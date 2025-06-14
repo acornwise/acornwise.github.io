@@ -1,0 +1,55 @@
+[
+  {
+    "id": "8ddc0607-9f59-4f39-86a5-c4ab41ec171e",
+    "title": "Full Name",
+    "category": "Decomposition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes as input a person's firstname and their last name. Your program should then output their full name by combining the two inputs with a space separating them AND formatting the names so they start with an uppercase letter but are otherwise all lowercase.\n\n**Constraints**\nThe provided input words will only consist of uppercase and lowercase letters but not necessarily correctly formatted.\nInput format:\nTwo strings of letters.\n\nOutput format:\nA string consisting of letters and a space, correctly formatted for names.",
+    "starter_code": "# Write a program that takes as input a person's firstname and their last name. Your program should then output their full name by combining the two inputs with a space separating them AND formatting the names so they start with an uppercase letter but are otherwise all lowercase.",
+    "test_cases": [
+      {
+        "input": [
+          "mo",
+          "Ali"
+        ],
+        "expected_output": "Mo Ali"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "d0b26c73-4962-4e54-bde9-1030a064270f",
+    "title": "Pruning Flowers",
+    "category": "Decomposition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes, as input, a string of flower names and outputs a new string with any duplicate flowers removed.\n\n**Constraints**\nThe flowers will all have one word names and each flower name will be separated by a single space. The output string must contain the flowers in the same order as the input, except that any duplicates have been removed.\n\nInput format:\nA string.\n\nOutput format:\nA string.",
+    "starter_code": "# Write a program that takes, as input, a string of flower names and outputs a new string with any duplicate flowers removed.",
+    "test_cases": [
+      {
+        "input": [
+          "daisy ivy rose ivy tulip"
+        ],
+        "expected_output": "daisy ivy rose tulip"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "d61a0cd2-3d6a-4dac-8164-fcde894a9029",
+    "title": "Same Close Different",
+    "category": "Decomposition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes as input two integers and outputs whether they are the same, close or different.\n\nInformation:\nThe two integers are the \"same\" if they equal to each other.\nThe two integers are \"close\" if they are within 1 of each other. (e.g. 3 and 4, or 4 and 3)\nThe two integers are \"different\" if the difference between them is greater than 1.\n\n**Constraints**\nInput format:\nTwo integers on separate lines. The integers provided will be from 0 to 1000.\n\nOutput format:\nOne of three strings, \"same\", \"close\", or \"different\".",
+    "starter_code": "# Write a program that takes as input two integers and outputs whether they are the same, close or different.\n# \n# Information:\n# The two integers are the \"same\" if they equal to each other.\n# The two integers are \"close\" if they are within 1 of each other. (e.g. 3 and 4, or 4 and 3)\n# The two integers are \"different\" if the difference between them is greater than 1.",
+    "test_cases": [
+      {
+        "input": [
+          "3",
+          "3"
+        ],
+        "expected_output": "same"
+      }
+    ],
+    "from": "OUCC"
+  }
+]

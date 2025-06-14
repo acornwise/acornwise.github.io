@@ -1,0 +1,31 @@
+[
+  {
+    "id": "dce412f0-601a-4baa-9842-4a75f60c1235",
+    "title": "Only Integers",
+    "category": "Abstraction",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes as input a number and outputs whether or not the number is in the form of an integer.\n\n**Constraints**\nInput format:\nA number greater than 0 and less than 100.\n\nOutput format:\nA string.",
+    "starter_code": "# Write a program that takes as input a number and outputs whether or not the number is in the form of an integer.",
+    "test_cases": [
+      {
+        "input": [
+          "1"
+        ],
+        "expected_output": "integer"
+      },
+      {
+        "input": [
+          "5.1"
+        ],
+        "expected_output": "not an integer"
+      },
+      {
+        "input": [
+          "5.0"
+        ],
+        "expected_output": "not an integer"
+      }
+    ],
+    "from": "OUCC"
+  }
+]

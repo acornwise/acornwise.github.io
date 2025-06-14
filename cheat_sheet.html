@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exam Cheat Sheet</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Monaco', monospace; /* Good for code */
+            font-size: 9pt; /* Adjusted for A4 print - smaller for more content */
+            line-height: 1.4; /* Improved readability */
+            margin: 0;
+            padding: 0;
+        }
+        .page {
+            width: 210mm;  /* A4 width */
+            height: 297mm; /* A4 height */
+            padding: 12mm; /* Slightly reduced margins for more space */
+            box-sizing: border-box;
+            page-break-after: always;
+            position: relative;
+            display: flex; /* Use flexbox for vertical content distribution */
+            flex-direction: column;
+        }
+        .page:last-child {
+            page-break-after: avoid; /* No page break after the last page */
+        }
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 5px;
+            margin-left: 10px;
+            overflow-x: auto; /* Still good for very long lines */
+            font-size: 8pt; /* Smaller for code blocks */
+            line-height: 1.3; /* Tighter line height for code */
+            white-space: pre-wrap; /* Allows long lines to wrap */
+            word-wrap: break-word; /* Ensures long words break */
+            word-break: break-all; /* More aggressive word breaking for long strings */
+        }
+        h1 {
+            text-align: center;
+            font-size: 15pt; /* Slightly smaller */
+            margin-bottom: 15px; /* Reduced margin */
+        }
+        h2 {
+            font-size: 12pt; /* Slightly smaller */
+            margin-top: 12px; /* Adjusted margin */
+            margin-bottom: 4px; /* Adjusted margin */
+        }
+        h3 {
+            font-size: 10pt; /* Slightly smaller */
+            margin-top: 8px; /* Adjusted margin */
+            margin-bottom: 2px; /* Adjusted margin */
+        }
+        b {
+            font-weight: bold;
+        }
+        ul {
+            margin-top: 4px; /* Reduced margin */
+            margin-bottom: 4px; /* Reduced margin */
+            padding-left: 18px; /* Slightly reduced padding */
+        }
+        li {
+            margin-bottom: 1px; /* Tighter list item spacing */
+        }
+        .page-content {
+            flex-grow: 1; /* Allows content to expand and push page number to bottom */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute sections within the page */
+        }
+        .page-number {
+            text-align: center;
+            font-size: 7pt; /* Even smaller for page number */
+            margin-top: 10mm; /* Ensure it's at the bottom */
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .page {
+                border: none;
+                margin: 0;
+                box-shadow: none;
+            }
+            /* Ensure code blocks don't break across pages badly */
+            pre {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <h1>Python Exam Cheat Sheet</h1>
+
+                <h2>I. Input & Data Conversion</h2>
+                <ul>
+                    <li><b>Read a single line of string:</b>
+                        <pre><code>s = input()</code></pre>
+                    </li>
+                    <li><b>Read an integer:</b>
+                        <pre><code>n = int(input())</code></pre>
+                    </li>
+                    <li><b>Read a float:</b>
+                        <pre><code>f = float(input())</code></pre>
+                    </li>
+                    <li><b>Read a list of space-separated integers:</b>
+                        <pre><code>nums = list(map(int, input().split()))</code></pre>
+                        <i>Example:</i> <code>1 2 3</code> becomes <code>[1, 2, 3]</code>
+                    </li>
+                    <li><b>Read a list of space-separated strings:</b>
+                        <pre><code>words = input().split()</code></pre>
+                        <i>Example:</i> <code>hello world</code> becomes <code>['hello', 'world']</code>
+                    </li>
+                </ul>
+
+                <h2>II. Loops & Iteration</h2>
+                <ul>
+                    <li><b><code>for</code> loop (by range):</b>
+                        <pre><code>for i in range(5): # 0, 1, 2, 3, 4
+    # ...
+for i in range(1, 6): # 1, 2, 3, 4, 5
+    # ...
+for i in range(5, 0, -1): # 5, 4, 3, 2, 1
+    # ...</code></pre>
+                    </li>
+                    <li><b><code>for</code> loop (through a list/set/etc.):</b>
+                        <pre><code>my_collection = [10, 20, 30] # Works for lists, sets, strings, dict keys, etc.
+for item in my_collection:
+    # ...</code></pre>
+                    </li>
+                    <li><b><code>for</code> loop with index (using <code>enumerate</code>):</b>
+                        <pre><code>my_list = ['a', 'b', 'c']
+for index, value in enumerate(my_list):
+    # ... index 0, value 'a'; index 1, value 'b', etc.</code></pre>
+                    </li>
+                    <li><b><code>while</code> loop:</b>
+                        <pre><code>count = 0
+while count < 5:
+    # ...
+    count += 1</code></pre>
+                    </li>
+                    <li><b>Loop Control:</b>
+                        <ul>
+                            <li><code>break</code>: Exits the current loop.</li>
+                            <li><code>continue</code>: Skipped rest of current iter & goes to next.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-number">Page 1</div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <h2>III. Conditional Statements</h2>
+                <ul>
+                    <li><b><code>if</code>, <code>elif</code>, <code>else</code>:</b>
+                        <pre><code>if condition1:
+    # ...
+elif condition2:
+    # ...
+else:
+    # ...</code></pre>
+                    </li>
+                    <li><b>Logical Operators:</b>
+                        <ul>
+                            <li><code>and</code>: Both conditions must be true.</li>
+                            <li><code>or</code>: At least one condition must be true.</li>
+                            <li><code>not</code>: Reverses the boolean value.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h2>IV. Lists (Common Operations)</h2>
+                <ul>
+                    <li><b>Create:</b> <code>my_list = []</code> or <code>my_list = [1, 2, 3]</code></li>
+                    <li><b>Access:</b> <code>my_list[0]</code> (first), <code>my_list[-1]</code> (last)</li>
+                    <li><b>Add:</b>
+                        <ul>
+                            <li><code>my_list.append(item)</code>: Adds to end.</li>
+                            <li><code>my_list.insert(index, item)</code>: Inserts at specific index.</li>
+                        </ul>
+                    </li>
+                    <li><b>Remove:</b>
+                        <ul>
+                            <li><code>my_list.pop()</code>: Removes and returns last item.</li>
+                            <li><code>my_list.pop(index)</code>: Removes and returns item at index.</li>
+                            <li><code>my_list.remove(value)</code>: Removes first occurrence of value.</li>
+                        </ul>
+                    </li>
+                    <li><b>Length:</b> <code>len(my_list)</code></li>
+                    <li><b>Sort:</b>
+                        <ul>
+                            <li><code>my_list.sort()</code>: Sorts in-place (ascending).</li>
+                            <li><code>my_list.sort(reverse=True)</code>: Sorts in-place (descending).</li>
+                            <li><code>sorted(my_list)</code>: Returns a new sorted list.</li>
+                        </ul>
+                    </li>
+                    <li><b>Min/Max/Sum:</b> <code>min(my_list)</code>, <code>max(my_list)</code>, <code>sum(my_list)</code></li>
+                </ul>
+
+                <h2>V. Sets (Unique Elements & Fast Lookups)</h2>
+                <ul>
+                    <li><b>Create:</b>
+                        <ul>
+                            <li><code>my_set = set()</code>: Empty set.</li>
+                            <li><code>my_set = {1, 2, 3}</code>: From literal values.</li>
+                            <li><code>my_set = set([1, 2, 2, 3])</code>: From a list (duplicates removed).
+                                <i>Result:</i> <code>{1, 2, 3}</code>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Add:</b>
+                        <ul>
+                            <li><code>my_set.add(item)</code>: Adds an item. No effect if item present.</li>
+                        </ul>
+                    </li>
+                    <li><b>Remove:</b>
+                        <ul>
+                            <li><code>my_set.remove(item)</code>: Removes item. Raises <code>KeyError</code> if not found.</li>
+                            <li><code>my_set.discard(item)</code>: Removes item. Does nothing if not found (safer).</li>
+                            <li><code>my_set.pop()</code>: Removes and returns arbitrary item (unordered).</li>
+                        </ul>
+                    </li>
+                    <li><b>Check Membership (Very Fast!):</b>
+                        <pre><code>if item in my_set:
+    # ...
+if item not in my_set:
+    # ...</code></pre>
+                    </li>
+                    <li><b>Length:</b> <code>len(my_set)</code></li>
+                    <li><b>Set Operations:</b>
+                        <ul>
+                            <li><code>set1.union(set2)</code> or <code>set1 | set2</code>: All unique elements.</li>
+                            <li><code>set1.intersection(set2)</code> or <code>set1 & set2</code>: Common elements.</li>
+                            <li><code>set1.difference(set2)</code> or <code>set1 - set2</code>: In <code>set1</code> but not <code>set2</code>.</li>
+                            <li><code>set1.symmetric_difference(set2)</code> or <code>set1 ^ set2</code>: In either, but not both.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-number">Page 2</div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <h2>VI. Dictionaries (Key-Value Pairs)</h2>
+                <ul>
+                    <li><b>Create:</b>
+                        <ul>
+                            <li><code>my_dict = {}</code> or <code>my_dict = dict()</code>: Empty.</li>
+                            <li><code>my_dict = {'name': 'Alice', 'age': 30}</code>: With initial pairs.</li>
+                        </ul>
+                    </li>
+                    <li><b>Access Value:</b>
+                        <ul>
+                            <li><code>value = my_dict['key']</code>: Access by key. Raises <code>KeyError</code> if not found.</li>
+                            <li><code>value = my_dict.get('key')</code>: Returns <code>None</code> if key not found (safer).</li>
+                            <li><code>value = my_dict.get('key', default_value)</code>: Returns <code>default_value</code> if not found.</li>
+                        </ul>
+                    </li>
+                    <li><b>Add/Update:</b>
+                        <ul>
+                            <li><code>my_dict['new_key'] = 'new_value'</code>: Adds new pair.</li>
+                            <li><code>my_dict['existing_key'] = 'updated_value'</code>: Updates existing.</li>
+                        </ul>
+                    </li>
+                    <li><b>Remove:</b>
+                        <ul>
+                            <li><code>del my_dict['key']</code>: Deletes pair. Raises <code>KeyError</code> if not found.</li>
+                            <li><code>value = my_dict.pop('key')</code>: Removes & returns value. Raises <code>KeyError</code> if not found.</li>
+                            <li><code>value = my_dict.pop('key', default_value)</code>: Removes & returns value; <code>default_value</code> if not found.</li>
+                        </ul>
+                    </li>
+                    <li><b>Check Key Membership (Fast!):</b>
+                        <pre><code>if 'key' in my_dict:
+    # ...</code></pre>
+                    </li>
+                    <li><b>Length:</b> <code>len(my_dict)</code> (number of key-value pairs)</li>
+                    <li><b>Iterating:</b>
+                        <ul>
+                            <li><b>Keys (default):</b>
+                                <pre><code>for key in my_dict:
+    # ...
+for key in my_dict.keys(): # Explicitly iterate keys
+    # ...</code></pre>
+                            </li>
+                            <li><b>Values:</b>
+                                <pre><code>for value in my_dict.values():
+    # ...</code></pre>
+                            </li>
+                            <li><b>Key-Value Pairs:</b>
+                                <pre><code>for key, value in my_dict.items():
+    # ...</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="page-number">Page 3</div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-content">
+            <div>
+                <h2>VII. Strings (Common Operations)</h2>
+                <ul>
+                    <li><b>Length:</b> <code>len(my_string)</code></li>
+                    <li><b>Access Character:</b> <code>my_string[0]</code></li>
+                    <li><b>Slicing:</b> <code>my_string[start:end:step]</code>
+                        <ul>
+                            <li><code>my_string[1:4]</code> (chars from index 1 to 3)</li>
+                            <li><code>my_string[2:]</code> (from index 2 to end)</li>
+                            <li><code>my_string[:5]</code> (from start to index 4)</li>
+                        </ul>
+                    </li>
+                    <li><b>Concatenation:</b> <code>str1 + str2</code></li>
+                    <li><b>Split:</b> <code>my_string.split(separator)</code> (defaults to whitespace)</li>
+                    <li><b>Join:</b> <code>'separator'.join(list_of_strings)</code></li>
+                </ul>
+
+                <h2>VIII. Output</h2>
+                <ul>
+                    <li><b>Print a single value:</b>
+                        <pre><code>print("Hello")
+print(123)</code></pre>
+                    </li>
+                    <li><b>Print multiple values (space-separated by default):</b>
+                        <pre><code>print("Name:", "Alice", "Age:", 30)
+# Output: Name: Alice Age: 30</code></pre>
+                    </li>
+                    <li><b>Print a list/tuple/set/etc. of numbers with space separators:</b>
+                        <pre><code>my_collection = [1, 5, 9, 2] # Works for lists, tuples, sets, keys from dicts
+print(*my_collection)
+# Output: 1 5 9 2 (order may vary for sets/dicts before Python 3.7)</code></pre>
+                        <i>Alternative (for any iterable, good for non-numeric as well):</i>
+                        <pre><code>print(' '.join(map(str, my_collection)))
+# Output: 1 5 9 2 (order may vary for sets/dicts before Python 3.7)</code></pre>
+                    </li>
+                    <li><b>Print with f-strings (formatted string literals - Python 3.6+):</b>
+                        <pre><code>name = "Bob"
+age = 25
+print(f"Name: {name}, Age: {age}")
+# Output: Name: Bob, Age: 25</code></pre>
+                    </li>
+                </ul>
+
+                <h2>IX. Useful Built-in Functions</h2>
+                <ul>
+                    <li><code>len()</code>: Length of sequence (list, string, set, dict, etc.)</li>
+                    <li><code>min()</code>, <code>max()</code>, <code>sum()</code></li>
+                    <li><code>abs()</code>: Absolute value.</li>
+                    <li><code>round(number, ndigits)</code>: Round to specified decimal places.</li>
+                </ul>
+
+                <h2>Tips for Exam:</h2>
+                <ul>
+                    <li><b>Read the problem carefully.</b> Understand inputs, outputs, and constraints.</li>
+                    <li><b>Test with examples.</b></li>
+                    <li><b>Start with input parsing and output formatting.</b> This ensures basic structure.</li>
+                    <li><b>Break down complex problems.</b></li>
+                    <li><b>Indent correctly!</b> Python relies on indentation.</li>
+                </ul>
+            </div>
+            <div class="page-number">Page 4</div>
+        </div>
+    </div>
+
+</body>
+</html>

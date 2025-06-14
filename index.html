@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcornWise Daily Coding Challenges: OUCC, AIO & Coding Test Prep</title>
+    <meta name="description" content="Master Python coding with daily challenges from AcornWise Coding & Math. Perfect for students preparing for OUCC, AIO, competitive programming, and technical interviews. Start coding today!">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.48.0/min/vs/loader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_PUBLISHER_ID" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="loading-content text-center">
+                <h1 class="loading-title">
+                    Welcome to <span class="text-secondary">AcornWise</span>!
+                </h1>
+                <p class="loading-lead">
+                    Your exciting journey into the world of Python programming starts here.
+                </p>
+    
+                <p class="loading-text">
+                    AcornWise offers engaging coding challenges designed specifically for <strong>middle and high school students</strong>. Dive into real-world problems, write your solutions in our <strong>in-browser IDE</strong>, and get <strong>instant feedback</strong> on your code.
+                </p>
+    
+                <p class="loading-text">
+                    Whether you're just starting out or looking to sharpen your skills, AcornWise provides a fun, interactive, and supportive environment to <strong>learn by doing</strong>.
+                </p>
+    
+                <div class="loading-spinner" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p id="loading-task-text" class="loading-task-text">Initializing...</p>
+                <div class="loading-progress-bar-container">
+                    <div id="loading-progress-bar" class="loading-progress-bar" style="width: 0%;"></div>
+                </div>
+                <p id="loading-status-text" class="loading-status-text">
+                    Preparing your adventure in Python. Please wait a moment...
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <h1>AcornWise Daily Coding & Math Challenges</h1>
+        <button id="view-progress-report-btn" class="header-button">View Progress Report</button>
+    </header>
+    <section id="daily-challenges-view" style="display: none;"> <!-- Initially hidden -->
+        <header class="daily-challenges-header">
+            <h2>Today's Coding Workout</h2>
+            <div class="daily-info">
+                <p>Next set of challenges in: <span id="next-selection-countdown">Loading...</span></p>
+                <p>Estimated total time for today: <span id="daily-total-time-limit">Calculating...</span></p>
+            </div>
+        </header>
+        <div id="daily-challenge-list-container">
+            <p>Loading today's challenges...</p>
+        </div>
+    </section>
+
+    <main style="display: none;"> <!-- Initially hidden -->
+        <aside class="sidebar">
+            <h2>Challenges</h2>
+            <nav id="challenge-navigation">
+                <p>Loading challenges...</p>
+            </nav>
+            <div class="ad-slot sidebar-ad">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_SIDEBAR_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </aside>
+
+        <section class="challenge-content">
+            <div class="ad-slot content-ad">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_DESCRIPTION_AD_SLOT_ID"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div class="challenge-description">
+                <h2>Challenge Description</h2>
+                <div id="description-area">
+                    <p>Select a challenge from the left to view its description.</p>
+                </div>
+            </div>
+
+            <div id="timer-container">
+                Time Remaining: <span id="timer-display">00:00</span>
+                <button id="retry-challenge-btn" style="display: none;">Retry Challenge</button>
+            </div>
+
+            <div class="ide-container">
+                <h2>Your Code</h2>
+                <div id="code-editor" class="code-editor"></div>
+                <button id="run-code-btn" disabled>Run Code</button>
+                <div id="pyodide-status" class="status-message">Loading Pyodide...</div>
+            </div>
+
+            <div class="ad-slot code-test-ad">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_CODE_TEST_AD_SLOT_ID"
+                     data-ad-format="rectangle"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <div class="test-cases-section">
+                <h2>Test Cases</h2>
+                <div id="test-cases-area">
+                    <p>Test cases will appear here.</p>
+                </div>
+
+                <div class="custom-test-section">
+                    <h3>Custom Test</h3>
+                    <div class="custom-test-inputs">
+                        <div class="input-group">
+                            <label for="custom-input">Input:</label>
+                            <textarea id="custom-input" rows="5" placeholder="Enter custom input here. For function calls, use JSON array format: [arg1, arg2]"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <label for="custom-expected-output">Expected Output:</label>
+                            <textarea id="custom-expected-output" rows="3" placeholder="Enter expected output here (e.g., '123' or 'true' or JSON: [1,2,3])"></textarea>
+                        </div>
+                    </div>
+                    <button id="run-custom-test-btn" disabled>Run Custom Test</button>
+                    <div id="custom-test-result" class="status-message"></div>
+                </div>
+            </div>
+
+            <div class="ad-slot content-ad">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_TEST_CASES_AD_SLOT_ID"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+
+            <div class="results-section">
+                <h2>Results</h2>
+                <pre id="results-output"></pre>
+            </div>
+        </section>
+    </main>
+
+    <section id="progress-report-container" style="display: none;">
+        <header>
+            <h2>Your Progress Report</h2>
+        </header>
+        <div id="progress-report-layout">
+            <aside class="ad-slot progress-ad progress-ad-left">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_PROGRESS_LEFT_AD_SLOT_ID" 
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </aside>
+            <div id="report-content-area">
+                <p>Loading report...</p>
+            </div>
+            <aside class="ad-slot progress-ad progress-ad-right">
+                <p>Advertisement</p>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ADSENSE_PUBLISHER_ID"
+                     data-ad-slot="YOUR_PROGRESS_RIGHT_AD_SLOT_ID" 
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </aside>
+        </div>
+        <footer>
+            <button id="back-to-challenges-btn" class="header-button">Back to Challenges</button>
+        </footer>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AcornWise Coding & Math</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "b3f5ebeb-3fe5-4972-9620-9ac2f909d094",
+    "title": "Pangrams",
+    "category": "Pattern Recognition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA pangram is a string which contains every letter of the alphabet.\nAn example: The quick brown fox jumps over the lazy dog.\n\nWrite a program that takes a string as input and checks to see if it is a pangram or not. If the string is a pangram, then your program should output Pangram, otherwise Not a pangram\n\n**Constraints**\nInput format:\nA string whose length is between 0 and 200.\n\nOutput format:\nThe string Pangram, or the string Not a pangram.",
+    "starter_code": "# A pangram is a string which contains every letter of the alphabet.\n# An example: The quick brown fox jumps over the lazy dog.\n# \n# Write a program that takes a string as input and checks to see if it is a pangram or not. If the string is a pangram, then your program should output Pangram, otherwise Not a pangram",
+    "test_cases": [
+      {
+        "input": [
+          "The quick brown fox jumps over the lazy dog."
+        ],
+        "expected_output": "Pangram"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "b9bf7c51-3219-4367-b702-bff743be37af",
+    "title": "Most Common Letters",
+    "category": "Pattern Recognition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nYou are interested in the most common letter in a string.\n\nExamples\nThe most common letter in honeyeater is e.\n\nThe most common letters in oystercatcher are t, e, r and c.\n\nWrite a program that outputs the most common letter(s) in a given string.\n\n\n**Constraints**\nInput format: A string of letters.\n\nOutput format: The most common letter in the string OR an alphabetical list of the most common letters if there is a tie.",
+    "starter_code": "# You are interested in the most common letter in a string.\n# \n# Examples\n# The most common letter in honeyeater is e.\n# \n# The most common letters in oystercatcher are t, e, r and c.\n# \n# Write a program that outputs the most common letter(s) in a given string.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "oystercatcher"
+        ],
+        "expected_output": "c e r t"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "ee774bdf-ed66-4f20-9239-dac6ee73aca2",
+    "title": "Most Popular Digit",
+    "category": "Pattern Recognition",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA statistics team ask group of students to each provide a random 3 digit number.\n\nWrite a program that outputs the most popular digit used by all of the students.\n\n**Constraints**\n* All the numbers are 3 digits long.\n* The most commonly used digit will never tie with another digit.\n\nInput format: An integer n representing the number of students, followed by n rows of 3 digit numbers.\n\nOutput format: An integer representing the most popular digit used by the students.",
+    "starter_code": "# A statistics team ask group of students to each provide a random 3 digit number.\n# \n# Write a program that outputs the most popular digit used by all of the students.",
+    "test_cases": [
+      {
+        "input": [
+          "6",
+          "445",
+          "627",
+          "894",
+          "125",
+          "562",
+          "244"
+        ],
+        "expected_output": "4"
+      }
+    ],
+    "from": "OUCC"
+  }
+]

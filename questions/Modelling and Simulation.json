@@ -1,0 +1,149 @@
+[
+  {
+    "id": "a6ba344a-08b3-4ed4-a104-dfc583dde53a",
+    "title": "Bus Passengers",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nBus routes consist of travelling between a number of stops. At the stops passengers first get off and then new passengers get on. All passengers travel at the very least from the stop they got on to the very next stop.\n\nWrite a program that takes, as input, a line of text with the numbers of the passengers that got off at each stop of the journey and another line of text with the corresponding number of passengers that got on. Your program should then output an integer representing the maximum number of passengers on the bus at any point in the journey.\n\n\n**Constraints**\n* All integers in the input will be no more than 100.\n* The two lines of integers will contain no more than 20 integers and will be the same length, that is, the number of stops in a given journey will not exceed 20.\n\nInput format: Two rows of integers separated by spaces.\n\nOutput format: An integer.",
+    "starter_code": "# Bus routes consist of travelling between a number of stops. At the stops passengers first get off and then new passengers get on. All passengers travel at the very least from the stop they got on to the very next stop.\n# \n# Write a program that takes, as input, a line of text with the numbers of the passengers that got off at each stop of the journey and another line of text with the corresponding number of passengers that got on. Your program should then output an integer representing the maximum number of passengers on the bus at any point in the journey.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "0 2 4 1 5",
+          "3 5 2 2 0"
+        ],
+        "expected_output": "6"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "45ddd840-ea14-4527-8adc-99f28bdd96f2",
+    "title": "Lift Says \"no!\"",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA ten-storey building has a smart lift which allows people to access the floor they require. The lift can carry a maximum of eight people at any one time. The ascending lift automatically stops at each floor, where people who need to exit the lift first do so and then people will attempt to enter the lift. The system controlling the lift indicates how many people are allowed to enter the lift, so that it is not overcrowded.\n\nWrite a program to display the total number of people who were not able to enter the ascending lift on their first attempt.\n\n**Constraints**\nInput is always a set of 10 pairs of integers.\nThere may be nobody waiting for a lift or a maximum of 25.\nThe lift is empty at the beginning of the program.\n\nInput format:\nA single line which contains 10 pairs of numbers, which are separated by a comma.\nEach pair represents activity at consecutive floors.\nThe first number in each pair is the number of people who get out of the lift at that floor, while the second number is the number of people who attempt to enter the lift at that floor.\nNumbers in a pair are separated by a space.\n\nOutput format:\nA single integer representing the number of people who were unable to enter the lift.",
+    "starter_code": "# A ten-storey building has a smart lift which allows people to access the floor they require. The lift can carry a maximum of eight people at any one time. The ascending lift automatically stops at each floor, where people who need to exit the lift first do so and then people will attempt to enter the lift. The system controlling the lift indicates how many people are allowed to enter the lift, so that it is not overcrowded.\n# \n# Write a program to display the total number of people who were not able to enter the ascending lift on their first attempt.",
+    "test_cases": [
+      {
+        "input": [
+          "0 7,5 6,2 3,4 2,2 6,4 3,2 2,4 2,3 1,3 0"
+        ],
+        "expected_output": "3"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "5a83476f-e7f1-4a1b-a949-09f5eebe5308",
+    "title": "Toothed Caterpillars",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nToothed caterpillars have a curious life cycle. They are born with teeth in their upper jaw and a different number of teeth in their lower jaw. After one day the teeth in their upper jaw fall out and they grow new teeth. On the second day the teeth in their lower jaw fall out and they grow new teeth. On day three they again grow new teeth in their upper jaw and so on.\n\nThe really curious thing is that the number of new teeth they grow on any day is one more than the difference between the number of teeth in their upper and lower jaws on the previous days.\n\nExample\nA caterpillar was born with 6 teeth in its upper jaw and 3 in its lower jaw.\n\nAge (days)\t0\t1\t2\t3\t4\t5\nUpper\t\t6\t4\t4\t3\t3\t2\nLower\t    \t3\t3\t2\t2\t2\t2\nDifference\t3\t1\t2\t1\t1\t0\n\nWhen they have the same number of teeth in their upper and lower jaws, they pupate to become butterflies.\n\nWrite a program that determines the caterpillar\u2019s age, in days, when it pupates (5 in the example).\n\n**Constraints**\nToothed caterpillars are never born with more than 100 teeth in either jaw, or less than 1.\n\nInput format:\n* Line 1: The number (as an integer) of teeth in the upper jaw at birth.\n* Line 2: The number (as an integer) of teeth in the lower jaw at birth.\n\nOutput format: The age at which the caterpillar pupates (an integer).",
+    "starter_code": "# Toothed caterpillars have a curious life cycle. They are born with teeth in their upper jaw and a different number of teeth in their lower jaw. After one day the teeth in their upper jaw fall out and they grow new teeth. On the second day the teeth in their lower jaw fall out and they grow new teeth. On day three they again grow new teeth in their upper jaw and so on.\n# \n# The really curious thing is that the number of new teeth they grow on any day is one more than the difference between the number of teeth in their upper and lower jaws on the previous days.\n# \n# Example\n# A caterpillar was born with 6 teeth in its upper jaw and 3 in its lower jaw.\n# \n# Age (days)\t0\t1\t2\t3\t4\t5\n# Upper\t\t6\t4\t4\t3\t3\t2\n# Lower\t    \t3\t3\t2\t2\t2\t2\n# Difference\t3\t1\t2\t1\t1\t0\n# \n# When they have the same number of teeth in their upper and lower jaws, they pupate to become butterflies.\n# \n# Write a program that determines the caterpillar\u2019s age, in days, when it pupates (5 in the example).",
+    "test_cases": [
+      {
+        "input": [
+          "6",
+          "3"
+        ],
+        "expected_output": "5"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "56a8d962-3510-4a49-9e75-d216e30ad93c",
+    "title": "Solar Panels",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA company requires a program that calculates the number of solar panels it manufactures that can be installed on a rectangular area of roof.\n\nWrite a program that takes, as input, the width and depth of the rectangular roof section, and outputs the maximum number of solar panels that can be installed on it.\n\n\n**Constraints**\nThe solar panels can only be installed vertically.\nThe solar panels are 0.95m wide and 1.5m tall.\nNo space is needed between adjacent panels and they can be fitted to the very edges of the roof section.\n\nInput format:\nFirst line: A float (The width of the roof section.)\nSecond line: A float (The depth of the roof section.)\n\nOutput format:\nAn integer.",
+    "starter_code": "# A company requires a program that calculates the number of solar panels it manufactures that can be installed on a rectangular area of roof.\n# \n# Write a program that takes, as input, the width and depth of the rectangular roof section, and outputs the maximum number of solar panels that can be installed on it.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "5.1",
+          "2.0"
+        ],
+        "expected_output": "5"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "bb7b7e9b-db36-4612-8c9e-9ad6361fb784",
+    "title": "MangoesReview",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nThe mango season has arrived. A market stall buys mangoes in the morning and sells them during the day. Any that are left over are kept for the next day. The stall owner ensures that older mangoes are sold before newer ones.\n\nA 3 day example:\nDay 1: Buy 10 mangoes, Sell 6 mangoes (0 old, 6 fresh). Keep 4 old mangoes.\nDay 2: Buy 5 mangoes, Sell 7 mangoes (4 old, 3 fresh). Keep 2 old mangoes.\nDay 3: Buy 1 mangoes, Sell 3 mangoes (2 old, 1 fresh).\n\nA total of 6 + 3 + 1 = 10 fresh mangoes were sold during the 3 day period.\n\nWrite a program that outputs the total number of fresh mangoes (those sold on the same day as they were bought) sold during the given number of days.\n\n**Constraints**\nThe number of days that data will be provided for will be more than 1 and less than 8.\nThe number of mangoes bought on a particular day will be less than 100, as will the number sold.\n\nInput format:\nThe input consists of several lines. Line 1 is an integer, n, representing the number of days buying and selling Mangoes.\nThe next n lines provide two integers, separated by a space. The first integer is the number of mangoes bought on that day and the second number is the number sold on that day.\n\nOutput format:\nAn integer representing the total number of mangoes sold on the day they were bought.",
+    "starter_code": "# The mango season has arrived. A market stall buys mangoes in the morning and sells them during the day. Any that are left over are kept for the next day. The stall owner ensures that older mangoes are sold before newer ones.\n# \n# A 3 day example:\n# Day 1: Buy 10 mangoes, Sell 6 mangoes (0 old, 6 fresh). Keep 4 old mangoes.\n# Day 2: Buy 5 mangoes, Sell 7 mangoes (4 old, 3 fresh). Keep 2 old mangoes.\n# Day 3: Buy 1 mangoes, Sell 3 mangoes (2 old, 1 fresh).\n# \n# A total of 6 + 3 + 1 = 10 fresh mangoes were sold during the 3 day period.\n# \n# Write a program that outputs the total number of fresh mangoes (those sold on the same day as they were bought) sold during the given number of days.",
+    "test_cases": [
+      {
+        "input": [
+          "3",
+          "10 6",
+          "5 7",
+          "1 3"
+        ],
+        "expected_output": "10"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "8d2effcd-a8c2-4a8d-9082-095276417d30",
+    "title": "Trading Licences",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nYou are on a trading journey, visiting several towns.\n\nAt each town you know how much profit you will make if you trade. However, in order to trade in a town, you will have to buy a trading licence. The cost of a licence is half of the cash you have with you (rounded down).\n\nExample\nYou start your journey with \u00a320.\n\nYou visit 3 towns, where you can make profits of \u00a38, \u00a313 and \u00a316.\n\n* You would not trade at the first town, as the cost of the licence (\u00a310) is greater than your profit (\u00a38).\n* You would trade at the second town, as your profit (\u00a313) is greater than the cost of the licence (\u00a310). You would leave the second town with \u00a320 - \u00a310 + \u00a313 = \u00a323.\n* You would trade at the third town, as your profit (\u00a316) is greater than the cost of the licence (\u00a311). You would leave the third town with \u00a323 - \u00a311 + \u00a316 = \u00a328.\n\nYou would finish the journey with \u00a328 in cash. Note that all prices are in whole pounds. No one deals in pence.\n\nYour task is to determine the most cash you can end up with after a trading journey.\n\n\n**Constraints**\n* All costs and profits are in pounds (\u00a3). No traders deal in pence.\n* You always trade in a town if you can end your visit with more money than when you arrived.\n\nInput format:\n* Line 1: An integer. This is the amount of cash you start with.\n* Line 2: A line of space separated integers. These are the profits you could make at each town if you trade there.\n\nOutput format: An integer. This is the most cash you could have at the end of your journey.",
+    "starter_code": "# You are on a trading journey, visiting several towns.\n# \n# At each town you know how much profit you will make if you trade. However, in order to trade in a town, you will have to buy a trading licence. The cost of a licence is half of the cash you have with you (rounded down).\n# \n# Example\n# You start your journey with \u00a320.\n# \n# You visit 3 towns, where you can make profits of \u00a38, \u00a313 and \u00a316.\n# \n# * You would not trade at the first town, as the cost of the licence (\u00a310) is greater than your profit (\u00a38).\n# * You would trade at the second town, as your profit (\u00a313) is greater than the cost of the licence (\u00a310). You would leave the second town with \u00a320 - \u00a310 + \u00a313 = \u00a323.\n# * You would trade at the third town, as your profit (\u00a316) is greater than the cost of the licence (\u00a311). You would leave the third town with \u00a323 - \u00a311 + \u00a316 = \u00a328.\n# \n# You would finish the journey with \u00a328 in cash. Note that all prices are in whole pounds. No one deals in pence.\n# \n# Your task is to determine the most cash you can end up with after a trading journey.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "20",
+          "8 13 16"
+        ],
+        "expected_output": "28"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "5ff4496d-8f21-40d8-abd2-b1ad0cdee830",
+    "title": "Ticket to Ride",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA tram travels up and down a riverbank along a tram line, stopping at several stops to allow passengers to board the tram and other passengers to get off the tram. Firstly, passengers get off the tram from a door at the rear of the tram, then passengers board the tram at the door at the front of the tram. Tickets are purchased which allow passengers to travel the remaining section of the line, and they can get off at any stop that is left on the tram line.\n\nWrite a program that takes as input a line of text with pairs of numbers. The first number in the pair is the number of passengers who board the tram at a stop, and the second number is the number of passengers who get off the tram at that stop. Your program should calculate the number of passengers who arrive at its final stop.\n\n**Constraints**\nAll integers in the input will be no more than 100.\nThe input will contain no more than 15 pairs of integers, that is, the number of stops in each journey will not exceed 15, excluding the final stop on the line.\nThere will be no pair of integers for the final stop as it is expected that everyone gets off.\n\nInput format:\nPairs of integers separated by commas. Each pair of integers is separated by a space.\n\nOutput format:\nAn integer.",
+    "starter_code": "# A tram travels up and down a riverbank along a tram line, stopping at several stops to allow passengers to board the tram and other passengers to get off the tram. Firstly, passengers get off the tram from a door at the rear of the tram, then passengers board the tram at the door at the front of the tram. Tickets are purchased which allow passengers to travel the remaining section of the line, and they can get off at any stop that is left on the tram line.\n# \n# Write a program that takes as input a line of text with pairs of numbers. The first number in the pair is the number of passengers who board the tram at a stop, and the second number is the number of passengers who get off the tram at that stop. Your program should calculate the number of passengers who arrive at its final stop.",
+    "test_cases": [
+      {
+        "input": [
+          "25 0,15 19,34 10,17 6"
+        ],
+        "expected_output": "56"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "e94018df-150c-4653-926e-72a3627fbdb7",
+    "title": "Dividing the Loot",
+    "category": "Modelling and Simulation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nThe pirates, Desi and Loki, are dividing the loot. The loot consists of an even number of necklaces. Desi has first choice of a necklace, then Loki, then Desi and so on.\n\nThe necklaces have differing numbers of rubies and sapphires. Desi will always choose the necklace with the most rubies, whilst Loki will always choose the one with the most sapphires.\n\nExample\nThere are 4 necklaces with {rubies, sapphires} of {3,2}, {6,4}, {4,1}, {5,6}.\n\nDesi chooses the {6,4} necklace.\nLoki chooses the {5,6} necklace.\nDesi chooses the {4,1} necklace.\nLoki chooses the {3,2} necklace.\n\nDesi ends up with 6+4 = 10 rubies and 4+1 = 5 sapphires.\nLoki ends up with 5+3 = 8 rubies and 6+2 = 8 sapphires.\n\nWrite a program that outputs how many sapphires Loki will end up with after they divide the loot.\n\n\n**Constraints**\n* There will always be an even number of necklaces.\n* All necklaces have at least one ruby and one sapphire.\n* There will not be any necklaces which have the same number of rubies or the same number of sapphires as any other necklace in the provided set.\n\nInput format\n* Line 1: A single number. This is the amount of necklaces n in the loot.\n* The next n lines: A pair of numbers representing a necklace. The first number is the number of rubies on the necklace, the second number is the number of sapphires.\n\nOutput format: A single number. The number of sapphires Loki ends up with.",
+    "starter_code": "# The pirates, Desi and Loki, are dividing the loot. The loot consists of an even number of necklaces. Desi has first choice of a necklace, then Loki, then Desi and so on.\n# \n# The necklaces have differing numbers of rubies and sapphires. Desi will always choose the necklace with the most rubies, whilst Loki will always choose the one with the most sapphires.\n# \n# Example\n# There are 4 necklaces with {rubies, sapphires} of {3,2}, {6,4}, {4,1}, {5,6}.\n# \n# Desi chooses the {6,4} necklace.\n# Loki chooses the {5,6} necklace.\n# Desi chooses the {4,1} necklace.\n# Loki chooses the {3,2} necklace.\n# \n# Desi ends up with 6+4 = 10 rubies and 4+1 = 5 sapphires.\n# Loki ends up with 5+3 = 8 rubies and 6+2 = 8 sapphires.\n# \n# Write a program that outputs how many sapphires Loki will end up with after they divide the loot.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "4",
+          "3 2",
+          "6 4",
+          "4 1",
+          "5 6"
+        ],
+        "expected_output": "8"
+      }
+    ],
+    "from": "OUCC"
+  }
+]

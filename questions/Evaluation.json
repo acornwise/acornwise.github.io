@@ -1,0 +1,58 @@
+[
+  {
+    "id": "b016801d-538b-44eb-95cd-b5df79eaa59e",
+    "title": "Magic Squares",
+    "category": "Evaluation",
+    "input_type": "stdin",
+    "description_md": "**Task**\n3 x 3 magic squares consist of 9 digits arranged in three rows. What makes them magical is that all the rows, all the columns, and the two diagonals, add up to the same number. This number is always 15.\n\nExample Magic Square\n8 1 6\n3 5 7\n4 9 2\n\nWrite a program that takes, as input, the three rows of a magic square arrangement and checks that it is indeed magic. Your program should output \"magic\" if it is and \"muggle\" if it is not.\n\n\n**Constraints**\nAll integers in the input will be: 1, 2, 3, 4, 5, 6, 7, 8, or 9.\n\nInput format:\nThree rows of three integers separated by spaces.\n\nOutput format:\nA string.",
+    "starter_code": "# 3 x 3 magic squares consist of 9 digits arranged in three rows. What makes them magical is that all the rows, all the columns, and the two diagonals, add up to the same number. This number is always 15.\n# \n# Example Magic Square\n# 8 1 6\n# 3 5 7\n# 4 9 2\n# \n# Write a program that takes, as input, the three rows of a magic square arrangement and checks that it is indeed magic. Your program should output \"magic\" if it is and \"muggle\" if it is not.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "8 1 6",
+          "3 5 7",
+          "4 9 2"
+        ],
+        "expected_output": "magic"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "5ea23f56-14d8-4afe-9bd2-a260ce5e7140",
+    "title": "Capture the Flag",
+    "category": "Evaluation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nTwo teams of students are playing \"capture the flag\". They take turns invading each other's base and capturing their opposing team's flag in the shortest amount of time. The attacking players each have one soft ball they can throw at the defenders. Teams get to reduce the time they took to capture the flag by 3 seconds for each of the defenders team that gets hit with a ball.\n\nWrite a program that calculates which team won based on who had the smallest accumulated time and outputs the team name or draw.\n\n**Constraints**\n* There are two teams: A and B.\n* There are four rounds played: A starts as the attacking team first followed by B, then A then B.\n* The attacking team will always eventually capture the flag.\n\nInput format: Four lines of input, each consisting of: A letter followed by two integers separated by spaces. The letter is the attacking team, the first integer is the time taken to capture the flag in seconds, the second integer is how many of the defenders got hit by a ball.\n\nOutput format: One of three strings: A, B, or draw",
+    "starter_code": "# Two teams of students are playing \"capture the flag\". They take turns invading each other's base and capturing their opposing team's flag in the shortest amount of time. The attacking players each have one soft ball they can throw at the defenders. Teams get to reduce the time they took to capture the flag by 3 seconds for each of the defenders team that gets hit with a ball.\n# \n# Write a program that calculates which team won based on who had the smallest accumulated time and outputs the team name or draw.",
+    "test_cases": [
+      {
+        "input": [
+          "A 150 7",
+          "B 130 0",
+          "A 143 2",
+          "B 130 3"
+        ],
+        "expected_output": "B"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "9d5f692d-e165-4a24-8d7e-60d3c3e166fd",
+    "title": "Races",
+    "category": "Evaluation",
+    "input_type": "stdin",
+    "description_md": "**Task**\nFour friends: A, B, C, and D, are racing multiple times to see who wins the most. Each race winner is awarded 1 point. If a player wins two times in a row they are awarded their winning point and an extra point.\n\nWrite a program that outputs the score of the overall winner (or winners if there is a draw).\n\n\n**Constraints**\nProvided data will consist of no more than 100 race results.\n\nInput format: A string of uppercase letters separated by spaces. Each letter represents the player that won that race.\n\nOutput format: An integer.",
+    "starter_code": "# Four friends: A, B, C, and D, are racing multiple times to see who wins the most. Each race winner is awarded 1 point. If a player wins two times in a row they are awarded their winning point and an extra point.\n# \n# Write a program that outputs the score of the overall winner (or winners if there is a draw).\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "A A B C D C B C D D"
+        ],
+        "expected_output": "4"
+      }
+    ],
+    "from": "OUCC"
+  }
+]

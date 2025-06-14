@@ -1,0 +1,526 @@
+[
+  {
+    "id": "def97ef7-5521-41cb-bc51-f80104b9bb2a",
+    "title": "Countdown",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes as input an integer and outputs a rocket countdown sequence.\n\n**Constraints**\nInput format:\nAn integer greater than 0 and less than 100.\n\nOutput format:\nA series of integers on separate rows with a final string, \"lift off\".",
+    "starter_code": "# Write a program that takes as input an integer and outputs a rocket countdown sequence.",
+    "test_cases": [
+      {
+        "input": [
+          "3"
+        ],
+        "expected_output": "3\n2\n1\nlift off"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "f8bf6bbe-4b67-4c50-a15f-c171424e78b1",
+    "title": "Pig Latin",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nPig Latin is a language game made by modifying English words:\n\nIf the letter starts with a consonant:\nStep 1: Remove the first letter of the word.\nStep 2: Add a \u201c-\u201d to the end of the word.\nStep 3: Add the removed letter.\nStep 4: Add \u201day\u201d.\n\nIf the letter starts with a vowel just add \u201c-yay\u201c to the end of the word.\n\nWrite a program that will translate a word into Pig Latin.\n\n**Constraints**\nThe provided input word will only consist of uppercase and lowercase letters.\n\nInput format:\nA string consisting of a single English word.\n\nOutput format:\nA string consisting of the translated input.",
+    "starter_code": "# Pig Latin is a language game made by modifying English words:\n# \n# If the letter starts with a consonant:\n# Step 1: Remove the first letter of the word.\n# Step 2: Add a \u201c-\u201d to the end of the word.\n# Step 3: Add the removed letter.\n# Step 4: Add \u201day\u201d.\n# \n# If the letter starts with a vowel just add \u201c-yay\u201c to the end of the word.\n# \n# Write a program that will translate a word into Pig Latin.",
+    "test_cases": [
+      {
+        "input": [
+          "Hello"
+        ],
+        "expected_output": "ello-Hay"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "91a6ca65-5da6-4598-b23a-35260871ed05",
+    "title": "Cost of Petrol",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nAlesis is concerned about the CO2 emissions from his petrol car. According to his car manual, burning 1 litre of petrol produces 0.0024 tonnes of CO2.\n\nWrite a program to calculate the total tonnes of CO2 produced by a car in a year, rounded down to the nearest whole number. The program should take as input a list of 12 numbers, each representing the liters of petrol used per month.\n\nSample calculation:\n2136 litres used over a year\nAnnual CO2 = 2136 * 0.0024 = 5.1264\nAnnual CO2 = 5 tonnes (rounded down to nearest whole number)\n\n\n**Constraints**\nInput format:\nA list of 12 numbers (positive integers) separated by spaces. The values will be in the range 0 to 200 inclusive. \n\nOutput format:\nA number (positive integer) representing the tonnes of CO2 produced, rounded down to the nearest whole tonne.",
+    "starter_code": "# Alesis is concerned about the CO2 emissions from his petrol car. According to his car manual, burning 1 litre of petrol produces 0.0024 tonnes of CO2.\n# \n# Write a program to calculate the total tonnes of CO2 produced by a car in a year, rounded down to the nearest whole number. The program should take as input a list of 12 numbers, each representing the liters of petrol used per month.\n# \n# Sample calculation:\n# 2136 litres used over a year\n# Annual CO2 = 2136 * 0.0024 = 5.1264\n# Annual CO2 = 5 tonnes (rounded down to nearest whole number)\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "142 150 120 182 202 205 231 258 214 162 148 122"
+        ],
+        "expected_output": "5"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "0ec0d3d7-bc4a-408a-a01b-1e0b2ad27f31",
+    "title": "How Long?",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nYou are babysitting your young nephew. You are finding it difficult to keep her amused. She doesn\u2019t like computer games, but does like doing sums. So you devise the following game for her.\n\n* I give you a number. Write it down.\n* Multiply this number by 3 and add 1. Write your number down unless it is more than 99. If the number is 100 or more, just write down the last two digits.\n* You keep going, using the last number you have written down, until you reach the number I gave you.\n* Then you tell me how long your list is.\n\nExample\n 17 -> 52 -> 57 -> 72 -> 17\n\nYou want to keep your nephew amused for a while, so you don\u2019t want a list that is too short or too long.\n\nWrite a program that calculates the length of the list of numbers produced, using the rules above, when supplied with an integer from 1 to 100 inclusive.\n\n\n**Constraints**\nThe input will be no more than 100.\n\nInput format: An integer.\n\nOutput format: An integer.",
+    "starter_code": "# You are babysitting your young nephew. You are finding it difficult to keep her amused. She doesn\u2019t like computer games, but does like doing sums. So you devise the following game for her.\n# \n# * I give you a number. Write it down.\n# * Multiply this number by 3 and add 1. Write your number down unless it is more than 99. If the number is 100 or more, just write down the last two digits.\n# * You keep going, using the last number you have written down, until you reach the number I gave you.\n# * Then you tell me how long your list is.\n# \n# Example\n#  17 -> 52 -> 57 -> 72 -> 17\n# \n# You want to keep your nephew amused for a while, so you don\u2019t want a list that is too short or too long.\n# \n# Write a program that calculates the length of the list of numbers produced, using the rules above, when supplied with an integer from 1 to 100 inclusive.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "17"
+        ],
+        "expected_output": "5"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "1bda8af5-6381-458d-bd02-743e2ac7dbaa",
+    "title": "How Many Inputs?",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nSome times when data is being collected, from users, it is not possible to know how many data points there will be. In these circumstances the user is asked to indicate when the last valid input was provided by entering a unique value.\n\nIn this task users enter a series of positive integers as valid input and indicate when the data has all been entered by entering -1 (an invalid input).\n\nWrite a program that takes an unknown number of integers, as input, and then outputs how many valid inputs there were on one line, and the sum of the valid integers on a second line.",
+    "starter_code": "# Some times when data is being collected, from users, it is not possible to know how many data points there will be. In these circumstances the user is asked to indicate when the last valid input was provided by entering a unique value.\n# \n# In this task users enter a series of positive integers as valid input and indicate when the data has all been entered by entering -1 (an invalid input).\n# \n# Write a program that takes an unknown number of integers, as input, and then outputs how many valid inputs there were on one line, and the sum of the valid integers on a second line.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "5",
+          "7",
+          "4",
+          "-1"
+        ],
+        "expected_output": "3\n16"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "815b3229-9bd8-4813-8eb0-d43802a37b0b",
+    "title": "Fibonacci",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nIn a Fibonacci sequence of numbers, the first two numbers are given and the next number in the sequence is the sum of the preceding two numbers.\n\nThe original Fibonacci sequence starts with 0, 1 and the Lucas sequence starts with 2, 1. But the same rule \u201cthe next number in the sequence is the sum of the preceding two numbers\u201d can be used to generate sequences with any two starting numbers.\n\nExample Fibonacci Series\n0, 1, 1, 2, 3, 5, 8, ...\n2, 1, 3, 4, 7, 11, 18, ...\n7, 12, 19, 31, 50, 81, ...\n\nYou and your friend are fascinated with Fibonacci sequences. Your friend has made the extraordinary claim that any given positive starting pair of numbers will generate a sequence that contains, within the first 25 numbers, a number that is the reverse of the previous number. For instance 36, 81 \u2192 117, 198, 315, 513.\n\nYou are sceptical about this claim, and decide to write a program to test it out.\n\nWrite a program that tests out your friend's claim.\n\n\n**Constraints**\nAll input integers will be between 0 and 5000 inclusive.\n\nInput format: The first two integers of the sequence are provided on two rows of input data.\n\nOutput format: The first number that is the reverse of the preceeding number OR -1 if no such number is found in the first 25 numbers of the sequence.",
+    "starter_code": "# In a Fibonacci sequence of numbers, the first two numbers are given and the next number in the sequence is the sum of the preceding two numbers.\n# \n# The original Fibonacci sequence starts with 0, 1 and the Lucas sequence starts with 2, 1. But the same rule \u201cthe next number in the sequence is the sum of the preceding two numbers\u201d can be used to generate sequences with any two starting numbers.\n# \n# Example Fibonacci Series\n# 0, 1, 1, 2, 3, 5, 8, ...\n# 2, 1, 3, 4, 7, 11, 18, ...\n# 7, 12, 19, 31, 50, 81, ...\n# \n# You and your friend are fascinated with Fibonacci sequences. Your friend has made the extraordinary claim that any given positive starting pair of numbers will generate a sequence that contains, within the first 25 numbers, a number that is the reverse of the previous number. For instance 36, 81 \u2192 117, 198, 315, 513.\n# \n# You are sceptical about this claim, and decide to write a program to test it out.\n# \n# Write a program that tests out your friend's claim.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "36",
+          "81"
+        ],
+        "expected_output": "513"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "26510f2f-e651-4247-8026-c3b9f46f634b",
+    "title": "Stop at Zero",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA program is required to output a simple horizontal graph. Data is sent to the program as a stream of integers. Each new integer is less than the previous one. The graphical output is only required for the positive data.\n\nThe formatting of the graph consists of a number of dashes on each horizontal line corresponding to the integer being represented on that line of the graph.\n\nWrite a program that takes, as input, an unspecified number of integer inputs and outputs a horizontal line graph of the data received that is greater than 0.\n\n\n**Constraints**\nAll integers in the input will be no more than 100.\nThe data supplied will always have at least one integer that is greater than 0.\nThe data supplied will always have at least one integer that is less than 1.\n\nInput format:\nAn unspecified number of rows with a single integer in each row.\n\nOutput format:\nA horizontal line graph.",
+    "starter_code": "# A program is required to output a simple horizontal graph. Data is sent to the program as a stream of integers. Each new integer is less than the previous one. The graphical output is only required for the positive data.\n# \n# The formatting of the graph consists of a number of dashes on each horizontal line corresponding to the integer being represented on that line of the graph.\n# \n# Write a program that takes, as input, an unspecified number of integer inputs and outputs a horizontal line graph of the data received that is greater than 0.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "7",
+          "5",
+          "2",
+          "1",
+          "0",
+          "-2",
+          "-12"
+        ],
+        "expected_output": "-------\n-----\n--\n-"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "964d28f3-2a32-40f8-b330-0d58be12c51e",
+    "title": "Saving Up",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nKaleisha, a student, works at a coffee shop and is trying to save her earnings to buy an e-bike. She spends \u00a320 a day on food and bus fares. She wants to find out if she will be able to buy the e-bike after 10 days of working. The bike Kaleisha wants to buy is \u00a31000. She looks back at her pay for the last 20 days working at the coffee shop.\n\nWrite a program that totals daily earnings and outputs how many days it will take to save \u00a31000. Your program must also remove the student's \u00a320 daily expenses.\n\n\n**Constraints**\nAll integers in the input will be less than or equal to 200.\nThe data provided will always be enough to save \u00a31000 by the 20th day.\n\nInput format:\nA single row of 20 integers separated by spaces.\n\nOutput format:\nAn integer.",
+    "starter_code": "# Kaleisha, a student, works at a coffee shop and is trying to save her earnings to buy an e-bike. She spends \u00a320 a day on food and bus fares. She wants to find out if she will be able to buy the e-bike after 10 days of working. The bike Kaleisha wants to buy is \u00a31000. She looks back at her pay for the last 20 days working at the coffee shop.\n# \n# Write a program that totals daily earnings and outputs how many days it will take to save \u00a31000. Your program must also remove the student's \u00a320 daily expenses.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "80 150 200 90 110 150 150 77 59 200 100 190 205 190 115 150 160 97 102 100"
+        ],
+        "expected_output": "10"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "a0fe7568-8447-4106-a713-2817f7deec6e",
+    "title": "Maximal Sum Path",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA binary tree is a data structure that is made of connected nodes. The tree is accessed through a root node. In the diagram below, the root node contains 3 and appears at the top of the tree. Each node, including the root, has 2 or fewer paths to the next node. They allow for quick navigation of data by binary choices.\n\nHere is an example of a simple binary tree:\n\nexample binary tree\n\nAs well as being quick to navigate the data for a binary tree can be compactly stored as a simple list or array. The example shown can be stored as:\n\n[3, -2, 5, 9, 'None', 2, 2, 'None', 'None', 'None', 'None', 1, 'None', 3, -3]\n\nNotice how the data is simply read from left to right starting at the root node and going down in horizontal bands until the end of the tree is reached.\n\nThe maximal sum path, starting from the root node and descending this tree, is 3 5 2 3 and the sum of the node values in the path is 13.\n\nWrite a program that takes, as input, a binary tree in the format shown below. Your program should then output the maximal sum path of the binary tree from the root node descending as far as is necessary.\n\n**Constraints**\n* The input provided will always be in the form shown below and the node values will always be integers.\n* The absence of a child node will be represented by the value \u201cNone\u201d.\n* There will only be one maximal sum route in each binary tree provided.\n* The maximal sum path will always include, as a minimum, the value of the root node.\n* The maximal sum path must always start at the root node and must only descend the tree.\n* The path can end at any node in the tree.\n\nInput format:\nA line of input consisting of a string of integers (and possibly None) separated by spaces.\n\nOutput format:\nThe first line of output will be a string of space separated integers representing the maximal sum route.\nThe second line will be an integer representing the sum of the maximal sum route.",
+    "starter_code": "# A binary tree is a data structure that is made of connected nodes. The tree is accessed through a root node. In the diagram below, the root node contains 3 and appears at the top of the tree. Each node, including the root, has 2 or fewer paths to the next node. They allow for quick navigation of data by binary choices.\n# \n# Here is an example of a simple binary tree:\n# \n# example binary tree\n# \n# As well as being quick to navigate the data for a binary tree can be compactly stored as a simple list or array. The example shown can be stored as:\n# \n# [3, -2, 5, 9, 'None', 2, 2, 'None', 'None', 'None', 'None', 1, 'None', 3, -3]\n# \n# Notice how the data is simply read from left to right starting at the root node and going down in horizontal bands until the end of the tree is reached.\n# \n# The maximal sum path, starting from the root node and descending this tree, is 3 5 2 3 and the sum of the node values in the path is 13.\n# \n# Write a program that takes, as input, a binary tree in the format shown below. Your program should then output the maximal sum path of the binary tree from the root node descending as far as is necessary.",
+    "test_cases": [
+      {
+        "input": [
+          "3 -2 5 9 None 2 2 None None None None 1 None 3 -3"
+        ],
+        "expected_output": "3 5 2 3\n13"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "940c36dd-7ae7-46a3-9963-340a55f1d39d",
+    "title": "Cost of Petrol",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nAlesis is worrying about the CO2 emissions produced by his petrol car.\n\nWrite a program that takes, as input, the litres of petrol he uses each month of a year and outputs the tonnes of CO2 produced.\n\n\n**Constraints**\nThe monthly figures are given in whole litres.\nMonthly litres supplied are between 0 and 200 (inclusive).\n1 litre of petrol produces 0.0024 tonnes of CO2 when burnt. (We are ignoring extraction, refining, etc.)\n\nInput format:\nA row of 12 integers separated by spaces.\n\nOutput format:\nAn integer representing the tonnes of CO2 produced, rounded down to the nearest tonne.\n\n\nCalculation using example input data:\nAnnual C02 = 0.0024 x total litres = 5.1264 = 5 tonnes",
+    "starter_code": "# Alesis is worrying about the CO2 emissions produced by his petrol car.\n# \n# Write a program that takes, as input, the litres of petrol he uses each month of a year and outputs the tonnes of CO2 produced.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "142 150 120 182 202 205 231 258 214 162 148 122"
+        ],
+        "expected_output": "5"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "bc0d6b35-0b32-4163-9011-8b16dc78607c",
+    "title": "Run Length Encoding",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nRun Length Encoding is a compression technique where runs or sequences of the same letter are stored as the letter plus the number of occurrences.\n\nExamples\n* aaaa is encoded to a4.\n* x is encoded to x1.\n* ppppqqqqqqqqstt is encoded to p4q8s1t2.\n\nWrite a program that encodes a string of letters using run length encoding.\n\n\n**Constraints**\nInput format: A string of letters.\n\nOutput format: A string of letters and numbers that encode the input.",
+    "starter_code": "# Run Length Encoding is a compression technique where runs or sequences of the same letter are stored as the letter plus the number of occurrences.\n# \n# Examples\n# * aaaa is encoded to a4.\n# * x is encoded to x1.\n# * ppppqqqqqqqqstt is encoded to p4q8s1t2.\n# \n# Write a program that encodes a string of letters using run length encoding.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "aaaa"
+        ],
+        "expected_output": "a4"
+      },
+      {
+        "input": [
+          "x"
+        ],
+        "expected_output": "x1"
+      },
+      {
+        "input": [
+          "ppppqqqqqqqqstt"
+        ],
+        "expected_output": "p4q8s1t2"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "9c62b855-85a1-4f3f-b9fd-a9fc101c4252",
+    "title": "Integer Division",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nWrite a program that takes two integers as input, divides the larger integer by the smaller one, and outputs the result with the decimal part removed and the remainder from this process.\n\n**Constraints**\nThe two input integers will be positive and can be from 1 to 1,000,000.\n\nInput format: Two integers separated by a space.\n\nOutput format: Two integers separated by a space.",
+    "starter_code": "# Write a program that takes two integers as input, divides the larger integer by the smaller one, and outputs the result with the decimal part removed and the remainder from this process.",
+    "test_cases": [
+      {
+        "input": [
+          "9 4"
+        ],
+        "expected_output": "2 1"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "2941eadf-a353-40ed-8fed-3186df1565ef",
+    "title": "A Mountain Hike",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nYou are going on a hiking trip in the mountains. Your friend has walked these routes before you and has charted the altitudes of the path at 100m intervals.\n\nWrite a program that takes as input a series of altitudes and outputs how much of the route is uphill.\n\n**Constraints**\n* Altitudes are recorded every 100m and variations within these measurements are ignored.\n* All altitudes will be greater than 0.\n* Paths start at the first altitude and end at the last altitude.\n\nInput format: The input will start with a single line with a single integer m that tells you how many measurements there are. The following m lines each contain a single integer indicating the measured altitude.\n\nOutput format: An integer that indicates how many metres of the path involve going up hill.",
+    "starter_code": "# You are going on a hiking trip in the mountains. Your friend has walked these routes before you and has charted the altitudes of the path at 100m intervals.\n# \n# Write a program that takes as input a series of altitudes and outputs how much of the route is uphill.",
+    "test_cases": [
+      {
+        "input": [
+          "10",
+          "100",
+          "120",
+          "115",
+          "120",
+          "125",
+          "140",
+          "130",
+          "110",
+          "130",
+          "120"
+        ],
+        "expected_output": "500"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "982b711a-7d73-4ecd-af96-ad7c7eb37ba3",
+    "title": "Marathon",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA marathon runner wants to ensure she stays hydrated after her runs. She wants to drink 30ml of water for every mile. For every completed 3 miles she wants to drink an additional 10ml of water.\n\nWrite a program that takes as input the number of miles run and outputs how much water she would need to drink.\n\n\n**Constraints**\nInput format: An integer from 0 to 100 representing the number of miles run.\n\nOutput format: An integer representing the amount of water, in ml, she should drink.",
+    "starter_code": "# A marathon runner wants to ensure she stays hydrated after her runs. She wants to drink 30ml of water for every mile. For every completed 3 miles she wants to drink an additional 10ml of water.\n# \n# Write a program that takes as input the number of miles run and outputs how much water she would need to drink.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "16"
+        ],
+        "expected_output": "530"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "4b996b11-68e5-443c-b078-b907c4b133e0",
+    "title": "Boxes in Boxes",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nJem likes to hide the size of her gifts by putting a present inside several boxes.\n\nEach box is denoted by its dimensions: Length (L), Height (H), Width (W).\nGiven n boxes and their dimensions, how many boxes can be used to wrap a gift?\n\n\n**Constraints**\nAll dimensions are given as integers.\nBox A fits into box B, if and only if A\u2019s dimensions (L, W, H) are strictly smaller than B\u2019s. For example, box (1, 2, 3) can fit into box (4, 3, 2). However, box (1, 2, 3) cannot fit into box (2, 2, 4).\nBoxes can be rotated through 90 degrees in any direction so that their dimensions can be switched but they cannot be put into another box at an angle.\n\nInput format:\nFirst line consists of the number of boxes available, 1 <= n <= 100.\nEach of the subsequent n input lines consists of three positive integers between 1 and 100, representing the size of a particular box along the Length (L), Width (W) and Height (H) dimensions.\n\nOutput format:\nA positive integer: the maximum number of boxes that can be used.",
+    "starter_code": "# Jem likes to hide the size of her gifts by putting a present inside several boxes.\n# \n# Each box is denoted by its dimensions: Length (L), Height (H), Width (W).\n# Given n boxes and their dimensions, how many boxes can be used to wrap a gift?\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "4",
+          "1 2 1",
+          "2 3 4",
+          "5 4 3",
+          "2 5 2"
+        ],
+        "expected_output": "3"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "f3691cde-c9c0-4adc-b7c7-4fcebedcb71b",
+    "title": "Chocolates",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nYou and a friend are given an even number of packets of chocolates and decide to share them using the following rules:\n\nYou pick two of the packets.\nYour friend chooses which packet she wants, and you get the other one.\nRepeat this process until all packages have been distributed.\nNote that you are always the one who picks the two packets and your friend always chooses one of them!\n\nEach packet contains several chocolates but not always the same amount. You would like to get as many pieces of chocolate as you can. Unfortunately, your friend does too, and will always choose the packet with the most chocolates.\n\nWrite a program that takes as input a list of space separated integers, which represent the packets and how many chocolates they each contain, and outputs the maximum number of chocolates you will get if you choose the pairs wisely.\n\n**Constraints**\nThe provided input will always consist of an even number of integers.",
+    "starter_code": "# You and a friend are given an even number of packets of chocolates and decide to share them using the following rules:\n# \n# You pick two of the packets.\n# Your friend chooses which packet she wants, and you get the other one.\n# Repeat this process until all packages have been distributed.\n# Note that you are always the one who picks the two packets and your friend always chooses one of them!\n# \n# Each packet contains several chocolates but not always the same amount. You would like to get as many pieces of chocolate as you can. Unfortunately, your friend does too, and will always choose the packet with the most chocolates.\n# \n# Write a program that takes as input a list of space separated integers, which represent the packets and how many chocolates they each contain, and outputs the maximum number of chocolates you will get if you choose the pairs wisely.",
+    "test_cases": [
+      {
+        "input": [
+          "8 4 7 9 2 5"
+        ],
+        "expected_output": "15"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "0cffabe6-7999-4306-b0e8-1212af8218e8",
+    "title": "Crossnum Puzzle",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\n![](https://www.bebras.uk/question_files/3/5/d/crossnumexample.png)\n\n\nShown on the right, is an example of an uncompleted crossnum puzzle. This grid is constructed in an online puzzle game and clues are provided, just like in a crossword, but the answers are all numbers.\n\nThe blank crossword shown is created from a text file that stores not only the grid but all the answers:\n\nX2911X341X\n5X3X178XX1\n2X144X1300\n120X7XX6X7\nX6XX6X8064\n1634X1XX1X\n2X7XX1X801\n2871X802X2\n4XX641X0X0\nX341X7080X\n\nThere is no need for the question numbers to be stored as these can be calculated by the controlling program. This is because, just like in crosswords, a question number is needed for every square that starts a number of at least two digits, either horizontally or vertically.\n\nWrite a program that, given data similar to that provided above, outputs the largest question number that will be needed. In the example provided, this will be 25.\n\n\n**Constraints**\nAll answers in the crossnum puzzles must consist of 2 digits or more.\n\nInput format:\n* The first line of input provided will consist of two integers representing the width and height of a crossnum puzzle.\n* The rest of the lines of input will be strings, one line for each row of the crossnum puzzle.\n\nOutput format: An integer that represents the largest question number required for that particular crossnum puzzle.",
+    "starter_code": "# ![](https://www.bebras.uk/question_files/3/5/d/crossnumexample.png)\n# \n# \n# Shown on the right, is an example of an uncompleted crossnum puzzle. This grid is constructed in an online puzzle game and clues are provided, just like in a crossword, but the answers are all numbers.\n# \n# The blank crossword shown is created from a text file that stores not only the grid but all the answers:\n# \n# X2911X341X\n# 5X3X178XX1\n# 2X144X1300\n# 120X7XX6X7\n# X6XX6X8064\n# 1634X1XX1X\n# 2X7XX1X801\n# 2871X802X2\n# 4XX641X0X0\n# X341X7080X\n# \n# There is no need for the question numbers to be stored as these can be calculated by the controlling program. This is because, just like in crosswords, a question number is needed for every square that starts a number of at least two digits, either horizontally or vertically.\n# \n# Write a program that, given data similar to that provided above, outputs the largest question number that will be needed. In the example provided, this will be 25.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "10 10",
+          "X2911X341X",
+          "5X3X178XX1",
+          "2X144X1300",
+          "120X7XX6X7",
+          "X6XX6X8064",
+          "1634X1XX1X",
+          "2X7XX1X801",
+          "2871X802X2",
+          "4XX641X0X0",
+          "X341X7080X"
+        ],
+        "expected_output": "25"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "a14d10d9-2fe9-42b0-a53b-89f5d58883a7",
+    "title": "IPv4 Validation",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nAn IPv4 network address consists of four integers in the range 0 to 255 separated by a dot(.), for example 192.168.0.1. This notation is referred to as dotted decimal notation.\n\nWrite a program to check if the IPv4 network address is valid or not. If the address is valid, display a \"Valid IP address\" message. Otherwise, display an \"Invalid IP address\" message.\n\n**Constraints**\nInput format: IP4 Validation\nA string with between 2 and 100 characters.\n\nOutput format:\nA string.",
+    "starter_code": "# An IPv4 network address consists of four integers in the range 0 to 255 separated by a dot(.), for example 192.168.0.1. This notation is referred to as dotted decimal notation.\n# \n# Write a program to check if the IPv4 network address is valid or not. If the address is valid, display a \"Valid IP address\" message. Otherwise, display an \"Invalid IP address\" message.",
+    "test_cases": [
+      {
+        "input": [
+          "192.168.0.256"
+        ],
+        "expected_output": "Invalid IP address"
+      },
+      {
+        "input": [
+          "10.24.251.129"
+        ],
+        "expected_output": "Valid IP address"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "cbc43d93-6cc8-47fc-9f74-fb02611aa2fc",
+    "title": "Heat Pumps",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nSusan runs a company that supplies ground source heat pumps to people looking to replace their gas boilers. There are two ways of installing ground source heat pumps:\n\n* Horizontally: This needs a large garden as shallow trenches are dug and lengths of pipes that extract heat out of the ground are layed in the trenches.\n* Vertically: This can be done in a much smaller space as 100m holes are drilled vertically and 100m lengths of pipe are inserted to extract the heat from the ground. \n\nThe horizontal system is cheaper to install than the vertical system but requires that the garden area is at least 2.5 times as large as the floor area in the house. The vertical system needs a new 100m bore hole and pipe to be installed for every 100m2 of house floor space. (e.g. 100m2 floor space requires 1 vertical pipe and 101m2 requires 2 pipes.)\n\nWrite a program that inputs a house's floor area, and its garden area. The program should then output \"Horizontal\" if this system is viable or \"Vertical\" and the number of 100m bores that will need to be drilled for this particular house.\n\n**Constraints**\n* The house floor area will not exceed 300m2.\n* The garden area will not exceed 2000m2.\n\nInput format:\n* Row 1: A house floor area in m2 as an integer.\n* Row 2: The garden area in m2 as an integer.\n\nOutput format:\n* Row 1: Either the string \"Horizontal\" or \"Vertical\".\n* Row 2: If \"Vertical\" the number of vertical pipes required as an integer.",
+    "starter_code": "# Susan runs a company that supplies ground source heat pumps to people looking to replace their gas boilers. There are two ways of installing ground source heat pumps:\n# \n# * Horizontally: This needs a large garden as shallow trenches are dug and lengths of pipes that extract heat out of the ground are layed in the trenches.\n# * Vertically: This can be done in a much smaller space as 100m holes are drilled vertically and 100m lengths of pipe are inserted to extract the heat from the ground. \n# \n# The horizontal system is cheaper to install than the vertical system but requires that the garden area is at least 2.5 times as large as the floor area in the house. The vertical system needs a new 100m bore hole and pipe to be installed for every 100m2 of house floor space. (e.g. 100m2 floor space requires 1 vertical pipe and 101m2 requires 2 pipes.)\n# \n# Write a program that inputs a house's floor area, and its garden area. The program should then output \"Horizontal\" if this system is viable or \"Vertical\" and the number of 100m bores that will need to be drilled for this particular house.",
+    "test_cases": [
+      {
+        "input": [
+          "150",
+          "750"
+        ],
+        "expected_output": "Horizontal"
+      },
+      {
+        "input": [
+          "150",
+          "300"
+        ],
+        "expected_output": "Vertical\n2"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "273f2ef8-b826-4e97-adcf-68a60d27b4d2",
+    "title": "Error Codes",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA software development team is trying to bug fix their app. To assist, the app runs a series of tests and provides a set of codes, one after each test. The codes are in the form of a 3 digit integer. Before printing the set of codes, the program outputs a set of digits that represent the potential error codes. If a code begins with one of the provided digits then that code is an error code, if not then that test was a success.\n\nWrite a program that counts the number of error codes.\n\n\n**Constraints**\n* n will always be greater than or equal to 0\n* m will always be greater than or equal to 0\n\nInput format\nn the number of error digits to look for in the error codes\nA line of n digits separated by a space (the error digits)\nm the number of error codes\nm lines of 3 digit error codes\n\nOutput format: An integer representing the number of error codes found.",
+    "starter_code": "# A software development team is trying to bug fix their app. To assist, the app runs a series of tests and provides a set of codes, one after each test. The codes are in the form of a 3 digit integer. Before printing the set of codes, the program outputs a set of digits that represent the potential error codes. If a code begins with one of the provided digits then that code is an error code, if not then that test was a success.\n# \n# Write a program that counts the number of error codes.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "Input:",
+          "3",
+          "5 9 2",
+          "6",
+          "353",
+          "225",
+          "528",
+          "800",
+          "204",
+          "955"
+        ],
+        "expected_output": "4"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "2f36c146-1104-48e9-80cd-a04ab72e7f23",
+    "title": "Hailstones",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nThe hailstones sequence of numbers is generated by:\n\nStart with a number.\n\n* If the number is even, divide the number by 2 to generate the next number.\n* If the number is odd, multiply the number by 3 and add 1 to generate the next number.\n* Repeat until the number is 1.\n\nFor example: 5 \u2192 16 \u2192 8 \u2192 4 \u2192 2 \u2192 1.\n\nIt is believed that all hailstone sequences end with 1, no matter what the starting number is. You are interested in the proportion of odd and even numbers in a hailstone sequence.\n\nWrite a program that takes, as input, the starting value of a hailstone sequence. Your program should then determine how many even numbers and how many odd numbers it contains.\n\n**Constraints**\n* All inputs provided by the testing server will result in hailstone sequences that end in 1.\n* The starting number will not be less than 1 or greater than 200.\n\nInput format: An integer.\n\nOutput format:\n* Line 1: The number (integer) of even numbers in the sequence.\n* Line 2: The number (integer) of odd numbers in the sequence.",
+    "starter_code": "# The hailstones sequence of numbers is generated by:\n# \n# Start with a number.\n# \n# * If the number is even, divide the number by 2 to generate the next number.\n# * If the number is odd, multiply the number by 3 and add 1 to generate the next number.\n# * Repeat until the number is 1.\n# \n# For example: 5 \u2192 16 \u2192 8 \u2192 4 \u2192 2 \u2192 1.\n# \n# It is believed that all hailstone sequences end with 1, no matter what the starting number is. You are interested in the proportion of odd and even numbers in a hailstone sequence.\n# \n# Write a program that takes, as input, the starting value of a hailstone sequence. Your program should then determine how many even numbers and how many odd numbers it contains.",
+    "test_cases": [
+      {
+        "input": [
+          "5"
+        ],
+        "expected_output": "4\n2"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "694caf94-f9c4-4352-96fc-6a7b35ecc503",
+    "title": "Square List",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nA student wants to be able to find all the square numbers from 2 to n, where n is a positive integer.\n\nWrite a program that outputs a list of all the square numbers from 2 to n.\n\n**Constraints**\n1 < n < 1000.",
+    "starter_code": "# A student wants to be able to find all the square numbers from 2 to n, where n is a positive integer.\n# \n# Write a program that outputs a list of all the square numbers from 2 to n.",
+    "test_cases": [
+      {
+        "input": [
+          "10"
+        ],
+        "expected_output": "4 9 16 25 36 49 64 81 100"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "faa81f6a-23d8-4cfb-8cda-c4e146a36792",
+    "title": "Happy Ultrarunners",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nIn an Ultrarun season, each runner has to compete in five races. The runners are awarded points calculated by a number of factors such as how long it took to complete, their overall finishing position, how hilly the run was, etc..\n\nEvery runner aims to improve their performance throughout the season by getting more points than in their previous races in the same season. A runner is said to be a \"happy runner\" if they achieve this in every race throughout the season.\n\nWrite a program that outputs the number of \"happy runners\" at the end of the season from the data provided.\n\n**Constraints**\nThe fewest points a runner can be awarded in a race is 0 and the maximum is 100.\n\nInput format:\nOn the first line, an integer, n, representing the number of runners who completed all 5 ultraruns.\nOn each of the next n lines, a set of five integers representing the points scored in each race, in chronological order starting with the first race. Each line has this data for a single runner.\n\nOutput format:\nAn integer from 0 to n representing the number of \"happy runners\" at the end of the season.",
+    "starter_code": "# In an Ultrarun season, each runner has to compete in five races. The runners are awarded points calculated by a number of factors such as how long it took to complete, their overall finishing position, how hilly the run was, etc..\n# \n# Every runner aims to improve their performance throughout the season by getting more points than in their previous races in the same season. A runner is said to be a \"happy runner\" if they achieve this in every race throughout the season.\n# \n# Write a program that outputs the number of \"happy runners\" at the end of the season from the data provided.",
+    "test_cases": [
+      {
+        "input": [
+          "4",
+          "50 50 70 80 100",
+          "65 50 70 85 85",
+          "60 70 75 80 90",
+          "70 70 65 70 75"
+        ],
+        "expected_output": "1"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "0ff622ac-f34e-4adb-9f59-3420f5dd1d9d",
+    "title": "Guest Goes Free",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nThe Developers Social Club (DSC) holds a monthly meeting at a restaurant where a guest is always invited. The DSC consists of 10 members but they do not always attend the monthly meal. The guest is never asked to pay so the cost of the meal is shared by the DSC members attending like this:\n\n1. The total bill from all the diners is calculated.\n2. A tip of 5% is added (no rounding).\n3. The individual bill for the DSC members is calculated by dividing the total including the tip by the number of diners - 1. (The guest never pays.)\n4. The result of the calculation above is rounded down to the nearest whole pence.\n\nObviously the DSC would like a computer to do this. They have invited you to join the DSC as long as you will write them a program to sort out their monthly restaurant payments.\n\nWrite a program that takes, as input, the total number of diners and their individual bills and outputs how much each of the DSC members attending the meal should pay.\n\n\n**Constraints**\n* Maximum number of diners = 10 DSC members + 1 guest.\n* The individual bills never come to more than \u00a3100.\n\nInput format:\n* Row 1: The number of diners, n, including the guest as an integer.\n* n rows of data: Each row of data consists of a float to 2 decimal places. (The individual bills.)\n\nOutput format: The cost each DSC has to pay to cover the bill and tip in UK money format. (e.g. 5.60)",
+    "starter_code": "# The Developers Social Club (DSC) holds a monthly meeting at a restaurant where a guest is always invited. The DSC consists of 10 members but they do not always attend the monthly meal. The guest is never asked to pay so the cost of the meal is shared by the DSC members attending like this:\n# \n# 1. The total bill from all the diners is calculated.\n# 2. A tip of 5% is added (no rounding).\n# 3. The individual bill for the DSC members is calculated by dividing the total including the tip by the number of diners - 1. (The guest never pays.)\n# 4. The result of the calculation above is rounded down to the nearest whole pence.\n# \n# Obviously the DSC would like a computer to do this. They have invited you to join the DSC as long as you will write them a program to sort out their monthly restaurant payments.\n# \n# Write a program that takes, as input, the total number of diners and their individual bills and outputs how much each of the DSC members attending the meal should pay.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "5",
+          "5.60",
+          "7.42",
+          "3.16",
+          "6.94",
+          "9.20"
+        ],
+        "expected_output": "8.48"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "0c849496-161d-4da5-ad77-bf1ccf02b328",
+    "title": "Too Short",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nChildren are only allowed on a fairground ride if they are at least 1.2m tall.\n\nWrite a program that counts how many children are allowed on the ride.\n\n\n**Constraints**\nAll children who are tall enough go on the ride.\n\nInput format:\nAn integer, n, on the first row indicates how many children were in the queue. This is followed by n rows of decimal numbers which represent the height of each child in the queue.\n\nOutput format:\nAn integer.",
+    "starter_code": "# Children are only allowed on a fairground ride if they are at least 1.2m tall.\n# \n# Write a program that counts how many children are allowed on the ride.\n# ",
+    "test_cases": [
+      {
+        "input": [
+          "4",
+          "1.41",
+          "1.20",
+          "1.19",
+          "1.21"
+        ],
+        "expected_output": "3"
+      }
+    ],
+    "from": "OUCC"
+  },
+  {
+    "id": "776b26fd-05a2-45b1-bc22-ca8104e2b225",
+    "title": "Shopping Discounts",
+    "category": "Algorithms",
+    "input_type": "stdin",
+    "description_md": "**Task**\nThe Store has a sale on. There are several reductions available depending how much you spend:\n\n* Spend over \u00a350 and get 10% off.\n* Spend over \u00a3100 and get 15% off.\n* Spend over \u00a3200 and get 20% off.\n\nWrite a program that takes the total undiscounted price of your purchase as input, and outputs the price to be paid.\n\n**Constraints**\n* The undiscounted price will be from \u00a30 to \u00a32,000.\n* The output price will always be rounded down to the nearest, whole pound (\u00a3).\n\nInput format: An integer from 0 to 2000.\n\nOutput format: An integer.",
+    "starter_code": "# The Store has a sale on. There are several reductions available depending how much you spend:\n# \n# * Spend over \u00a350 and get 10% off.\n# * Spend over \u00a3100 and get 15% off.\n# * Spend over \u00a3200 and get 20% off.\n# \n# Write a program that takes the total undiscounted price of your purchase as input, and outputs the price to be paid.",
+    "test_cases": [
+      {
+        "input": [
+          "210"
+        ],
+        "expected_output": "168"
+      }
+    ],
+    "from": "OUCC"
+  }
+]
