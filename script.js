@@ -70,12 +70,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const adSlots = containerElement.querySelectorAll('ins.adsbygoogle');
         adSlots.forEach(slot => {
             if (slot.getAttribute('data-ad-status') !== 'initialized') {
-                try {
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    slot.setAttribute('data-ad-status', 'initialized'); // Mark as initialized
-                } catch (e) {
-                    console.error('AdSense push error:', e, slot);
-                }
+                // Use requestAnimationFrame to ensure the slot is rendered and has dimensions
+                requestAnimationFrame(() => {
+                    try {
+                        console.log("Attempting to push ad for slot:", slot, "Available width:", slot.offsetWidth);
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        slot.setAttribute('data-ad-status', 'initialized'); // Mark as initialized
+                    } catch (e) {
+                        console.error('AdSense push error:', e, slot);
+                    }
+                });
             }
         });
     }
