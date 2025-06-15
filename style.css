@@ -38,6 +38,7 @@ main {
     padding: 30px; /* Increased padding */
     gap: 30px; /* Increased gap */
     max-width: 1400px;
+    box-sizing: border-box; /* Ensure padding and border are included in width/max-width */
     margin: 30px auto; /* Increased margin */
     background-color: #fff;
     border-radius: 12px; /* Rounded corners */
@@ -51,6 +52,7 @@ main {
     padding: 30px; /* Increased padding */
     border-right: 1px solid #e0e0e0;
     border-radius: 12px 0 0 12px; /* Rounded corners */
+    box-sizing: border-box; /* Crucial for width calculations with padding */
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.04); /* Subtle shadow */
 }
 
@@ -537,6 +539,7 @@ footer {
     padding: 30px;
     background-color: #fff;
     border-radius: 12px;
+    box-sizing: border-box; /* Ensures padding is included in the 100% width */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 }
 
