@@ -27,6 +27,11 @@ header h1 {
     font-weight: 700; /* Bold weight */
 }
 
+.header-buttons-group {
+    display: flex;
+    gap: 10px; /* Space between buttons in the group */
+}
+
 main {
     display: flex;
     flex: 1;
@@ -582,6 +587,24 @@ footer {
 .daily-challenge-item p { /* Category */
     color: #7f8c8d;
     font-size: 0.9em;
+}
+.daily-challenge-item .skip-challenge-btn {
+    background-color: #e67e22; /* Orange color for skip */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+.daily-challenge-item .skip-challenge-btn:hover:not(:disabled) {
+    background-color: #d35400; /* Darker orange */
+}
+.daily-challenge-item .skip-challenge-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
 }
 
 /* Loading Screen Styles */

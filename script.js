@@ -11,11 +11,15 @@ let startTime;
 const LS_LAST_DAILY_SELECTION_TIMESTAMP = 'acornwise_lastDailySelectionTimestamp';
 const LS_CURRENT_DAILY_SET = 'acornwise_currentDailySet';
 const LS_SOLVED_CHALLENGES = 'acornwise_solvedChallenges';
+const LS_QUESTION_FILE_CACHE_PREFIX = 'acornwise_question_file_';
+const LS_ALL_METADATA_CACHE = 'acornwise_all_metadata_cache';
 
 const DAILY_CHALLENGE_COUNT = 5;
 const TWENTY_FOUR_HOURS_MS = 24 * 60 * 60 * 1000;
+const METADATA_CACHE_EXPIRATION_MS = 72 * 60 * 60 * 1000; // 72 hours
 const ONE_YEAR_MS = 365 * TWENTY_FOUR_HOURS_MS;
 
+let previousViewBeforeReport = 'daily'; // To store which view was active before showing the report
 document.addEventListener('DOMContentLoaded', () => {
     const runButton = document.getElementById('run-code-btn');
     const pyodideStatus = document.getElementById('pyodide-status');
@@ -32,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressReportContainer = document.getElementById('progress-report-container');
     const reportContentArea = document.getElementById('report-content-area');
     const backToChallengesBtn = document.getElementById('back-to-challenges-btn');
+    const backToDailyViewBtn = document.getElementById('back-to-daily-view-btn'); // New button in main header
     const retryChallengeBtn = document.getElementById('retry-challenge-btn');    
     const dailyChallengesView = document.getElementById('daily-challenges-view');
     const mainContentArea = document.querySelector('main'); // The main IDE area
@@ -119,6 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loadingScreen) {
             loadingScreen.style.display = 'none';
         }
+        // Initial state: Daily view is shown, so "Back to Daily" is hidden, "Progress Report" is visible.
+        backToDailyViewBtn.style.display = 'none';        
         // No need to update progress to 100% here as the screen is hidden
         dailyChallengesView.style.display = 'block'; // Or 'flex' if its layout requires it
     });
@@ -556,6 +563,8 @@ except Exception as e:
 
         dailyChallengesView.style.display = 'none';
         mainContentArea.style.display = 'flex';
+        viewProgressReportBtn.style.display = 'block';
+        backToDailyViewBtn.style.display = 'block';        
 
         runButton.disabled = true;
         runCustomTestBtn.disabled = true;
@@ -683,21 +692,58 @@ except Exception as e:
                 challengesManifest = await manifestResponse.json();
             }
 
-            const challengeInfo = challengesManifest.filter(ch => ch.id === challengeId)[0];            
-            const fileName = challengeInfo.file;
-
-            const response = await fetch(`./${fileName}`);
-
-            if (!response.ok) {
-                throw new Error(`Failed to load question file: ${response.status}`)
-            } else {
-                const challengeDataList = await response.json();
-                const challegeData = challengeDataList.filter(ch => ch.id === challengeId)[0];
-
-                return challegeData;
+            const challengeInfo = challengesManifest.find(ch => ch.id === challengeId);
+            if (!challengeInfo) {
+                throw new Error(`Challenge ID "${challengeId}" not found in challenges.json manifest.`);
             }
+            const fileName = challengeInfo.file;
+            const fileCacheKey = `${LS_QUESTION_FILE_CACHE_PREFIX}${fileName}`;
+
+            let fileContent; // This will hold the parsed JSON content of the file
+            const cachedFileContentString = localStorage.getItem(fileCacheKey);
+
+            if (cachedFileContentString) {
+                console.log(`[CACHE HIT] Loading question file content for "${fileName}" from localStorage.`);
+                try {
+                    fileContent = JSON.parse(cachedFileContentString);
+                } catch (e) {
+                    console.error(`Error parsing cached content for ${fileName}. Removing from cache and fetching from network.`, e);
+                    localStorage.removeItem(fileCacheKey);
+                    // Fall through to fetch from network if parsing failed
+                }
+            }
+
+            if (!fileContent) { // If not in cache or parsing failed
+                console.log(`[CACHE MISS] Fetching question file "${fileName}" from network.`);
+                const response = await fetch(`./${fileName}`); // Assuming fileName is relative to index.html
+                if (!response.ok) {
+                    throw new Error(`Failed to load question file "${fileName}": ${response.status}`);
+                }
+                fileContent = await response.json();
+                try {
+                    localStorage.setItem(fileCacheKey, JSON.stringify(fileContent));
+                } catch (e) {
+                    console.error(`Error saving file content for "${fileName}" to localStorage. May be out of space.`, e);
+                    // Proceed without caching if localStorage is full or errors out
+                }
+            }
+
+            // Now, extract the specific challenge data from the (potentially cached) fileContent
+            let specificChallengeData;
+            if (Array.isArray(fileContent)) {
+                specificChallengeData = fileContent.find(ch => ch.id === challengeId);
+            } else if (typeof fileContent === 'object' && fileContent !== null && fileContent.id === challengeId) {
+                // Handles case where the file contains a single challenge object that matches the ID
+                specificChallengeData = fileContent;
+            }
+
+            if (!specificChallengeData) {
+                throw new Error(`Challenge data for ID "${challengeId}" not found within the content of file "${fileName}".`);
+            }
+            return specificChallengeData;
+
         }  catch (error) {
-            console.error('Error loading question:', error);
+            console.error(`Error in getQuestion for ID "${challengeId}":`, error);
             return null;
         }
     }
@@ -716,16 +762,7 @@ except Exception as e:
             challengeNavigation.innerHTML = '';
             const ul = document.createElement('ul');
 
-            // Fetch and cache challenges.json if not already done
-            if (!challengesManifest) {
-                const manifestResponse = await fetch('./challenges.json');
-                if (!manifestResponse.ok) {
-                    throw new Error(`Failed to load challenges.json: ${manifestResponse.status}`);
-                }
-                challengesManifest = await manifestResponse.json();
-            }
-
-            const challengePromises = dailyChallengeIds.map(async (item) => {
+            const challengePromises = dailyChallengeIds.map(async (item) => {                
                 const challengeId = item.id;
                 const challengeData = await getQuestion(challengeId);
 
@@ -864,9 +901,29 @@ except Exception as e:
                 <h3>${challenge.title}</h3>
                 <p>Category: ${challenge.category || 'General'}</p>
             `;
+            
+            // Add main click listener to the entire itemDiv for navigation
             itemDiv.addEventListener('click', () => {
-                window.location.hash = challenge.id;
+                console.log(`Challenge clicked: ${challenge.id}`);
+                window.location.hash = challenge.id; // This will trigger loadChallenge via hashchange
             });
+            
+            const skipButton = document.createElement('button');
+            skipButton.classList.add('skip-challenge-btn');
+            skipButton.textContent = 'Skip This Challenge';
+            skipButton.dataset.skipId = challenge.id;
+
+            const solvedData = getSolvedChallengeData(challenge.id);
+            if (solvedData && solvedData.wasSolvedInTime) {
+                skipButton.disabled = true;
+            }
+
+            skipButton.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent triggering the itemDiv click listener
+                handleSkipChallenge(challenge.id);
+            });
+
+            itemDiv.appendChild(skipButton);
             dailyChallengeListContainer.appendChild(itemDiv);
             totalTime += getInitialDurationForLevel(challenge.level);
         }
@@ -905,12 +962,66 @@ except Exception as e:
             console.log("Time for new daily selection or first time.");
             currentDailySetMeta = await selectNewDailyChallenges();
         } else {
-            console.log("Loading existing daily set.");
             const dailySetIds = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET) || '[]');
             const allMeta = await getAllChallengeMetadata();
             currentDailySetMeta = dailySetIds.map(id => allMeta.find(m => m.id === id)).filter(Boolean);
         }
         renderDailyChallengesPage(currentDailySetMeta);
+    }
+
+    async function handleSkipChallenge(challengeIdToSkip) {
+        console.log(`Attempting to skip challenge: ${challengeIdToSkip}`);
+        updateLoadingProgress("Finding a new challenge...", 0); // Show immediate feedback
+
+        let currentDailySetIds = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET) || '[]');
+        if (!currentDailySetIds.includes(challengeIdToSkip)) {
+            console.warn("Challenge to skip not found in current daily set.");
+            alert("Error: Could not find the challenge to skip in the current set.");
+            updateLoadingProgress("Idle", 0); // Reset progress
+            return;
+        }
+
+        const allChallengesMeta = await getAllChallengeMetadata();
+        const solvedChallengesData = getSolvedChallengesData();
+
+        const potentialReplacements = allChallengesMeta.filter(challenge => {
+            if (currentDailySetIds.includes(challenge.id) && challenge.id !== challengeIdToSkip) return false; // Already in set (and not the one being skipped)
+            if (challenge.id === challengeIdToSkip) return false; // Don't pick the same one
+
+            const solvedData = solvedChallengesData[challenge.id];
+            if (solvedData && solvedData.wasSolvedInTime) {
+                return (Date.now() - solvedData.solvedTimestamp) >= ONE_YEAR_MS;
+            }
+            return true;
+        });
+
+        if (potentialReplacements.length === 0) {
+            alert("No more eligible challenges available to swap with at the moment. Try again later or solve the current ones!");
+            updateLoadingProgress("Idle", 0); // Reset progress
+            return;
+        }
+
+        const randomIndex = Math.floor(Math.random() * potentialReplacements.length);
+        const newChallengeMeta = potentialReplacements[randomIndex];
+
+        const newDailySetIds = currentDailySetIds.map(id => (id === challengeIdToSkip ? newChallengeMeta.id : id));
+        localStorage.setItem(LS_CURRENT_DAILY_SET, JSON.stringify(newDailySetIds));
+        localStorage.removeItem(`challengeTimer_${challengeIdToSkip}`);
+        console.log(`Timer for skipped challenge ${challengeIdToSkip} cleared.`);
+
+        // Re-fetch metadata for the new set to pass to renderDailyChallengesPage
+        const newDailySetFullMeta = await Promise.all(newDailySetIds.map(id => getQuestion(id)));
+        
+        if (newDailySetFullMeta.some(meta => !meta)) {
+            console.error("Failed to fetch metadata for one or more challenges in the new daily set.");
+            alert("An error occurred while updating the challenge list. Please refresh.");
+            // Fallback: re-run the full daily selection process might be too much here, better to signal error
+        } else {
+            renderDailyChallengesPage(newDailySetFullMeta.filter(Boolean)); // Filter out nulls just in case
+            backToDailyViewBtn.style.display = 'none';
+            await loadChallengeList(); // Update sidebar
+        }
+        updateLoadingProgress("Idle", 0); // Reset progress
     }
 
     function getInitialDurationForLevel(levelString) {
@@ -925,6 +1036,25 @@ except Exception as e:
     }
 
     async function getAllChallengeMetadata() {
+        // Try to get from cache first
+        const cachedDataString = localStorage.getItem(LS_ALL_METADATA_CACHE);
+        if (cachedDataString) {
+            try {
+                const cachedData = JSON.parse(cachedDataString);
+                if (cachedData && cachedData.timestamp && (Date.now() - cachedData.timestamp < METADATA_CACHE_EXPIRATION_MS)) {
+                    console.log("[CACHE HIT] Using cached allChallengeMetadata.");
+                    return cachedData.metadata; // Return the cached metadata array
+                } else {
+                    console.log("[CACHE STALE/INVALID] Cached allChallengeMetadata expired or invalid. Fetching new data.");
+                    localStorage.removeItem(LS_ALL_METADATA_CACHE); // Remove stale/invalid data
+                }
+            } catch (e) {
+                console.error("Error parsing cached allChallengeMetadata. Removing from cache.", e);
+                localStorage.removeItem(LS_ALL_METADATA_CACHE);
+            }
+        }
+
+        console.log("[CACHE MISS] Fetching allChallengeMetadata by processing challenges.json and individual questions.");
         const allMetadata = [];
         try {
             const response = await fetch('./challenges.json');
@@ -935,28 +1065,12 @@ except Exception as e:
 
             for (const item of challengeIdList) {
                 const challengeId = item.id;
-                const filename = item.file
                 try {
-                    // Assuming item.file from challenges.json is the correct relative path (e.g., "questions/Algorithms.json")
-                    const challengeDetailsResponse = await fetch(filename); 
-                    if (!challengeDetailsResponse.ok) {
-                        console.warn(`Could not load details for challenge ID ${challengeId} from file ${filename}. Status: ${challengeDetailsResponse.status}. Skipping.`);
-                        continue;
-                    }
-                    const parsedFileContent = await challengeDetailsResponse.json();
-                    
-                    let actualChallengeData = null;
-                    if (Array.isArray(parsedFileContent)) {
-                        // If the file content is an array, find the challenge with the matching ID
-                        actualChallengeData = parsedFileContent.find(ch => ch.id === challengeId);
-                    } else if (typeof parsedFileContent === 'object' && parsedFileContent !== null) {
-                        // If it's a single object, assume it's the correct one.
-                        // Optionally, you could add a check: if (parsedFileContent.id !== challengeId) console.warn(...)
-                        actualChallengeData = parsedFileContent;
-                    }
+                    // Call getQuestion to leverage caching and existing logic
+                    const actualChallengeData = await getQuestion(challengeId); 
 
                     if (!actualChallengeData) {
-                        console.warn(`Challenge data for ID ${challengeId} not found or in unexpected format in file ${filename}.`);
+                        console.warn(`Could not retrieve challenge data for ID ${challengeId} via getQuestion. Skipping in metadata.`);
                         continue;
                     }
 
@@ -973,6 +1087,19 @@ except Exception as e:
         } catch (error) {
             console.error('Error loading challenge list for report:', error);
             reportContentArea.innerHTML = `<p style="color:red;">Could not load challenge data for the report.</p>`;
+            return []; // Return empty array on critical error
+        }
+
+        // After successfully building allMetadata, cache it
+        try {
+            const dataToCache = {
+                timestamp: Date.now(),
+                metadata: allMetadata
+            };
+            localStorage.setItem(LS_ALL_METADATA_CACHE, JSON.stringify(dataToCache));
+            console.log("allChallengeMetadata cached successfully.");
+        } catch (e) {
+            console.error("Error saving allChallengeMetadata to localStorage. May be out of space.", e);
         }
         return allMetadata;
     }
@@ -1054,16 +1181,44 @@ except Exception as e:
     }
 
     viewProgressReportBtn.addEventListener('click', () => {
-        document.querySelector('main').style.display = 'none';
+        // Determine which view is currently active and store it
+        if (dailyChallengesView.style.display !== 'none') {
+            previousViewBeforeReport = 'daily';
+            dailyChallengesView.style.display = 'none';
+        } else if (mainContentArea.style.display !== 'none') {
+            previousViewBeforeReport = 'main';
+            mainContentArea.style.display = 'none';
+        }
+        // Hide both just in case, though one should already be hidden
+        dailyChallengesView.style.display = 'none'; 
+        mainContentArea.style.display = 'none'; 
+
         progressReportContainer.style.display = 'block';
         viewProgressReportBtn.style.display = 'none';
+        backToDailyViewBtn.style.display = 'block';
         renderProgressReport();
     });
 
     backToChallengesBtn.addEventListener('click', () => {
         progressReportContainer.style.display = 'none';
-        document.querySelector('main').style.display = 'flex';
-        viewProgressReportBtn.style.display = 'block';
+        if (previousViewBeforeReport === 'daily') {
+            dailyChallengesView.style.display = 'block';
+            mainContentArea.style.display = 'none'; 
+            viewProgressReportBtn.style.display = 'block';
+            backToDailyViewBtn.style.display = 'none';            
+        } else if (previousViewBeforeReport === 'main') {
+            mainContentArea.style.display = 'flex'; // Or 'block' if that's its default
+            dailyChallengesView.style.display = 'none'; // Ensure daily view is hidden
+            viewProgressReportBtn.style.display = 'block';
+            backToDailyViewBtn.style.display = 'block';            
+        } else {
+            // Default fallback if something went wrong with previousViewBeforeReport
+            dailyChallengesView.style.display = 'block'; 
+            mainContentArea.style.display = 'none';
+            viewProgressReportBtn.style.display = 'block';
+            backToDailyViewBtn.style.display = 'none';            
+        }
+        window.scrollTo(0, 0); // Scroll to the top of the page
     });
 
     retryChallengeBtn.addEventListener('click', () => {
@@ -1083,4 +1238,17 @@ except Exception as e:
 
         loadChallenge(challengeIdToRetry);
     });
+
+    // Event Listener for the new "Back to Daily Workout" button in the header
+    backToDailyViewBtn.addEventListener('click', () => {
+        mainContentArea.style.display = 'none';
+        progressReportContainer.style.display = 'none'; // Hide report if it was open
+        dailyChallengesView.style.display = 'block';
+        backToDailyViewBtn.style.display = 'none'; // Hide itself
+        viewProgressReportBtn.style.display = 'block'; // Ensure progress report button is visible
+        if (window.location.hash) { // Clear the hash
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
+        window.scrollTo(0, 0);
+    });    
 });
