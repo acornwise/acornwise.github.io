@@ -61,6 +61,25 @@ document.addEventListener('DOMContentLoaded', () => {
             loadingProgressBar.style.width = `${percentage}%`;
         }
     }
+
+    function initializeAdsInContainer(containerElement) {
+        if (!containerElement || typeof adsbygoogle === 'undefined') {
+            console.warn("AdSense script not ready or container not found for ad initialization.");
+            return;
+        }
+        const adSlots = containerElement.querySelectorAll('ins.adsbygoogle');
+        adSlots.forEach(slot => {
+            if (slot.getAttribute('data-ad-status') !== 'initialized') {
+                try {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    slot.setAttribute('data-ad-status', 'initialized'); // Mark as initialized
+                } catch (e) {
+                    console.error('AdSense push error:', e, slot);
+                }
+            }
+        });
+    }
+
     // --- Pyodide Initialization ---
     async function initializePyodide() {
         try {
@@ -563,6 +582,7 @@ except Exception as e:
 
         dailyChallengesView.style.display = 'none';
         mainContentArea.style.display = 'flex';
+        initializeAdsInContainer(mainContentArea);
         viewProgressReportBtn.style.display = 'block';
         backToDailyViewBtn.style.display = 'block';        
 
@@ -1196,6 +1216,7 @@ except Exception as e:
         progressReportContainer.style.display = 'block';
         viewProgressReportBtn.style.display = 'none';
         backToDailyViewBtn.style.display = 'block';
+        initializeAdsInContainer(progressReportContainer);
         renderProgressReport();
     });
 
