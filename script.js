@@ -70,15 +70,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const adSlots = containerElement.querySelectorAll('ins.adsbygoogle');
         adSlots.forEach(slot => {
             if (slot.getAttribute('data-ad-status') !== 'initialized') {
-                // Use requestAnimationFrame to ensure the slot is rendered and has dimensions
+                // Delay slightly to give the browser a chance to render and calculate dimensions
                 requestAnimationFrame(() => {
-                    try {
-                        console.log("Attempting to push ad for slot:", slot, "Available width:", slot.offsetWidth);
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                        slot.setAttribute('data-ad-status', 'initialized'); // Mark as initialized
-                    } catch (e) {
-                        console.error('AdSense push error:', e, slot);
-                    }
+                    setTimeout(() => { // Add a minimal setTimeout
+                        try {
+                            // It's good practice to check offsetWidth again right before push
+                            if (slot.offsetWidth > 0) {
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                                slot.setAttribute('data-ad-status', 'initialized');
+                                console.log("AdSense initialized:", slot);
+                            } else {
+                                console.warn("Ad slot still has 0 width after delay, not pushing:", slot);
+                            }
+                        } catch (e) {
+                            console.error('AdSense push error:', e, slot);
+                        }
+                    }, 1000); // A small delay like 10ms, can be 0 too.
                 });
             }
         });
@@ -203,9 +210,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     resultDiv.classList.add('fail');
                 }
 
-            } else if (inputType === "function_call") {
+            } else if (inputType === "function") {
                 if (!functionName) {
-                    throw new Error("Function name is not defined for 'function_call' input type.");
+                    throw new Error("Function name is not defined for 'function' input type.");
                 }
                 await pyodide.runPythonAsync(`import json`);
                 const pythonInputArgs = JSON.stringify(testCase.input);
@@ -341,6 +348,16 @@ except Exception as e:
         return passed;
     }
 
+    function extractFunctionName(starterCode) {
+        if (!starterCode) return null;
+        // Regex to find "def function_name(" or "def function_name ("
+        const match = starterCode.match(/def\s+([a-zA-Z_][a-zA-Z0-9_]*)\s*\(/);
+        if (match && match[1]) {
+            return match[1];
+        }
+        return null; // Or throw an error if a function name is expected but not found
+    }
+
     runButton.addEventListener('click', async () => {
         if (!pyodide || !currentChallengeData) {
             resultsOutput.textContent = "Error: Pyodide not loaded or no challenge selected.";
@@ -368,7 +385,7 @@ except Exception as e:
                 userCode,
                 testCaseResultDiv,
                 currentChallengeData.input_type,
-                currentChallengeData.function_name
+                currentChallengeData.input_type === "function" ? extractFunctionName(currentChallengeData.starter_code) : null
             );
             if (!passedThisTest) {
                 overallPass = false;
@@ -445,9 +462,16 @@ except Exception as e:
         }
 
         let parsedCustomInput;
+
+        let functionNameToTest = null;
+
+        if (currentChallengeData.input_type === "function") {
+            functionNameToTest = extractFunctionName(currentChallengeData.starter_code);
+        }
+
         if (currentChallengeData.input_type === "stdin") {
             parsedCustomInput = customInputValue.split('\n');
-        } else if (currentChallengeData.input_type === "function_call") {
+        } else if (currentChallengeData.input_type === "function") {
             try {
                 parsedCustomInput = JSON.parse(customInputValue);
                 if (!Array.isArray(parsedCustomInput)) {
@@ -488,7 +512,7 @@ except Exception as e:
             userCode,
             customTestResultDiv,
             currentChallengeData.input_type,
-            currentChallengeData.function_name
+            functionNameToTest
         );
 
         runButton.disabled = false;
@@ -628,11 +652,12 @@ except Exception as e:
                 listItem.classList.add('test-case-item');
 
                 let inputContentHtml = '';                
+                let expectedOutputHtml = '';
                 const outputValue = testCase.expected_output;
 
                 if (challengeData.input_type === "stdin") {
                     inputContentHtml = testCase.input.map(line => `<i>${line}</i>`).join('<br>');
-                } else if (challengeData.input_type === "function_call") {
+                } else if (challengeData.input_type === "function") {
                     inputContentHtml = `<code>${JSON.stringify(testCase.input)}</code>`;
                 } else if (challengeData.input_type === "file_read") {
                     const contentSnippet = testCase.input_file_content.substring(0, 100);
@@ -646,8 +671,6 @@ except Exception as e:
                     inputContentHtml = 'N/A';
                     expectedOutputHtml = 'N/A';
                 }
-
-                let expectedOutputHtml = '';
 
                 if (typeof outputValue === 'string') {
                     const tempDiv = document.createElement('div');
