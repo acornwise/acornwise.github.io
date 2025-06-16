@@ -378,6 +378,12 @@ except Exception as e:
             return;
         }
 
+        // Scroll to the test cases section
+        if (testCasesArea) {
+            // testCasesArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelector('.test-cases-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }        
+
         const userCode = editor.getValue();
         resultsOutput.textContent = "Running tests...";
         runButton.disabled = true;
@@ -624,7 +630,7 @@ except Exception as e:
 
         dailyChallengesView.style.display = 'none';
         mainContentArea.style.display = 'flex';
-        initializeAdsInContainer(mainContentArea);
+        // initializeAdsInContainer(mainContentArea);
         viewProgressReportBtn.style.display = 'block';
         backToDailyViewBtn.style.display = 'block';        
 
@@ -1257,7 +1263,7 @@ except Exception as e:
         progressReportContainer.style.display = 'block';
         viewProgressReportBtn.style.display = 'none';
         backToDailyViewBtn.style.display = 'block';
-        initializeAdsInContainer(progressReportContainer);
+        // initializeAdsInContainer(progressReportContainer);
         renderProgressReport();
     });
 

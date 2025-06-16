@@ -342,26 +342,6 @@ main {
     width: 100%;
 }
 
-.content-ad {
-}
-
-.content-ad ins.adsbygoogle { /* Ensure the ins tag can fill the code-test ad slot */
-    width: 100%;
-    max-width: 728px; /* Example max width for a banner */
-    /* No specific styles needed beyond .ad-slot, but you can add them if desired */
-}
-
-
-.code-test-ad {
-    /* You might want to set a specific height for this one too if desired */
-    /* e.g., min-height: 100px; */
-}
-.code-test-ad ins.adsbygoogle { /* Ensure the ins tag can fill the code-test ad slot */
-    width: 100%;
-    max-width: 728px; /* Example max width for a banner */
-    /* No specific styles needed beyond .ad-slot, but you can add them if desired */
-}
-
 /* Footer Styling */
 footer {
     background-color: #3498db;
