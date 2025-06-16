@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 capturedStdout += msg + '\n';
             }
         });
+
         pyodide.setStderr({
             batched: (msg) => {
                 capturedStdout += `ERROR (stderr): ${msg}\n`;
@@ -212,6 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 await pyodide.runPythonAsync(userCode);
+                
+                if (capturedStdout.trim().length == 0) {
+                    console.log('Try to flush outputs ..');
+                    await pyodide.runPythonAsync('print()');
+                }
+
                 const actualOutput = capturedStdout.trim();
                 const expectedOutput = String(testCase.expected_output).trim();
 
@@ -229,7 +236,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     throw new Error("Function name is not defined for 'function' input type.");
                 }
                 await pyodide.runPythonAsync(`import json`);
-                const pythonInputArgs = JSON.stringify(testCase.input);
+                let test_case_inputs = []
+
+                for (const test_input of testCase.input) {
+                    if(test_input.match(/^-?\d+$/)) {
+                        test_case_inputs.push(parseInt(test_input, 10));
+                    } else if(test_input.match(/^-?\d*\.\d+$/))    {
+                        test_case_inputs.push(parseFloat(test_input));
+                    } else  {
+                        test_case_inputs.push(test_input)
+                    }
+                }
+
+                const pythonInputArgs = JSON.stringify(test_case_inputs);
 
                 const codeToExecute = `
 ${userCode}
@@ -242,7 +261,7 @@ except Exception as e:
     _actual_output_func_call = f"ERROR: {e}"
 `;
                 await pyodide.runPythonAsync(codeToExecute);
-                const actualOutput = pyodide.globals.get('_actual_output_func_call');
+                const actualOutput = String(pyodide.globals.get('_actual_output_func_call'));
                 const expectedOutput = testCase.expected_output;
 
                 if (JSON.stringify(actualOutput) === JSON.stringify(expectedOutput)) {
