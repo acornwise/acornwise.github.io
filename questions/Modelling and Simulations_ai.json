@@ -9,7 +9,7 @@
     "test_cases": [
       {
         "input": "babad",
-        "output": "bab"
+        "expected_output": "bab"
       }
     ],
     "from": "AI"
@@ -24,7 +24,7 @@
     "test_cases": [
       {
         "input": "1 8 6 2 5 4 8 3 7",
-        "output": "49"
+        "expected_output": "49"
       }
     ],
     "from": "AI"
@@ -39,7 +39,7 @@
     "test_cases": [
       {
         "input": "1994",
-        "output": "MCMXCIV"
+        "expected_output": "MCMXCIV"
       }
     ],
     "from": "AI"
@@ -54,7 +54,7 @@
     "test_cases": [
       {
         "input": "MCMXCIV",
-        "output": "1994"
+        "expected_output": "1994"
       }
     ],
     "from": "AI"
@@ -69,7 +69,7 @@
     "test_cases": [
       {
         "input": "3\nflower\nflow\nflight",
-        "output": "fl"
+        "expected_output": "fl"
       }
     ],
     "from": "AI"
@@ -84,7 +84,7 @@
     "test_cases": [
       {
         "input": "-1 2 1 -4\n1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -99,7 +99,7 @@
     "test_cases": [
       {
         "input": "23",
-        "output": "ad,ae,af,bd,be,bf,cd,ce,cf"
+        "expected_output": "ad,ae,af,bd,be,bf,cd,ce,cf"
       }
     ],
     "from": "AI"
@@ -114,7 +114,7 @@
     "test_cases": [
       {
         "input": "1 0 -1 0 -2 2\n0",
-        "output": "-2 -1 1 2, -2 0 0 2, -1 0 0 1"
+        "expected_output": "-2 -1 1 2, -2 0 0 2, -1 0 0 1"
       }
     ],
     "from": "AI"
@@ -129,7 +129,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n2",
-        "output": "1 2 3 5"
+        "expected_output": "1 2 3 5"
       }
     ],
     "from": "AI"
@@ -144,7 +144,7 @@
     "test_cases": [
       {
         "input": "()[]{}",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -159,7 +159,7 @@
     "test_cases": [
       {
         "input": "1 2 4\n1 3 4",
-        "output": "1 1 2 3 4 4"
+        "expected_output": "1 1 2 3 4 4"
       }
     ],
     "from": "AI"
@@ -174,7 +174,7 @@
     "test_cases": [
       {
         "input": "3",
-        "output": "((())),(()()),(())(),()(()),()()()"
+        "expected_output": "((())),(()()),(())(),()(()),()()()"
       }
     ],
     "from": "AI"
@@ -189,7 +189,7 @@
     "test_cases": [
       {
         "input": "3\n1 4 5\n1 3 4\n2 6",
-        "output": "1 1 2 3 4 4 5 6"
+        "expected_output": "1 1 2 3 4 4 5 6"
       }
     ],
     "from": "AI"
@@ -204,7 +204,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4",
-        "output": "2 1 4 3"
+        "expected_output": "2 1 4 3"
       }
     ],
     "from": "AI"
@@ -219,7 +219,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n2",
-        "output": "2 1 4 3 5"
+        "expected_output": "2 1 4 3 5"
       }
     ],
     "from": "AI"
@@ -234,7 +234,7 @@
     "test_cases": [
       {
         "input": "1 1 2",
-        "output": "2\n1 2"
+        "expected_output": "2\n1 2"
       }
     ],
     "from": "AI"
@@ -249,7 +249,7 @@
     "test_cases": [
       {
         "input": "3 2 2 3\n3",
-        "output": "2\n2 2"
+        "expected_output": "2\n2 2"
       }
     ],
     "from": "AI"
@@ -264,7 +264,7 @@
     "test_cases": [
       {
         "input": "hello\nll",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -279,7 +279,7 @@
     "test_cases": [
       {
         "input": "10\n3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -294,7 +294,7 @@
     "test_cases": [
       {
         "input": "barfoothefoobarman\nfoo bar",
-        "output": "0,9"
+        "expected_output": "0,9"
       }
     ],
     "from": "AI"
@@ -309,7 +309,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "1 3 2"
+        "expected_output": "1 3 2"
       }
     ],
     "from": "AI"
@@ -324,7 +324,7 @@
     "test_cases": [
       {
         "input": "4 5 6 7 0 1 2\n0",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -339,7 +339,7 @@
     "test_cases": [
       {
         "input": "5 7 7 8 8 10\n8",
-        "output": "3 4"
+        "expected_output": "3 4"
       }
     ],
     "from": "AI"
@@ -354,7 +354,7 @@
     "test_cases": [
       {
         "input": "2 3 6 7\n7",
-        "output": "2 2 3, 7"
+        "expected_output": "2 2 3, 7"
       }
     ],
     "from": "AI"
@@ -369,7 +369,7 @@
     "test_cases": [
       {
         "input": "10 1 2 7 6 1 5\n8",
-        "output": "1 1 6, 1 2 5, 1 7, 2 6"
+        "expected_output": "1 1 6, 1 2 5, 1 7, 2 6"
       }
     ],
     "from": "AI"
@@ -384,7 +384,7 @@
     "test_cases": [
       {
         "input": "1 2 0",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -399,7 +399,7 @@
     "test_cases": [
       {
         "input": "0 1 0 2 1 0 1 3 2 1 2 1",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -414,7 +414,7 @@
     "test_cases": [
       {
         "input": "3\n1 2 3\n4 5 6\n7 8 9",
-        "output": "7 4 1\n8 5 2\n9 6 3"
+        "expected_output": "7 4 1\n8 5 2\n9 6 3"
       }
     ],
     "from": "AI"
@@ -429,7 +429,7 @@
     "test_cases": [
       {
         "input": "2 3 1 1 4",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -444,7 +444,7 @@
     "test_cases": [
       {
         "input": "4\n1 3\n2 6\n8 10\n15 18",
-        "output": "1 6\n8 10\n15 18"
+        "expected_output": "1 6\n8 10\n15 18"
       }
     ],
     "from": "AI"
@@ -459,7 +459,7 @@
     "test_cases": [
       {
         "input": "3\n1 3\n6 9\n2 5",
-        "output": "1 5\n6 9"
+        "expected_output": "1 5\n6 9"
       }
     ],
     "from": "AI"
@@ -474,7 +474,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1"
+        "expected_output": "1 2 3\n1 3 2\n2 1 3\n2 3 1\n3 1 2\n3 2 1"
       }
     ],
     "from": "AI"
@@ -489,7 +489,7 @@
     "test_cases": [
       {
         "input": "1 1 2",
-        "output": "1 1 2\n1 2 1\n2 1 1"
+        "expected_output": "1 1 2\n1 2 1\n2 1 1"
       }
     ],
     "from": "AI"
@@ -504,7 +504,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n2",
-        "output": "4 5 1 2 3"
+        "expected_output": "4 5 1 2 3"
       }
     ],
     "from": "AI"
@@ -519,7 +519,7 @@
     "test_cases": [
       {
         "input": "3\n7",
-        "output": "28"
+        "expected_output": "28"
       }
     ],
     "from": "AI"
@@ -534,7 +534,7 @@
     "test_cases": [
       {
         "input": "3\n3\n0 0 0\n0 1 0\n0 0 0",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -549,7 +549,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 3 1\n1 5 1\n4 2 1",
-        "output": "7"
+        "expected_output": "7"
       }
     ],
     "from": "AI"
@@ -564,7 +564,7 @@
     "test_cases": [
       {
         "input": "horse\nros",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -579,7 +579,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 1 1\n1 0 1\n1 1 1",
-        "output": "1 0 1\n0 0 0\n1 0 1"
+        "expected_output": "1 0 1\n0 0 0\n1 0 1"
       }
     ],
     "from": "AI"
@@ -594,7 +594,7 @@
     "test_cases": [
       {
         "input": "3\n4\n1 3 5 7\n10 11 16 20\n23 30 34 60\n3",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -609,7 +609,7 @@
     "test_cases": [
       {
         "input": "2 0 2 1 1 0",
-        "output": "0 0 1 1 2 2"
+        "expected_output": "0 0 1 1 2 2"
       }
     ],
     "from": "AI"
@@ -624,7 +624,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "[]\n1\n1 2\n1 2 3\n1 3\n2\n2 3\n3"
+        "expected_output": "[]\n1\n1 2\n1 2 3\n1 3\n2\n2 3\n3"
       }
     ],
     "from": "AI"
@@ -639,7 +639,7 @@
     "test_cases": [
       {
         "input": "2 1 5 6 2 3",
-        "output": "10"
+        "expected_output": "10"
       }
     ],
     "from": "AI"
@@ -654,7 +654,7 @@
     "test_cases": [
       {
         "input": "4\n5\n1 0 1 0 0\n1 0 1 1 1\n1 1 1 1 1\n1 0 0 1 0",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -669,7 +669,7 @@
     "test_cases": [
       {
         "input": "1 2 3 0 0 0\n3\n2 5 6\n3",
-        "output": "1 2 2 3 5 6"
+        "expected_output": "1 2 2 3 5 6"
       }
     ],
     "from": "AI"
@@ -684,7 +684,7 @@
     "test_cases": [
       {
         "input": "1 1 2 3 3",
-        "output": "1 2 3"
+        "expected_output": "1 2 3"
       }
     ],
     "from": "AI"
@@ -699,7 +699,7 @@
     "test_cases": [
       {
         "input": "1 2 3 3 4 4 5",
-        "output": "1 2 5"
+        "expected_output": "1 2 5"
       }
     ],
     "from": "AI"
@@ -714,7 +714,7 @@
     "test_cases": [
       {
         "input": "2",
-        "output": "987"
+        "expected_output": "987"
       }
     ],
     "from": "AI"
@@ -729,7 +729,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "25"
+        "expected_output": "25"
       }
     ],
     "from": "AI"
@@ -744,7 +744,7 @@
     "test_cases": [
       {
         "input": "100 4 200 1 3 2",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -759,7 +759,7 @@
     "test_cases": [
       {
         "input": "1 3\n2",
-        "output": "2.0"
+        "expected_output": "2.0"
       }
     ],
     "from": "AI"
@@ -774,7 +774,7 @@
     "test_cases": [
       {
         "input": "aa\na*",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -789,7 +789,7 @@
     "test_cases": [
       {
         "input": "1 8 6 2 5 4 8 3 7",
-        "output": "18"
+        "expected_output": "18"
       }
     ],
     "from": "AI"
@@ -804,7 +804,7 @@
     "test_cases": [
       {
         "input": "123",
-        "output": "One Hundred Twenty Three"
+        "expected_output": "One Hundred Twenty Three"
       }
     ],
     "from": "AI"
@@ -819,7 +819,7 @@
     "test_cases": [
       {
         "input": "(()",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -834,7 +834,7 @@
     "test_cases": [
       {
         "input": "4",
-        "output": "1211"
+        "expected_output": "1211"
       }
     ],
     "from": "AI"
@@ -849,7 +849,7 @@
     "test_cases": [
       {
         "input": "3\n7",
-        "output": "1 2 4"
+        "expected_output": "1 2 4"
       }
     ],
     "from": "AI"
@@ -864,7 +864,7 @@
     "test_cases": [
       {
         "input": "4",
-        "output": ". Q . .\n. . . Q\nQ . . .\n. . Q .\n\n. . Q .\nQ . . .\n. . . Q\n. Q . ."
+        "expected_output": ". Q . .\n. . . Q\nQ . . .\n. . Q .\n\n. . Q .\nQ . . .\n. . . Q\n. Q . ."
       }
     ],
     "from": "AI"
@@ -879,7 +879,7 @@
     "test_cases": [
       {
         "input": "4",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -894,7 +894,7 @@
     "test_cases": [
       {
         "input": "-2 1 -3 4 -1 2 1 -5 4",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -909,7 +909,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 2 3\n4 5 6\n7 8 9",
-        "output": "1 2 3 6 9 8 7 4 5"
+        "expected_output": "1 2 3 6 9 8 7 4 5"
       }
     ],
     "from": "AI"
@@ -924,7 +924,7 @@
     "test_cases": [
       {
         "input": "2 3 1 1 4",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -939,7 +939,7 @@
     "test_cases": [
       {
         "input": "3\n3",
-        "output": "213"
+        "expected_output": "213"
       }
     ],
     "from": "AI"
@@ -954,7 +954,7 @@
     "test_cases": [
       {
         "input": "53..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -969,7 +969,7 @@
     "test_cases": [
       {
         "input": "53..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79",
-        "output": "534678912\n672195348\n198342567\n859761423\n426853791\n713924856\n961537284\n287419635\n345286179"
+        "expected_output": "534678912\n672195348\n198342567\n859761423\n426853791\n713924856\n961537284\n287419635\n345286179"
       }
     ],
     "from": "AI"
@@ -984,7 +984,7 @@
     "test_cases": [
       {
         "input": "10",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -999,7 +999,7 @@
     "test_cases": [
       {
         "input": "12\n2 7 13 19",
-        "output": "32"
+        "expected_output": "32"
       }
     ],
     "from": "AI"
@@ -1014,7 +1014,7 @@
     "test_cases": [
       {
         "input": "2.00000\n10",
-        "output": "1024.00000"
+        "expected_output": "1024.00000"
       }
     ],
     "from": "AI"
@@ -1029,7 +1029,7 @@
     "test_cases": [
       {
         "input": "2 3 -2 4",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -1044,7 +1044,7 @@
     "test_cases": [
       {
         "input": "1 2 3 1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1059,7 +1059,7 @@
     "test_cases": [
       {
         "input": "2 5 6 0 0 1 2\n0",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -1074,7 +1074,7 @@
     "test_cases": [
       {
         "input": "3 4 5 1 2",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1089,7 +1089,7 @@
     "test_cases": [
       {
         "input": "1 3 5",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1104,7 +1104,7 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1119,7 +1119,7 @@
     "test_cases": [
       {
         "input": "1 2 2",
-        "output": "[]\n1\n1 2\n1 2 2\n2\n2 2"
+        "expected_output": "[]\n1\n1 2\n1 2 2\n2\n2 2"
       }
     ],
     "from": "AI"
@@ -1134,7 +1134,7 @@
     "test_cases": [
       {
         "input": "3\n4\nA B C E\nS F C S\nA D E E\nABCCED",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -1149,7 +1149,7 @@
     "test_cases": [
       {
         "input": "abcabcbb",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1164,7 +1164,7 @@
     "test_cases": [
       {
         "input": "bbbab",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1179,7 +1179,7 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1194,7 +1194,7 @@
     "test_cases": [
       {
         "input": "1 2 5\n11",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1209,7 +1209,7 @@
     "test_cases": [
       {
         "input": "10 9 2 5 3 7 101 18",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1224,7 +1224,7 @@
     "test_cases": [
       {
         "input": "leetcode\nleet code",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -1239,7 +1239,7 @@
     "test_cases": [
       {
         "input": "4\n5\n11110\n11010\n11000\n00000",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1254,7 +1254,7 @@
     "test_cases": [
       {
         "input": "abcde\nace",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1269,7 +1269,7 @@
     "test_cases": [
       {
         "input": "5",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1284,7 +1284,7 @@
     "test_cases": [
       {
         "input": "hit\ncog\nhot dot dog lot log cog",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -1299,7 +1299,7 @@
     "test_cases": [
       {
         "input": "hit\ncog\nhot dot dog lot log cog",
-        "output": "hit hot dot dog cog\nhit hot lot log cog"
+        "expected_output": "hit hot dot dog cog\nhit hot lot log cog"
       }
     ],
     "from": "AI"
@@ -1314,7 +1314,7 @@
     "test_cases": [
       {
         "input": "1 null 3 2 4 null null null 5",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1329,7 +1329,7 @@
     "test_cases": [
       {
         "input": "ADOBECODEBANC\nABC",
-        "output": "BANC"
+        "expected_output": "BANC"
       }
     ],
     "from": "AI"
@@ -1344,7 +1344,7 @@
     "test_cases": [
       {
         "input": "3 1 5 8",
-        "output": "167"
+        "expected_output": "167"
       }
     ],
     "from": "AI"
@@ -1359,7 +1359,7 @@
     "test_cases": [
       {
         "input": "1 3 -1 -3 5 3 6 7\n3",
-        "output": "3 3 5 5 6 7"
+        "expected_output": "3 3 5 5 6 7"
       }
     ],
     "from": "AI"
@@ -1374,7 +1374,7 @@
     "test_cases": [
       {
         "input": "4\n3\n1 0\n1 2\n1 3",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1389,7 +1389,7 @@
     "test_cases": [
       {
         "input": "3 10 5 25 2 8",
-        "output": "28"
+        "expected_output": "28"
       }
     ],
     "from": "AI"
@@ -1404,7 +1404,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 4 3\n3 2 4\n2 3 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1419,7 +1419,7 @@
     "test_cases": [
       {
         "input": "lc cpgg gc cl",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -1434,7 +1434,7 @@
     "test_cases": [
       {
         "input": "cat cats catsdog catdog dog dogs",
-        "output": "catsdog catdog"
+        "expected_output": "catsdog catdog"
       }
     ],
     "from": "AI"
@@ -1449,7 +1449,7 @@
     "test_cases": [
       {
         "input": "1 3 5 4 7",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1464,7 +1464,7 @@
     "test_cases": [
       {
         "input": "()())()",
-        "output": "()()()\n(())()"
+        "expected_output": "()()()\n(())()"
       }
     ],
     "from": "AI"
@@ -1479,7 +1479,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n4\n3",
-        "output": "1 2 3 4"
+        "expected_output": "1 2 3 4"
       }
     ],
     "from": "AI"
@@ -1494,7 +1494,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5 6 1\n3",
-        "output": "12"
+        "expected_output": "12"
       }
     ],
     "from": "AI"
@@ -1509,7 +1509,7 @@
     "test_cases": [
       {
         "input": "1 1 1 1 1\n3",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -1524,7 +1524,7 @@
     "test_cases": [
       {
         "input": "cbaebabacd\nabc",
-        "output": "0 6"
+        "expected_output": "0 6"
       }
     ],
     "from": "AI"
@@ -1539,7 +1539,7 @@
     "test_cases": [
       {
         "input": "4\n10 16\n2 8\n1 6\n7 12",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1554,7 +1554,7 @@
     "test_cases": [
       {
         "input": "1 5 11 5",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -1569,7 +1569,7 @@
     "test_cases": [
       {
         "input": "1 3 4 2 2",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1584,7 +1584,7 @@
     "test_cases": [
       {
         "input": "A A A B B B\n2",
-        "output": "8"
+        "expected_output": "8"
       }
     ],
     "from": "AI"
@@ -1599,7 +1599,7 @@
     "test_cases": [
       {
         "input": "2 4 3",
-        "output": "14"
+        "expected_output": "14"
       }
     ],
     "from": "AI"
@@ -1614,7 +1614,7 @@
     "test_cases": [
       {
         "input": "10 5 -3 3 2 null 11 3 -2 null 1\n8",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1629,7 +1629,7 @@
     "test_cases": [
       {
         "input": "2\n1\n1 0",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -1644,7 +1644,7 @@
     "test_cases": [
       {
         "input": "2\n1\n1 0",
-        "output": "0 1"
+        "expected_output": "0 1"
       }
     ],
     "from": "AI"
@@ -1659,7 +1659,7 @@
     "test_cases": [
       {
         "input": "3\n3\n9 9 4\n6 6 8\n2 1 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1674,7 +1674,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5 6",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -1689,7 +1689,7 @@
     "test_cases": [
       {
         "input": "3\n0 0 1\n1 0 1\n0 0 0",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1704,7 +1704,7 @@
     "test_cases": [
       {
         "input": "3[a]2[bc]",
-        "output": "aaabcbc"
+        "expected_output": "aaabcbc"
       }
     ],
     "from": "AI"
@@ -1719,7 +1719,7 @@
     "test_cases": [
       {
         "input": "3 1 4 null 2\n1",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1734,7 +1734,7 @@
     "test_cases": [
       {
         "input": "6\n7 0\n4 4\n7 1\n5 0\n6 1\n5 2",
-        "output": "5 0\n7 0\n5 2\n6 1\n4 4\n7 1"
+        "expected_output": "5 0\n7 0\n5 2\n6 1\n4 4\n7 1"
       }
     ],
     "from": "AI"
@@ -1749,7 +1749,7 @@
     "test_cases": [
       {
         "input": "1 1 1 2 2 3\n2",
-        "output": "1 2"
+        "expected_output": "1 2"
       }
     ],
     "from": "AI"
@@ -1764,7 +1764,7 @@
     "test_cases": [
       {
         "input": "3 2 1 5 6 4\n2",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -1779,7 +1779,7 @@
     "test_cases": [
       {
         "input": "banana",
-        "output": "ana"
+        "expected_output": "ana"
       }
     ],
     "from": "AI"
@@ -1794,7 +1794,7 @@
     "test_cases": [
       {
         "input": "1 null 2 3",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1809,7 +1809,7 @@
     "test_cases": [
       {
         "input": "1 3 2 5 3 null 9",
-        "output": "1 3 9"
+        "expected_output": "1 3 9"
       }
     ],
     "from": "AI"
@@ -1824,7 +1824,7 @@
     "test_cases": [
       {
         "input": "8\n13\n0010000000000\n0000000000000\n0000110000000\n0000110000000\n0000000000000\n0000110000000\n0010000000000\n0000000000000",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -1839,7 +1839,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 2 3\n0 0 4\n7 6 5",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -1854,7 +1854,7 @@
     "test_cases": [
       {
         "input": "3\n1 1 0\n1 1 0\n0 0 1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -1869,7 +1869,7 @@
     "test_cases": [
       {
         "input": "3\n3\n0 0 0\n0 1 0\n0 0 0",
-        "output": "0 0 0\n0 1 0\n0 0 0"
+        "expected_output": "0 0 0\n0 1 0\n0 0 0"
       }
     ],
     "from": "AI"
@@ -1884,7 +1884,7 @@
     "test_cases": [
       {
         "input": "dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tfile2.ext",
-        "output": "20"
+        "expected_output": "20"
       }
     ],
     "from": "AI"
@@ -1899,7 +1899,7 @@
     "test_cases": [
       {
         "input": "AACCGGTT\nAACCGGTA\nAACCGGTA AACCGGAA AACCGGAT",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -1914,7 +1914,7 @@
     "test_cases": [
       {
         "input": "*",
-        "output": "9"
+        "expected_output": "9"
       }
     ],
     "from": "AI"
@@ -1929,7 +1929,7 @@
     "test_cases": [
       {
         "input": "3 6 7 11\n8",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1944,7 +1944,7 @@
     "test_cases": [
       {
         "input": "7 2 5 10 8\n2",
-        "output": "18"
+        "expected_output": "18"
       }
     ],
     "from": "AI"
@@ -1959,7 +1959,7 @@
     "test_cases": [
       {
         "input": "2\n1 3 2\n2 5 3",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -1974,7 +1974,7 @@
     "test_cases": [
       {
         "input": "1 3 6\n3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -1989,7 +1989,7 @@
     "test_cases": [
       {
         "input": "9 1 2 3 9\n3",
-        "output": "20.0"
+        "expected_output": "20.0"
       }
     ],
     "from": "AI"
@@ -2004,7 +2004,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4",
-        "output": "23:41"
+        "expected_output": "23:41"
       }
     ],
     "from": "AI"
@@ -2019,7 +2019,7 @@
     "test_cases": [
       {
         "input": "dcba\n2\n0 3\n1 2",
-        "output": "abcd"
+        "expected_output": "abcd"
       }
     ],
     "from": "AI"
@@ -2034,7 +2034,7 @@
     "test_cases": [
       {
         "input": "croakcroak",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -2049,7 +2049,7 @@
     "test_cases": [
       {
         "input": "1 3 5 4\n1 2 3 7",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -2064,7 +2064,7 @@
     "test_cases": [
       {
         "input": "a b ba bca bda bdca",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2079,7 +2079,7 @@
     "test_cases": [
       {
         "input": "3\n3\n0 1 100\n1 2 100\n0 2 500\n0\n2\n1",
-        "output": "200"
+        "expected_output": "200"
       }
     ],
     "from": "AI"
@@ -2094,7 +2094,7 @@
     "test_cases": [
       {
         "input": "7\n1 3 4 5",
-        "output": "16"
+        "expected_output": "16"
       }
     ],
     "from": "AI"
@@ -2109,7 +2109,7 @@
     "test_cases": [
       {
         "input": "2\n3\n2\n3",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -2124,7 +2124,7 @@
     "test_cases": [
       {
         "input": "4\n3 3 4 2 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -2139,7 +2139,7 @@
     "test_cases": [
       {
         "input": "5\n11000\n11000\n00000\n00000\n00011",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -2154,7 +2154,7 @@
     "test_cases": [
       {
         "input": "2 7 9 4 4",
-        "output": "10"
+        "expected_output": "10"
       }
     ],
     "from": "AI"
@@ -2169,7 +2169,7 @@
     "test_cases": [
       {
         "input": "100\n10\n2\n10 60\n20 30",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -2184,7 +2184,7 @@
     "test_cases": [
       {
         "input": "4\n4\no a a n\ne t a e\ni h k r\ni f l v\noath pea eat rain",
-        "output": "eat oath"
+        "expected_output": "eat oath"
       }
     ],
     "from": "AI"
@@ -2199,7 +2199,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -2214,7 +2214,7 @@
     "test_cases": [
       {
         "input": "0 1 0\n1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -2229,7 +2229,7 @@
     "test_cases": [
       {
         "input": "eceba\n2",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -2244,7 +2244,7 @@
     "test_cases": [
       {
         "input": "3 9 3",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -2259,11 +2259,11 @@
     "test_cases": [
       {
         "input": "UDLR",
-        "output": "0 0"
+        "expected_output": "0 0"
       },
       {
         "input": "UUUDL",
-        "output": "-1 3"
+        "expected_output": "-1 3"
       }
     ],
     "from": "AI"
@@ -2278,11 +2278,11 @@
     "test_cases": [
       {
         "input": "C.C.\n1",
-        "output": ".C.C"
+        "expected_output": ".C.C"
       },
       {
         "input": "C.C.\n2",
-        "output": "C..C"
+        "expected_output": "C..C"
       }
     ],
     "from": "AI"
@@ -2297,7 +2297,7 @@
     "test_cases": [
       {
         "input": "01000\n30\n1",
-        "output": "00000"
+        "expected_output": "00000"
       }
     ],
     "from": "AI"
@@ -2312,7 +2312,7 @@
     "test_cases": [
       {
         "input": "2\n0 1\n10 -1\n5",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -2327,7 +2327,7 @@
     "test_cases": [
       {
         "input": "2\nwood 10\nstone 5\n1\nwood 1\nstone 1\n10",
-        "output": "wood: 100, stone: 50"
+        "expected_output": "wood: 100, stone: 50"
       }
     ],
     "from": "AI"
@@ -2342,7 +2342,7 @@
     "test_cases": [
       {
         "input": "10\n10000",
-        "output": "0.5"
+        "expected_output": "0.5"
       }
     ],
     "from": "AI"
@@ -2357,7 +2357,7 @@
     "test_cases": [
       {
         "input": "10\n3\n2 5 8",
-        "output": "2 8"
+        "expected_output": "2 8"
       }
     ],
     "from": "AI"
@@ -2372,7 +2372,7 @@
     "test_cases": [
       {
         "input": "5 5\n0 0\n0.5\n2\n3",
-        "output": "Day 1: I=3, H=22, R=0\nDay 2: I=5, H=20, R=0\nDay 3: I=0, H=20, R=5"
+        "expected_output": "Day 1: I=3, H=22, R=0\nDay 2: I=5, H=20, R=0\nDay 3: I=0, H=20, R=5"
       }
     ],
     "from": "AI"
@@ -2387,7 +2387,7 @@
     "test_cases": [
       {
         "input": "10\n5\n1\n1\n0 1 5\n0 2 8\n100",
-        "output": "Wait Time: 10"
+        "expected_output": "Wait Time: 10"
       }
     ],
     "from": "AI"
@@ -2402,7 +2402,7 @@
     "test_cases": [
       {
         "input": "2\n100\n5 15\n2 10",
-        "output": "Avg Wait: 5.0, Max Queue: 3"
+        "expected_output": "Avg Wait: 5.0, Max Queue: 3"
       }
     ],
     "from": "AI"
@@ -2417,7 +2417,7 @@
     "test_cases": [
       {
         "input": "10000",
-        "output": "Switch Win %: ~0.66, Stick Win %: ~0.33"
+        "expected_output": "Switch Win %: ~0.66, Stick Win %: ~0.33"
       }
     ],
     "from": "AI"
@@ -2432,7 +2432,7 @@
     "test_cases": [
       {
         "input": "10\n10000",
-        "output": "Average Manhattan Distance: ~7.07"
+        "expected_output": "Average Manhattan Distance: ~7.07"
       }
     ],
     "from": "AI"
@@ -2447,7 +2447,7 @@
     "test_cases": [
       {
         "input": "10 5\n1 1\n1 1\n2",
-        "output": "3 3"
+        "expected_output": "3 3"
       }
     ],
     "from": "AI"
@@ -2462,7 +2462,7 @@
     "test_cases": [
       {
         "input": "100\n10000",
-        "output": "Average longest streak: ~6-7"
+        "expected_output": "Average longest streak: ~6-7"
       }
     ],
     "from": "AI"
@@ -2477,7 +2477,7 @@
     "test_cases": [
       {
         "input": "3\nenqueue 1\nenqueue 2\nenqueue 3\ndequeue\nenqueue 4",
-        "output": "2 3 4"
+        "expected_output": "2 3 4"
       }
     ],
     "from": "AI"
@@ -2492,7 +2492,7 @@
     "test_cases": [
       {
         "input": "3\n0 0 1 0\n1 1 0 1\n2 0 -1 0\n1",
-        "output": "0.33 0.33"
+        "expected_output": "0.33 0.33"
       }
     ],
     "from": "AI"
@@ -2507,7 +2507,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 1 0\n0 1 0\n0 1 0",
-        "output": "0 0 0\n1 1 1\n0 0 0"
+        "expected_output": "0 0 0\n1 1 1\n0 0 0"
       }
     ],
     "from": "AI"
@@ -2522,7 +2522,7 @@
     "test_cases": [
       {
         "input": "100\n100\n10",
-        "output": "Final Price: 105, Trades: 20"
+        "expected_output": "Final Price: 105, Trades: 20"
       }
     ],
     "from": "AI"
@@ -2537,7 +2537,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 1 1\n1 2 1\n0 2 2\n2\n0 2\n0 2",
-        "output": "Packet 1: 2, Packet 2: 2"
+        "expected_output": "Packet 1: 2, Packet 2: 2"
       }
     ],
     "from": "AI"
@@ -2552,11 +2552,11 @@
     "test_cases": [
       {
         "input": "FFRLF",
-        "output": "3"
+        "expected_output": "3"
       },
       {
         "input": "FFFF",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2571,7 +2571,7 @@
     "test_cases": [
       {
         "input": "4 3\n0 1\n0 2\n1 3",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -2586,7 +2586,7 @@
     "test_cases": [
       {
         "input": "4 5\n0 1 10\n0 2 6\n0 3 5\n1 3 15\n2 3 4",
-        "output": "19"
+        "expected_output": "19"
       }
     ],
     "from": "AI"
@@ -2601,7 +2601,7 @@
     "test_cases": [
       {
         "input": "5 7\n0 1 10\n0 2 3\n1 2 1\n1 3 2\n2 1 4\n2 3 8\n2 4 2\n0",
-        "output": "0:0 1:7 2:3 3:9 4:5"
+        "expected_output": "0:0 1:7 2:3 3:9 4:5"
       }
     ],
     "from": "AI"
@@ -2616,7 +2616,7 @@
     "test_cases": [
       {
         "input": "4 5\n0 1 20\n0 2 10\n1 2 5\n1 3 10\n2 3 20\n0 3",
-        "output": "30"
+        "expected_output": "30"
       }
     ],
     "from": "AI"
@@ -2631,7 +2631,7 @@
     "test_cases": [
       {
         "input": "6 6\n5 2\n5 0\n4 0\n4 1\n2 3\n3 1",
-        "output": "5 4 2 3 1 0"
+        "expected_output": "5 4 2 3 1 0"
       }
     ],
     "from": "AI"
@@ -2646,7 +2646,7 @@
     "test_cases": [
       {
         "input": "8\n0 0\n7 7",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -2661,7 +2661,7 @@
     "test_cases": [
       {
         "input": "4\n1 2 50\n3 5 20\n6 19 100\n2 100 200",
-        "output": "250"
+        "expected_output": "250"
       }
     ],
     "from": "AI"
@@ -2676,7 +2676,7 @@
     "test_cases": [
       {
         "input": "3\n1 2 3 4 1 2 5 1 2 3 4 5",
-        "output": "Hits: 2, Misses: 10"
+        "expected_output": "Hits: 2, Misses: 10"
       }
     ],
     "from": "AI"
@@ -2691,7 +2691,7 @@
     "test_cases": [
       {
         "input": "53..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79",
-        "output": "531678942\n672195384\n198342567\n859761423\n426853791\n713924856\n967530281\n284719635\n305286179"
+        "expected_output": "531678942\n672195384\n198342567\n859761423\n426853791\n713924856\n967530281\n284719635\n305286179"
       }
     ],
     "from": "AI"
@@ -2706,7 +2706,7 @@
     "test_cases": [
       {
         "input": "4",
-        "output": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q.."
+        "expected_output": ".Q..\n...Q\nQ...\n..Q.\n\n..Q.\nQ...\n...Q\n.Q.."
       }
     ],
     "from": "AI"
@@ -2721,7 +2721,7 @@
     "test_cases": [
       {
         "input": "4\n0 10 15 20\n10 0 35 25\n15 35 0 30\n20 25 30 0",
-        "output": "80"
+        "expected_output": "80"
       }
     ],
     "from": "AI"
@@ -2736,7 +2736,7 @@
     "test_cases": [
       {
         "input": "3 50\n60 10\n100 20\n120 30",
-        "output": "220"
+        "expected_output": "220"
       }
     ],
     "from": "AI"
@@ -2751,7 +2751,7 @@
     "test_cases": [
       {
         "input": "4\n1 5 8 9",
-        "output": "10"
+        "expected_output": "10"
       }
     ],
     "from": "AI"
@@ -2766,7 +2766,7 @@
     "test_cases": [
       {
         "input": "AGGTAB\nGXTXAYB",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2781,7 +2781,7 @@
     "test_cases": [
       {
         "input": "kitten\nsitting",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -2796,7 +2796,7 @@
     "test_cases": [
       {
         "input": "4\n10 30 5 60",
-        "output": "4500"
+        "expected_output": "4500"
       }
     ],
     "from": "AI"
@@ -2811,7 +2811,7 @@
     "test_cases": [
       {
         "input": "5\n3 34 4 12 5 2\n9",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -2826,7 +2826,7 @@
     "test_cases": [
       {
         "input": "3\n1 2 5\n11",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -2841,7 +2841,7 @@
     "test_cases": [
       {
         "input": "10 9 2 5 3 7 101 18",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2856,7 +2856,7 @@
     "test_cases": [
       {
         "input": "leetcode\nleet code",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -2871,7 +2871,7 @@
     "test_cases": [
       {
         "input": "7 1 5 3 6 4",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -2886,7 +2886,7 @@
     "test_cases": [
       {
         "input": "3 3\n1 3 1\n1 5 1\n4 2 1",
-        "output": "7"
+        "expected_output": "7"
       }
     ],
     "from": "AI"
@@ -2901,7 +2901,7 @@
     "test_cases": [
       {
         "input": "3 7",
-        "output": "28"
+        "expected_output": "28"
       }
     ],
     "from": "AI"
@@ -2916,7 +2916,7 @@
     "test_cases": [
       {
         "input": "bbbab",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2931,7 +2931,7 @@
     "test_cases": [
       {
         "input": "1 1 1 1 1\n3",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -2946,7 +2946,7 @@
     "test_cases": [
       {
         "input": "10 15 20",
-        "output": "15"
+        "expected_output": "15"
       }
     ],
     "from": "AI"
@@ -2961,7 +2961,7 @@
     "test_cases": [
       {
         "input": "1 2 3 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -2976,7 +2976,7 @@
     "test_cases": [
       {
         "input": "-2 1 -3 4 -1 2 1 -5 4",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -2991,7 +2991,7 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3006,7 +3006,7 @@
     "test_cases": [
       {
         "input": "(()",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3021,7 +3021,7 @@
     "test_cases": [
       {
         "input": "3 4\nA B C E\nS F C S\nA D E E\nABCCED",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -3036,7 +3036,7 @@
     "test_cases": [
       {
         "input": "2 3 6 7\n7",
-        "output": "[[2,2,3],[7]]"
+        "expected_output": "[[2,2,3],[7]]"
       }
     ],
     "from": "AI"
@@ -3051,7 +3051,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"
+        "expected_output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"
       }
     ],
     "from": "AI"
@@ -3066,7 +3066,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]"
+        "expected_output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]"
       }
     ],
     "from": "AI"
@@ -3081,7 +3081,7 @@
     "test_cases": [
       {
         "input": "3",
-        "output": "((()))\n(()())\n(())()\n()(())\n()()()"
+        "expected_output": "((()))\n(()())\n(())()\n()(())\n()()()"
       }
     ],
     "from": "AI"
@@ -3096,11 +3096,11 @@
     "test_cases": [
       {
         "input": "2\n1 0",
-        "output": "True"
+        "expected_output": "True"
       },
       {
         "input": "2\n1 0\n0 1",
-        "output": "False"
+        "expected_output": "False"
       }
     ],
     "from": "AI"
@@ -3115,7 +3115,7 @@
     "test_cases": [
       {
         "input": "4 5\n1 1 1 1 0\n1 1 0 1 0\n1 1 0 0 0\n0 0 0 0 0",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -3130,7 +3130,7 @@
     "test_cases": [
       {
         "input": "5 5\n1 2 2 3 5\n3 2 3 4 4\n2 4 5 3 1\n6 7 1 4 5\n5 1 1 2 4",
-        "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"
+        "expected_output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"
       }
     ],
     "from": "AI"
@@ -3145,7 +3145,7 @@
     "test_cases": [
       {
         "input": "3 3\n2 1 1\n1 1 0\n0 1 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -3160,7 +3160,7 @@
     "test_cases": [
       {
         "input": "4 4\nINF -1 0 INF\nINF INF INF -1\nINF -1 INF -1\n0 -1 INF INF",
-        "output": "3 -1 0 1\n2 2 1 -1\n1 -1 2 -1\n0 -1 3 4"
+        "expected_output": "3 -1 0 1\n2 2 1 -1\n1 -1 2 -1\n0 -1 3 4"
       }
     ],
     "from": "AI"
@@ -3175,7 +3175,7 @@
     "test_cases": [
       {
         "input": "3 4\n0 1 1 1\n1 1 1 1\n0 1 1 1",
-        "output": "15"
+        "expected_output": "15"
       }
     ],
     "from": "AI"
@@ -3190,7 +3190,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 E 0\nE 0 E\n0 E 0",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3205,7 +3205,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 0 0\n0 1 0\n0 0 0",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3220,7 +3220,7 @@
     "test_cases": [
       {
         "input": "3\n2 1 3\n6 5 4\n7 8 9",
-        "output": "13"
+        "expected_output": "13"
       }
     ],
     "from": "AI"
@@ -3235,7 +3235,7 @@
     "test_cases": [
       {
         "input": "3 4 2",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -3250,7 +3250,7 @@
     "test_cases": [
       {
         "input": "1 5 11 5",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -3265,7 +3265,7 @@
     "test_cases": [
       {
         "input": "1 2 3 0 2",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3280,7 +3280,7 @@
     "test_cases": [
       {
         "input": "babad",
-        "output": "bab"
+        "expected_output": "bab"
       }
     ],
     "from": "AI"
@@ -3295,7 +3295,7 @@
     "test_cases": [
       {
         "input": "aabcc\ndbca\naabcde",
-        "output": "False"
+        "expected_output": "False"
       }
     ],
     "from": "AI"
@@ -3310,7 +3310,7 @@
     "test_cases": [
       {
         "input": "great\nrgeat",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -3325,15 +3325,15 @@
     "test_cases": [
       {
         "input": "aa\na",
-        "output": "False"
+        "expected_output": "False"
       },
       {
         "input": "aa\n*",
-        "output": "True"
+        "expected_output": "True"
       },
       {
         "input": "cb\n?a",
-        "output": "False"
+        "expected_output": "False"
       }
     ],
     "from": "AI"
@@ -3348,15 +3348,15 @@
     "test_cases": [
       {
         "input": "aa\na",
-        "output": "False"
+        "expected_output": "False"
       },
       {
         "input": "aa\na*",
-        "output": "True"
+        "expected_output": "True"
       },
       {
         "input": "ab\n.*",
-        "output": "True"
+        "expected_output": "True"
       }
     ],
     "from": "AI"
@@ -3371,7 +3371,7 @@
     "test_cases": [
       {
         "input": "ADOBECODEBANC\nABC",
-        "output": "BANC"
+        "expected_output": "BANC"
       }
     ],
     "from": "AI"
@@ -3386,7 +3386,7 @@
     "test_cases": [
       {
         "input": "1 3 -1 -3 5 3 6 7\n3",
-        "output": "3 3 5 5 6 7"
+        "expected_output": "3 3 5 5 6 7"
       }
     ],
     "from": "AI"
@@ -3401,7 +3401,7 @@
     "test_cases": [
       {
         "input": "eceba\n2",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3416,7 +3416,7 @@
     "test_cases": [
       {
         "input": "[[0,30],[5,10],[15,20]]",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3431,11 +3431,11 @@
     "test_cases": [
       {
         "input": "2\n1 0",
-        "output": "[0,1]"
+        "expected_output": "[0,1]"
       },
       {
         "input": "4\n1 0\n2 0\n3 1\n3 2",
-        "output": "[0,1,2,3]"
+        "expected_output": "[0,1,2,3]"
       }
     ],
     "from": "AI"
@@ -3450,7 +3450,7 @@
     "test_cases": [
       {
         "input": "wrt\nwrf\ner\nett\nrftt",
-        "output": "wertf"
+        "expected_output": "wertf"
       }
     ],
     "from": "AI"
@@ -3465,7 +3465,7 @@
     "test_cases": [
       {
         "input": "100 4 200 1 3 2",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -3480,7 +3480,7 @@
     "test_cases": [
       {
         "input": "5 2 6 1",
-        "output": "2 1 1 0"
+        "expected_output": "2 1 1 0"
       }
     ],
     "from": "AI"
@@ -3495,7 +3495,7 @@
     "test_cases": [
       {
         "input": "[[2,9,10],[3,7,15],[5,12,12],[15,20,10],[19,24,8]]",
-        "output": "[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]"
+        "expected_output": "[[2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0]]"
       }
     ],
     "from": "AI"
@@ -3510,7 +3510,7 @@
     "test_cases": [
       {
         "input": "12\n2 7 13 19",
-        "output": "32"
+        "expected_output": "32"
       }
     ],
     "from": "AI"
@@ -3525,7 +3525,7 @@
     "test_cases": [
       {
         "input": "3 6\n1 4 3 1 3 2\n3 2 1 3 2 4\n2 3 3 2 3 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -3540,7 +3540,7 @@
     "test_cases": [
       {
         "input": "addNum 1\naddNum 2\nfindMedian\naddNum 3\nfindMedian",
-        "output": "1.5\n2.0"
+        "expected_output": "1.5\n2.0"
       }
     ],
     "from": "AI"
@@ -3555,7 +3555,7 @@
     "test_cases": [
       {
         "input": "3 2 1 5 6 4\n2",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -3570,7 +3570,7 @@
     "test_cases": [
       {
         "input": "1 3 4 2 2",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3585,7 +3585,7 @@
     "test_cases": [
       {
         "input": "A A A B B B\n2",
-        "output": "8"
+        "expected_output": "8"
       }
     ],
     "from": "AI"
@@ -3600,11 +3600,11 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "3"
+        "expected_output": "3"
       },
       {
         "input": "13",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3619,7 +3619,7 @@
     "test_cases": [
       {
         "input": "1 2 5\n5",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -3634,7 +3634,7 @@
     "test_cases": [
       {
         "input": "3 3\n9 9 4\n6 6 8\n2 1 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -3649,7 +3649,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n4\n3",
-        "output": "1 2 3 4"
+        "expected_output": "1 2 3 4"
       }
     ],
     "from": "AI"
@@ -3664,7 +3664,7 @@
     "test_cases": [
       {
         "input": "4 2 6 1 3",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -3679,7 +3679,7 @@
     "test_cases": [
       {
         "input": "10 5 -3 3 2 null 11 3 -2 null 1\n8",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3694,7 +3694,7 @@
     "test_cases": [
       {
         "input": "4 1 6 0 2 5 7 null null null 3 null null 8",
-        "output": "30 36 21 36 35 26 15 null null null 33 null null 8"
+        "expected_output": "30 36 21 36 35 26 15 null null null 33 null null 8"
       }
     ],
     "from": "AI"
@@ -3709,7 +3709,7 @@
     "test_cases": [
       {
         "input": "abcabcbb",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3724,7 +3724,7 @@
     "test_cases": [
       {
         "input": "3",
-        "output": "((()))\n(()())\n(())()\n()(())\n()()()"
+        "expected_output": "((()))\n(()())\n(())()\n()(())\n()()()"
       }
     ],
     "from": "AI"
@@ -3739,7 +3739,7 @@
     "test_cases": [
       {
         "input": "hit\ncog\nhot dot dog lot log cog",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -3754,7 +3754,7 @@
     "test_cases": [
       {
         "input": "3\n0 1 100\n1 2 100\n0 2 500\n0 2 1",
-        "output": "200"
+        "expected_output": "200"
       }
     ],
     "from": "AI"
@@ -3769,7 +3769,7 @@
     "test_cases": [
       {
         "input": "5\n0 1\n1 2\n3 4",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -3784,7 +3784,7 @@
     "test_cases": [
       {
         "input": "eceba",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3799,7 +3799,7 @@
     "test_cases": [
       {
         "input": "abcde\nace",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -3814,7 +3814,7 @@
     "test_cases": [
       {
         "input": "3 50\n10 60\n20 100\n30 120",
-        "output": "220"
+        "expected_output": "220"
       }
     ],
     "from": "AI"
@@ -3829,7 +3829,7 @@
     "test_cases": [
       {
         "input": "5 6\n0 1 10\n0 2 3\n1 3 2\n2 1 4\n2 3 8\n2 4 2\n0",
-        "output": "0 7 3 9 5"
+        "expected_output": "0 7 3 9 5"
       }
     ],
     "from": "AI"
@@ -3844,7 +3844,7 @@
     "test_cases": [
       {
         "input": "4 4\n0 1 1\n1 2 -1\n2 3 -1\n3 0 -1\n0",
-        "output": "Negative cycle detected"
+        "expected_output": "Negative cycle detected"
       }
     ],
     "from": "AI"
@@ -3859,7 +3859,7 @@
     "test_cases": [
       {
         "input": "6 7\n0 1 10\n0 2 10\n1 3 4\n1 4 8\n2 4 9\n3 5 10\n4 5 10\n0 5",
-        "output": "19"
+        "expected_output": "19"
       }
     ],
     "from": "AI"
@@ -3874,7 +3874,7 @@
     "test_cases": [
       {
         "input": "4 5\n0 1 10\n0 2 6\n0 3 5\n1 3 15\n2 3 4",
-        "output": "19"
+        "expected_output": "19"
       }
     ],
     "from": "AI"
@@ -3889,7 +3889,7 @@
     "test_cases": [
       {
         "input": "4\n0 10 15 20\n10 0 35 25\n15 35 0 30\n20 25 30 0",
-        "output": "80"
+        "expected_output": "80"
       }
     ],
     "from": "AI"
@@ -3904,7 +3904,7 @@
     "test_cases": [
       {
         "input": "53..7....\n6..195...\n.98....6.\n8...6...3\n4..8.3..1\n7...2...6\n.6....28.\n...419..5\n....8..79",
-        "output": "534678912\n672195348\n198342567\n859761423\n426853791\n713924856\n961537284\n287419635\n345286179"
+        "expected_output": "534678912\n672195348\n198342567\n859761423\n426853791\n713924856\n961537284\n287419635\n345286179"
       }
     ],
     "from": "AI"
@@ -3919,7 +3919,7 @@
     "test_cases": [
       {
         "input": "4",
-        "output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]"
+        "expected_output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]"
       }
     ],
     "from": "AI"
@@ -3934,7 +3934,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 1 0\n0 0 1\n1 1 1",
-        "output": "0 0 0\n1 0 1\n0 1 1"
+        "expected_output": "0 0 0\n1 0 1\n0 1 1"
       }
     ],
     "from": "AI"
@@ -3949,7 +3949,7 @@
     "test_cases": [
       {
         "input": "3 3 5 0 0 3 1 4",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -3964,7 +3964,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 0 0\n0 1 0\n0 0 0",
-        "output": "RRDD"
+        "expected_output": "RRDD"
       }
     ],
     "from": "AI"
@@ -3979,7 +3979,7 @@
     "test_cases": [
       {
         "input": "hit\ncog\nhot dot dog lot log cog",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -3994,7 +3994,7 @@
     "test_cases": [
       {
         "input": "1 3 -1 -3 5 3 6 7\n3",
-        "output": "3 3 5 5 6 7"
+        "expected_output": "3 3 5 5 6 7"
       }
     ],
     "from": "AI"
@@ -4009,7 +4009,7 @@
     "test_cases": [
       {
         "input": "1 2\n3 4",
-        "output": "2.5"
+        "expected_output": "2.5"
       }
     ],
     "from": "AI"
@@ -4024,7 +4024,7 @@
     "test_cases": [
       {
         "input": "aa\na*",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4039,7 +4039,7 @@
     "test_cases": [
       {
         "input": "adceb\na*b",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4054,7 +4054,7 @@
     "test_cases": [
       {
         "input": "This is an example of text justification.\n16",
-        "output": "[\"This    is    an\",\"example  of text\",\"justification.  \"]"
+        "expected_output": "[\"This    is    an\",\"example  of text\",\"justification.  \"]"
       }
     ],
     "from": "AI"
@@ -4069,7 +4069,7 @@
     "test_cases": [
       {
         "input": "ADOBECODEBANC\nABC",
-        "output": "BANC"
+        "expected_output": "BANC"
       }
     ],
     "from": "AI"
@@ -4084,7 +4084,7 @@
     "test_cases": [
       {
         "input": "2 1 5 6 2 3",
-        "output": "10"
+        "expected_output": "10"
       }
     ],
     "from": "AI"
@@ -4099,7 +4099,7 @@
     "test_cases": [
       {
         "input": "0 1 0 2 1 0 1 3 2 1 2 1",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -4114,7 +4114,7 @@
     "test_cases": [
       {
         "input": "1 2 3 null null 4 5",
-        "output": "1 2 3 null null 4 5"
+        "expected_output": "1 2 3 null null 4 5"
       }
     ],
     "from": "AI"
@@ -4129,7 +4129,7 @@
     "test_cases": [
       {
         "input": "leetcode\nleet code",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4144,7 +4144,7 @@
     "test_cases": [
       {
         "input": "2 3 -2 4",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -4159,7 +4159,7 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4174,7 +4174,7 @@
     "test_cases": [
       {
         "input": "10 9 2 5 3 7 101 18",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4189,7 +4189,7 @@
     "test_cases": [
       {
         "input": "1 2 5\n11",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4204,7 +4204,7 @@
     "test_cases": [
       {
         "input": "(()",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4219,7 +4219,7 @@
     "test_cases": [
       {
         "input": "horse\nros",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4234,7 +4234,7 @@
     "test_cases": [
       {
         "input": "1 2 2",
-        "output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]"
+        "expected_output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]"
       }
     ],
     "from": "AI"
@@ -4249,7 +4249,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "1 2"
+        "expected_output": "1 2"
       }
     ],
     "from": "AI"
@@ -4264,7 +4264,7 @@
     "test_cases": [
       {
         "input": "12",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4279,7 +4279,7 @@
     "test_cases": [
       {
         "input": "100 4 200 1 3 2",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4294,7 +4294,7 @@
     "test_cases": [
       {
         "input": "4\n1 0\n1 2\n1 3",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -4309,7 +4309,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5 6",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -4324,7 +4324,7 @@
     "test_cases": [
       {
         "input": "4 5\n1 0 1 0 0\n1 0 1 1 1\n1 1 1 1 1\n1 0 0 1 0",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4339,7 +4339,7 @@
     "test_cases": [
       {
         "input": "4\n1 0 2 0 3 1 3 2",
-        "output": "0 1 2 3"
+        "expected_output": "0 1 2 3"
       }
     ],
     "from": "AI"
@@ -4354,7 +4354,7 @@
     "test_cases": [
       {
         "input": "3 2 1 5 6 4\n2",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -4369,7 +4369,7 @@
     "test_cases": [
       {
         "input": "5 2 6 1",
-        "output": "2 1 1 0"
+        "expected_output": "2 1 1 0"
       }
     ],
     "from": "AI"
@@ -4384,7 +4384,7 @@
     "test_cases": [
       {
         "input": "1 3 2 3 1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4399,7 +4399,7 @@
     "test_cases": [
       {
         "input": "great\nrgeat",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4414,7 +4414,7 @@
     "test_cases": [
       {
         "input": "rabbbit\nrabbit",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4429,7 +4429,7 @@
     "test_cases": [
       {
         "input": "abcdebdde\nbde",
-        "output": "bcde"
+        "expected_output": "bcde"
       }
     ],
     "from": "AI"
@@ -4444,7 +4444,7 @@
     "test_cases": [
       {
         "input": "9 1 2 3 9\n3",
-        "output": "20.0"
+        "expected_output": "20.0"
       }
     ],
     "from": "AI"
@@ -4459,7 +4459,7 @@
     "test_cases": [
       {
         "input": "4 5\n1 1 0 0 0\n1 1 0 0 0\n0 0 1 0 0\n0 0 0 1 1",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4474,7 +4474,7 @@
     "test_cases": [
       {
         "input": "3 3\n9 9 4\n6 6 8\n2 1 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4489,7 +4489,7 @@
     "test_cases": [
       {
         "input": "4\n0 1 1 2 2 3 1 3",
-        "output": "[[1,3]]"
+        "expected_output": "[[1,3]]"
       }
     ],
     "from": "AI"
@@ -4504,7 +4504,7 @@
     "test_cases": [
       {
         "input": "3\n0 0\n2 2\n3 10",
-        "output": "12"
+        "expected_output": "12"
       }
     ],
     "from": "AI"
@@ -4519,7 +4519,7 @@
     "test_cases": [
       {
         "input": "4 2\n2 1 1 2 3 1 3 4 1",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4534,7 +4534,7 @@
     "test_cases": [
       {
         "input": "2\n0 2\n1 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4549,7 +4549,7 @@
     "test_cases": [
       {
         "input": "2\n0 2\n1 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4564,7 +4564,7 @@
     "test_cases": [
       {
         "input": "1 2 3\n4 0 5",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -4579,7 +4579,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4",
-        "output": "18"
+        "expected_output": "18"
       }
     ],
     "from": "AI"
@@ -4594,7 +4594,7 @@
     "test_cases": [
       {
         "input": "AAABBC\n2",
-        "output": "8"
+        "expected_output": "8"
       }
     ],
     "from": "AI"
@@ -4609,7 +4609,7 @@
     "test_cases": [
       {
         "input": "3\n0 1 100 1 2 100 0 2 500\n0 2 1",
-        "output": "200"
+        "expected_output": "200"
       }
     ],
     "from": "AI"
@@ -4624,7 +4624,7 @@
     "test_cases": [
       {
         "input": "3\ni love you 5\ni am an actor 4\ni want to sleep 5\ni\n \nl\no\nv\ne\n#\ni\n \na\n#",
-        "output": "[[\"i love you\",\"i want to sleep\",\"i am an actor\"],[\"i love you\",\"i am an actor\",\"i want to sleep\"],[\"i love you\",\"i want to sleep\"],[\"i love you\"],[\"i love you\"],[\"i love you\"],[],[\"i love you\",\"i am an actor\",\"i want to sleep\"],[\"i am an actor\",\"i love you\",\"i want to sleep\"],[\"i am an actor\",\"i love you\"],[]]"
+        "expected_output": "[[\"i love you\",\"i want to sleep\",\"i am an actor\"],[\"i love you\",\"i am an actor\",\"i want to sleep\"],[\"i love you\",\"i want to sleep\"],[\"i love you\"],[\"i love you\"],[\"i love you\"],[],[\"i love you\",\"i am an actor\",\"i want to sleep\"],[\"i am an actor\",\"i love you\",\"i want to sleep\"],[\"i am an actor\",\"i love you\"],[]]"
       }
     ],
     "from": "AI"
@@ -4639,7 +4639,7 @@
     "test_cases": [
       {
         "input": "4 4\noaan\netah\nniat\nxbyr\noath pea eat rain",
-        "output": "eat oath"
+        "expected_output": "eat oath"
       }
     ],
     "from": "AI"
@@ -4654,7 +4654,7 @@
     "test_cases": [
       {
         "input": "3 3\n1 0 2\n0 0 0\n0 0 1",
-        "output": "7"
+        "expected_output": "7"
       }
     ],
     "from": "AI"
@@ -4669,7 +4669,7 @@
     "test_cases": [
       {
         "input": "1 2 . 3 .",
-        "output": "1.5 2.0"
+        "expected_output": "1.5 2.0"
       }
     ],
     "from": "AI"
@@ -4684,7 +4684,7 @@
     "test_cases": [
       {
         "input": "eceba\n2",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4699,7 +4699,7 @@
     "test_cases": [
       {
         "input": "aacecaaa",
-        "output": "aaacecaaa"
+        "expected_output": "aaacecaaa"
       }
     ],
     "from": "AI"
@@ -4714,7 +4714,7 @@
     "test_cases": [
       {
         "input": "1 3 4 2 2",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4729,7 +4729,7 @@
     "test_cases": [
       {
         "input": "1 2 3 4 5\n4 3",
-        "output": "1 2 3 4"
+        "expected_output": "1 2 3 4"
       }
     ],
     "from": "AI"
@@ -4744,7 +4744,7 @@
     "test_cases": [
       {
         "input": "4\n10 16\n2 8\n1 6\n7 12",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4759,7 +4759,7 @@
     "test_cases": [
       {
         "input": "6\n7 0\n4 4\n7 1\n5 0\n6 1\n5 2",
-        "output": "[[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]"
+        "expected_output": "[[5,0],[7,0],[5,2],[6,1],[4,4],[7,1]]"
       }
     ],
     "from": "AI"
@@ -4774,7 +4774,7 @@
     "test_cases": [
       {
         "input": "12\n2 7 13 19",
-        "output": "32"
+        "expected_output": "32"
       }
     ],
     "from": "AI"
@@ -4789,7 +4789,7 @@
     "test_cases": [
       {
         "input": "4\n5 4\n6 4\n6 7\n2 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4804,7 +4804,7 @@
     "test_cases": [
       {
         "input": "10 5 -3 3 2 null 11 3 -2 null 1\n8",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -4819,7 +4819,7 @@
     "test_cases": [
       {
         "input": "3 1 5 8",
-        "output": "167"
+        "expected_output": "167"
       }
     ],
     "from": "AI"
@@ -4834,7 +4834,7 @@
     "test_cases": [
       {
         "input": "28",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4849,7 +4849,7 @@
     "test_cases": [
       {
         "input": "1 7 11\n2 4 6\n3",
-        "output": "[[1,2],[1,4],[1,6]]"
+        "expected_output": "[[1,2],[1,4],[1,6]]"
       }
     ],
     "from": "AI"
@@ -4864,7 +4864,7 @@
     "test_cases": [
       {
         "input": "7 2 5 10 8\n2",
-        "output": "18"
+        "expected_output": "18"
       }
     ],
     "from": "AI"
@@ -4879,7 +4879,7 @@
     "test_cases": [
       {
         "input": "bbbab",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4894,7 +4894,7 @@
     "test_cases": [
       {
         "input": "1 1 1 1 1\n3",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -4909,7 +4909,7 @@
     "test_cases": [
       {
         "input": "3[a]2[bc]",
-        "output": "aaabcbc"
+        "expected_output": "aaabcbc"
       }
     ],
     "from": "AI"
@@ -4924,7 +4924,7 @@
     "test_cases": [
       {
         "input": "0201 0101 0102 1212 2002\n0202",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -4939,7 +4939,7 @@
     "test_cases": [
       {
         "input": "1 5 11 5",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -4954,7 +4954,7 @@
     "test_cases": [
       {
         "input": "sea\neat",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -4969,7 +4969,7 @@
     "test_cases": [
       {
         "input": "a b ba bca bda bdca",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -4984,7 +4984,7 @@
     "test_cases": [
       {
         "input": "3\n0 1 -1\n1 0 -1\n1 1 1",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -4999,7 +4999,7 @@
     "test_cases": [
       {
         "input": "9 7 5\n3",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -5014,7 +5014,7 @@
     "test_cases": [
       {
         "input": "bread sandwich burger\nflour sugar water\nbread meat\nbread sandwich meat\nflour sugar meat",
-        "output": "bread sandwich"
+        "expected_output": "bread sandwich"
       }
     ],
     "from": "AI"
@@ -5029,7 +5029,7 @@
     "test_cases": [
       {
         "input": "4 2 5 3",
-        "output": "0"
+        "expected_output": "0"
       }
     ],
     "from": "AI"
@@ -5044,7 +5044,7 @@
     "test_cases": [
       {
         "input": "dog cat dad good\na a c d d d g o o\n1 0 9 5 0 0 3 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0",
-        "output": "23"
+        "expected_output": "23"
       }
     ],
     "from": "AI"
@@ -5059,7 +5059,7 @@
     "test_cases": [
       {
         "input": "7\n1 3 4 5",
-        "output": "16"
+        "expected_output": "16"
       }
     ],
     "from": "AI"
@@ -5074,7 +5074,7 @@
     "test_cases": [
       {
         "input": "abac\nrab",
-        "output": "rabac"
+        "expected_output": "rabac"
       }
     ],
     "from": "AI"
@@ -5089,7 +5089,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -5104,7 +5104,7 @@
     "test_cases": [
       {
         "input": "1 1 7",
-        "output": "ccbccacc"
+        "expected_output": "ccbccacc"
       }
     ],
     "from": "AI"
@@ -5119,7 +5119,7 @@
     "test_cases": [
       {
         "input": "011010\n2 3",
-        "output": "true"
+        "expected_output": "true"
       }
     ],
     "from": "AI"
@@ -5134,7 +5134,7 @@
     "test_cases": [
       {
         "input": "3 3\n9 9 4\n6 6 8\n2 1 1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -5149,7 +5149,7 @@
     "test_cases": [
       {
         "input": "godding\nding",
-        "output": "13"
+        "expected_output": "13"
       }
     ],
     "from": "AI"
@@ -5164,7 +5164,7 @@
     "test_cases": [
       {
         "input": "1 2 3 5\n3",
-        "output": "2 5"
+        "expected_output": "2 5"
       }
     ],
     "from": "AI"
@@ -5179,7 +5179,7 @@
     "test_cases": [
       {
         "input": "4\n3 1 2\n3 2 3\n3 3 4\n3 1 4\n1 1 2\n2 3 4",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -5194,7 +5194,7 @@
     "test_cases": [
       {
         "input": "4\n1 100\n\n\n0 20\n0\n\n0 30\n3\n\n0 40\n1\n\n0",
-        "output": "100"
+        "expected_output": "100"
       }
     ],
     "from": "AI"
@@ -5209,7 +5209,7 @@
     "test_cases": [
       {
         "input": "croakcroak",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -5224,7 +5224,7 @@
     "test_cases": [
       {
         "input": "9 1 2 3 9\n3",
-        "output": "20.0"
+        "expected_output": "20.0"
       }
     ],
     "from": "AI"
@@ -5239,7 +5239,7 @@
     "test_cases": [
       {
         "input": "3\n1 1\n2 2\n3 3",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -5254,7 +5254,7 @@
     "test_cases": [
       {
         "input": "3 2\n0 1 1\n1 0 1\n1 1 0\n10 10\n10 10\n10 10",
-        "output": "30"
+        "expected_output": "30"
       }
     ],
     "from": "AI"
@@ -5269,7 +5269,7 @@
     "test_cases": [
       {
         "input": "3 3\n1 3 11\n2 4 6\n3 5 7\n5",
-        "output": "12"
+        "expected_output": "12"
       }
     ],
     "from": "AI"
@@ -5284,7 +5284,7 @@
     "test_cases": [
       {
         "input": "1 7 5\n2 3 5",
-        "output": "3"
+        "expected_output": "3"
       }
     ],
     "from": "AI"
@@ -5299,7 +5299,7 @@
     "test_cases": [
       {
         "input": "4 2 5 3",
-        "output": "0"
+        "expected_output": "0"
       }
     ],
     "from": "AI"
@@ -5314,7 +5314,7 @@
     "test_cases": [
       {
         "input": "3 3\n0 0 0\n0 0 1\n0 0 0\n1",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -5329,7 +5329,7 @@
     "test_cases": [
       {
         "input": "2 2\n5 2\n1 6\n3",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -5344,7 +5344,7 @@
     "test_cases": [
       {
         "input": "1 1 1 1 1\n2",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -5359,7 +5359,7 @@
     "test_cases": [
       {
         "input": "6 4 8 2 10\n4 2 10 6 8",
-        "output": "2"
+        "expected_output": "2"
       }
     ],
     "from": "AI"
@@ -5374,7 +5374,7 @@
     "test_cases": [
       {
         "input": "2 3 1",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -5389,7 +5389,7 @@
     "test_cases": [
       {
         "input": "3\n1 2\n1 3\n2 3",
-        "output": "1"
+        "expected_output": "1"
       }
     ],
     "from": "AI"
@@ -5404,7 +5404,7 @@
     "test_cases": [
       {
         "input": "3\n1 2 3\n4 5 6\n7 8 9",
-        "output": "13"
+        "expected_output": "13"
       }
     ],
     "from": "AI"
@@ -5419,7 +5419,7 @@
     "test_cases": [
       {
         "input": "3\n3\n1 3\n2 3\n0 1\n3 2 5\n1 2 3",
-        "output": "8"
+        "expected_output": "8"
       }
     ],
     "from": "AI"
@@ -5434,7 +5434,7 @@
     "test_cases": [
       {
         "input": "2 3 1 2",
-        "output": "5"
+        "expected_output": "5"
       }
     ],
     "from": "AI"
@@ -5449,7 +5449,7 @@
     "test_cases": [
       {
         "input": "3\n2\n0 1 10\n0 2 1\n7",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
@@ -5464,7 +5464,7 @@
     "test_cases": [
       {
         "input": "3\n0 0\n2 2\n3 10",
-        "output": "20"
+        "expected_output": "20"
       }
     ],
     "from": "AI"
@@ -5479,7 +5479,7 @@
     "test_cases": [
       {
         "input": "10",
-        "output": "4"
+        "expected_output": "4"
       }
     ],
     "from": "AI"
@@ -5494,7 +5494,7 @@
     "test_cases": [
       {
         "input": "3 3\n3 1 1\n2 5 1\n1 5 5",
-        "output": "24"
+        "expected_output": "24"
       }
     ],
     "from": "AI"
@@ -5509,7 +5509,7 @@
     "test_cases": [
       {
         "input": "1 2 3",
-        "output": "6"
+        "expected_output": "6"
       }
     ],
     "from": "AI"
