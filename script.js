@@ -70,23 +70,37 @@ document.addEventListener('DOMContentLoaded', () => {
         const adSlots = containerElement.querySelectorAll('ins.adsbygoogle');
         adSlots.forEach(slot => {
             if (slot.getAttribute('data-ad-status') !== 'initialized') {
-                // Delay slightly to give the browser a chance to render and calculate dimensions
-                requestAnimationFrame(() => {
-                    setTimeout(() => { // Add a minimal setTimeout
+                let retries = 0;
+                const maxRetries = 10; // Try for a maximum of 50 seconds (10 retries * 5 seconds)
+                const intervalTime = 5000; // 5 seconds
+
+                function attemptAdPush() {
+                    if (slot.getAttribute('data-ad-status') === 'initialized') {
+                        return; // Already initialized by another check or previous attempt
+                    }
+
+                    requestAnimationFrame(() => { // Ensure check happens in sync with browser rendering
                         try {
-                            // It's good practice to check offsetWidth again right before push
                             if (slot.offsetWidth > 0) {
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                                 slot.setAttribute('data-ad-status', 'initialized');
                                 console.log("AdSense initialized:", slot);
+                            } else if (retries < maxRetries) {
+                                retries++;
+                                console.warn(`Ad slot still has 0 width. Retry ${retries}/${maxRetries} in ${intervalTime/1000}s for slot:`, slot);
+                                setTimeout(attemptAdPush, intervalTime);
                             } else {
-                                console.warn("Ad slot still has 0 width after delay, not pushing:", slot);
+                                console.error(`Ad slot still has 0 width after ${maxRetries} retries. Giving up for slot:`, slot);
                             }
                         } catch (e) {
                             console.error('AdSense push error:', e, slot);
+                            // Optionally, you might want to stop retrying on certain errors
                         }
-                    }, 1000); // A small delay like 10ms, can be 0 too.
-                });
+                    });
+                }
+
+                // Initial attempt
+                attemptAdPush();
             }
         });
     }

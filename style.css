@@ -336,15 +336,29 @@ main {
 
 /* Specific ad slot adjustments */
 .sidebar-ad {
-    margin-top: 30px; /* Increased margin */
+    margin-top: 30px;
+}
+.sidebar-ad ins.adsbygoogle { /* Ensure the ins tag can fill the sidebar ad slot */
+    width: 100%;
 }
 
 .content-ad {
-    margin-top: 30px; /* Increased margin */
-    margin-bottom: 30px; /* Increased margin */
 }
 
+.content-ad ins.adsbygoogle { /* Ensure the ins tag can fill the code-test ad slot */
+    width: 100%;
+    max-width: 728px; /* Example max width for a banner */
+    /* No specific styles needed beyond .ad-slot, but you can add them if desired */
+}
+
+
 .code-test-ad {
+    /* You might want to set a specific height for this one too if desired */
+    /* e.g., min-height: 100px; */
+}
+.code-test-ad ins.adsbygoogle { /* Ensure the ins tag can fill the code-test ad slot */
+    width: 100%;
+    max-width: 728px; /* Example max width for a banner */
     /* No specific styles needed beyond .ad-slot, but you can add them if desired */
 }
 
@@ -394,6 +408,12 @@ footer {
     .ad-slot {
         margin: 15px 0; /* Reduced margin */
         min-height: 80px; /* Reduced height */
+    }
+    /* Adjust fixed-size ad slots for mobile */
+    .content-ad ins.adsbygoogle {
+        width: 320px !important; /* Important to override inline style */
+        height: 100px !important; /* Large Mobile Banner */
+        /* Or use 300px x 250px for Medium Rectangle */
     }
 }
 
@@ -495,9 +515,12 @@ footer {
 
 .progress-ad { /* Extends .ad-slot for specific progress page ad styling */
     flex: 0 0 200px; /* Example fixed width for side ads, adjust as needed */
-    /* You can add more specific styles here if they differ from general .ad-slot */
-    /* For example, if you want them to have a different min-height or background */
     min-height: 300px; /* Example: Taller ad slot for sidebars */
+}
+
+.progress-ad ins.adsbygoogle { /* Ensure the ins tag can fill the code-test ad slot */
+    width: 100%;
+    max-width: 728px; /* Example max width for a banner */
 }
 
 #retry-challenge-btn {
