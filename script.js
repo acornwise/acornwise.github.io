@@ -13,6 +13,7 @@ const LS_CURRENT_DAILY_SET = 'acornwise_currentDailySet';
 const LS_SOLVED_CHALLENGES = 'acornwise_solvedChallenges';
 const LS_QUESTION_FILE_CACHE_PREFIX = 'acornwise_question_file_';
 const LS_ALL_METADATA_CACHE = 'acornwise_all_metadata_cache';
+const LS_EDITOR_CONTENT_PREFIX = 'acornwise_editor_content_';
 
 const DAILY_CHALLENGE_COUNT = 5;
 const TWENTY_FOUR_HOURS_MS = 24 * 60 * 60 * 1000;
@@ -151,6 +152,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         console.log("Monaco Editor loaded and configured for Python.");
+
+        // Save editor content to localStorage on change
+        editor.onDidChangeModelContent(() => {
+            if (editor && currentChallengeData && currentChallengeData.id) {
+                const userCode = editor.getValue();
+                const editorContentKey = `${LS_EDITOR_CONTENT_PREFIX}${currentChallengeData.id}`;
+                localStorage.setItem(editorContentKey, userCode);
+            }
+        });
 
         updateLoadingProgress("Initializing Python Environment...", 25);
         // Await critical initializations before hiding the loading screen
@@ -676,8 +686,15 @@ except Exception as e:
                 descriptionArea.innerHTML = `<h3>${challengeData.title}</h3><div>${renderedDescription}</div>`;
             }
 
+            // Load editor content from localStorage if available, otherwise use starter_code
             if (editor) {
-                editor.setValue(challengeData.starter_code + "\n");
+                const editorContentKey = `${LS_EDITOR_CONTENT_PREFIX}${challengeId}`;
+                const savedEditorContent = localStorage.getItem(editorContentKey);
+                if (savedEditorContent !== null) {
+                    editor.setValue(savedEditorContent);
+                } else {
+                    editor.setValue((challengeData.starter_code || "") + "\n");
+                }
             }
             runButton.disabled = false;
             runCustomTestBtn.disabled = false;
@@ -1315,6 +1332,11 @@ except Exception as e:
         const solvedChallenges = getSolvedChallengesData();
         delete solvedChallenges[challengeIdToRetry];
         localStorage.setItem(LS_SOLVED_CHALLENGES, JSON.stringify(solvedChallenges));
+
+        // Clear saved editor content for this challenge upon retry
+        const editorContentKey = `${LS_EDITOR_CONTENT_PREFIX}${challengeIdToRetry}`;
+        localStorage.removeItem(editorContentKey);
+        console.log(`Cleared saved editor content for ${challengeIdToRetry} from localStorage.`);
 
         const challengeLink = document.querySelector(`.challenge-link[data-challenge-id="${challengeIdToRetry}"]`);
         if (challengeLink) {
