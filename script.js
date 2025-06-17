@@ -1349,10 +1349,11 @@ except Exception as e:
     });
 
     // Event Listener for the new "Back to Daily Workout" button in the header
-    backToDailyViewBtn.addEventListener('click', () => {
+    backToDailyViewBtn.addEventListener('click', async () => { // Make the listener async
         mainContentArea.style.display = 'none';
         progressReportContainer.style.display = 'none'; // Hide report if it was open
-        dailyChallengesView.style.display = 'block';
+        await manageDailyChallengeSelection(); // Ensure the daily challenges are up-to-date
+        dailyChallengesView.style.display = 'block'; // Then show the view
         backToDailyViewBtn.style.display = 'none'; // Hide itself
         viewProgressReportBtn.style.display = 'block'; // Ensure progress report button is visible
         if (window.location.hash) { // Clear the hash
