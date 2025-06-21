@@ -166,11 +166,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Await critical initializations before hiding the loading screen
         await initializePyodide();
 
-        updateLoadingProgress("Fetching Challenge List...", 50);
-        await loadChallengeList(); // For sidebar, depends on daily set being potentially available
-
         updateLoadingProgress("Preparing Today's Workout...", 75);
         await manageDailyChallengeSelection(); // This renders the first interactive view
+        
+        updateLoadingProgress("Fetching Challenge List...", 85); // Adjusted percentage
+        await loadChallengeList(); // Load sidebar AFTER daily set is potentially updated
 
         updateLoadingProgress("Finalizing Setup...", 95);
 
@@ -868,12 +868,16 @@ except Exception as e:
             const challengePromises = dailyChallengeIds.map(async (item) => {                
                 const challengeId = item.id;
                 const challengeData = await getQuestion(challengeId);
-
-                return { id: challengeId, title: challengeData.title };
+                if (challengeData && challengeData.title) {
+                    return { id: challengeId, title: challengeData.title };
+                }
+                console.warn(`Could not retrieve title for challenge ID ${challengeId} for sidebar. Challenge data:`, challengeData);
+                return null; // Return null if data or title is missing
             });
 
-            const challengesWithTitles = (await Promise.all(challengePromises)).filter(Boolean); // Filter out nulls
-
+            const resolvedChallenges = await Promise.all(challengePromises);
+            const challengesWithTitles = resolvedChallenges.filter(challenge => challenge !== null);
+            
             challengesWithTitles.forEach(challenge => {
                 const li = document.createElement('li');
                 const a = document.createElement('a');
@@ -1353,6 +1357,7 @@ except Exception as e:
         mainContentArea.style.display = 'none';
         progressReportContainer.style.display = 'none'; // Hide report if it was open
         await manageDailyChallengeSelection(); // Ensure the daily challenges are up-to-date
+        await loadChallengeList(); // Reload sidebar in case daily set changed
         dailyChallengesView.style.display = 'block'; // Then show the view
         backToDailyViewBtn.style.display = 'none'; // Hide itself
         viewProgressReportBtn.style.display = 'block'; // Ensure progress report button is visible
