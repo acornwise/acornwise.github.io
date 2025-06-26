@@ -63,6 +63,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Helper function to create and load an AdSense ad unit
+    function createAndLoadAd(containerId, adSlotId, width, height) {
+        const container = document.getElementById(containerId);
+        if (!container) {
+            console.warn(`Ad container with ID '${containerId}' not found.`);
+            return;
+        }
+
+        // Clear any existing ad content in the container
+        container.innerHTML = '';
+
+        const ins = document.createElement('ins');
+        ins.className = 'adsbygoogle';
+        ins.style.display = 'inline-block';
+        ins.style.width = `${width}px`;
+        ins.style.height = `${height}px`;
+        ins.setAttribute('data-ad-client', 'ca-pub-7669371125149782');
+        ins.setAttribute('data-ad-slot', adSlotId);
+        container.appendChild(ins);
+
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+
     function initializeAdsInContainer(containerElement) {
         if (!containerElement || typeof adsbygoogle === 'undefined') {
             console.warn("AdSense script not ready or container not found for ad initialization.");
@@ -659,7 +682,11 @@ except Exception as e:
 
         dailyChallengesView.style.display = 'none';
         mainContentArea.style.display = 'flex';
-        // initializeAdsInContainer(mainContentArea);
+        
+        // Dynamically load ads for the main content area
+        createAndLoadAd('sidebar-ad-container', '6298571578', 160, 600);
+        createAndLoadAd('content-ad-up-container', '2589027905', 728, 90);
+        createAndLoadAd('code-test-ad-container', '9020937833', 728, 90);
         viewProgressReportBtn.style.display = 'block';
         backToDailyViewBtn.style.display = 'block';        
 
@@ -1299,7 +1326,9 @@ except Exception as e:
         // Hide both just in case, though one should already be hidden
         dailyChallengesView.style.display = 'none'; 
         mainContentArea.style.display = 'none'; 
-
+        
+        // Dynamically load ads for the progress report container
+        createAndLoadAd('progress-ad-left-container', '9976563337', 300, 600);
         progressReportContainer.style.display = 'block';
         viewProgressReportBtn.style.display = 'none';
         backToDailyViewBtn.style.display = 'block';

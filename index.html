@@ -71,18 +71,7 @@
             <nav id="challenge-navigation">
                 <p>Loading challenges...</p>
             </nav>
-            <div class="ad-slot sidebar-ad">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                    crossorigin="anonymous"></script>
-                <!-- sidebar-ad -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-7669371125149782"
-                    data-ad-slot="6298571578"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+            <div id="sidebar-ad-container" class="ad-slot sidebar-ad"></div>
         </aside>
 
         <section class="challenge-content">
@@ -115,18 +104,7 @@
                 <div id="pyodide-status" class="status-message">Loading Pyodide...</div>
             </div>
 
-            <div class="ad-slot code-test-ad">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                    crossorigin="anonymous"></script>
-                <!-- code-test-ad -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:728px;height:90px"
-                    data-ad-client="ca-pub-7669371125149782"
-                    data-ad-slot="9020937833"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>                
-            </div>
+            <div id="code-test-ad-container" class="ad-slot code-test-ad"></div>
 
             <div class="test-cases-section">
                 <h2>Test Cases</h2>
@@ -150,21 +128,7 @@
                     <div id="custom-test-result" class="status-message"></div>
                 </div>
             </div>
-
-            <div class="ad-slot content-ad">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                    crossorigin="anonymous"></script>
-                <!-- content-ad-down -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:728px;height:90px"
-                    data-ad-client="ca-pub-7669371125149782"
-                    data-ad-slot="3449046955"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
-
-
+            <div id="content-ad-up-container" class="ad-slot content-ad"></div>
             <div class="results-section">
                 <h2>Results</h2>
                 <pre id="results-output"></pre>
@@ -177,33 +141,11 @@
             <h2>Your Progress Report</h2>
         </header>
         <div id="progress-report-layout">
-            <aside class="ad-slot progress-ad progress-ad-left">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                    crossorigin="anonymous"></script>
-                <!-- progress-ad-left -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:600px"
-                    data-ad-client="ca-pub-7669371125149782"
-                    data-ad-slot="9976563337"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>                
-            </aside>
+            <div id="progress-ad-left-container" class="ad-slot progress-ad progress-ad-left"></div>
             <div id="report-content-area">
                 <p>Loading report...</p>
             </div>
-            <aside class="ad-slot progress-ad progress-ad-right">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                    crossorigin="anonymous"></script>
-                <!-- progress-ad-right -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:600px"
-                    data-ad-client="ca-pub-7669371125149782"
-                    data-ad-slot="2263957796"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </aside>
+            <div id="progress-ad-right-container" class="ad-slot progress-ad progress-ad-right"></div>
         </div>
         <footer>
             <button id="back-to-challenges-btn" class="header-button">Back to Challenges</button>
@@ -214,6 +156,6 @@
         <p>&copy; 2025 <a href="https://acornwise.com.au" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">AcornWise Coding & Math</a></p>
     </footer>
 
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=6"></script>
 </body>
 </html>
