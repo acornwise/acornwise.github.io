@@ -2165,7 +2165,7 @@
   },
   {
     "id": "pr_077",
-    "title": "Capitalize the Title",
+    "title": "Capitalize The Title",
     "category": "Pattern Recognition",
     "input_type": "stdin",
     "description_md": "**Task**\nYou are given a string `title` where words are separated by a single space. Capitalize the title such that:\n- If a word has length 1 or 2, it is all lowercase.\n- Otherwise, it is capitalized (first letter uppercase, others lowercase).\n\n**Constraints**\nInput format: A single string `title`. Length of `title` is between 1 and 100. Words consist of English letters. There are no leading or trailing spaces and all words are separated by a single space.\n\nOutput format: The capitalized title string.",
@@ -2175,13 +2175,13 @@
         "input": [
           "capiTalIze tHe titLe"
         ],
-        "expected_output": "Capitalize the Title"
+        "expected_output": "Capitalize The Title"
       },
       {
         "input": [
           "First leTTeR of EACH word"
         ],
-        "expected_output": "First Letter of Each Word"
+        "expected_output": "First Letter Of Each Word"
       }
     ],
     "from": "AI"

@@ -3,159 +3,617 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcornWise Daily Coding Challenges: OUCC, AIO & Coding Test Prep</title>
-    <meta name="description" content="Master Python coding with daily challenges from AcornWise Coding & Math. Perfect for students preparing for OUCC, AIO, competitive programming, and technical interviews. Start coding today!">
-    <link rel="stylesheet" href="style.css">
+    <title>AcornWise - Python Programming Education Platform</title>
+    <meta name="description" content="Learn Python programming through interactive challenges and tutorials. Perfect for students preparing for coding competitions like OUCC and AIO.">
+    <meta name="keywords" content="Python programming, coding challenges, programming education, OUCC, AIO, learn to code">
+    <link rel="canonical" href="https://acornwise.github.io/">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.48.0/min/vs/loader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782" crossorigin="anonymous"></script>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4a5568;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #48bb78;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #38a169;
+            transform: translateY(-2px);
+        }
+
+        /* Daily Challenge Highlight Section */
+        .daily-challenge-banner {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.3);
+        }
+
+        .challenge-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .challenge-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .challenge-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .progress-tracker {
+            background: white;
+            color: #333;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .daily-counter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem 0;
+        }
+
+        .counter-item {
+            text-align: center;
+            flex: 1;
+        }
+
+        .counter-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            transition: transform 0.2s ease-out, color 0.3s ease-in-out;
+        }
+
+        .counter-number.updating {
+            transform: scale(1.25);
+            color: #27ae60; /* A vibrant green for attention */
+        }
+        
+        .counter-label {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .content-section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem 0;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: #f7fafc;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #2d3748;
+        }
+
+        .article-meta {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .tutorial-section {
+            background: #f7fafc;
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+
+        .code-example {
+            background: #1a202c;
+            color: #68d391;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+
+        .about-section {
+            background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: #a0aec0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .challenge-title {
+                font-size: 2rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .challenge-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .daily-counter {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="loading-container">
-            <div class="loading-content text-center">
-                <h1 class="loading-title">
-                    Unlock Your Coding <span class="text-primary">Superpowers</span> with <span class="text-secondary">AcornWise</span>!
-                </h1>
-                <p class="loading-lead">
-                    Your adventure into the exciting world of Python programming is about to begin.
-                </p>
-    
-                <p class="loading-text">
-                    At <strong>AcornWise</strong>, we believe everyone can code! Tackle fun and challenging problems, write your solutions instantly in our <strong>smart web-based editor</strong>, and get <strong>immediate, helpful feedback</strong> to level up your skills.
-                </p>
-    
-                <p class="loading-text">
-                    Perfect for students from <strong>upper primary to secondary school</strong>, our platform empowers you to think like a programmer, prepare for major coding competitions (like the OUCC or AIO!), and transform your bright ideas into real Python code.
-                </p>
-    
-                <div class="loading-spinner" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-                <p id="loading-task-text" class="loading-task-text">Initializing...</p>
-                <div class="loading-progress-bar-container">
-                    <div id="loading-progress-bar" class="loading-progress-bar" style="width: 0%;"></div>
-                </div>
-                <p id="loading-status-text" class="loading-status-text">
-                    Preparing your adventure in Python. Please wait a moment...
-                </p>
-            </div>
-        </div>
-    </div>
-
     <header>
-        <h1>AcornWise Daily Coding & Math Challenges</h1>
-        <div class="header-buttons-group">
-            <button id="back-to-daily-view-btn" class="header-button" style="display: none;">Back to Daily Workout</button>
-            <button id="view-progress-report-btn" class="header-button">View Progress Report</button>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">AcornWise Daily Coding Challenges</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#daily-challenge">Daily Challenge</a></li>
+                        <li><a href="#skillsets">Skill Sets</a></li>
+                        <li><a href="#learningscience">Learning Science</a></li>
+                        <li><a href="mailto:info@acornwise.com.au">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section id="daily-challenges-view" style="display: none;"> <!-- Initially hidden -->
-        <header class="daily-challenges-header">
-            <h2>Today's Coding Workout</h2>
-            <div class="daily-info">
-                <p>Next set of challenges in: <span id="next-selection-countdown">Loading...</span></p>
-                <p>Estimated total time for today: <span id="daily-total-time-limit">Calculating...</span></p>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Master Python Programming with AcornWise</h1>
+                <p>Transform your coding journey with our revolutionary <strong>5 Questions Daily Challenge</strong>. Build consistency, master concepts, and prepare for competitions - one day at a time for 365 days!</p>
+                <a href="challenge.html" class="cta-button">Start Your 365-Day Journey</a>
             </div>
-        </header>
-        <div id="daily-challenge-list-container">
-            <p>Loading today's challenges...</p>
-        </div>
-    </section>
+        </section>
 
-    <main style="display: none;"> <!-- Initially hidden -->
-        <aside class="sidebar">
-            <h2>Challenges</h2>
-            <nav id="challenge-navigation">
-                <p>Loading challenges...</p>
-            </nav>
-            <div id="sidebar-ad-container" class="ad-slot sidebar-ad"></div>
-        </aside>
-
-        <section class="challenge-content">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-                crossorigin="anonymous"></script>
-            <!-- content-ad-up -->
-            <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-7669371125149782"
-                data-ad-slot="2589027905"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <div class="challenge-description">
-                <h2>Challenge Description</h2>
-                <div id="description-area">
-                    <p>Select a challenge from the left to view its description.</p>
-                </div>
-            </div>
-
-            <div id="timer-container">
-                Time Remaining: <span id="timer-display">00:00</span>
-                <button id="retry-challenge-btn" style="display: none;">Retry Challenge</button>
-            </div>
-
-            <div class="ide-container">
-                <h2>Your Code</h2>
-                <div id="code-editor" class="code-editor"></div>
-                <button id="run-code-btn" disabled>Run Code</button>
-                <div id="pyodide-status" class="status-message">Loading Pyodide...</div>
-            </div>
-
-            <div id="code-test-ad-container" class="ad-slot code-test-ad"></div>
-
-            <div class="test-cases-section">
-                <h2>Test Cases</h2>
-                <div id="test-cases-area">
-                    <p>Test cases will appear here.</p>
+        <section id="daily-challenge" class="daily-challenge-banner">
+            <div class="container">
+                <h2 class="challenge-title">🎯 5 Questions Daily Challenge</h2>
+                <p class="challenge-subtitle">Commit to solving 5 coding questions every day for 365 days and transform your programming skills!</p>
+                
+                <div class="challenge-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Questions Per Day</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">365</span>
+                        <span class="stat-label">Days Challenge</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1,825</span>
+                        <span class="stat-label">Total Questions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Skill Growth</span>
+                    </div>
                 </div>
 
-                <div class="custom-test-section">
-                    <h3>Custom Test</h3>
-                    <div class="custom-test-inputs">
-                        <div class="input-group">
-                            <label for="custom-input">Input:</label>
-                            <textarea id="custom-input" rows="5" placeholder="Enter custom input here. For function calls, use JSON array format: [arg1, arg2]"></textarea>
+                <div class="progress-tracker">
+                    <h3 style="text-align: center; margin-bottom: 1rem;">Your Progress Tracker</h3>
+                    <div class="daily-counter">
+                        <div class="counter-item">
+                            <div class="counter-number" id="today-progress">0 %</div>
+                            <div class="counter-label">Today's Progress</div>
                         </div>
-                        <div class="input-group">
-                            <label for="custom-expected-output">Expected Output:</label>
-                            <textarea id="custom-expected-output" rows="3" placeholder="Enter expected output here (e.g., '123' or 'true' or JSON: [1,2,3])"></textarea>
+                        <div class="counter-item">
+                            <div class="counter-number" id="current-day">0</div>
+                            <div class="counter-label">Current Day</div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-number" id="streak">0</div>
+                            <div class="counter-label">Day Streak</div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-number" id="partially-solved">0</div>
+                            <div class="counter-label">Partial Days</div>
+                        </div>                        
+                        <div class="counter-item">
+                            <div class="counter-number" id="total-solved">0</div>
+                            <div class="counter-label">Questions Solved</div>
+                        </div>
+                        <div class="counter-item">
+                            <div class="counter-number" id="remaining-days">365</div>
+                            <div class="counter-label">Days Remaining</div>
                         </div>
                     </div>
-                    <button id="run-custom-test-btn" disabled>Run Custom Test</button>
-                    <div id="custom-test-result" class="status-message"></div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <p style="text-align: center; margin-top: 1rem;">
+                        <strong>Today's Goal:</strong> Complete 5 questions to maintain your streak! 🔥
+                    </p>
+                </div>
+                <a href="challenge.html" class="cta-button">Start Your 365-Day Journey</a>
+            </div>
+        </section>
+
+        <section class="content-section" id="features">
+            <div class="container">
+                <h2 class="section-title">Why the Daily Challenge Works</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📈</div>
+                        <h3>Consistent Progress</h3>
+                        <p>Small daily efforts compound into massive improvements. By solving just 5 questions daily, you'll develop strong problem-solving patterns and muscle memory that leads to programming mastery.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>Spaced Learning</h3>
+                        <p>Our algorithm ensures you encounter varied concepts daily, reinforcing previous learning while introducing new challenges. This proven approach maximizes retention and understanding.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Competition Ready</h3>
+                        <p>After 365 days of consistent practice, you'll have solved 1,825 problems covering every topic needed for OUCC, AIO, and other competitive programming contests.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Habit Formation</h3>
+                        <p>Transform coding from a chore into a natural habit. Our streak tracking and daily reminders help you build the consistency that separates good programmers from great ones.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Progress Tracking</h3>
+                        <p>Watch your skills grow with detailed analytics. Track your streak, see your improvement over time, and identify areas where you excel or need more practice.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Achievable Goals</h3>
+                        <p>5 questions per day is challenging enough to drive growth but manageable enough to maintain long-term. Perfect for busy students balancing studies and coding practice.</p>
+                    </div>
                 </div>
             </div>
-            <div id="content-ad-up-container" class="ad-slot content-ad"></div>
-            <div class="results-section">
-                <h2>Results</h2>
-                <pre id="results-output"></pre>
+        </section>
+
+        <section class="tutorial-section" id="skillsets">
+            <div class="container">
+                <h2 class="section-title">Computational Thinking Skill Sets</h2>
+                <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">
+                    Our challenges are designed to develop these core computational thinking skills.
+                </p>
+                <div class="article-grid">
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">🧩 Decomposition</h3>
+                            <p>Breaking down a complex problem into smaller, more manageable parts. This skill is crucial for tackling large-scale projects and understanding intricate systems.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">💡 Abstraction</h3>
+                            <p>Filtering out extraneous details to focus on what is essential. This allows you to create simplified models and generalize solutions, making them reusable and efficient.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">🔍 Pattern Recognition</h3>
+                            <p>Identifying repeated or familiar patterns in problems and data. Recognizing these patterns helps in developing efficient algorithms and predicting outcomes.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">📊 Modelling and Simulation</h3>
+                            <p>Setting up and running a simplified model of a process or system. This helps in understanding complex behaviors, testing hypotheses, and making predictions.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">⚙️ Algorithms</h3>
+                            <p>Creating a step-by-step procedure or set of rules to solve a problem. This is the foundation of programming, enabling you to design clear and effective solutions.</p>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">⚖️ Evaluation</h3>
+                            <p>Assessing or comparing outcomes to determine the effectiveness or correctness of a solution. This involves critical thinking and analyzing results against criteria.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="learningscience">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">The Science Behind Daily Practice</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Research shows that consistent daily practice is far more effective than sporadic intensive sessions. Our 5-questions-per-day approach is scientifically designed for optimal learning and retention.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">1,825</div>
+                        <div>Problems Solved in 365 Days</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25-30</div>
+                        <div>Minutes Daily Commitment</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div>Completion Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3x</div>
+                        <div>Faster Learning vs. Cramming</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <h3 style="margin-bottom: 1rem;">Why 5 Questions Work</h3>
+                    <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+                        Five questions hit the sweet spot between challenge and sustainability. It's enough to maintain engagement and drive progress, but not so much that it becomes overwhelming or leads to burnout. This approach leverages the psychological principle of "small wins" while building the compound effect of consistent practice.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <section id="progress-report-container" style="display: none;">
-        <header>
-            <h2>Your Progress Report</h2>
-        </header>
-        <div id="progress-report-layout">
-            <div id="progress-ad-left-container" class="ad-slot progress-ad progress-ad-left"></div>
-            <div id="report-content-area">
-                <p>Loading report...</p>
+    <footer id="contact">
+        <div class="container">
+            <div style="border-top: 1px solid #4a5568; padding-top: 1rem;">
+                <p>&copy; 2025 <a href="https://acornwise.com.au" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">AcornWise Coding &amp; Math</a>. All rights reserved. Empowering consistent learners, one day at a time.</p>
             </div>
-            <div id="progress-ad-right-container" class="ad-slot progress-ad progress-ad-right"></div>
         </div>
-        <footer>
-            <button id="back-to-challenges-btn" class="header-button">Back to Challenges</button>
-        </footer>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 <a href="https://acornwise.com.au" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">AcornWise Coding & Math</a></p>
     </footer>
-
-    <script src="script.js?v=6"></script>
+    <script src="main.js"></script>
 </body>
 </html>

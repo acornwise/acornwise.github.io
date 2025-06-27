@@ -17,7 +17,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     border-bottom: 3px solid #2980b9; /* Slightly darker shade */
     display: flex; /* Enable flexbox */
-    justify-content: space-between; /* Pushes items to ends */
+    justify-content: flex-start; /* Align items to the start initially */
     align-items: center; /* Vertically aligns items */
 }
 
@@ -425,6 +425,11 @@ footer {
     color: #e74c3c; /* Red for overtime */
 }
 
+/* Center the main title within the header, pushing buttons to ends */
+header h1 {
+    margin-left: auto; /* Push h1 to the right, away from the left button */
+    margin-right: auto; /* Push h1 to the left, away from the right buttons */
+}
 .header-button {
     padding: 8px 15px;
     /* margin-left: 20px; Removed as justify-content handles spacing */
@@ -721,4 +726,155 @@ footer {
 .loading-status-text {
     font-size: 1rem; /* fs-6 */
     color: #2ecc71; /* text-secondary */
+}
+
+/* Cheat Sheet Carousel specific styles */
+.cheat-sheet-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    margin: 2rem auto;
+    max-width: 800px; /* Adjust as needed for cheat sheet content */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 20px; /* Padding around the carousel content */
+}
+
+.carousel-track-container {
+    flex-grow: 1;
+    overflow: hidden; /* Hide overflowing slides */
+    border-radius: 8px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+}
+
+/* Styles for the individual cheat sheet pages within the carousel */
+.cheat-sheet-carousel .page {
+    /* Override cheat_sheet.html .page styles for carousel */
+    width: 100%; /* Each page takes full width of its container */
+    flex-shrink: 0; /* Prevent pages from shrinking */
+    height: auto; /* Allow height to adjust to content */
+    padding: 12mm; /* Maintain original A4 padding */
+    box-sizing: border-box;
+    page-break-after: avoid; /* Important for carousel, not print */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute sections within the page */
+    background-color: #fff; /* Ensure background is white */
+
+    /* Original cheat_sheet.html body styles applied to .page for content rendering */
+    font-family: 'Consolas', 'Monaco', monospace; /* Good for code */
+    font-size: 9pt; /* Adjusted for A4 print - smaller for more content */
+    line-height: 1.4; /* Improved readability */
+}
+
+.cheat-sheet-carousel .page:last-child {
+    page-break-after: avoid; /* No page break after the last page */
+}
+
+.cheat-sheet-carousel .page pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-left: 10px;
+    overflow-x: auto; /* Still good for very long lines */
+    font-size: 8pt; /* Smaller for code blocks */
+    line-height: 1.3; /* Tighter line height for code */
+    white-space: pre-wrap; /* Allows long lines to wrap */
+    word-wrap: break-word; /* Ensures long words break */
+    word-break: break-all; /* More aggressive word breaking for long strings */
+}
+
+.cheat-sheet-carousel .page h1 {
+    text-align: center; /* Keep center for main title */
+    font-size: 15pt; /* Slightly smaller */
+    margin-bottom: 15px; /* Reduced margin */
+}
+.cheat-sheet-carousel .page h2 {
+    font-size: 12pt; /* Slightly smaller */
+    margin-top: 12px; /* Adjusted margin */
+    margin-bottom: 4px; /* Adjusted margin */
+}
+.cheat-sheet-carousel .page h3 {
+    font-size: 10pt; /* Slightly smaller */
+    margin-top: 8px; /* Adjusted margin */
+    margin-bottom: 2px; /* Adjusted margin */
+}
+.cheat-sheet-carousel .page ul {
+    margin-top: 4px; /* Reduced margin */
+    margin-bottom: 4px; /* Reduced margin */
+    padding-left: 18px; /* Slightly reduced padding */
+}
+.cheat-sheet-carousel .page li {
+    margin-bottom: 1px; /* Tighter list item spacing */
+}
+.cheat-sheet-carousel .page .page-content {
+    flex-grow: 1; /* Allows content to expand and push page number to bottom */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute sections within the page */
+}
+.cheat-sheet-carousel .page .page-number {
+    text-align: center;
+    font-size: 7pt; /* Even smaller for page number */
+    margin-top: 10mm; /* Ensure it's at the bottom */
+    position: static; /* Override absolute positioning from original cheat sheet */
+    transform: none;
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #667eea; /* Active dot color */
+}
+
+/* Ensure print styles don't interfere with carousel */
+@media print {
+    .cheat-sheet-carousel {
+        display: none; /* Hide carousel in print */
+    }
 }

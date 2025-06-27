@@ -8,9 +8,12 @@ let currentRemainingTime;
 let timerRunning = false;
 let startTime;
 
+const VERSION = '7';
 const LS_LAST_DAILY_SELECTION_TIMESTAMP = 'acornwise_lastDailySelectionTimestamp';
+const LS_APP_VERSION = 'acornwise_appVersion';
 const LS_CURRENT_DAILY_SET = 'acornwise_currentDailySet';
 const LS_SOLVED_CHALLENGES = 'acornwise_solvedChallenges';
+const LS_DAILY_COMPLETION_RECORDS = 'acornwise_dailyCompletionRecords'; // New LS key for daily completions
 const LS_QUESTION_FILE_CACHE_PREFIX = 'acornwise_question_file_';
 const LS_ALL_METADATA_CACHE = 'acornwise_all_metadata_cache';
 const LS_EDITOR_CONTENT_PREFIX = 'acornwise_editor_content_';
@@ -22,6 +25,27 @@ const ONE_YEAR_MS = 365 * TWENTY_FOUR_HOURS_MS;
 
 let previousViewBeforeReport = 'daily'; // To store which view was active before showing the report
 document.addEventListener('DOMContentLoaded', () => {
+    const storedVersion = localStorage.getItem(LS_APP_VERSION);
+    if (storedVersion !== VERSION) {
+        console.log(`Version mismatch. Stored: ${storedVersion}, Current: ${VERSION}. Flushing question cache.`);
+        
+        const keysToRemove = [];
+        for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key.startsWith(LS_QUESTION_FILE_CACHE_PREFIX) || key === LS_ALL_METADATA_CACHE) {
+                keysToRemove.push(key);
+            }
+        }
+
+        keysToRemove.forEach(key => {
+            localStorage.removeItem(key);
+            console.log(`Removed cached item: ${key}`);
+        });
+
+        localStorage.setItem(LS_APP_VERSION, VERSION);
+        console.log(`Cache flushed and version updated to ${VERSION}.`);
+    }
+
     const runButton = document.getElementById('run-code-btn');
     const pyodideStatus = document.getElementById('pyodide-status');
     const resultsOutput = document.getElementById('results-output');
@@ -47,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingScreen = document.getElementById('loading-screen');
     const loadingTaskText = document.getElementById('loading-task-text');
     const loadingProgressBar = document.getElementById('loading-progress-bar');
+    const goToHomeBtn = document.getElementById('go-to-home-btn'); // New button
 
     // Remove hash on initial page load if present
     if (window.location.hash) {
@@ -268,23 +293,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (!functionName) {
                     throw new Error("Function name is not defined for 'function' input type.");
                 }
-                await pyodide.runPythonAsync(`import json`);
-                let test_case_inputs = []
+                await pyodide.runPythonAsync(`import json`); // Ensure json module is available
+                let test_case_inputs = [];
 
-                for (const test_input of testCase.input) {
-                    if(test_input.match(/^-?\d+$/)) {
-                        test_case_inputs.push(parseInt(test_input, 10));
-                    } else if(test_input.match(/^-?\d*\.\d+$/))    {
-                        test_case_inputs.push(parseFloat(test_input));
-                    } else  {
-                        test_case_inputs.push(test_input)
+                // Iterate through each input argument provided in the test case
+                for (const test_input_str of testCase.input) {
+                    try {
+                        // Attempt to parse the string as JSON. This handles numbers, booleans,
+                        // and JSON-formatted arrays/objects (like "[1, 2, 3]" or "true").
+                        const parsed = JSON.parse(test_input_str);
+                        test_case_inputs.push(parsed);
+                    } catch (e) {
+                        // If JSON.parse fails, it means the input is a literal string
+                        // that is not a valid JSON (e.g., "hello", "+"). Push it as is.
+                        test_case_inputs.push(test_input_str);
                     }
                 }
 
                 const pythonInputArgs = JSON.stringify(test_case_inputs);
 
                 const codeToExecute = `
-${userCode}
+${userCode.trim()}
 
 # Test harness code for function call
 _input_args = json.loads('${pythonInputArgs}')
@@ -292,17 +321,35 @@ try:
     _actual_output_func_call = ${functionName}(*_input_args)
 except Exception as e:
     _actual_output_func_call = f"ERROR: {e}"
-`;
+`.trim(); // Trim the entire template literal to remove any accidental leading/trailing newlines/spaces
                 await pyodide.runPythonAsync(codeToExecute);
-                const actualOutput = String(pyodide.globals.get('_actual_output_func_call'));
-                const expectedOutput = testCase.expected_output;
 
-                if (JSON.stringify(actualOutput) === JSON.stringify(expectedOutput)) {
+                // Retrieve the Python output and convert it to a JavaScript type
+                const pyProxyOutput = pyodide.globals.get('_actual_output_func_call');
+                let actualOutputString;
+
+                if (pyProxyOutput && typeof pyProxyOutput.toJs === 'function') {
+                    const jsOutput = pyProxyOutput.toJs({ dict_converter: Object.fromEntries }); // Convert PyProxy to JS native types
+                    if (Array.isArray(jsOutput)) {
+                        actualOutputString = jsOutput.join(' '); // Join array elements with space for comparison
+                    } else if (typeof jsOutput === 'boolean') {
+                        actualOutputString = jsOutput ? 'True' : 'False'; // Python booleans are 'True'/'False'
+                    } else {
+                        actualOutputString = String(jsOutput); // Convert other types to string
+                    }
+                    pyProxyOutput.destroy(); // Clean up the PyProxy object
+                } else {
+                    actualOutputString = String(pyProxyOutput); // Fallback for non-PyProxy or error cases
+                }
+
+                const expectedOutputString = String(testCase.expected_output).trim();
+
+                if (actualOutputString.trim() === expectedOutputString) {
                     resultDiv.textContent = `PASS`;
                     resultDiv.classList.add('pass');
                     passed = true;
                 } else {
-                    resultDiv.textContent = `FAIL (Expected: ${JSON.stringify(expectedOutput)}, Got: ${JSON.stringify(actualOutput)})`;
+                    resultDiv.textContent = `FAIL (Expected: "${expectedOutputString}", Got: "${actualOutputString}")`;
                     resultDiv.classList.add('fail');
                 }
 
@@ -432,7 +479,6 @@ except Exception as e:
 
         // Scroll to the test cases section
         if (testCasesArea) {
-            // testCasesArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
             document.querySelector('.test-cases-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }        
 
@@ -739,7 +785,10 @@ except Exception as e:
                 const outputValue = testCase.expected_output;
 
                 if (challengeData.input_type === "stdin") {
-                    inputContentHtml = testCase.input.map(line => `<i>${line}</i>`).join('<br>');
+                    // Ensure testCase.input is an array for display.
+                    // If it's a string, wrap it in an array. If null/undefined, treat as empty array.
+                    const inputForDisplay = Array.isArray(testCase.input) ? testCase.input : (testCase.input != null ? [String(testCase.input)] : []);
+                    inputContentHtml = inputForDisplay.map(line => `<i>${line}</i>`).join('<br>');
                 } else if (challengeData.input_type === "function") {
                     inputContentHtml = `<code>${JSON.stringify(testCase.input)}</code>`;
                 } else if (challengeData.input_type === "file_read") {
@@ -971,6 +1020,24 @@ except Exception as e:
             wasSolvedInTime
         };
         localStorage.setItem(LS_SOLVED_CHALLENGES, JSON.stringify(solvedChallenges));
+
+        // TODO 
+        const dailySetList = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET));
+        let solvedCount = 0
+
+        for (const challengeId of dailySetList) {
+            if (solvedChallenges[challengeId] !== undefined) {
+                solvedCount++;
+            }
+        }
+
+        if (solvedCount == DAILY_CHALLENGE_COUNT) {
+            let completionList = localStorage.getItem(LS_DAILY_COMPLETION_RECORDS) || '[]';
+            completionList = JSON.parse(completionList);
+            completionList.push(Date.now());
+
+            localStorage.setItem(LS_DAILY_COMPLETION_RECORDS, JSON.stringify(completionList));
+        }
     }
 
     function isTimeForNewDailySelection() {
@@ -1395,4 +1462,8 @@ except Exception as e:
         }
         window.scrollTo(0, 0);
     });    
+
+    goToHomeBtn.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
 });

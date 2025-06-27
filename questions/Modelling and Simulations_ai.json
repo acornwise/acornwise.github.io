@@ -6886,5 +6886,128 @@
             }
         ],
         "from": "AI"
-    }
+    },
+    {
+        "id": "mas_366",
+        "title": "Robot on a Grid",
+        "category": "Modelling and Simulation",
+        "input_type": "stdin",
+        "description_md": "**Task**\nA robot is placed at `(0,0)` on an infinite 2D grid. It receives a sequence of instructions: 'U' (Up), 'D' (Down), 'L' (Left), 'R' (Right). After processing all instructions, how many *unique* grid cells did the robot visit?\n\n**Constraints**\n* 1 <= N <= 100,000\n* The instruction string `S` consists only of 'U', 'D', 'L', 'R' characters.\n\nInput format: The first line contains an integer `N`. The second line contains a string `S` of `N` characters.\n\nOutput format: A single integer representing the number of unique cells visited.",
+        "starter_code": "def solve():\n    N = int(input())\n    S = input()\n\n    # Your code here\n\nif __name__ == '__main__':\n    solve()",
+        "test_cases": [
+            {
+                "input": [
+                    "5",
+                    "ULDRU"
+                ],
+                "expected_output": "4"
+            },
+            {
+                "input": [
+                    "10",
+                    "RRRULLLLDD"
+                ],
+                "expected_output": "8"
+            },
+            {
+                "input": [
+                    "3",
+                    "UUU"
+                ],
+                "expected_output": "4"
+            },
+            {
+                "input": [
+                    "1",
+                    "L"
+                ],
+                "expected_output": "2"
+            }
+        ],
+        "from": "AI"
+    },
+    {
+        "id": "mas_367",
+        "title": "Bouncing Ball in a 1D Corridor",
+        "category": "Modelling and Simulation",
+        "input_type": "stdin",
+        "description_md": "**Task**\nYou have a ball in a 1D corridor of length `L`. The corridor has positions from `0` to `L-1`. The ball starts at a given `start_position` and moves `steps` units in a given `direction` ('L' or 'R'). If the ball hits either end of the corridor (`0` or `L-1`), it bounces and reverses its direction. How many *unique* positions did the ball occupy before it completes all its `steps`?\n\n**Constraints**\n* 1 <= L <= 1000\n* 0 <= start_position < L\n* 1 <= steps <= 100,000\n\nInput format: A single line containing `L`, `start_position`, `steps`, and `initial_direction` (L or R) separated by spaces.\n\nOutput format: A single integer representing the number of unique positions visited.",
+        "starter_code": "def solve():\n    L, start_pos, steps, initial_direction = input().split()\n    L = int(L)\n    start_pos = int(start_pos)\n    steps = int(steps)\n\n    # Your code here\n\nif __name__ == '__main__':\n    solve()",
+        "test_cases": [
+            {
+                "input": [
+                    "5 0 7 R"
+                ],
+                "expected_output": "5"
+            },
+            {
+                "input": [
+                    "3 1 5 L"
+                ],
+                "expected_output": "3"
+            },
+            {
+                "input": [
+                    "10 0 10 R"
+                ],
+                "expected_output": "10"
+            },
+            {
+                "input": [
+                    "2 0 3 R"
+                ],
+                "expected_output": "2"
+            }
+        ],
+        "from": "AI"
+    },
+    {
+        "id": "mas_368",
+        "title": "Race Track Lap Counter",
+        "category": "Modelling and Simulation",
+        "input_type": "stdin",
+        "description_md": "**Task**\nA race car is on a circular track with `C` checkpoints, numbered `0` to `C-1`. The car starts at checkpoint `0`. It receives a sequence of `N` instructions. Each instruction tells it to move `X` checkpoints clockwise or `Y` checkpoints counter-clockwise. You need to determine how many *full laps* the car completed (moving from checkpoint `0` back to `0` in the same direction, accumulating to a full circle) and what is its final checkpoint.\n\n**Constraints**\n* 2 <= C <= 1000\n* 1 <= N <= 100,000\n* -1000 <= X, Y <= 1000 (absolute value of jump not exceeding 1000)\n\nInput format: The first line contains two integers `C` and `N` separated by a space. Following `N` lines each contain a string representing an instruction, e.g., `+3` or `-2`.\n\nOutput format: Two integers separated by a space: the total full laps completed and the final checkpoint number.",
+        "starter_code": "def solve():\n    C, N = map(int, input().split())\n\n    # Your code here\n\nif __name__ == '__main__':\n    solve()",
+        "test_cases": [
+            {
+                "input": [
+                    "5 3",
+                    "+3",
+                    "+4",
+                    "-2"
+                ],
+                "expected_output": "1 0"
+            },
+            {
+                "input": [
+                    "10 2",
+                    "+15",
+                    "-7"
+                ],
+                "expected_output": "0 8"
+            },
+            {
+                "input": [
+                    "3 4",
+                    "+1",
+                    "+1",
+                    "+1",
+                    "+1"
+                ],
+                "expected_output": "1 1"
+            },
+            {
+                "input": [
+                    "7 5",
+                    "-5",
+                    "-4",
+                    "+10",
+                    "+1",
+                    "-2"
+                ],
+                "expected_output": "0 0"
+            }
+        ],
+        "from": "AI"
+    }    
 ]
