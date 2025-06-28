@@ -7,389 +7,11 @@
     <meta name="description" content="Learn Python programming through interactive challenges and tutorials. Perfect for students preparing for coding competitions like OUCC and AIO.">
     <meta name="keywords" content="Python programming, coding challenges, programming education, OUCC, AIO, learn to code">
     <link rel="canonical" href="https://acornwise.github.io/">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.48.0/min/vs/loader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #4a5568;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #4a5568;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #667eea;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 4rem 0;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #48bb78;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
-        }
-
-        .cta-button:hover {
-            background: #38a169;
-            transform: translateY(-2px);
-        }
-
-        /* Daily Challenge Highlight Section */
-        .daily-challenge-banner {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-            margin: 2rem 0;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(238, 90, 36, 0.3);
-        }
-
-        .challenge-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .challenge-subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .challenge-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .stat-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            display: block;
-        }
-
-        .stat-label {
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-
-        .progress-tracker {
-            background: white;
-            color: #333;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem 0;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .progress-bar {
-            width: 100%;
-            height: 20px;
-            background: #e2e8f0;
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 1rem 0;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #48bb78, #38a169);
-            width: 0%;
-            transition: width 0.3s ease;
-            border-radius: 10px;
-        }
-
-        .daily-counter {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 1rem 0;
-        }
-
-        .counter-item {
-            text-align: center;
-            flex: 1;
-        }
-
-        .counter-number {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            transition: transform 0.2s ease-out, color 0.3s ease-in-out;
-        }
-
-        .counter-number.updating {
-            transform: scale(1.25);
-            color: #27ae60; /* A vibrant green for attention */
-        }
-        
-        .counter-label {
-            font-size: 0.9rem;
-            color: #718096;
-        }
-
-        .content-section {
-            background: white;
-            margin: 2rem 0;
-            padding: 3rem 0;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #2d3748;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .feature-card {
-            background: #f7fafc;
-            padding: 2rem;
-            border-radius: 8px;
-            text-align: center;
-            border: 1px solid #e2e8f0;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #2d3748;
-        }
-
-        .article-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .article-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .article-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .article-content {
-            padding: 1.5rem;
-        }
-
-        .article-title {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: #2d3748;
-        }
-
-        .article-meta {
-            color: #718096;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .read-more {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .tutorial-section {
-            background: #f7fafc;
-            padding: 3rem 0;
-            margin: 2rem 0;
-        }
-
-        .code-example {
-            background: #1a202c;
-            color: #68d391;
-            padding: 1.5rem;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            margin: 1rem 0;
-            overflow-x: auto;
-        }
-
-        .about-section {
-            background: linear-gradient(135deg, #4299e1 0%, #667eea 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .stat-card {
-            text-align: center;
-        }
-
-        footer {
-            background: #2d3748;
-            color: white;
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h4 {
-            margin-bottom: 1rem;
-        }
-
-        .footer-section a {
-            color: #a0aec0;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section a:hover {
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .challenge-title {
-                font-size: 2rem;
-            }
-
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .challenge-stats {
-                grid-template-columns: 1fr;
-            }
-
-            .daily-counter {
-                flex-direction: column;
-                gap: 1rem;
-            }
-        }
-    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -399,10 +21,10 @@
                 <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#daily-challenge">Daily Challenge</a></li>
+                        <li><a href="#daily-challenge">Challenge Status</a></li>
+                        <li><a href="#challenge-platform">Challenge Platform</a></li>
                         <li><a href="#skillsets">Skill Sets</a></li>
                         <li><a href="#learningscience">Learning Science</a></li>
-                        <li><a href="mailto:info@acornwise.com.au">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -414,7 +36,7 @@
             <div class="container">
                 <h1>Master Python Programming with AcornWise</h1>
                 <p>Transform your coding journey with our revolutionary <strong>5 Questions Daily Challenge</strong>. Build consistency, master concepts, and prepare for competitions - one day at a time for 365 days!</p>
-                <a href="challenge.html" class="cta-button">Start Your 365-Day Journey</a>
+                <a href="#challenge-platform" class="cta-button">Start Your 365-Day Journey</a>
             </div>
         </section>
 
@@ -477,9 +99,54 @@
                         <strong>Today's Goal:</strong> Complete 5 questions to maintain your streak! 🔥
                     </p>
                 </div>
-                <a href="challenge.html" class="cta-button">Start Your 365-Day Journey</a>
+                <a href="#challenge-platform" class="cta-button">Start Your 365-Day Journey</a>
             </div>
         </section>
+
+        <section class="challenge-platform-section" id="challenge-platform">            
+            <div class="container">
+                <main>
+                    <aside>
+                        <nav id="challenge-navigation">
+                            <p>Loading challenges...</p>
+                        </nav>
+                    </aside>
+                    <section>
+                        <div class="challenge-description">
+                            <h2>Challenge Description</h2>
+                            <div id="description-area">
+                                <p>Select a challenge from the left to view its description.</p>
+                            </div>
+                        </div>
+
+                        <div id="timer-container">
+                            Time Remaining: <span id="timer-display">00:00</span>
+                            <button id="skip-challenge-btn" style="display: none;">Skip This Challenge</button>
+                            <button id="retry-challenge-btn" style="display: none;">Retry Challenge</button>
+                        </div>
+
+                        <div class="ide-container">
+                            <h2>Your Code</h2>
+                            <div id="code-editor" class="code-editor"></div>
+                            <button id="run-code-btn" disabled>Run Code</button>
+                            <div id="pyodide-status" class="status-message">Loading Pyodide...</div>
+                        </div>
+
+                        <div class="results-section">
+                            <h2>Results</h2>
+                            <pre id="results-output"></pre>
+                        </div>
+
+                        <div class="test-cases-section">
+                            <h2>Test Cases</h2>
+                            <div id="test-cases-area">
+                                <p>Test cases will appear here.</p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>  
 
         <section class="content-section" id="features">
             <div class="container">
@@ -614,6 +281,6 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>

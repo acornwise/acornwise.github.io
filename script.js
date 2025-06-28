@@ -1,16 +1,29 @@
+(function() {
+    const original = {
+        log: console.log,
+        warn: console.warn,
+        error: console.error,
+    };
+    const getTimestamp = () => new Date().toISOString();
+    console.log = (...args) => original.log.apply(console, [`[${getTimestamp()}]`, ...args]);
+    console.warn = (...args) => original.warn.apply(console, [`[${getTimestamp()}] [WARN]`, ...args]);
+    console.error = (...args) => original.error.apply(console, [`[${getTimestamp()}] [ERROR]`, ...args]);
+})();
+
 let editor;
 let pyodide;
 let currentChallengeData = null;
 let markedModule;
+let typeListener;
 let timerInterval;
 let initialChallengeDuration;
 let currentRemainingTime;
 let timerRunning = false;
 let startTime;
 
-const VERSION = '7';
-const LS_LAST_DAILY_SELECTION_TIMESTAMP = 'acornwise_lastDailySelectionTimestamp';
+const VERSION = '8';
 const LS_APP_VERSION = 'acornwise_appVersion';
+const LS_LAST_DAILY_SELECTION_TIMESTAMP = 'acornwise_lastDailySelectionTimestamp';
 const LS_CURRENT_DAILY_SET = 'acornwise_currentDailySet';
 const LS_SOLVED_CHALLENGES = 'acornwise_solvedChallenges';
 const LS_DAILY_COMPLETION_RECORDS = 'acornwise_dailyCompletionRecords'; // New LS key for daily completions
@@ -24,7 +37,164 @@ const METADATA_CACHE_EXPIRATION_MS = 72 * 60 * 60 * 1000; // 72 hours
 const ONE_YEAR_MS = 365 * TWENTY_FOUR_HOURS_MS;
 
 let previousViewBeforeReport = 'daily'; // To store which view was active before showing the report
+
 document.addEventListener('DOMContentLoaded', () => {
+    // NEW: Functions for homepage progress tracker
+
+    // Function to get daily completion records
+    function getDailyCompletionRecords() {
+        const data = localStorage.getItem(LS_DAILY_COMPLETION_RECORDS);
+        return data ? JSON.parse(data) : [];
+    }
+
+    // Function to calculate streak
+    function calculateStreak(records) {
+        if (records.length === 0) return 0;
+
+        // Convert records to Date objects (UTC normalized) and sort
+        const dates = records.map(d => {
+            const date = new Date(d + 'T00:00:00Z'); // Parse as UTC
+            return date;
+        }).sort((a, b) => a.getTime() - b.getTime()); // Sort chronologically
+
+        let currentStreak = 0;
+        
+        // Get today's date and yesterday's date, normalized to UTC start of day
+        const now = new Date();
+        const todayUTC = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
+        const yesterdayUTC = new Date(todayUTC);
+        yesterdayUTC.setDate(todayUTC.getDate() - 1);
+
+        // Check if the most recent record is today or yesterday
+        const mostRecentRecordDate = dates[dates.length - 1];
+        if (mostRecentRecordDate.getTime() === todayUTC.getTime()) {
+            currentStreak = 1;
+        } else if (mostRecentRecordDate.getTime() === yesterdayUTC.getTime()) {
+            currentStreak = 1;
+        } else {
+            return 0; // Most recent record is not today or yesterday, streak is 0
+        }
+
+        // Iterate backwards from the second to last record
+        for (let i = dates.length - 2; i >= 0; i--) {
+            const currentDate = dates[i];
+            const expectedPreviousDay = new Date(dates[i + 1]);
+            expectedPreviousDay.setDate(dates[i + 1].getDate() - 1);
+
+            if (currentDate.getTime() === expectedPreviousDay.getTime()) {
+                currentStreak++;
+            } else {
+                break; // Gap found, streak broken
+            }
+        }
+        return currentStreak;
+    }
+
+    // Helper function to update a counter with a "pop" animation effect
+    function updateAnimatedCounter(element, newValue) {
+        if (!element) return;
+
+        const finalValue = String(newValue);
+        element.classList.add('updating');
+        element.textContent = finalValue;
+
+        // Remove the class after the animation/transition completes
+        setTimeout(() => {
+            element.classList.remove('updating');
+        }, 300); // This duration should match or be slightly longer than the CSS transition
+    }
+
+    // Function to update the homepage progress tracker
+    function updateHomepageProgressTracker() {
+        const currentDayEl = document.getElementById('current-day');
+        const streakEl = document.getElementById('streak');
+        const totalSolvedEl = document.getElementById('total-solved');
+        const remainingDaysEl = document.getElementById('remaining-days');
+        const todayProgressEl = document.getElementById('today-progress'); // Reference to the new element
+        const partiallySolvedEl = document.getElementById('partially-solved'); // New element reference
+        const progressFillEl = document.getElementById('progress-fill');
+
+        // Only run if these elements exist (i.e., we are on index.html)
+        if (!currentDayEl || !streakEl || !totalSolvedEl || !remainingDaysEl || !todayProgressEl || !partiallySolvedEl || !progressFillEl) {
+            return;
+        }
+
+        const solvedChallenges = getSolvedChallengesData();
+        const dailyCompletionRecords = getDailyCompletionRecords();
+
+        // Get all unique dates where any challenge was solved.
+        const daysWithAnyActivity = new Set();
+        Object.values(solvedChallenges).forEach(challenge => {
+            const solvedDate = new Date(challenge.solvedTimestamp).toISOString().slice(0, 10); // YYYY-MM-DD format
+            daysWithAnyActivity.add(solvedDate);
+        });
+
+        const completedDaysCount = dailyCompletionRecords.length;
+        const partiallySolvedDaysCount = Math.max(0, daysWithAnyActivity.size - completedDaysCount);
+
+        // Calculate Today's Progress
+        const currentDailySetIds = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET) || '[]');
+        let solvedTodayCount = 0;
+        currentDailySetIds.forEach(challengeId => {
+            if (solvedChallenges[challengeId] && solvedChallenges[challengeId].wasSolvedInTime) {
+                solvedTodayCount++;
+            }
+        });
+        const todayProgressPercentage = ((solvedTodayCount / DAILY_CHALLENGE_COUNT) * 100).toFixed(0);
+
+        // Update content with animation
+        updateAnimatedCounter(currentDayEl, completedDaysCount);
+        updateAnimatedCounter(streakEl, calculateStreak(dailyCompletionRecords));
+        updateAnimatedCounter(totalSolvedEl, Object.keys(solvedChallenges).length);
+        updateAnimatedCounter(remainingDaysEl, Math.max(0, 365 - completedDaysCount));
+        updateAnimatedCounter(partiallySolvedEl, partiallySolvedDaysCount);
+        updateAnimatedCounter(todayProgressEl, `${todayProgressPercentage} %`);
+
+        const progressPercentage = (completedDaysCount / 365) * 100;
+        progressFillEl.style.width = `${progressPercentage}%`;
+    }
+
+    // Smooth scrolling for navigation links (moved from inline script)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Add active class to navigation based on scroll position (moved from inline script)
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        let currentSectionId = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - document.querySelector('header').offsetHeight; // Adjust for sticky header
+            const sectionBottom = sectionTop + section.offsetHeight;
+            if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+                currentSectionId = section.id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === currentSectionId) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+    function getSolvedChallengesData() {
+        const data = localStorage.getItem(LS_SOLVED_CHALLENGES);
+        return data ? JSON.parse(data) : {};
+    }
+
     const storedVersion = localStorage.getItem(LS_APP_VERSION);
     if (storedVersion !== VERSION) {
         console.log(`Version mismatch. Stored: ${storedVersion}, Current: ${VERSION}. Flushing question cache.`);
@@ -52,26 +222,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const descriptionArea = document.getElementById('description-area');
     const testCasesArea = document.getElementById('test-cases-area');
     const challengeNavigation = document.getElementById('challenge-navigation'); // Get navigation element
-    const customInput = document.getElementById('custom-input');
-    const customExpectedOutput = document.getElementById('custom-expected-output');
-    const runCustomTestBtn = document.getElementById('run-custom-test-btn');
-    const customTestResultDiv = document.getElementById('custom-test-result');
     const timerDisplay = document.getElementById('timer-display');    
-    const viewProgressReportBtn = document.getElementById('view-progress-report-btn');
-    const progressReportContainer = document.getElementById('progress-report-container');
     const reportContentArea = document.getElementById('report-content-area');
-    const backToChallengesBtn = document.getElementById('back-to-challenges-btn');
-    const backToDailyViewBtn = document.getElementById('back-to-daily-view-btn'); // New button in main header
     const retryChallengeBtn = document.getElementById('retry-challenge-btn');    
-    const dailyChallengesView = document.getElementById('daily-challenges-view');
+    const skipChallengeBtn = document.getElementById('skip-challenge-btn');    
     const mainContentArea = document.querySelector('main'); // The main IDE area
-    const nextSelectionCountdownDisplay = document.getElementById('next-selection-countdown');
-    const dailyTotalTimeLimitDisplay = document.getElementById('daily-total-time-limit');
-    const dailyChallengeListContainer = document.getElementById('daily-challenge-list-container');
-    const loadingScreen = document.getElementById('loading-screen');
-    const loadingTaskText = document.getElementById('loading-task-text');
+    const loadingTaskText = document.getElementById('pyodide-status');
     const loadingProgressBar = document.getElementById('loading-progress-bar');
-    const goToHomeBtn = document.getElementById('go-to-home-btn'); // New button
 
     // Remove hash on initial page load if present
     if (window.location.hash) {
@@ -159,12 +316,10 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             pyodideStatus.textContent = "Loading Pyodide (this may take a moment)...";
             runButton.disabled = true;
-            runCustomTestBtn.disabled = true;
 
             pyodide = await loadPyodide();
             pyodideStatus.textContent = "Pyodide ready.";
             runButton.disabled = false;
-            runCustomTestBtn.disabled = false;
             console.log("Pyodide loaded and ready.");
         } catch (error) {
             pyodideStatus.textContent = `Failed to load Pyodide: ${error.message}`;
@@ -211,26 +366,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         updateLoadingProgress("Initializing Python Environment...", 25);
-        // Await critical initializations before hiding the loading screen
+
         await initializePyodide();
 
         updateLoadingProgress("Preparing Today's Workout...", 75);
-        await manageDailyChallengeSelection(); // This renders the first interactive view
+        await manageDailyChallengeSelection();
         
-        updateLoadingProgress("Fetching Challenge List...", 85); // Adjusted percentage
-        await loadChallengeList(); // Load sidebar AFTER daily set is potentially updated
+        updateLoadingProgress("Fetching Challenge List...", 85);
+        await loadChallengeList();
 
         updateLoadingProgress("Finalizing Setup...", 95);
+        updateLoadingProgress("Pyodide loaded and ready.", 100);
 
-        // Hide loading screen and show the daily challenges view
-        if (loadingScreen) {
-            loadingScreen.style.display = 'none';
+        // TODO
+        const currentDailySet = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET) || '[]');
+        const solvedChallenges = getSolvedChallengesData();
+        let loadTargetId = undefined;
+
+
+        for (let i = 0; i < currentDailySet.length; i++) {
+            const challengeId = currentDailySet[i];
+            if (!solvedChallenges[challengeId]) {
+                loadTargetId = challengeId;
+                break;
+            }
         }
-        // Initial state: Daily view is shown, so "Back to Daily" is hidden, "Progress Report" is visible.
-        backToDailyViewBtn.style.display = 'none';        
-        // No need to update progress to 100% here as the screen is hidden
-        dailyChallengesView.style.display = 'block'; // Or 'flex' if its layout requires it
+
+        if (!loadTargetId) {
+            loadTargetId = currentDailySet[0];
+        }
+
+        await loadChallenge(loadTargetId);
     });
+    
 
     async function runSingleTest(testCase, userCode, resultDiv, inputType, functionName) {
         resultDiv.textContent = 'Running...';
@@ -485,7 +653,6 @@ except Exception as e:
         const userCode = editor.getValue();
         resultsOutput.textContent = "Running tests...";
         runButton.disabled = true;
-        runCustomTestBtn.disabled = true;
 
         document.querySelectorAll('.test-case-result').forEach(div => {
             div.textContent = '';
@@ -512,7 +679,6 @@ except Exception as e:
 
         resultsOutput.textContent = `All tests completed. Overall: ${overallPass ? 'PASS' : 'FAIL'}`;
         runButton.disabled = false;
-        runCustomTestBtn.disabled = false;
 
         if (overallPass) {
             console.log(`[DEBUG] overallPass is true for challenge ${currentChallengeData.id}. Attempting to add tick.`);
@@ -559,83 +725,9 @@ except Exception as e:
         timerDisplay.textContent = "Challenge Passed!";
         timerDisplay.classList.remove('timer-red', 'timer-green');
         retryChallengeBtn.style.display = 'inline-block';
-        runButton.style.display = 'none';
-        runCustomTestBtn.style.display = 'none';
-    }    
-
-    runCustomTestBtn.addEventListener('click', async () => {
-        if (!pyodide || !currentChallengeData) {
-            customTestResultDiv.textContent = "Error: Pyodide not loaded or no challenge selected.";
-            return;
-        }
-
-        const userCode = editor.getValue();
-        const customInputValue = customInput.value.trim();
-        let customExpectedOutputValue = customExpectedOutput.value.trim();
-
-        try {
-            customExpectedOutputValue = JSON.parse(customExpectedOutputValue);
-        } catch (e) {
-            // If not valid JSON, keep as string
-        }
-
-        let parsedCustomInput;
-
-        let functionNameToTest = null;
-
-        if (currentChallengeData.input_type === "function") {
-            functionNameToTest = extractFunctionName(currentChallengeData.starter_code);
-        }
-
-        if (currentChallengeData.input_type === "stdin") {
-            parsedCustomInput = customInputValue.split('\n');
-        } else if (currentChallengeData.input_type === "function") {
-            try {
-                parsedCustomInput = JSON.parse(customInputValue);
-                if (!Array.isArray(parsedCustomInput)) {
-                    throw new Error("Function call input must be a JSON array.");
-                }
-            } catch (e) {
-                customTestResultDiv.textContent = `ERROR: Invalid JSON input for function call: ${e.message}`;
-                customTestResultDiv.classList.add('fail');
-                runButton.disabled = false;
-                runCustomTestBtn.disabled = false;
-                return;
-            }
-        } else if (currentChallengeData.input_type === "file_read" || currentChallengeData.input_type === "file_io") {
-            parsedCustomInput = customInputValue;
-        } else {
-            parsedCustomInput = customInputValue;
-        }
-
-        if (!customInputValue && !currentChallengeData.input_type.startsWith("file_")) {
-             customTestResultDiv.textContent = "Please provide custom input.";
-             customTestResultDiv.classList.add('fail');
-             return;
-        }
-
-        const customTestCase = {
-            input: parsedCustomInput,
-            expected_output: customExpectedOutputValue,
-            input_file_content: (currentChallengeData.input_type === "file_read" || currentChallengeData.input_type === "file_io") ? customInputValue : undefined,
-            input_filename: currentChallengeData.test_cases[0].input_filename,
-            output_filename: currentChallengeData.test_cases[0].output_filename
-        };
-
-        runButton.disabled = true;
-        runCustomTestBtn.disabled = true;
-
-        await runSingleTest(
-            customTestCase,
-            userCode,
-            customTestResultDiv,
-            currentChallengeData.input_type,
-            functionNameToTest
-        );
-
-        runButton.disabled = false;
-        runCustomTestBtn.disabled = false;
-    });
+        skipChallengeBtn.style.display = 'none';
+        runButton.style.display = 'none';        
+    }
 
     function startTimer() {
         if (timerInterval) {
@@ -711,6 +803,9 @@ except Exception as e:
     async function loadChallenge(challengeId) {
         console.log(`Loading challenge: ${challengeId}`);
         stopTimer();
+        if (typeListener) {
+            typeListener.dispose();
+        }
 
         // Clear previous challenge data immediately
         currentChallengeData = null; 
@@ -718,26 +813,12 @@ except Exception as e:
         descriptionArea.innerHTML = '<p>Loading challenge details...</p>';
         testCasesArea.innerHTML = '<p>Loading test cases...</p>';
         resultsOutput.textContent = '';
-        customTestResultDiv.textContent = '';
-        customTestResultDiv.classList.remove('pass', 'fail', 'running');
 
-        // Clear editor content or set to a loading message
         if (editor) {
             editor.setValue("# Loading challenge...\n");
         }
 
-        dailyChallengesView.style.display = 'none';
-        mainContentArea.style.display = 'flex';
-        
-        // Dynamically load ads for the main content area
-        createAndLoadAd('sidebar-ad-container', '6298571578', 160, 600);
-        createAndLoadAd('content-ad-up-container', '2589027905', 728, 90);
-        createAndLoadAd('code-test-ad-container', '9020937833', 728, 90);
-        viewProgressReportBtn.style.display = 'block';
-        backToDailyViewBtn.style.display = 'block';        
-
         runButton.disabled = true;
-        runCustomTestBtn.disabled = true;
 
         document.querySelectorAll('.challenge-link').forEach(link => {
             link.classList.remove('active');
@@ -770,7 +851,6 @@ except Exception as e:
                 }
             }
             runButton.disabled = false;
-            runCustomTestBtn.disabled = false;
 
             testCasesArea.innerHTML = '';
             const testCaseList = document.createElement('ul');
@@ -842,17 +922,27 @@ except Exception as e:
                 updateUIAfterPass();
             } else {
                 retryChallengeBtn.style.display = 'none';
+                skipChallengeBtn.style.display = 'inline-block';
                 runButton.style.display = 'inline-block'; 
-                runCustomTestBtn.style.display = 'inline-block';
 
-                startTimer();
+                timerDisplay.textContent = formatTime(initialChallengeDuration);
+                timerDisplay.classList.remove('timer-red', 'timer-green');
+
+                typeListener = editor.onDidType(() => {
+                    if (!timerRunning) {
+                        console.log("First keypress detected, starting timer.");
+                        startTimer();
+                    }
+
+                    typeListener.dispose();
+                });                
             }
+
         } catch (error) {
             console.error('Error loading challenge:', error);
             descriptionArea.innerHTML = `<p style="color: red;">Failed to load challenge ${challengeId}. Error: ${error.message}</p>`;
             testCasesArea.innerHTML = `<p style="color: red;">Test cases could not be loaded.</p>`;
             runButton.disabled = true;
-            runCustomTestBtn.disabled = true;
             timerDisplay.textContent = "Timer Error";
             timerDisplay.classList.remove('timer-red', 'timer-green');
         }
@@ -963,12 +1053,26 @@ except Exception as e:
                 a.href = `#${challenge.id}`;
 
                 const solvedData = getSolvedChallengeData(challenge.id);
-                if (solvedData?.wasSolvedInTime) {
+                if (solvedData) {
+                    if (solvedData?.wasSolvedInTime) {
+                        a.classList.add('passed');
+                        const tickSpan = document.createElement('span');
+                        tickSpan.classList.add('tick-mark');
+                        tickSpan.innerHTML = '&#10003;&nbsp;';
+                        a.appendChild(tickSpan);
+                    } else {
+                        a.classList.add('passed');
+                        const tickSpan = document.createElement('span');
+                        tickSpan.classList.add('tick-mark-overtime');
+                        tickSpan.innerHTML = '&#10003;&nbsp;';
+                        a.appendChild(tickSpan);
+                    }
+                } else {
                     a.classList.add('passed');
                     const tickSpan = document.createElement('span');
-                    tickSpan.classList.add('tick-mark');
-                    tickSpan.innerHTML = '&#10003;';
-                    a.appendChild(tickSpan);
+                    tickSpan.classList.add('tick-mark-overtime');
+                    tickSpan.innerHTML = '&#x1F5F8;&nbsp;';
+                    a.appendChild(tickSpan);                    
                 }
 
                 const titleSpan = document.createElement('span');
@@ -992,7 +1096,6 @@ except Exception as e:
             loadChallenge(challengeId);
         } else if (mainContentArea.style.display !== 'none') {
             mainContentArea.style.display = 'none';
-            dailyChallengesView.style.display = 'block';
             manageDailyChallengeSelection(); 
         }            
     });
@@ -1021,7 +1124,6 @@ except Exception as e:
         };
         localStorage.setItem(LS_SOLVED_CHALLENGES, JSON.stringify(solvedChallenges));
 
-        // TODO 
         const dailySetList = JSON.parse(localStorage.getItem(LS_CURRENT_DAILY_SET));
         let solvedCount = 0
 
@@ -1034,10 +1136,16 @@ except Exception as e:
         if (solvedCount == DAILY_CHALLENGE_COUNT) {
             let completionList = localStorage.getItem(LS_DAILY_COMPLETION_RECORDS) || '[]';
             completionList = JSON.parse(completionList);
-            completionList.push(Date.now());
-
+            
+            const todayDateString = new Date().toLocaleDateString('en-CA'); // YYYY-MM-DD format
+            if (!completionList.includes(todayDateString)) {
+                completionList.push(todayDateString);
+            }
+ 
             localStorage.setItem(LS_DAILY_COMPLETION_RECORDS, JSON.stringify(completionList));
         }
+
+        updateHomepageProgressTracker();
     }
 
     function isTimeForNewDailySelection() {
@@ -1084,81 +1192,7 @@ except Exception as e:
         return newDailySet;
     }
 
-    async function renderDailyChallengesPage(dailyChallengeMetaObjects) {
-        dailyChallengeListContainer.innerHTML = '';
-        let totalTime = 0;
-
-        if (!dailyChallengeMetaObjects || dailyChallengeMetaObjects.length === 0) {
-            dailyChallengeListContainer.innerHTML = '<p>No challenges available for today. Please check back later!</p>';
-            dailyTotalTimeLimitDisplay.textContent = 'N/A';
-            return;
-        }
-
-        for (const challenge of dailyChallengeMetaObjects) {
-            const itemDiv = document.createElement('div');
-            itemDiv.classList.add('daily-challenge-item');
-            itemDiv.dataset.challengeId = challenge.id;
-            itemDiv.innerHTML = `
-                <h3>${challenge.title}</h3>
-                <p>Category: ${challenge.category || 'General'}</p>
-            `;
-            
-            // Add main click listener to the entire itemDiv for navigation
-            itemDiv.addEventListener('click', () => {
-                console.log(`Challenge clicked: ${challenge.id}`);
-                window.location.hash = challenge.id; // This will trigger loadChallenge via hashchange
-            });
-            
-            const skipButton = document.createElement('button');
-            skipButton.classList.add('skip-challenge-btn');
-            skipButton.textContent = 'Skip This Challenge';
-            skipButton.dataset.skipId = challenge.id;
-
-            const solvedData = getSolvedChallengeData(challenge.id);
-            if (solvedData && solvedData.wasSolvedInTime) {
-                skipButton.disabled = true;
-            }
-
-            skipButton.addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent triggering the itemDiv click listener
-                handleSkipChallenge(challenge.id);
-            });
-
-            itemDiv.appendChild(skipButton);
-            dailyChallengeListContainer.appendChild(itemDiv);
-            totalTime += getInitialDurationForLevel(challenge.level);
-        }
-        dailyTotalTimeLimitDisplay.textContent = formatTime(totalTime);
-        updateNextSelectionCountdown();
-    }
-
-    function updateNextSelectionCountdown() {
-        const lastSelection = parseInt(localStorage.getItem(LS_LAST_DAILY_SELECTION_TIMESTAMP), 10);
-        if (!lastSelection) {
-            nextSelectionCountdownDisplay.textContent = "Ready now!";
-            return;
-        }
-
-        const intervalId = setInterval(() => {
-            const now = Date.now();
-            const nextSelectionTime = lastSelection + TWENTY_FOUR_HOURS_MS;
-            const remainingMs = nextSelectionTime - now;
-
-            if (remainingMs <= 0) {
-                nextSelectionCountdownDisplay.textContent = "Ready for new selection!";
-                clearInterval(intervalId);
-            } else {
-                const hours = Math.floor(remainingMs / (1000 * 60 * 60));
-                const minutes = Math.floor((remainingMs % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((remainingMs % (1000 * 60)) / 1000);
-                nextSelectionCountdownDisplay.textContent = 
-                    `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
-            }
-        }, 1000);
-    }
-
     async function manageDailyChallengeSelection() {
-        let currentDailySetMeta;
         if (isTimeForNewDailySelection()) {
             console.log("Time for new daily selection or first time.");
             currentDailySetMeta = await selectNewDailyChallenges();
@@ -1167,7 +1201,6 @@ except Exception as e:
             const allMeta = await getAllChallengeMetadata();
             currentDailySetMeta = dailySetIds.map(id => allMeta.find(m => m.id === id)).filter(Boolean);
         }
-        renderDailyChallengesPage(currentDailySetMeta);
     }
 
     async function handleSkipChallenge(challengeIdToSkip) {
@@ -1210,7 +1243,6 @@ except Exception as e:
         localStorage.removeItem(`challengeTimer_${challengeIdToSkip}`);
         console.log(`Timer for skipped challenge ${challengeIdToSkip} cleared.`);
 
-        // Re-fetch metadata for the new set to pass to renderDailyChallengesPage
         const newDailySetFullMeta = await Promise.all(newDailySetIds.map(id => getQuestion(id)));
         
         if (newDailySetFullMeta.some(meta => !meta)) {
@@ -1218,11 +1250,10 @@ except Exception as e:
             alert("An error occurred while updating the challenge list. Please refresh.");
             // Fallback: re-run the full daily selection process might be too much here, better to signal error
         } else {
-            renderDailyChallengesPage(newDailySetFullMeta.filter(Boolean)); // Filter out nulls just in case
-            backToDailyViewBtn.style.display = 'none';
             await loadChallengeList(); // Update sidebar
         }
         updateLoadingProgress("Idle", 0); // Reset progress
+        loadChallenge(newChallengeMeta.id);
     }
 
     function getInitialDurationForLevel(levelString) {
@@ -1305,126 +1336,6 @@ except Exception as e:
         return allMetadata;
     }
 
-    async function renderProgressReport() {
-        reportContentArea.innerHTML = '<p>Generating report...</p>';
-        const allChallengeMeta = await getAllChallengeMetadata();
-        const progressByDate = {};
-        const inProgressChallenges = [];
-
-        allChallengeMeta.forEach(challenge => {
-            const solvedData = getSolvedChallengeData(challenge.id);            
- 
-            if (solvedData) {
-                const solvedDateKey = new Date(solvedData.solvedTimestamp).toLocaleDateString('en-CA'); // YYYY-MM-DD format
-                const solvedTimeSeconds = solvedData.timeTakenSeconds;
-                const initialDuration = solvedData.initialDurationSeconds;
-                const status = solvedTimeSeconds <= initialDuration ? "In Time" : "Over Time";
-
-                if (!progressByDate[solvedDateKey]) {
-                    progressByDate[solvedDateKey] = {
-                        solvedCount: 0,
-                        inTimeCount: 0,
-                        overTimeCount: 0,
-                        challenges: []
-                    };
-                }
-
-                progressByDate[solvedDateKey].solvedCount++;
-                if (status === "In Time") {
-                    progressByDate[solvedDateKey].inTimeCount++;
-                } else {
-                    progressByDate[solvedDateKey].overTimeCount++;
-                }
-                progressByDate[solvedDateKey].challenges.push({
-                    title: challenge.title,
-                    timeTaken: formatTime(solvedTimeSeconds),
-                    status: status
-                });
-            } else if (localStorage.getItem(`challengeTimer_${challenge.id}`)) {
-                inProgressChallenges.push({ title: challenge.title });
-            }
-        });
-
-        let reportHTML = '<h3>Solved Challenges by Date</h3>';
-        const sortedDates = Object.keys(progressByDate).sort((a, b) => new Date(b) - new Date(a)); // Newest first
-
-        if (sortedDates.length === 0) {
-            reportHTML += '<p>No challenges solved yet. Keep practicing!</p>';
-        } else {
-            sortedDates.forEach(date => {
-                const data = progressByDate[date];
-                reportHTML += `
-                    <div class="report-date-section">
-                        <h4>${new Date(date + 'T00:00:00').toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</h4>
-                        <p><strong>Total Solved:</strong> ${data.solvedCount} | 
-                           <strong>In Time:</strong> ${data.inTimeCount} | 
-                           <strong>Over Time:</strong> ${data.overTimeCount}</p>
-                        <ul>
-                            ${data.challenges.map(c => `<li>${c.title} - ${c.status} (Took: ${c.timeTaken})</li>`).join('')}
-                        </ul>
-                    </div>
-                `;
-            });
-        }
-
-        reportHTML += '<h3>Challenges Currently In Progress (Not Yet Solved)</h3>';
-        if (inProgressChallenges.length === 0) {
-            reportHTML += '<p>No challenges currently in progress.</p>';
-        } else {
-            reportHTML += '<ul>';
-            inProgressChallenges.forEach(c => {
-                reportHTML += `<li>${c.title}</li>`;
-            });
-            reportHTML += '</ul>';
-        }
-
-        reportContentArea.innerHTML = reportHTML;
-    }
-
-    viewProgressReportBtn.addEventListener('click', () => {
-        // Determine which view is currently active and store it
-        if (dailyChallengesView.style.display !== 'none') {
-            previousViewBeforeReport = 'daily';
-            dailyChallengesView.style.display = 'none';
-        } else if (mainContentArea.style.display !== 'none') {
-            previousViewBeforeReport = 'main';
-            mainContentArea.style.display = 'none';
-        }
-        // Hide both just in case, though one should already be hidden
-        dailyChallengesView.style.display = 'none'; 
-        mainContentArea.style.display = 'none'; 
-        
-        // Dynamically load ads for the progress report container
-        createAndLoadAd('progress-ad-left-container', '9976563337', 300, 600);
-        progressReportContainer.style.display = 'block';
-        viewProgressReportBtn.style.display = 'none';
-        backToDailyViewBtn.style.display = 'block';
-        // initializeAdsInContainer(progressReportContainer);
-        renderProgressReport();
-    });
-
-    backToChallengesBtn.addEventListener('click', () => {
-        progressReportContainer.style.display = 'none';
-        if (previousViewBeforeReport === 'daily') {
-            dailyChallengesView.style.display = 'block';
-            mainContentArea.style.display = 'none'; 
-            viewProgressReportBtn.style.display = 'block';
-            backToDailyViewBtn.style.display = 'none';            
-        } else if (previousViewBeforeReport === 'main') {
-            mainContentArea.style.display = 'flex'; // Or 'block' if that's its default
-            dailyChallengesView.style.display = 'none'; // Ensure daily view is hidden
-            viewProgressReportBtn.style.display = 'block';
-            backToDailyViewBtn.style.display = 'block';            
-        } else {
-            // Default fallback if something went wrong with previousViewBeforeReport
-            dailyChallengesView.style.display = 'block'; 
-            mainContentArea.style.display = 'none';
-            viewProgressReportBtn.style.display = 'block';
-            backToDailyViewBtn.style.display = 'none';            
-        }
-        window.scrollTo(0, 0); // Scroll to the top of the page
-    });
-
     retryChallengeBtn.addEventListener('click', () => {
         if (!currentChallengeData) return;
 
@@ -1448,22 +1359,16 @@ except Exception as e:
         loadChallenge(challengeIdToRetry);
     });
 
-    // Event Listener for the new "Back to Daily Workout" button in the header
-    backToDailyViewBtn.addEventListener('click', async () => { // Make the listener async
-        mainContentArea.style.display = 'none';
-        progressReportContainer.style.display = 'none'; // Hide report if it was open
-        await manageDailyChallengeSelection(); // Ensure the daily challenges are up-to-date
-        await loadChallengeList(); // Reload sidebar in case daily set changed
-        dailyChallengesView.style.display = 'block'; // Then show the view
-        backToDailyViewBtn.style.display = 'none'; // Hide itself
-        viewProgressReportBtn.style.display = 'block'; // Ensure progress report button is visible
-        if (window.location.hash) { // Clear the hash
-            history.replaceState(null, '', window.location.pathname + window.location.search);
-        }
-        window.scrollTo(0, 0);
-    });    
+    skipChallengeBtn.addEventListener('click', () => {
+        if (!currentChallengeData) return;
 
-    goToHomeBtn.addEventListener('click', () => {
-        window.location.href = 'index.html';
+        const currentChallengeId = currentChallengeData.id;
+        console.log(`Attempting to skip challenge: ${currentChallengeId}`);
+        handleSkipChallenge(currentChallengeId)
     });
+
+    // Initial call to update the tracker when the page loads
+    updateHomepageProgressTracker();
+    // Refresh the tracker every 30 seconds to keep it live
+    setInterval(updateHomepageProgressTracker, 5000); // Refresh every 5 seconds
 });
