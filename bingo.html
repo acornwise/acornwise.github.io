@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top for better content flow */
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 2fr; /* Two columns on larger screens */
+            }
+        }
+
+        .section {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        input[type="number"]:focus, select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        .status-message {
+            text-align: center;
+            margin-top: 25px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e0f7fa;
+            color: #00796b;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: 1px solid #b2ebf2;
+        }
+
+        .current-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2196F3;
+            text-align: center;
+            margin: 30px 0;
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .bingo-boards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .bingo-board {
+            border: 2px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            width: 250px; /* Fixed width for display */
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .bingo-board h3 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .bingo-grid {
+            display: grid;
+            width: 100%;
+            flex-grow: 1;
+        }
+        .bingo-cell {
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 10px 5px;
+            box-sizing: border-box;
+            background-color: white;
+            color: #333;
+        }
+        .bingo-cell.free {
+            background-color: #eee;
+            font-weight: 700;
+            color: #666;
+        }
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+            position: relative;
+        }
+        .close-button {
+            color: #aaa;
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Styles for Called Numbers Display */
+        .called-numbers-display {
+            background-color: #e8f5e9; /* Light green background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-top: 20px;
+            /* Removed display: none; from here */
+        }
+        .called-numbers-display h3 {
+            text-align: center;
+            color: #388e3c; /* Darker green for heading */
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .called-numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Responsive grid */
+            gap: 10px;
+            max-height: 300px; /* Limit height for scrolling */
+            overflow-y: auto; /* Enable scrolling */
+            padding: 10px;
+            border: 1px solid #c8e6c9;
+            border-radius: 8px;
+            background-color: #f0fdf0;
+        }
+        .called-number-item {
+            background-color: #a5d6a7; /* Medium green for items */
+            color: #1b5e20; /* Dark green text */
+            padding: 8px 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        .winner-count-display {
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff3e0; /* Light orange background */
+            color: #ff9800; /* Orange text */
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: 1px solid #ffe0b2;
+        }
+
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+            .container, .section, .button-group, .status-message, .current-number, .modal, .called-numbers-display, .winner-count-display {
+                display: none !important; /* Hide all non-board elements and called numbers display during print */
+            }
+            .bingo-boards-container {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: flex-start; /* Align to start for printing */
+                gap: 20px;
+                padding: 0;
+                margin: 0;
+                background-color: white;
+                width: 100%;
+                box-shadow: none;
+            }
+            .bingo-board {
+                width: 210mm; /* A4 width - margins */
+                height: 297mm; /* A4 height - margins */
+                page-break-after: always; /* Each board on a new page */
+                border: 1px solid #000;
+                box-shadow: none;
+                margin: 10mm; /* Add some margin for printing */
+            }
+            .bingo-board h3 {
+                background-color: #000;
+                color: white;
+            }
+            .bingo-grid {
+                width: 100%;
+                height: calc(100% - 40px); /* Adjust height for title */
+            }
+            .bingo-cell {
+                border: 1px solid #000;
+                font-size: 1.8rem; /* Larger font for print */
+                color: #000;
+            }
+            .bingo-cell.free {
+                background-color: #f0f0f0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex justify-center items-start min-h-screen p-5">
+    <div class="container">
+        <!-- Game Setup Section -->
+        <div class="section bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Bingo Setup</h2>
+
+            <div class="mb-5">
+                <label for="numPlayers" class="block text-gray-700 text-lg font-semibold mb-2">Number of Players:</label>
+                <input type="number" id="numPlayers" value="2" min="2" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-200">
+            </div>
+
+            <div class="mb-5">
+                <label for="gridSize" class="block text-gray-700 text-lg font-semibold mb-2">Numbers in Grid:</label>
+                <select id="gridSize" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-200">
+                    <option value="25">25 (5x5)</option>
+                    <option value="49">49 (7x7)</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label for="totalNumbers" class="block text-gray-700 text-lg font-semibold mb-2">Total Numbers:</label>
+                <select id="totalNumbers" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-200">
+                    <!-- Options will be dynamically populated by JavaScript -->
+                </select>
+            </div>
+
+            <!-- Free Cell Option - Wrapped in a div for easier toggling -->
+            <div id="freeCellOptionContainer" class="mb-6 flex items-center">
+                <input type="checkbox" id="includeFreeCell" checked class="mr-2 h-5 w-5 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                <label for="includeFreeCell" class="text-gray-700 text-lg font-semibold">Include "FREE" cell (5x5 only)</label>
+            </div>
+
+            <div class="mb-6">
+                <label for="linesToWin" class="block text-gray-700 text-lg font-semibold mb-2">Lines to Win:</label>
+                <select id="linesToWin" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 transition duration-200">
+                    <!-- Options will be dynamically populated by JavaScript -->
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button id="generateBoardsBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">Generate Boards</button>
+                <button id="printBoardsBtn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1" disabled>Print Boards</button>
+            </div>
+        </div>
+
+        <!-- Game Control and Status Section -->
+        <div class="section bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Game Control</h2>
+
+            <div id="currentNumberDisplay" class="current-number bg-blue-50 text-blue-700 rounded-lg py-5 px-8 mb-6 text-center text-5xl font-extrabold shadow-inner">
+                --
+            </div>
+
+            <div id="statusMessage" class="status-message bg-yellow-50 text-yellow-800 rounded-lg py-4 px-6 text-center text-lg font-medium shadow-sm">
+                Set up the game and generate boards to start!
+            </div>
+
+            <div id="winnerCountDisplay" class="winner-count-display">
+                Winners: 0
+            </div>
+
+            <div class="button-group mt-6">
+                <button id="startGameBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1" disabled>Start Game</button>
+                <button id="pauseGameBtn" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1" disabled>Pause Game</button>
+                <button id="resumeGameBtn" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg shadow-300 ease-in-out transform hover:-translate-y-1" disabled>Resume Game</button>
+                <button id="endGameBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1" disabled>End Game</button>
+                <button id="restartGameBtn" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1" disabled>Restart Game</button>
+            </div>
+
+            <!-- Display for Called Numbers -->
+            <div id="calledNumbersDisplay" class="called-numbers-display hidden">
+                <h3>Called Numbers</h3>
+                <div id="calledNumbersGrid" class="called-numbers-grid">
+                    <!-- Called numbers will be appended here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bingo Boards Display Area -->
+    <div id="bingoBoardsContainer" class="bingo-boards-container hidden">
+        <!-- Bingo boards will be dynamically inserted here -->
+    </div>
+
+    <!-- Custom Modal for Alerts -->
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p id="modalMessage" class="text-xl font-semibold text-gray-800"></p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg mt-4" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <!-- Background Music Audio Tag -->
+    <audio id="backgroundMusic" src="bingo-background.mp3" loop preload="auto" volume="0.01"></audio>
+
+    <script>
+        // Global game state variables
+        let numPlayers = 2;
+        let gridSize = 25; // Default to 5x5
+        let totalNumbers = 100; // Default to 100
+        let includeFreeCell = true; // Default to true
+        let linesToWin = 1; // Default to 1 line for Bingo
+        let availableNumbers = [];
+        let calledNumbers = [];
+        let bingoBoards = []; // Stores generated boards
+        let gameInterval = null;
+        let isPaused = false;
+        let gameStarted = false;
+        let currentNumber = '--';
+        let bingoSound = null; // Variable to hold the audio object
+        let backgroundMusic = null; // Variable to hold the background music audio object
+        let winnerCount = 0; // New variable to track winners
+
+        // DOM Elements
+        const numPlayersInput = document.getElementById('numPlayers');
+        const gridSizeSelect = document.getElementById('gridSize');
+        const totalNumbersSelect = document.getElementById('totalNumbers');
+        const includeFreeCellCheckbox = document.getElementById('includeFreeCell');
+        const freeCellOptionContainer = document.getElementById('freeCellOptionContainer'); // New DOM element reference
+        const linesToWinSelect = document.getElementById('linesToWin'); // New element
+        const generateBoardsBtn = document.getElementById('generateBoardsBtn');
+        const printBoardsBtn = document.getElementById('printBoardsBtn');
+        const startGameBtn = document.getElementById('startGameBtn');
+        const pauseGameBtn = document.getElementById('pauseGameBtn');
+        const resumeGameBtn = document.getElementById('resumeGameBtn');
+        const endGameBtn = document.getElementById('endGameBtn');
+        const restartGameBtn = document.getElementById('restartGameBtn');
+        const currentNumberDisplay = document.getElementById('currentNumberDisplay');
+        const statusMessageDisplay = document.getElementById('statusMessage');
+        const bingoBoardsContainer = document.getElementById('bingoBoardsContainer');
+        const calledNumbersDisplay = document.getElementById('calledNumbersDisplay');
+        const calledNumbersGrid = document.getElementById('calledNumbersGrid');
+        const customModal = document.getElementById('customModal');
+        const modalMessage = document.getElementById('modalMessage');
+        const winnerCountDisplay = document.getElementById('winnerCountDisplay'); // New DOM element reference
+
+        // Event Listeners
+        generateBoardsBtn.addEventListener('click', generateBingoBoards);
+        printBoardsBtn.addEventListener('click', printBingoBoards);
+        startGameBtn.addEventListener('click', startGame);
+        pauseGameBtn.addEventListener('click', pauseGame);
+        resumeGameBtn.addEventListener('click', resumeGame);
+        endGameBtn.addEventListener('click', endGame);
+        restartGameBtn.addEventListener('click', restartGame);
+        gridSizeSelect.addEventListener('change', () => {
+            updateLinesToWinOptions();
+            updateTotalNumbersOptions(); // Call new function to update total numbers
+            toggleFreeCellOption(); // Call the new toggle function
+        });
+
+        // Initialize audio objects
+        document.addEventListener('DOMContentLoaded', () => {
+            updateButtonStates();
+            // Initialize the bingo sound object (replace with your actual sound file path)
+            bingoSound = new Audio('congratulations-sound.mp3'); // Placeholder
+            bingoSound.load();
+
+            // Initialize background music object
+            backgroundMusic = document.getElementById('backgroundMusic');
+            backgroundMusic.volume = 0.05; // Set initial volume low (0.0 to 1.0)
+            backgroundMusic.load(); // Preload the audio
+
+            // Initial population of linesToWin and totalNumbers options based on default gridSize
+            updateLinesToWinOptions();
+            updateTotalNumbersOptions();
+            toggleFreeCellOption(); // Initial call to hide/show free cell option
+            updateWinnerCountDisplay(); // Initial update for winner count
+        });
+
+        // Helper function to show custom modal
+        function showModal(message) {
+            modalMessage.textContent = message;
+            customModal.style.display = 'flex'; // Use flex to center
+        }
+
+        // Helper function to close custom modal
+        function closeModal() {
+            customModal.style.display = 'none';
+            // Stop the bingo sound when the modal is closed
+            if (bingoSound) {
+                bingoSound.pause();
+                bingoSound.currentTime = 0; // Reset sound to start
+            }
+        }
+
+        // Function to update button states
+        function updateButtonStates() {
+            const boardsGenerated = bingoBoards.length > 0;
+            const gameIsRunning = gameStarted && !isPaused;
+            const gameIsPaused = gameStarted && isPaused;
+            const gameEnded = availableNumbers.length === 0 && gameStarted; // Game ended naturally
+
+            generateBoardsBtn.disabled = gameStarted;
+            printBoardsBtn.disabled = !boardsGenerated || gameStarted;
+            startGameBtn.disabled = !boardsGenerated || gameStarted;
+            pauseGameBtn.disabled = !gameIsRunning;
+            resumeGameBtn.disabled = !gameIsPaused;
+            endGameBtn.disabled = !gameStarted;
+            restartGameBtn.disabled = !gameStarted && !gameEnded; // Enable restart if game was started or ended
+        }
+
+        /**
+         * Dynamically updates the options in the "Lines to Win" dropdown
+         * based on the selected grid size.
+         */
+        function updateLinesToWinOptions() {
+            const currentGridSize = parseInt(gridSizeSelect.value);
+            let maxLines = 0;
+
+            if (currentGridSize === 25) { // 5x5 grid
+                maxLines = 5;
+            } else if (currentGridSize === 49) { // 7x7 grid
+                maxLines = 7;
+            }
+
+            linesToWinSelect.innerHTML = ''; // Clear existing options
+
+            for (let i = 1; i <= maxLines; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = `${i} Line${i > 1 ? 's' : ''}`;
+                linesToWinSelect.appendChild(option);
+            }
+
+            // Reset linesToWin to 1 if the current selection is invalid for the new grid size
+            if (parseInt(linesToWinSelect.value) > maxLines) {
+                linesToWinSelect.value = 1;
+            }
+        }
+
+        /**
+         * Dynamically updates the options in the "Total Numbers" dropdown
+         * based on the selected grid size.
+         */
+        function updateTotalNumbersOptions() {
+            const currentGridSize = parseInt(gridSizeSelect.value);
+            totalNumbersSelect.innerHTML = ''; // Clear existing options
+
+            let optionsToAdd = [];
+            if (currentGridSize === 25) { // 5x5 grid
+                optionsToAdd = [25, 50, 100];
+            } else if (currentGridSize === 49) { // 7x7 grid
+                optionsToAdd = [50, 100];
+            }
+
+            optionsToAdd.forEach(num => {
+                const option = document.createElement('option');
+                option.value = num;
+                option.textContent = num;
+                totalNumbersSelect.appendChild(option);
+            });
+
+            // Ensure the selected value remains valid or defaults to the lowest valid option
+            const currentTotalNumbers = parseInt(totalNumbersSelect.value);
+            if (!optionsToAdd.includes(currentTotalNumbers)) {
+                totalNumbersSelect.value = optionsToAdd[0]; // Default to the first valid option
+            }
+        }
+
+        /**
+         * Toggles the visibility of the "Include FREE cell" option based on grid size.
+         */
+        function toggleFreeCellOption() {
+            const currentGridSize = parseInt(gridSizeSelect.value);
+            if (currentGridSize === 49) { // If 7x7 grid
+                freeCellOptionContainer.classList.add('hidden');
+                includeFreeCellCheckbox.checked = false; // Uncheck if hidden
+            } else {
+                freeCellOptionContainer.classList.remove('hidden');
+            }
+        }
+
+        /**
+         * Updates the display for the number of winners.
+         */
+        function updateWinnerCountDisplay() {
+            winnerCountDisplay.textContent = `Winners: ${winnerCount}`;
+        }
+
+        // --- Bingo Game Logic ---
+
+        /**
+         * Generates a single Bingo board.
+         * @param {number} size - The total number of cells in the grid (e.g., 25 for 5x5, 49 for 7x7).
+         * @param {number} maxNumber - The maximum number to include in the board.
+         * @param {boolean} includeFree - Whether to include a "FREE" cell.
+         * @returns {Object} An object containing the 2D array representing the Bingo board and its dimensions.
+         */
+        function generateSingleBoard(size, maxNumber, includeFree) {
+            const board = [];
+            const numbers = Array.from({ length: maxNumber }, (_, i) => i + 1);
+            // Shuffle numbers to pick randomly
+            for (let i = numbers.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
+            }
+
+            const boardNumbers = new Set();
+            // Fill the board with unique numbers
+            while (boardNumbers.size < size) {
+                const randomIndex = Math.floor(Math.random() * numbers.length);
+                boardNumbers.add(numbers[randomIndex]);
+            }
+
+            const boardNumbersArray = Array.from(boardNumbers);
+            // Shuffle again to randomize placement on the board
+            for (let i = boardNumbersArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [boardNumbersArray[i], boardNumbersArray[j]] = [boardNumbersArray[j], boardNumbersArray[i]];
+            }
+
+            let rows, cols;
+            if (size === 25) {
+                rows = 5;
+                cols = 5;
+            } else if (size === 49) {
+                rows = 7;
+                cols = 7;
+            } else {
+                // Fallback for unexpected sizes, though select prevents this
+                rows = Math.floor(Math.sqrt(size));
+                cols = Math.ceil(size / rows);
+            }
+
+
+            let k = 0;
+            for (let i = 0; i < rows; i++) {
+                const row = [];
+                for (let j = 0; j < cols; j++) {
+                    if (k < boardNumbersArray.length) {
+                        row.push(boardNumbersArray[k++]);
+                    } else {
+                        // This case should ideally not be hit if boardNumbersArray.length === size
+                        row.push(''); // Empty cell if not enough numbers
+                    }
+                }
+                board.push(row);
+            }
+
+            // Add "FREE" space for 5x5 grid (size 25) if option is selected
+            if (size === 25 && includeFree) {
+                board[2][2] = 'FREE';
+            }
+
+            return { grid: board, rows: rows, cols: cols }; // Return grid and its dimensions
+        }
+
+        /**
+         * Renders the Bingo boards to the DOM.
+         */
+        function renderBingoBoards() {
+            bingoBoardsContainer.innerHTML = '';
+            bingoBoardsContainer.classList.remove('hidden'); // Show container
+
+            bingoBoards.forEach((boardData, index) => {
+                const boardElement = document.createElement('div');
+                boardElement.className = 'bingo-board';
+
+                const boardTitle = document.createElement('h3');
+                boardTitle.textContent = `Player ${index + 1}`;
+                boardElement.appendChild(boardTitle);
+
+                const gridElement = document.createElement('div');
+                gridElement.className = 'bingo-grid';
+                // Use the stored rows and cols for rendering the grid
+                gridElement.style.gridTemplateColumns = `repeat(${boardData.cols}, 1fr)`;
+
+                boardData.grid.forEach(row => {
+                    row.forEach(cellValue => {
+                        const cellElement = document.createElement('div');
+                        cellElement.className = 'bingo-cell';
+                        if (cellValue === 'FREE') {
+                            cellElement.classList.add('free');
+                        }
+                        cellElement.textContent = cellValue;
+                        gridElement.appendChild(cellElement);
+                    });
+                });
+                boardElement.appendChild(gridElement);
+                bingoBoardsContainer.appendChild(boardElement);
+            });
+        }
+
+        /**
+         * Generates Bingo boards for all players based on user inputs.
+         */
+        function generateBingoBoards() {
+            numPlayers = parseInt(numPlayersInput.value);
+            gridSize = parseInt(gridSizeSelect.value);
+            totalNumbers = parseInt(totalNumbersSelect.value);
+            includeFreeCell = includeFreeCellCheckbox.checked; // Get state of checkbox
+            linesToWin = parseInt(linesToWinSelect.value); // Get state of new linesToWin select
+
+            if (isNaN(numPlayers) || numPlayers < 1) {
+                showModal('Please enter a valid number of players (at least 1).');
+                return;
+            }
+            if (totalNumbers < gridSize) {
+                showModal('Total numbers must be greater than or equal to numbers in grid.');
+                return;
+            }
+            if (isNaN(linesToWin) || linesToWin < 1) {
+                showModal('Please select a valid number of lines to win.');
+                return;
+            }
+
+
+            bingoBoards = [];
+            for (let i = 0; i < numPlayers; i++) {
+                // Pass includeFreeCell to generateSingleBoard
+                // Ensure includeFreeCell is false if gridSize is 49 (7x7)
+                const effectiveIncludeFreeCell = (gridSize === 25) && includeFreeCell;
+                const { grid, rows, cols } = generateSingleBoard(gridSize, totalNumbers, effectiveIncludeFreeCell);
+                // Initialize a 'marked' grid for checking Bingo, and a 'hasBingo' flag
+                // If FREE cell is included, it's marked by default
+                const markedGrid = grid.map(row => row.map(cell => (cell === 'FREE' && effectiveIncludeFreeCell)));
+                bingoBoards.push({ id: i + 1, grid: grid, marked: markedGrid, hasBingo: false, rows: rows, cols: cols });
+            }
+
+            renderBingoBoards();
+            statusMessageDisplay.textContent = `${numPlayers} Bingo boards generated. Ready to start the game!`;
+            updateButtonStates();
+        }
+
+        /**
+         * Prints the generated Bingo boards.
+         */
+        function printBingoBoards() {
+            if (bingoBoards.length === 0) {
+                showModal('No boards to print. Please generate boards first.');
+                return;
+            }
+            window.print();
+        }
+
+        /**
+         * Initializes the game and starts calling numbers.
+         */
+        function startGame() {
+            if (bingoBoards.length === 0) {
+                showModal('Please generate Bingo boards first.');
+                return;
+            }
+
+            gameStarted = true;
+            isPaused = false;
+            calledNumbers = [];
+            availableNumbers = Array.from({ length: totalNumbers }, (_, i) => i + 1); // Numbers 1 to totalNumbers
+            linesToWin = parseInt(linesToWinSelect.value); // Ensure linesToWin is updated at game start
+            winnerCount = 0; // Reset winner count at game start
+            updateWinnerCountDisplay(); // Update display
+
+            // Hide bingo boards and show called numbers display
+            bingoBoardsContainer.classList.add('hidden');
+            calledNumbersDisplay.classList.remove('hidden'); // This will now correctly show it
+            calledNumbersGrid.innerHTML = ''; // Clear previous called numbers
+
+            // Reset marked state and hasBingo for all boards
+            bingoBoards.forEach(boardData => {
+                // Reset marked state based on whether FREE cell was included for this board
+                const effectiveIncludeFreeCell = (gridSize === 25) && includeFreeCellCheckbox.checked;
+                boardData.marked = boardData.grid.map(row => row.map(cell => (cell === 'FREE' && effectiveIncludeFreeCell)));
+                boardData.hasBingo = false;
+            });
+
+            statusMessageDisplay.textContent = 'Game started! Calling numbers...';
+            currentNumberDisplay.textContent = '--';
+            updateButtonStates();
+            
+            // Start background music
+            if (backgroundMusic) {
+                backgroundMusic.play().catch(e => console.error("Error playing background music:", e));
+            }
+
+            callNextNumber(); // Call the first number immediately
+        }
+
+        /**
+         * Calls the next random number and announces it using TTS.
+         */
+        function callNextNumber() {
+            if (isPaused) return; // Do not call if paused
+
+            if (availableNumbers.length === 0) {
+                endGame();
+                showModal('All numbers have been called! Game over.');
+                return;
+            }
+
+            // Pick a random number from availableNumbers
+            const randomIndex = Math.floor(Math.random() * availableNumbers.length);
+            const numberToCall = availableNumbers.splice(randomIndex, 1)[0];
+            calledNumbers.push(numberToCall);
+            currentNumber = numberToCall;
+            currentNumberDisplay.textContent = numberToCall;
+            statusMessageDisplay.textContent = `Calling: ${numberToCall}`;
+
+            // Add the called number to the display
+            const calledNumberItem = document.createElement('div');
+            calledNumberItem.className = 'called-number-item';
+            calledNumberItem.textContent = numberToCall;
+            calledNumbersGrid.appendChild(calledNumberItem);
+            // Scroll to the bottom to show the latest number
+            calledNumbersGrid.scrollTop = calledNumbersGrid.scrollHeight;
+
+
+            // Announce number twice with a 1-second pause
+            const utterance1 = new SpeechSynthesisUtterance(numberToCall.toString());
+            utterance1.rate = 0.8; // Slightly slower
+            utterance1.pitch = 1;
+
+            utterance1.onend = () => {
+                setTimeout(() => {
+                    const utterance2 = new SpeechSynthesisUtterance(numberToCall.toString());
+                    utterance2.rate = 0.8;
+                    utterance2.pitch = 1;
+                    utterance2.onend = () => {
+                        // After announcing twice, wait 2.5 seconds before checking for Bingo
+                        // This allows the user to process the number before an alert
+                        setTimeout(checkForBingo, 2500); // 2.5 seconds delay
+                        if (!isPaused && gameStarted) { // Only schedule next number if not paused and game is still running
+                            gameInterval = setTimeout(callNextNumber, 5000); // 5 seconds later for next number
+                        }
+                    };
+                    window.speechSynthesis.speak(utterance2);
+                }, 1000); // 1 second pause
+            };
+            window.speechSynthesis.speak(utterance1);
+        }
+
+        /**
+         * Pauses the game.
+         */
+        function pauseGame() {
+            if (!gameStarted || isPaused) return;
+            clearTimeout(gameInterval); // Stop the interval
+            isPaused = true;
+            statusMessageDisplay.textContent = 'Game paused. Click Resume to continue.';
+            window.speechSynthesis.cancel(); // Stop any ongoing speech
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+            }
+            updateButtonStates();
+        }
+
+        /**
+         * Resumes the game.
+         */
+        function resumeGame() {
+            if (!gameStarted || !isPaused) return;
+            isPaused = false;
+            statusMessageDisplay.textContent = `Game resumed. Calling: ${currentNumber}`; // Show last called number
+            if (backgroundMusic) {
+                backgroundMusic.play().catch(e => console.error("Error resuming background music:", e));
+            }
+            updateButtonStates();
+            // Immediately call next number if there was no ongoing speech, otherwise it will resume after speech
+            callNextNumber();
+        }
+
+        /**
+         * Ends the current game.
+         */
+        function endGame() {
+            clearTimeout(gameInterval);
+            gameStarted = false;
+            isPaused = false;
+            statusMessageDisplay.textContent = 'Game ended. Click Restart to play again.';
+            window.speechSynthesis.cancel(); // Stop any ongoing speech
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+                backgroundMusic.currentTime = 0; // Reset music to start
+            }
+            updateButtonStates();
+            // Show boards again, hide called numbers display
+            bingoBoardsContainer.classList.remove('hidden');
+            calledNumbersDisplay.classList.add('hidden');
+        }
+
+        /**
+         * Restarts the game by resetting all states.
+         */
+        function restartGame() {
+            clearTimeout(gameInterval);
+            gameStarted = false;
+            isPaused = false;
+            calledNumbers = [];
+            availableNumbers = [];
+            bingoBoards = [];
+            currentNumber = '--';
+            currentNumberDisplay.textContent = '--';
+            statusMessageDisplay.textContent = 'Game reset. Generate new boards or restart.';
+            bingoBoardsContainer.innerHTML = '';
+            bingoBoardsContainer.classList.add('hidden'); // Hide container
+            calledNumbersGrid.innerHTML = ''; // Clear called numbers display
+            calledNumbersDisplay.classList.add('hidden'); // Hide called numbers display
+            numPlayersInput.value = 1;
+            gridSizeSelect.value = 25; // Reset to default 25
+            totalNumbersSelect.value = 100;
+            includeFreeCellCheckbox.checked = true; // Reset checkbox to default
+            linesToWinSelect.value = 1; // Reset lines to win to default
+            winnerCount = 0; // Reset winner count
+            updateWinnerCountDisplay(); // Update display
+            if (backgroundMusic) {
+                backgroundMusic.pause();
+                backgroundMusic.currentTime = 0; // Reset music to start
+            }
+            updateButtonStates();
+            toggleFreeCellOption(); // Ensure free cell option visibility is correct on restart
+        }
+
+        /**
+         * Checks if any generated board has a Bingo based on called numbers.
+         * This function simulates the Bingo check on the system's side.
+         */
+        function checkForBingo() {
+            // Only check for bingo if the game is still running (not paused by a previous bingo or ended)
+            if (isPaused || !gameStarted) {
+                return;
+            }
+
+            let anyBingoDetectedGlobal = false;
+
+            bingoBoards.forEach(boardData => {
+                if (boardData.hasBingo) return; // Skip if already has Bingo
+
+                const rows = boardData.rows;
+                const cols = boardData.cols;
+                const linesRequiredForWin = parseInt(linesToWinSelect.value); // Get user's desired lines to win
+
+                let currentBoardCompletedLines = 0; // Count lines for the current board
+
+                console.log(`Checking board ${boardData.id}. Lines required to win: ${linesRequiredForWin}`);
+
+                // Mark numbers on the board
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const cellValue = boardData.grid[r][c];
+                        if (cellValue !== 'FREE' && calledNumbers.includes(cellValue)) {
+                            boardData.marked[r][c] = true;
+                        }
+                    }
+                }
+
+                // Check rows
+                for (let r = 0; r < rows; r++) {
+                    if (boardData.marked[r].every(cell => cell)) { // Check if the entire row is marked
+                        currentBoardCompletedLines++;
+                        console.log(`Board ${boardData.id}: Row ${r} completed. Total lines: ${currentBoardCompletedLines}`);
+                    }
+                }
+
+                // Check columns
+                for (let c = 0; c < cols; c++) {
+                    let columnCells = [];
+                    for (let r = 0; r < rows; r++) {
+                        columnCells.push(boardData.marked[r][c]);
+                    }
+                    if (columnCells.every(cell => cell)) { // Check if the entire column is marked
+                        currentBoardCompletedLines++;
+                        console.log(`Board ${boardData.id}: Column ${c} completed. Total lines: ${currentBoardCompletedLines}`);
+                    }
+                }
+
+                // Check diagonals (only for square grids like 5x5, 7x7)
+                if (rows === cols) { // Ensure it's a square grid for diagonals
+                    // Main diagonal
+                    let mainDiagonalCells = [];
+                    for (let i = 0; i < rows; i++) {
+                        mainDiagonalCells.push(boardData.marked[i][i]);
+                    }
+                    if (mainDiagonalCells.every(cell => cell)) {
+                        currentBoardCompletedLines++;
+                        console.log(`Board ${boardData.id}: Main Diagonal completed. Total lines: ${currentBoardCompletedLines}`);
+                    }
+
+                    // Anti-diagonal
+                    let antiDiagonalCells = [];
+                    for (let i = 0; i < rows; i++) {
+                        antiDiagonalCells.push(boardData.marked[i][rows - 1 - i]);
+                    }
+                    if (antiDiagonalCells.every(cell => cell)) {
+                        currentBoardCompletedLines++;
+                        console.log(`Board ${boardData.id}: Anti-Diagonal completed. Total lines: ${currentBoardCompletedLines}`);
+                    }
+                }
+
+                // Now, check if the number of completed lines meets the win condition
+                if (currentBoardCompletedLines >= linesRequiredForWin) {
+                    boardData.hasBingo = true; // Mark this board as having Bingo
+                    anyBingoDetectedGlobal = true; // Set flag that at least one bingo was found
+                    winnerCount++; // Increment winner count
+                    updateWinnerCountDisplay(); // Update winner count display
+                    console.log(`Board ${boardData.id} achieved Bingo with ${currentBoardCompletedLines} lines (required ${linesRequiredForWin}).`);
+                }
+            });
+
+            // If any bingo was detected across all boards, trigger the alert and sound
+            if (anyBingoDetectedGlobal) {
+                pauseGame(); // Automatically pause the game
+                const bingoMessage = `Bingo Alert! Someone might have a Bingo! Please check your board.`;
+                showModal(bingoMessage);
+                statusMessageDisplay.textContent = `Bingo detected! Game paused.`;
+
+                // Announce the Bingo message via TTS
+                const utterance = new SpeechSynthesisUtterance(bingoMessage);
+                utterance.rate = 0.9; // Slightly slower for emphasis
+                utterance.pitch = 1.1; // Slightly higher pitch for emphasis
+                window.speechSynthesis.speak(utterance);
+
+                // Play congratulation sound
+                if (bingoSound) {
+                    bingoSound.play().catch(e => console.error("Error playing sound:", e));
+                }
+            }
+        }
+    </script>
+</body>
+</html>
