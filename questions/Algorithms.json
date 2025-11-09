@@ -1,6 +1,6 @@
 [
   {
-    "id": "def97ef7-5521-41cb-bc51-f80104b9bb2a",
+    "id": "dSABb",
     "title": "Countdown",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -17,7 +17,7 @@
     "from": "OUCC"
   },
   {
-    "id": "f8bf6bbe-4b67-4c50-a15f-c171424e78b1",
+    "id": "ZG0hg",
     "title": "Pig Latin",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -34,7 +34,7 @@
     "from": "OUCC"
   },
   {
-    "id": "91a6ca65-5da6-4598-b23a-35260871ed05",
+    "id": "fXigi",
     "title": "Cost of Petrol",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -51,7 +51,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0ec0d3d7-bc4a-408a-a01b-1e0b2ad27f31",
+    "id": "CzZIT",
     "title": "How Long?",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -68,7 +68,7 @@
     "from": "OUCC"
   },
   {
-    "id": "1bda8af5-6381-458d-bd02-743e2ac7dbaa",
+    "id": "u54Is",
     "title": "How Many Inputs?",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -88,7 +88,7 @@
     "from": "OUCC"
   },
   {
-    "id": "815b3229-9bd8-4813-8eb0-d43802a37b0b",
+    "id": "69hXW",
     "title": "Fibonacci",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -106,7 +106,7 @@
     "from": "OUCC"
   },
   {
-    "id": "26510f2f-e651-4247-8026-c3b9f46f634b",
+    "id": "6HwhS",
     "title": "Stop at Zero",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -129,7 +129,7 @@
     "from": "OUCC"
   },
   {
-    "id": "964d28f3-2a32-40f8-b330-0d58be12c51e",
+    "id": "xSA1M",
     "title": "Saving Up",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -146,7 +146,7 @@
     "from": "OUCC"
   },
   {
-    "id": "a0fe7568-8447-4106-a713-2817f7deec6e",
+    "id": "Gh94N",
     "title": "Maximal Sum Path",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -163,7 +163,7 @@
     "from": "OUCC"
   },
   {
-    "id": "940c36dd-7ae7-46a3-9963-340a55f1d39d",
+    "id": "DL1Yp",
     "title": "Cost of Petrol",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -180,7 +180,7 @@
     "from": "OUCC"
   },
   {
-    "id": "bc0d6b35-0b32-4163-9011-8b16dc78607c",
+    "id": "WBGth",
     "title": "Run Length Encoding",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -209,7 +209,7 @@
     "from": "OUCC"
   },
   {
-    "id": "9c62b855-85a1-4f3f-b9fd-a9fc101c4252",
+    "id": "iGYSK",
     "title": "Integer Division",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -226,7 +226,7 @@
     "from": "OUCC"
   },
   {
-    "id": "2941eadf-a353-40ed-8fed-3186df1565ef",
+    "id": "OFRJA",
     "title": "A Mountain Hike",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -253,7 +253,7 @@
     "from": "OUCC"
   },
   {
-    "id": "982b711a-7d73-4ecd-af96-ad7c7eb37ba3",
+    "id": "wM7rK",
     "title": "Marathon",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -270,7 +270,7 @@
     "from": "OUCC"
   },
   {
-    "id": "4b996b11-68e5-443c-b078-b907c4b133e0",
+    "id": "2nrxG",
     "title": "Boxes in Boxes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -291,7 +291,7 @@
     "from": "OUCC"
   },
   {
-    "id": "f3691cde-c9c0-4adc-b7c7-4fcebedcb71b",
+    "id": "sJv8J",
     "title": "Chocolates",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -308,7 +308,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0cffabe6-7999-4306-b0e8-1212af8218e8",
+    "id": "fkuMT",
     "title": "Crossnum Puzzle",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -335,7 +335,7 @@
     "from": "OUCC"
   },
   {
-    "id": "a14d10d9-2fe9-42b0-a53b-89f5d58883a7",
+    "id": "vwQ9f",
     "title": "IPv4 Validation",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -358,7 +358,7 @@
     "from": "OUCC"
   },
   {
-    "id": "cbc43d93-6cc8-47fc-9f74-fb02611aa2fc",
+    "id": "SaZe9",
     "title": "Heat Pumps",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -383,7 +383,7 @@
     "from": "OUCC"
   },
   {
-    "id": "273f2ef8-b826-4e97-adcf-68a60d27b4d2",
+    "id": "zdgqG",
     "title": "Error Codes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -409,7 +409,7 @@
     "from": "OUCC"
   },
   {
-    "id": "2f36c146-1104-48e9-80cd-a04ab72e7f23",
+    "id": "06tAC",
     "title": "Hailstones",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -426,7 +426,7 @@
     "from": "OUCC"
   },
   {
-    "id": "694caf94-f9c4-4352-96fc-6a7b35ecc503",
+    "id": "2Jb74",
     "title": "Square List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -443,7 +443,7 @@
     "from": "OUCC"
   },
   {
-    "id": "faa81f6a-23d8-4cfb-8cda-c4e146a36792",
+    "id": "a9CNf",
     "title": "Happy Ultrarunners",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -464,7 +464,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0ff622ac-f34e-4adb-9f59-3420f5dd1d9d",
+    "id": "9B3ZS",
     "title": "Guest Goes Free",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -486,7 +486,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0c849496-161d-4da5-ad77-bf1ccf02b328",
+    "id": "56pel",
     "title": "Too Short",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -507,7 +507,7 @@
     "from": "OUCC"
   },
   {
-    "id": "776b26fd-05a2-45b1-bc22-ca8104e2b225",
+    "id": "QtrH3",
     "title": "Shopping Discounts",
     "category": "Algorithms",
     "input_type": "stdin",

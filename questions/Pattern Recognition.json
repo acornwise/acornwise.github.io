@@ -1,6 +1,6 @@
 [
   {
-    "id": "b3f5ebeb-3fe5-4972-9620-9ac2f909d094",
+    "id": "3YNzF",
     "title": "Pangrams",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -17,7 +17,7 @@
     "from": "OUCC"
   },
   {
-    "id": "b9bf7c51-3219-4367-b702-bff743be37af",
+    "id": "RxQLw",
     "title": "Most Common Letters",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -34,7 +34,7 @@
     "from": "OUCC"
   },
   {
-    "id": "ee774bdf-ed66-4f20-9239-dac6ee73aca2",
+    "id": "Uk7BG",
     "title": "Most Popular Digit",
     "category": "Pattern Recognition",
     "input_type": "stdin",

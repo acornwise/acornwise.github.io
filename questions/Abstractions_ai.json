@@ -1,6 +1,6 @@
 [
   {
-    "id": "int_q_001",
+    "id": "41IJg",
     "title": "Temperature Conversion Table",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -18,7 +18,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_002",
+    "id": "hvc0c",
     "title": "Grade Calculator",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -35,7 +35,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_003",
+    "id": "RMKzi",
     "title": "Count Words in Sentence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -52,7 +52,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_004",
+    "id": "NwcfC",
     "title": "Reverse Words in Sentence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -69,7 +69,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_005",
+    "id": "FE2wx",
     "title": "Factorial Calculation (Loop)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -86,7 +86,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_006",
+    "id": "Sj2Tz",
     "title": "Fibonacci Sequence (Nth Term)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -103,7 +103,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_007",
+    "id": "j6x2t",
     "title": "Greatest Common Divisor (GCD)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -121,7 +121,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_008",
+    "id": "wsc8g",
     "title": "Least Common Multiple (LCM)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -139,7 +139,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_009",
+    "id": "C5bLg",
     "title": "Prime Number Checker",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -156,7 +156,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_010",
+    "id": "95NVj",
     "title": "Sum of Digits",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -173,7 +173,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_011",
+    "id": "n2hxi",
     "title": "Count Even/Odd Numbers in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -190,7 +190,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_012",
+    "id": "7iEfm",
     "title": "Find Second Largest in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -207,7 +207,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_013",
+    "id": "umTMu",
     "title": "Remove Duplicates from List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -224,7 +224,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_014",
+    "id": "jgmhe",
     "title": "Common Elements in Two Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -242,7 +242,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_015",
+    "id": "AMTuU",
     "title": "Find Element Index",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -260,7 +260,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_016",
+    "id": "M1iZ7",
     "title": "String Palindrome Check Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -277,7 +277,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_017",
+    "id": "yzUas",
     "title": "Character Frequency Counter Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -294,7 +294,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_018",
+    "id": "ThyPD",
     "title": "Count Vowels and Consonants Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -311,7 +311,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_019",
+    "id": "ax20x",
     "title": "Check Anagrams Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -329,7 +329,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_020",
+    "id": "PLYZF",
     "title": "Simple List Sort (Ascending)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -346,7 +346,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_021",
+    "id": "LsTNu",
     "title": "Check Prime Numbers in Range",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -364,7 +364,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_022",
+    "id": "hzVyV",
     "title": "Basic Matrix Addition (2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -384,7 +384,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_023",
+    "id": "Jd6J3",
     "title": "Pattern Printing: Right Triangle",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -401,7 +401,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_024",
+    "id": "00lVR",
     "title": "Simple Stock Profit Calculator",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -418,7 +418,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_025",
+    "id": "sXdSi",
     "title": "Guess the Number Game",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -437,7 +437,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_026",
+    "id": "onTff",
     "title": "Caesar Cipher Encoder",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -455,7 +455,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_027",
+    "id": "PF1da",
     "title": "Validate Password Strength",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -472,7 +472,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_028",
+    "id": "R6lg8",
     "title": "Calculate GPA",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -489,7 +489,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_029",
+    "id": "RibKz",
     "title": "Find Longest Word in Sentence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -506,7 +506,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_030",
+    "id": "i7EwM",
     "title": "Check Balanced Parentheses (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -523,7 +523,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_031",
+    "id": "IJrG5",
     "title": "Sum of Squares of List Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -540,7 +540,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_032",
+    "id": "cENOz",
     "title": "Merge Two Sorted Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -558,7 +558,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_033",
+    "id": "CUMbV",
     "title": "Rotate List Left by N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -576,7 +576,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_034",
+    "id": "qRS0N",
     "title": "Max Subarray Sum (Fixed Size 2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -593,7 +593,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_035",
+    "id": "S0cZL",
     "title": "Flatten a Nested List (Depth 1)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -610,7 +610,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_036",
+    "id": "tYCyV",
     "title": "Find Missing Number in Sequence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -627,7 +627,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_037",
+    "id": "4l9uV",
     "title": "Word Reversal Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -644,7 +644,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_038",
+    "id": "wJYFF",
     "title": "Is Sorted List Function",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -661,7 +661,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_039",
+    "id": "rkmK4",
     "title": "Matrix Transpose (2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -679,7 +679,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_040",
+    "id": "c9ZXE",
     "title": "Count Words Starting with Specific Letter",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -697,7 +697,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_041",
+    "id": "r2Uhl",
     "title": "Pangram Checker",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -714,7 +714,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_042",
+    "id": "rwjx2",
     "title": "Run-Length Encoding (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -731,7 +731,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_043",
+    "id": "o4UTg",
     "title": "Check for Duplicate Characters",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -748,7 +748,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_044",
+    "id": "aA8hG",
     "title": "Vowel or Consonant (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -765,7 +765,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_045",
+    "id": "KqBfP",
     "title": "Sum of Range (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -783,7 +783,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_046",
+    "id": "vVQ5u",
     "title": "List Element Multiplier (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -801,7 +801,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_047",
+    "id": "W6BGR",
     "title": "Check if Substring Exists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -819,7 +819,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_048",
+    "id": "K8DEy",
     "title": "Count Vowels in Each Word",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -836,7 +836,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_049",
+    "id": "j6Zqh",
     "title": "Decimal to Binary Conversion",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -853,7 +853,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_050",
+    "id": "FHwsT",
     "title": "Validate Email Format (Basic)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -870,7 +870,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_051",
+    "id": "0bjUz",
     "title": "Digit Count in Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -887,7 +887,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_052",
+    "id": "JJ53b",
     "title": "Power of a Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -905,7 +905,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_053",
+    "id": "5O0ah",
     "title": "FizzBuzz Problem",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -922,7 +922,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_054",
+    "id": "6cEWc",
     "title": "Sum of Primes in Range",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -940,7 +940,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_055",
+    "id": "hs3XT",
     "title": "Reverse a Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -957,7 +957,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_056",
+    "id": "qp0r3",
     "title": "Check Armstrong Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -974,7 +974,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_057",
+    "id": "TP0Rm",
     "title": "Binary to Decimal Converter",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -991,7 +991,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_058",
+    "id": "JgxDd",
     "title": "Perfect Number Checker",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1008,7 +1008,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_059",
+    "id": "Fjl3I",
     "title": "Pattern Printing: Inverted Right Triangle",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1025,7 +1025,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_060",
+    "id": "Ke8Ic",
     "title": "Pattern Printing: Pyramid",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1042,7 +1042,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_061",
+    "id": "PFa78",
     "title": "Matrix Multiplication (2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1062,7 +1062,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_062",
+    "id": "vPbAi",
     "title": "Check if List is Anagram of Another",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1080,7 +1080,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_063",
+    "id": "6vVIE",
     "title": "Find Kth Smallest Element in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1098,7 +1098,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_064",
+    "id": "jlUT1",
     "title": "Median of a List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1115,7 +1115,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_065",
+    "id": "oclmd",
     "title": "Longest Common Prefix",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1132,7 +1132,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_066",
+    "id": "B30w8",
     "title": "String to Camel Case",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1149,7 +1149,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_067",
+    "id": "czZVW",
     "title": "Check Perfect Square",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1166,7 +1166,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_068",
+    "id": "hOjD9",
     "title": "Roman to Integer Converter (I, V, X)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1183,7 +1183,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_069",
+    "id": "2N3zs",
     "title": "Find Duplicate Elements in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1200,7 +1200,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_070",
+    "id": "vM8Nw",
     "title": "Rotate String Right by N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1218,7 +1218,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_071",
+    "id": "wFkNV",
     "title": "Longest Word in List (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1235,7 +1235,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_072",
+    "id": "ku9Ry",
     "title": "Check Balanced Brackets (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1252,7 +1252,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_073",
+    "id": "iQaxi",
     "title": "Count Substrings in String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1270,7 +1270,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_074",
+    "id": "ISUT8",
     "title": "Remove Vowels from String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1287,7 +1287,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_075",
+    "id": "cw5qw",
     "title": "Transpose Matrix (Any Size)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1304,7 +1304,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_076",
+    "id": "5xze4",
     "title": "Find Mode of a List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1321,7 +1321,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_077",
+    "id": "arHc9",
     "title": "Second Smallest Element in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1338,7 +1338,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_078",
+    "id": "X3Pvl",
     "title": "Calculate String Hash (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1355,7 +1355,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_079",
+    "id": "7LmMQ",
     "title": "Find All Divisors of N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1372,7 +1372,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_080",
+    "id": "jdR9G",
     "title": "List Intersection (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1390,7 +1390,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_081",
+    "id": "CKsEJ",
     "title": "Print Diamond Pattern (Dynamic Size)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1407,7 +1407,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_082",
+    "id": "bofUF",
     "title": "Count Prime Factors",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1424,7 +1424,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_083",
+    "id": "YR1z4",
     "title": "GCD of List of Numbers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1441,7 +1441,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_084",
+    "id": "50Aq1",
     "title": "Encrypt String (Simple Shift)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1459,7 +1459,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_085",
+    "id": "XjPUP",
     "title": "Decimal to Hexadecimal Converter",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1476,7 +1476,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_086",
+    "id": "feCAd",
     "title": "Find Unique Elements in List (Order Maintained)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1493,7 +1493,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_087",
+    "id": "WTVSu",
     "title": "Matrix Diagonal Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1510,7 +1510,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_088",
+    "id": "NBQmK",
     "title": "Second Most Frequent Character",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1527,7 +1527,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_089",
+    "id": "aP0t6",
     "title": "String Permutations (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1544,7 +1544,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_090",
+    "id": "8VItL",
     "title": "Find Sum of Sub-arrays (Fixed Size 2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1561,7 +1561,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_091",
+    "id": "rvzpo",
     "title": "Sum of Even Fibonacci Numbers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1578,7 +1578,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_092",
+    "id": "ZYIWH",
     "title": "Count Bits in Binary Representation",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1595,7 +1595,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_093",
+    "id": "XCgN7",
     "title": "Find Longest Increasing Subsequence (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1612,7 +1612,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_094",
+    "id": "gl6NJ",
     "title": "Smallest Missing Positive Integer",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1629,7 +1629,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_095",
+    "id": "GfKio",
     "title": "Implement Queue (Enqueue/Dequeue)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1650,7 +1650,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_096",
+    "id": "KRt1E",
     "title": "Implement Stack (Push/Pop)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1671,7 +1671,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_097",
+    "id": "aEF40",
     "title": "Check if List is Sorted and Rotated",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1688,7 +1688,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_098",
+    "id": "5CYF8",
     "title": "Count Set Bits in Range",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1706,7 +1706,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_099",
+    "id": "q6w7t",
     "title": "Validate IP Address (Simplified)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1723,7 +1723,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_100",
+    "id": "4DUoD",
     "title": "Find Pair with Given Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1741,7 +1741,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_101",
+    "id": "VUKQ0",
     "title": "Calculate Harmonic Series Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1758,7 +1758,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_102",
+    "id": "Lqiqu",
     "title": "Count Positive/Negative in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1775,7 +1775,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_103",
+    "id": "MC5rb",
     "title": "Matrix Row Sums",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1792,7 +1792,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_104",
+    "id": "Es8YX",
     "title": "Find Majority Element",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1809,7 +1809,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_105",
+    "id": "r3n11",
     "title": "String Compression (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1826,7 +1826,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_106",
+    "id": "izuk2",
     "title": "String Decompression (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1843,7 +1843,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_107",
+    "id": "J5ndL",
     "title": "Validate Credit Card Number (Luhn Algo - Simplified)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1860,7 +1860,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_108",
+    "id": "Inwxc",
     "title": "Closest Pair Sum (Two Pointers)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1878,7 +1878,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_109",
+    "id": "lvOXs",
     "title": "Circular Array Rotation",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1896,7 +1896,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_110",
+    "id": "Mgui5",
     "title": "Max Consecutive Ones",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1913,7 +1913,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_111",
+    "id": "lK1pQ",
     "title": "Find Longest Word Without Vowels",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1930,7 +1930,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_112",
+    "id": "AS2e5",
     "title": "Palindrome Permutation Check",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1947,7 +1947,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_113",
+    "id": "KKyxT",
     "title": "Remove Nth Character from String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1965,7 +1965,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_114",
+    "id": "3y5t7",
     "title": "Check if Number is Power of Two",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -1982,7 +1982,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_115",
+    "id": "vyTIr",
     "title": "Simple Calculator with Error Handling (Division by Zero)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2001,7 +2001,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_116",
+    "id": "iZNtF",
     "title": "Print Nth Prime Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2018,7 +2018,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_117",
+    "id": "LcUYr",
     "title": "Character Replacement in String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2037,7 +2037,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_118",
+    "id": "7x6CP",
     "title": "String to Title Case",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2054,7 +2054,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_119",
+    "id": "2MWxy",
     "title": "Maximum Subarray Sum (Kadane's Algo - Simplified)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2071,7 +2071,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_120",
+    "id": "7paQI",
     "title": "Pascal's Triangle Row",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2088,7 +2088,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_121",
+    "id": "DP8hF",
     "title": "Validate Date Format (DD/MM/YYYY)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2105,7 +2105,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_122",
+    "id": "Zsn3W",
     "title": "Character Counter (Function)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2122,7 +2122,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_123",
+    "id": "OJGXf",
     "title": "Reverse Words in a String III",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2139,7 +2139,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_124",
+    "id": "X4ljO",
     "title": "Unique Paths in Grid (2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2154,7 +2154,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_125",
+    "id": "XP70S",
     "title": "Power of Three",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2171,7 +2171,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_126",
+    "id": "NULiA",
     "title": "Happy Number Checker",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2188,7 +2188,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_127",
+    "id": "82uNC",
     "title": "Trailing Zeros in Factorial",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2205,7 +2205,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_128",
+    "id": "Pooup",
     "title": "Remove Nth Node From End of List (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2223,7 +2223,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_129",
+    "id": "xucUl",
     "title": "Longest Palindromic Substring Length (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2240,7 +2240,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_130",
+    "id": "teh7w",
     "title": "Group Anagrams Together",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2257,7 +2257,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_131",
+    "id": "IOGgt",
     "title": "Sum of Digits of Factorial",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2274,7 +2274,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_132",
+    "id": "jFxDx",
     "title": "Next Palindrome Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2291,7 +2291,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_133",
+    "id": "o3gic",
     "title": "Count Pairs with Sum S",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2309,7 +2309,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_134",
+    "id": "WuKlQ",
     "title": "Missing Number in Sequence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2326,7 +2326,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_135",
+    "id": "2OntU",
     "title": "Smallest Divisor of N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2343,7 +2343,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_136",
+    "id": "pfIOd",
     "title": "Reverse Words in a String (Spaces Only)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2360,7 +2360,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_137",
+    "id": "wIWd0",
     "title": "Check Prime Palindrome",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2377,7 +2377,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_138",
+    "id": "vxtnD",
     "title": "Fibonacci Sequence upto N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2394,7 +2394,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_139",
+    "id": "8VYXR",
     "title": "Count Distinct Elements in List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2411,7 +2411,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_140",
+    "id": "wcJ3J",
     "title": "Check if List Contains Duplicate (Bool)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2428,7 +2428,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_141",
+    "id": "u5Hpi",
     "title": "Smallest Element in Rotated Sorted Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2445,7 +2445,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_142",
+    "id": "cEf5x",
     "title": "Reverse Each Word in Sentence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2462,7 +2462,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_143",
+    "id": "0JPtz",
     "title": "Calculate LCM of Two Numbers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2480,7 +2480,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_144",
+    "id": "Bhlwc",
     "title": "Isomorphic Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2498,7 +2498,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_145",
+    "id": "fPx3L",
     "title": "Valid Parentheses String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2515,7 +2515,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_146",
+    "id": "YJcEe",
     "title": "Find All Palindromic Substrings (Count)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2532,7 +2532,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_147",
+    "id": "QruCa",
     "title": "Remove Duplicates from Sorted List (In-place)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2549,7 +2549,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_148",
+    "id": "8hk6N",
     "title": "Check if String is a Permutation of Other",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2567,7 +2567,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_149",
+    "id": "5ULED",
     "title": "Find Intersection of Two Sorted Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2585,7 +2585,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_150",
+    "id": "VQfRc",
     "title": "Evaluate Postfix Expression (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2602,7 +2602,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_151",
+    "id": "FFzbK",
     "title": "First Unique Character in String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2619,7 +2619,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_152",
+    "id": "CW0Jt",
     "title": "Group Words by First Letter",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2636,7 +2636,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_153",
+    "id": "y41aF",
     "title": "Check if String Contains All Alphabets (Pangram)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2653,7 +2653,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_154",
+    "id": "4Ta6f",
     "title": "Rotate Matrix by 90 Degrees (2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2670,7 +2670,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_155",
+    "id": "lSiZY",
     "title": "Remove Element from List (Value)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2688,7 +2688,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_156",
+    "id": "ny4KP",
     "title": "Merge Two Sorted Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2706,7 +2706,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_157",
+    "id": "Wa6md",
     "title": "Add Binary Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2724,7 +2724,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_158",
+    "id": "u2owP",
     "title": "Find Single Number (XOR)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2741,7 +2741,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_159",
+    "id": "nhgfb",
     "title": "Reverse Integer",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2758,7 +2758,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_160",
+    "id": "HNqVN",
     "title": "Count Vowels and Consonants",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2775,7 +2775,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_161",
+    "id": "ZRq16",
     "title": "Longest Substring Without Repeating Characters (Length)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2792,7 +2792,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_162",
+    "id": "E3jeB",
     "title": "Climbing Stairs (N steps)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2809,7 +2809,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_163",
+    "id": "yXsQv",
     "title": "Is String a Subsequence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2827,7 +2827,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_164",
+    "id": "FJ58x",
     "title": "Sum of Powers of Two (Binary Check)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2844,7 +2844,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_165",
+    "id": "tBud6",
     "title": "Move Zeros to End of List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2861,7 +2861,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_166",
+    "id": "wHCpI",
     "title": "Factorial of N (Recursive)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2878,7 +2878,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_167",
+    "id": "Q66XZ",
     "title": "Sum of Two Arrays (Element-wise)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2896,7 +2896,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_168",
+    "id": "Ry6W6",
     "title": "Reverse Integer (Positive Only)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2913,7 +2913,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_169",
+    "id": "5JnO8",
     "title": "Find Max Element in Each Row of Matrix",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2930,7 +2930,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_170",
+    "id": "AKhgJ",
     "title": "Count Words in a Sentence",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2947,7 +2947,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_171",
+    "id": "b8ypj",
     "title": "Intersection of Multiple Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2966,7 +2966,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_172",
+    "id": "1Nrkw",
     "title": "Difference of Two Lists",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -2984,7 +2984,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_173",
+    "id": "zaABj",
     "title": "Sort Words by Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3001,7 +3001,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_174",
+    "id": "4Cnr7",
     "title": "Check if Number is Abundant",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3018,7 +3018,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_175",
+    "id": "8hlxt",
     "title": "Matrix Column Sums",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3035,7 +3035,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_176",
+    "id": "O1LoJ",
     "title": "GCD of Three Numbers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3054,7 +3054,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_177",
+    "id": "hGVZb",
     "title": "Ugly Number Checker",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3071,7 +3071,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_178",
+    "id": "aTOpt",
     "title": "Smallest Common Multiple (LCM of Range)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3089,7 +3089,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_179",
+    "id": "J2Pu1",
     "title": "Count Set Bits in Integer Range",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3107,7 +3107,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_180",
+    "id": "HN2X1",
     "title": "Find All Substrings of String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3124,7 +3124,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_181",
+    "id": "fJkbt",
     "title": "String to Snake Case",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3141,7 +3141,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_182",
+    "id": "W6ljG",
     "title": "First Non-Repeating Character",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3158,7 +3158,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_183",
+    "id": "CjNCe",
     "title": "Number of Islands (Simplified 2x2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3175,7 +3175,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_184",
+    "id": "GCT0t",
     "title": "Find Max Profit from Stock (One Transaction)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3192,7 +3192,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_185",
+    "id": "xBXHF",
     "title": "Power of Four",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3209,7 +3209,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_186",
+    "id": "vEZJQ",
     "title": "Print Diamond Pattern (Dynamic Size, Numbers)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3226,7 +3226,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_187",
+    "id": "t7BF7",
     "title": "Length of Last Word",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3243,7 +3243,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_188",
+    "id": "kCCG9",
     "title": "Common Characters in Two Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3261,7 +3261,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_189",
+    "id": "uomj0",
     "title": "Search Insert Position",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3279,7 +3279,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_190",
+    "id": "N8QuC",
     "title": "Reverse Words in a Sentence (Preserve Punctuation)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3296,7 +3296,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_191",
+    "id": "lToJL",
     "title": "Check if List is Monotonic",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3313,7 +3313,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_192",
+    "id": "b4x5U",
     "title": "Sum of Digits till Single Digit",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3330,7 +3330,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_193",
+    "id": "QBggg",
     "title": "Check if Number is Automorphic",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3347,7 +3347,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_194",
+    "id": "bDioJ",
     "title": "Count 'a' in String (Case-Insensitive)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3364,7 +3364,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_195",
+    "id": "0y9pC",
     "title": "Find Majority Element II (Top 2)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3381,7 +3381,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_196",
+    "id": "7CCo4",
     "title": "String to Title Case (Custom Delimiter)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3399,7 +3399,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_197",
+    "id": "a8YaN",
     "title": "Maximum Product of Three Numbers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3416,7 +3416,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_198",
+    "id": "uBPX3",
     "title": "Next Greater Element (Simplified)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3433,7 +3433,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_199",
+    "id": "CBwt1",
     "title": "Find Pairs with Smallest Difference",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3450,7 +3450,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_200",
+    "id": "iacJW",
     "title": "Max Sum of Consecutive Subarray (Given K)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3468,7 +3468,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_201",
+    "id": "1PIv4",
     "title": "Valid Anagram",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3486,7 +3486,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_202",
+    "id": "hLZNG",
     "title": "Intersection of Two Arrays (Elements)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3504,7 +3504,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_203",
+    "id": "yfO7H",
     "title": "Find the Difference of Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3522,7 +3522,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_204",
+    "id": "gcWyP",
     "title": "Number of Good Pairs",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3539,7 +3539,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_205",
+    "id": "ED8ho",
     "title": "Shuffle the Array (Simple Half)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3557,7 +3557,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_206",
+    "id": "Q9PR0",
     "title": "Maximum Number of Words You Can Type",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3575,7 +3575,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_207",
+    "id": "Dvm8H",
     "title": "Check if String is a Subsequence (Order Maintained)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3593,7 +3593,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_208",
+    "id": "f1YcP",
     "title": "Count Elements With Strict Smaller and Greater Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3610,7 +3610,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_209",
+    "id": "fUIJf",
     "title": "Unique Number of Occurrences",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3627,7 +3627,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_210",
+    "id": "ASyus",
     "title": "Richest Customer Wealth",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3644,7 +3644,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_211",
+    "id": "XnZGd",
     "title": "Maximum Subarray (Kadane's - All Cases)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3661,7 +3661,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_212",
+    "id": "lVBZP",
     "title": "Convert Sorted Array to Binary Search Tree (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3678,7 +3678,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_213",
+    "id": "2Lspt",
     "title": "Search in Rotated Sorted Array (No Duplicates)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3696,7 +3696,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_214",
+    "id": "Svb3r",
     "title": "Reverse Linked List (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3713,7 +3713,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_215",
+    "id": "zfzk6",
     "title": "Binary Tree Inorder Traversal (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3730,7 +3730,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_216",
+    "id": "JUwrP",
     "title": "Minimum Moves to Equal Array Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3747,7 +3747,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_217",
+    "id": "IWq5M",
     "title": "Find the Kth Largest Element in an Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3765,7 +3765,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_218",
+    "id": "q4jKq",
     "title": "Count Primes up to N",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3782,7 +3782,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_219",
+    "id": "kKjod",
     "title": "Contains Duplicate II",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3800,7 +3800,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_220",
+    "id": "Y51aZ",
     "title": "Count Steps to Reduce Number to Zero",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3817,7 +3817,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_221",
+    "id": "mNN3F",
     "title": "Check if All Characters Have Equal Occurrences",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3834,7 +3834,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_222",
+    "id": "LyKCc",
     "title": "Find N Unique Integers Sum Up to Zero",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3851,7 +3851,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_223",
+    "id": "U0hcl",
     "title": "Binary Gap",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3868,7 +3868,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_224",
+    "id": "34CiG",
     "title": "Sum of Subarray Minimums (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3885,7 +3885,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_225",
+    "id": "yGVOm",
     "title": "Check if String Can Be Segmented",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3903,7 +3903,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_226",
+    "id": "dBy5v",
     "title": "Count Negative Numbers in a Sorted Matrix",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3920,7 +3920,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_227",
+    "id": "EHh2A",
     "title": "Max Sum of Pairs with Same Digit Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3937,7 +3937,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_228",
+    "id": "S7K9V",
     "title": "Concatenation of Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3954,7 +3954,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_229",
+    "id": "von0n",
     "title": "Build Array from Permutation",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3971,7 +3971,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_230",
+    "id": "fak2z",
     "title": "Smallest Even Multiple",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -3988,7 +3988,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_231",
+    "id": "caajJ",
     "title": "Number of Common Factors",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4006,7 +4006,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_232",
+    "id": "f91cq",
     "title": "Smallest Value of the Rearranged Number",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4023,7 +4023,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_233",
+    "id": "gsyed",
     "title": "Count Asterisks in String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4040,7 +4040,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_234",
+    "id": "zTOcf",
     "title": "Largest Odd Number in String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4057,7 +4057,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_235",
+    "id": "MVxvE",
     "title": "Check if Array Is Sorted and Rotated (With Duplicates)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4074,7 +4074,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_236",
+    "id": "mAVUi",
     "title": "Divisible and Non-divisible Sum Difference",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4092,7 +4092,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_237",
+    "id": "hoQPR",
     "title": "Left and Right Sum Differences",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4109,7 +4109,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_238",
+    "id": "E7fcw",
     "title": "Count Pairs Whose Sum is Less Than Target",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4127,7 +4127,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_239",
+    "id": "q2EB6",
     "title": "Kth Distinct String in an Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4145,7 +4145,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_240",
+    "id": "PAe7Z",
     "title": "Max Count of Positive Integer and Negative Integer",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4162,7 +4162,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_241",
+    "id": "HmRMt",
     "title": "Sum of Unique Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4179,7 +4179,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_242",
+    "id": "EF4MN",
     "title": "Count the Number of Consistent Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4197,7 +4197,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_243",
+    "id": "pKi4C",
     "title": "Calculate Time Required to Buy Tickets",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4215,7 +4215,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_244",
+    "id": "L4ACS",
     "title": "Remove All Adjacent Duplicates In String (Simple)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4232,7 +4232,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_245",
+    "id": "ArZjC",
     "title": "Check if String is a Permutation of a Palindrome (Simplified)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4249,7 +4249,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_246",
+    "id": "ExR3p",
     "title": "Find All Numbers Disappeared in an Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4266,7 +4266,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_247",
+    "id": "SSARf",
     "title": "Intersection of Two Arrays II (Counts)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4284,7 +4284,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_248",
+    "id": "bdeMu",
     "title": "Add Strings (Large Numbers)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4302,7 +4302,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_249",
+    "id": "LgRwM",
     "title": "Check if Number is Sum of Two Powers of Two",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4319,7 +4319,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_250",
+    "id": "Ex8KN",
     "title": "Count Elements in List that are Greater Than All Preceding Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4336,7 +4336,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_251",
+    "id": "ZThje",
     "title": "Implement a Queue using Two Stacks",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4358,7 +4358,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_252",
+    "id": "XK8mS",
     "title": "Find Kth Smallest Element in an Unsorted List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4376,7 +4376,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_253",
+    "id": "4LYjT",
     "title": "Validate Sudoku (Partial Check)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4393,7 +4393,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_254",
+    "id": "NOP3N",
     "title": "Longest Common Subsequence Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4411,7 +4411,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_255",
+    "id": "9DeyJ",
     "title": "Minimum Number of Coins for Change",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4429,7 +4429,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_256",
+    "id": "7gBi1",
     "title": "Word Break Problem (Can Segment)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4447,7 +4447,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_257",
+    "id": "bdFPj",
     "title": "Maximum Depth of Binary Tree (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4464,7 +4464,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_258",
+    "id": "Fxlmb",
     "title": "Rotate Matrix by 90 Degrees Clockwise",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4481,7 +4481,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_259",
+    "id": "7Ydjs",
     "title": "Implement Simple Hash Map (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4501,7 +4501,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_260",
+    "id": "5UmZQ",
     "title": "Merge K Sorted Lists (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4520,7 +4520,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_261",
+    "id": "L1o7n",
     "title": "Longest Increasing Subsequence Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4537,7 +4537,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_262",
+    "id": "Vl78W",
     "title": "Unique Paths in a Grid",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4555,7 +4555,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_263",
+    "id": "CV9d1",
     "title": "Coin Change Ways (Number of Combinations)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4573,7 +4573,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_264",
+    "id": "xMHQN",
     "title": "Generate Parentheses Combinations",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4590,7 +4590,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_265",
+    "id": "gqJjb",
     "title": "Median of Two Sorted Arrays",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4608,7 +4608,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_266",
+    "id": "uJMe8",
     "title": "Container With Most Water",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4625,7 +4625,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_267",
+    "id": "T6K86",
     "title": "Integer to Roman",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4642,7 +4642,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_268",
+    "id": "n0o2t",
     "title": "Longest Common Prefix",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4659,7 +4659,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_269",
+    "id": "ePaFf",
     "title": "3Sum (Find all unique triplets that sum to zero)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4676,7 +4676,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_270",
+    "id": "89ntg",
     "title": "Remove Nth Node From End of List (Actual Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4694,7 +4694,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_271",
+    "id": "kPRjL",
     "title": "Search in Rotated Sorted Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4712,7 +4712,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_272",
+    "id": "vD91G",
     "title": "Find First and Last Position of Element in Sorted Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4730,7 +4730,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_273",
+    "id": "NvXX2",
     "title": "Jump Game (Can Reach End)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4747,7 +4747,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_274",
+    "id": "t7uPL",
     "title": "Minimum Path Sum in Grid",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4764,7 +4764,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_275",
+    "id": "gM4e4",
     "title": "Decode Ways (Number of Decodings)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4781,7 +4781,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_276",
+    "id": "VCFTV",
     "title": "Validate Binary Search Tree (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4798,7 +4798,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_277",
+    "id": "aFRqg",
     "title": "Binary Tree Level Order Traversal (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4815,7 +4815,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_278",
+    "id": "0GSQS",
     "title": "Flatten Binary Tree to Linked List (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4832,7 +4832,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_279",
+    "id": "uTPJA",
     "title": "Sum Root to Leaf Numbers (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4849,7 +4849,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_280",
+    "id": "3IMTn",
     "title": "Word Ladder Length (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4868,7 +4868,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_281",
+    "id": "gntz2",
     "title": "Longest Consecutive Sequence Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4885,7 +4885,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_282",
+    "id": "uDspI",
     "title": "Product of Array Except Self",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4902,7 +4902,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_283",
+    "id": "6zUKH",
     "title": "Missing Ranges in Sorted List",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4921,7 +4921,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_284",
+    "id": "RtuQe",
     "title": "Meeting Rooms (Can Attend All)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4938,7 +4938,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_285",
+    "id": "XvPs1",
     "title": "Find All Duplicates in an Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4955,7 +4955,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_286",
+    "id": "c3JFB",
     "title": "Subarray Sum Equals K",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4973,7 +4973,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_287",
+    "id": "VRC2Y",
     "title": "Valid Parentheses, Brackets, and Braces",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -4990,7 +4990,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_288",
+    "id": "mUdCX",
     "title": "Implement Queue using Stacks (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5011,7 +5011,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_289",
+    "id": "xC4GV",
     "title": "Implement Stack using Queues (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5032,7 +5032,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_290",
+    "id": "qCoHy",
     "title": "Min Stack (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5055,7 +5055,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_291",
+    "id": "3kj3w",
     "title": "Isomorphic Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5073,7 +5073,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_292",
+    "id": "aqMBy",
     "title": "First Unique Character in a String",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5090,7 +5090,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_293",
+    "id": "dAVxN",
     "title": "Find the Difference Between Two Strings",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5108,7 +5108,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_294",
+    "id": "ZtemJ",
     "title": "Assign Cookies",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5126,7 +5126,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_295",
+    "id": "YXDgd",
     "title": "Teemo Attacking",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5144,7 +5144,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_296",
+    "id": "igRFR",
     "title": "Relative Ranks",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5161,7 +5161,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_297",
+    "id": "adsYM",
     "title": "Can Place Flowers",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5179,7 +5179,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_298",
+    "id": "IqYzD",
     "title": "Nim Game",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5196,7 +5196,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_299",
+    "id": "7s1oU",
     "title": "Maximize Sum Of Array After K Negations",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5214,7 +5214,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_300",
+    "id": "thgXp",
     "title": "Matrix Diagonal Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5231,7 +5231,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_301",
+    "id": "e1SGj",
     "title": "Subtract the Product and Sum of Digits of an Integer",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5248,7 +5248,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_302",
+    "id": "92uW2",
     "title": "Number of Steps to Reduce a Number to Zero",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5265,7 +5265,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_303",
+    "id": "Ctu7w",
     "title": "Richest Customer Wealth",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5282,7 +5282,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_304",
+    "id": "k6EEs",
     "title": "Shuffle the Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5300,7 +5300,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_305",
+    "id": "Jhv74",
     "title": "Check If N and Its Double Exist",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5317,7 +5317,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_306",
+    "id": "S9D5Q",
     "title": "Count Good Triplets",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5337,7 +5337,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_307",
+    "id": "tPEOu",
     "title": "Destination City",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5354,7 +5354,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_308",
+    "id": "HcTgS",
     "title": "Kids With the Greatest Number Of Candies",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5372,7 +5372,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_309",
+    "id": "LUiJ2",
     "title": "Sum of Unique Elements",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5389,7 +5389,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_310",
+    "id": "ssUBu",
     "title": "Maximum Number of Words You Can Type",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5407,7 +5407,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_311",
+    "id": "SPg3h",
     "title": "Smallest Index With Equal Value",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5424,7 +5424,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_312",
+    "id": "WlQSa",
     "title": "Find First Palindromic String in the Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5441,7 +5441,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_313",
+    "id": "DJezK",
     "title": "Maximum Number of Balloons",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5458,7 +5458,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_314",
+    "id": "ejUEd",
     "title": "Number of Laser Beams in a Bank",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5475,7 +5475,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_315",
+    "id": "SKk4w",
     "title": "Check if All A's Appear Before All B's",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5492,7 +5492,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_316",
+    "id": "SfEix",
     "title": "Check if Word Equals Summation of Two Words",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5511,7 +5511,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_317",
+    "id": "RNmyf",
     "title": "Find Target Indices After Sorting Array",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5529,7 +5529,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_318",
+    "id": "zrbia",
     "title": "Count Integers With Even Digit Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5546,7 +5546,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_319",
+    "id": "HfA4Z",
     "title": "Remove Digit From Number to Maximize Result",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5564,7 +5564,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_320",
+    "id": "U3wM2",
     "title": "Find Subsequence of Length K With the Largest Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5582,7 +5582,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_321",
+    "id": "kb66a",
     "title": "Find the Kth Largest Integer in the Array (as String)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5600,7 +5600,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_322",
+    "id": "BEkak",
     "title": "Counting Bits",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5617,7 +5617,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_323",
+    "id": "tk0KL",
     "title": "House Robber",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5634,7 +5634,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_324",
+    "id": "rvWv5",
     "title": "Climbing Stairs",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5651,7 +5651,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_325",
+    "id": "MOrZa",
     "title": "Longest Substring Without Repeating Characters Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5668,7 +5668,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_326",
+    "id": "DYjCA",
     "title": "Add Two Numbers (Represented as Linked Lists, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5686,7 +5686,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_327",
+    "id": "3kPc2",
     "title": "Divide Two Integers (Without Multiplication, Division, Modulo)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5704,7 +5704,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_328",
+    "id": "kuuVQ",
     "title": "Substring with Concatenation of All Words (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5722,7 +5722,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_329",
+    "id": "PDhjr",
     "title": "Next Permutation",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5739,7 +5739,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_330",
+    "id": "SK3ra",
     "title": "Longest Valid Parentheses Length",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5756,7 +5756,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_331",
+    "id": "UsRcn",
     "title": "Combination Sum",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5774,7 +5774,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_332",
+    "id": "YPqqv",
     "title": "Permutations (Unique)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5791,7 +5791,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_333",
+    "id": "LatYd",
     "title": "Subsets (All possible subsets)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5808,7 +5808,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_334",
+    "id": "WSedm",
     "title": "Merge Intervals",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5825,7 +5825,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_335",
+    "id": "J3DfZ",
     "title": "Set Matrix Zeroes",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5842,7 +5842,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_336",
+    "id": "ORuSI",
     "title": "Spiral Matrix Traversal",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5859,7 +5859,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_337",
+    "id": "GVVEm",
     "title": "Rotate List (Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5877,7 +5877,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_338",
+    "id": "2eG9g",
     "title": "Remove Duplicates from Sorted List II (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5894,7 +5894,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_339",
+    "id": "NNR6K",
     "title": "Swap Nodes in Pairs (Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5911,7 +5911,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_340",
+    "id": "NRcZ7",
     "title": "Reverse Nodes in k-Group (Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5929,7 +5929,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_341",
+    "id": "r5d6B",
     "title": "Linked List Cycle (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5947,7 +5947,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_342",
+    "id": "82zR3",
     "title": "Linked List Cycle II (Find Cycle Start, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5965,7 +5965,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_343",
+    "id": "WHTMu",
     "title": "Reorder List (Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5982,7 +5982,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_344",
+    "id": "Pmg8m",
     "title": "Copy List with Random Pointer (Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -5999,7 +5999,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_345",
+    "id": "pRJno",
     "title": "Palindrome Number (Without Converting to String)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6016,7 +6016,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_346",
+    "id": "jTNFg",
     "title": "Roman to Integer",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6033,7 +6033,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_347",
+    "id": "lwfN1",
     "title": "Longest Common Prefix (More Complex)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6050,7 +6050,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_348",
+    "id": "9XvJr",
     "title": "Merge Two Sorted Lists (Linked List, Conceptual)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6068,7 +6068,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_349",
+    "id": "rMByJ",
     "title": "Remove Duplicates from Sorted Array (Return Length)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6085,7 +6085,7 @@
     "from": "AI"
   },
   {
-    "id": "int_q_350",
+    "id": "1nWYx",
     "title": "Implement strStr() (Find Substring Index)",
     "category": "Abstraction",
     "input_type": "stdin",
@@ -6128,7 +6128,7 @@
         "expected_output": "example good a"
       }
     ],
-    "id": "int_q_351",
+    "id": "BqvBX",
     "from": "AI"
   },
   {
@@ -6153,7 +6153,7 @@
         "expected_output": "4"
       }
     ],
-    "id": "int_q_352",
+    "id": "zKLvs",
     "from": "AI"
   },
   {
@@ -6170,7 +6170,7 @@
         "expected_output": "7 4 1\\n8 5 2\\n9 6 3"
       }
     ],
-    "id": "int_q_353",
+    "id": "sM4ql",
     "from": "AI"
   },
   {
@@ -6195,7 +6195,7 @@
         "expected_output": "0"
       }
     ],
-    "id": "int_q_354",
+    "id": "R6Pyz",
     "from": "AI"
   },
   {
@@ -6224,7 +6224,7 @@
         "expected_output": "False"
       }
     ],
-    "id": "int_q_355",
+    "id": "ofwb6",
     "from": "AI"
   },
   {
@@ -6249,7 +6249,7 @@
         "expected_output": "-1"
       }
     ],
-    "id": "int_q_356",
+    "id": "J3iAm",
     "from": "AI"
   },
   {
@@ -6272,7 +6272,7 @@
         "expected_output": "1"
       }
     ],
-    "id": "int_q_357",
+    "id": "QIBRl",
     "from": "AI"
   },
   {
@@ -6301,7 +6301,7 @@
         "expected_output": "MCMXCIV"
       }
     ],
-    "id": "int_q_358",
+    "id": "stLE9",
     "from": "AI"
   },
   {
@@ -6330,7 +6330,7 @@
         "expected_output": "1994"
       }
     ],
-    "id": "int_q_359",
+    "id": "xn9gP",
     "from": "AI"
   },
   {
@@ -6359,7 +6359,7 @@
         "expected_output": "ap"
       }
     ],
-    "id": "int_q_360",
+    "id": "qjoVq",
     "from": "AI"
   },
   {
@@ -6376,7 +6376,7 @@
         "expected_output": "-1 -1 2\\n-1 0 1"
       }
     ],
-    "id": "int_q_361",
+    "id": "nNuGk",
     "from": "AI"
   },
   {
@@ -6408,7 +6408,7 @@
         "expected_output": "1"
       }
     ],
-    "id": "int_q_362",
+    "id": "7aPmy",
     "from": "AI"
   },
   {
@@ -6431,7 +6431,7 @@
         "expected_output": "1211"
       }
     ],
-    "id": "int_q_363",
+    "id": "Jx4dH",
     "from": "AI"
   },
   {
@@ -6448,7 +6448,7 @@
         "expected_output": "1 2 3\\n1 3 2\\n2 1 3\\n2 3 1\\n3 1 2\\n3 2 1"
       }
     ],
-    "id": "int_q_364",
+    "id": "kY4yS",
     "from": "AI"
   },
   {
@@ -6473,7 +6473,7 @@
         "expected_output": "2 2 2 2\\n2 3 3\\n3 5"
       }
     ],
-    "id": "int_q_365",
+    "id": "Oh3g6",
     "from": "AI"
   }
 ]

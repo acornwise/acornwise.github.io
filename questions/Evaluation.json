@@ -1,6 +1,6 @@
 [
   {
-    "id": "b016801d-538b-44eb-95cd-b5df79eaa59e",
+    "id": "FVYrb",
     "title": "Magic Squares",
     "category": "Evaluation",
     "input_type": "stdin",
@@ -19,7 +19,7 @@
     "from": "OUCC"
   },
   {
-    "id": "5ea23f56-14d8-4afe-9bd2-a260ce5e7140",
+    "id": "jZ3DK",
     "title": "Capture the Flag",
     "category": "Evaluation",
     "input_type": "stdin",
@@ -39,7 +39,7 @@
     "from": "OUCC"
   },
   {
-    "id": "9d5f692d-e165-4a24-8d7e-60d3c3e166fd",
+    "id": "05vvG",
     "title": "Races",
     "category": "Evaluation",
     "input_type": "stdin",

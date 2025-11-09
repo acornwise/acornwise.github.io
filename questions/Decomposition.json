@@ -1,6 +1,6 @@
 [
   {
-    "id": "8ddc0607-9f59-4f39-86a5-c4ab41ec171e",
+    "id": "UXyl3",
     "title": "Full Name",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -18,7 +18,7 @@
     "from": "OUCC"
   },
   {
-    "id": "d0b26c73-4962-4e54-bde9-1030a064270f",
+    "id": "XF59p",
     "title": "Pruning Flowers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -35,7 +35,7 @@
     "from": "OUCC"
   },
   {
-    "id": "d61a0cd2-3d6a-4dac-8164-fcde894a9029",
+    "id": "O3Cm3",
     "title": "Same Close Different",
     "category": "Decomposition",
     "input_type": "stdin",

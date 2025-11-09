@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Problems - Acornwise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.21.3/full/pyodide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        #editor { height: 400px; }
+        .prose strong { color: #111827; }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
+     crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 lg:px-8 py-12">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 text-center">Practice Problems</h1>
+            <p class="text-lg text-gray-600 text-center mb-10">Select a category and challenge yourself with a new problem.</p>
+
+            <!-- Controls -->
+            <div class="bg-white p-6 rounded-xl shadow-md mb-8 flex flex-wrap items-center justify-between gap-6">
+                <div class="flex-grow flex flex-col sm:flex-row items-center gap-4">
+                    <label for="category-select" class="font-semibold text-gray-700">Category:</label>
+                    <select id="category-select" class="flex-grow p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        <option value="All">All Categories</option>
+                    </select>
+                    <button id="new-question-button" class="w-full sm:w-auto bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 transition">Get New Question</button>
+                    <button id="reset-progress-button" class="w-full sm:w-auto bg-red-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-600 transition text-sm">Reset Progress</button>
+                </div>
+                 <div class="w-full sm:w-auto border-t sm:border-t-0 sm:border-l border-gray-200 mt-4 sm:mt-0 pt-4 sm:pt-0 sm:pl-6 flex-grow flex flex-col sm:flex-row items-center gap-4">
+                    <label for="question-id-input" class="font-semibold text-gray-700">Question ID:</label>
+                    <input type="text" id="question-id-input" placeholder="Enter Question ID..." class="flex-grow p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                    <button id="get-question-by-id-button" class="w-full sm:w-auto bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-gray-800 transition">Load Question</button>
+                </div>
+            </div>
+            
+            <div id="pyodide-loader" class="text-center text-indigo-600 font-semibold mb-6">Initializing Python Environment & Loading Questions... Please wait.</div>
+
+            <!-- Challenge Area -->
+            <div id="challenge-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-white p-8 rounded-xl shadow-md">
+                <!-- Content will be injected by JavaScript -->
+            </div>
+        </div>
+    </main>
+    
+    <script src="practice_problems.js"></script>
+    
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>    
+</body>
+</html>
+

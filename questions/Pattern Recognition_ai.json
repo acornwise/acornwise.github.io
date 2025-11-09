@@ -1,6 +1,6 @@
 [
   {
-    "id": "pr_001",
+    "id": "0tcAb",
     "title": "Anagram Checker",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -25,7 +25,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_002",
+    "id": "AioNQ",
     "title": "Longest Palindromic Substring",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -48,7 +48,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_003",
+    "id": "WlYwz",
     "title": "Run-Length Encoding",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -71,7 +71,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_004",
+    "id": "zVL8Q",
     "title": "Run-Length Decoding",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -94,7 +94,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_005",
+    "id": "iaDAs",
     "title": "First Non-Repeating Character",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -123,7 +123,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_006",
+    "id": "Apa8x",
     "title": "Valid Parentheses",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -158,7 +158,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_007",
+    "id": "VmOPy",
     "title": "Subsequence Check",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -190,7 +190,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_008",
+    "id": "ebHmK",
     "title": "Missing Number in Sequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -222,7 +222,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_009",
+    "id": "0Y9jJ",
     "title": "Find Duplicate Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -247,7 +247,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_010",
+    "id": "BaYG6",
     "title": "Majority Element",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -272,7 +272,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_011",
+    "id": "DRiOv",
     "title": "Find Unique Elements",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -297,7 +297,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_012",
+    "id": "wXLYX",
     "title": "Check Arithmetic or Geometric Sequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -329,7 +329,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_013",
+    "id": "1tOUj",
     "title": "Caesar Cipher Encrypt",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -354,7 +354,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_014",
+    "id": "iRM9Z",
     "title": "Caesar Cipher Decrypt",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -379,7 +379,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_015",
+    "id": "JF8Nf",
     "title": "Rotate String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -404,7 +404,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_016",
+    "id": "HqvTm",
     "title": "Longest Consecutive Characters",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -433,7 +433,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_017",
+    "id": "Ny4yP",
     "title": "Most Frequent Word",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -456,7 +456,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_018",
+    "id": "HgKN3",
     "title": "Roman to Integer",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -485,7 +485,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_019",
+    "id": "oNPx0",
     "title": "Integer to Roman",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -514,7 +514,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_020",
+    "id": "tpa4a",
     "title": "Power of Two",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -549,7 +549,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_021",
+    "id": "W2PHw",
     "title": "Happy Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -572,7 +572,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_022",
+    "id": "5gwy1",
     "title": "Ugly Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -601,7 +601,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_023",
+    "id": "g1gLN",
     "title": "Longest Common Prefix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -630,7 +630,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_024",
+    "id": "mhuqo",
     "title": "Valid Palindrome (Alphanumeric)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -653,7 +653,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_025",
+    "id": "0AtPe",
     "title": "Sum of Digits Pattern",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -682,7 +682,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_026",
+    "id": "iSca7",
     "title": "Trailing Zeros in Factorial",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -711,7 +711,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_027",
+    "id": "3Hr6Y",
     "title": "Perfect Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -740,7 +740,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_028",
+    "id": "rhOuc",
     "title": "Harshad Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -769,7 +769,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_029",
+    "id": "VT1Z6",
     "title": "Armstrong Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -798,7 +798,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_030",
+    "id": "AbEsY",
     "title": "Prime Number Checker",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -833,7 +833,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_031",
+    "id": "YdfH9",
     "title": "Longest Consecutive Sequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -857,7 +857,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_032",
+    "id": "K6Nx8",
     "title": "Binary String Alternating Pattern",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -892,7 +892,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_033",
+    "id": "yp2ho",
     "title": "Find All Anagrams in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -917,7 +917,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_034",
+    "id": "WvPhj",
     "title": "Group Anagrams",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -945,7 +945,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_035",
+    "id": "1udnU",
     "title": "Valid IPv4 Address",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -986,7 +986,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_036",
+    "id": "uXM8F",
     "title": "Count Palindromic Substrings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1009,7 +1009,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_037",
+    "id": "ux6Uu",
     "title": "Isomorphic Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1041,7 +1041,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_038",
+    "id": "7qWIZ",
     "title": "Word Pattern",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1073,7 +1073,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_039",
+    "id": "ToXjz",
     "title": "Unique Morse Code Words",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1094,7 +1094,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_040",
+    "id": "6KfPB",
     "title": "Detect Capital",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1129,7 +1129,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_041",
+    "id": "ISGl6",
     "title": "Reverse Vowels of a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1152,7 +1152,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_042",
+    "id": "vRrLl",
     "title": "Valid Anagram",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1177,7 +1177,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_043",
+    "id": "1t3FG",
     "title": "N-th Fibonacci Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1212,7 +1212,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_044",
+    "id": "Akxdt",
     "title": "Check if Straight Line",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1242,7 +1242,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_045",
+    "id": "RMYA2",
     "title": "Longest Nice Substring",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1271,7 +1271,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_046",
+    "id": "Adn25",
     "title": "Count Consistent Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1298,7 +1298,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_047",
+    "id": "E6bUJ",
     "title": "Count Vowels and Consonants",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1327,7 +1327,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_048",
+    "id": "jErvj",
     "title": "Check if Array is Sorted and Rotated",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1366,7 +1366,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_049",
+    "id": "ffIod",
     "title": "Lexicographical Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1389,7 +1389,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_050",
+    "id": "VmaHw",
     "title": "Find the Difference",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1414,7 +1414,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_051",
+    "id": "J0KyD",
     "title": "Find All Duplicates in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1446,7 +1446,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_052",
+    "id": "omWb4",
     "title": "Find All Numbers Disappeared in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1471,7 +1471,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_053",
+    "id": "APbrf",
     "title": "Check if Array Forms an Arithmetic Progression",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1496,7 +1496,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_054",
+    "id": "yZfTC",
     "title": "Check if Array Forms a Geometric Progression",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1528,7 +1528,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_055",
+    "id": "eiWws",
     "title": "Count Good Triplets",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1553,7 +1553,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_056",
+    "id": "YeqVu",
     "title": "Sort Array By Parity",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1578,7 +1578,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_057",
+    "id": "Itb63",
     "title": "Check if N and its Double Exist",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1610,7 +1610,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_058",
+    "id": "pLPyc",
     "title": "Valid Mountain Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1642,7 +1642,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_059",
+    "id": "o7BAj",
     "title": "Monotonic Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1674,7 +1674,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_060",
+    "id": "lwpjm",
     "title": "Longest Harmonious Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1706,7 +1706,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_061",
+    "id": "v5881",
     "title": "Third Maximum Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1738,7 +1738,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_062",
+    "id": "P9Wtu",
     "title": "Contains Duplicate II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1770,7 +1770,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_063",
+    "id": "Qj3YV",
     "title": "Find Peak Element",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1802,7 +1802,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_064",
+    "id": "U7stZ",
     "title": "Next Greater Element I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1831,7 +1831,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_065",
+    "id": "7E0A8",
     "title": "Reverse Words in a String III",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1854,7 +1854,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_066",
+    "id": "ZOq42",
     "title": "Reverse String II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1879,7 +1879,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_067",
+    "id": "UrChM",
     "title": "Number of Segments in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1908,7 +1908,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_068",
+    "id": "DmXKN",
     "title": "Buddy Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1947,7 +1947,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_069",
+    "id": "3PSWF",
     "title": "Longest Palindromic Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1970,7 +1970,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_070",
+    "id": "VYBGW",
     "title": "Count Binary Substrings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -1993,7 +1993,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_071",
+    "id": "sFR4A",
     "title": "Base 7",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2016,7 +2016,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_072",
+    "id": "Gk2fb",
     "title": "Relative Ranks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2041,7 +2041,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_073",
+    "id": "YuItX",
     "title": "Longest Word in Dictionary through Deleting",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2068,7 +2068,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_074",
+    "id": "gYZoi",
     "title": "Find Pivot Index",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2107,7 +2107,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_075",
+    "id": "K79Me",
     "title": "Maximum Number of Pairs in Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2132,7 +2132,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_076",
+    "id": "jYFkd",
     "title": "Smallest Index With Equal Value",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2164,7 +2164,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_077",
+    "id": "yqfft",
     "title": "Capitalize The Title",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2187,7 +2187,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_078",
+    "id": "7Hdqn",
     "title": "Check if All A's Appears Before All B's",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2222,7 +2222,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_079",
+    "id": "myWMP",
     "title": "Count Integers With Even Digit Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2245,7 +2245,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_080",
+    "id": "vneo7",
     "title": "Check if Matrix Is X-Matrix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2283,7 +2283,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_081",
+    "id": "3Xi6y",
     "title": "Sum of Values at Indices With K Set Bits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2308,7 +2308,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_082",
+    "id": "fBIgo",
     "title": "Count Pairs Of Similar Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2338,7 +2338,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_083",
+    "id": "pDW1H",
     "title": "Number of Arithmetic Triplets",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2363,7 +2363,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_084",
+    "id": "UHUam",
     "title": "Find Closest Number to Zero",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2395,7 +2395,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_085",
+    "id": "6XavG",
     "title": "Find the K-Beauty of a Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2424,7 +2424,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_086",
+    "id": "4ngJq",
     "title": "Count Asterisks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2453,7 +2453,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_087",
+    "id": "vwaKT",
     "title": "Count Equal and Divisible Pairs in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2478,7 +2478,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_088",
+    "id": "t1QJD",
     "title": "Count the Number of Vowel Strings in Range",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2505,7 +2505,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_089",
+    "id": "Cwt3W",
     "title": "Check if Array is Good",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2537,7 +2537,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_090",
+    "id": "LerHh",
     "title": "Minimum Sum of Four Digit Number After Splitting Digits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2560,7 +2560,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_091",
+    "id": "bBZFD",
     "title": "Largest Local Values in a Matrix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2590,7 +2590,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_092",
+    "id": "VdCkh",
     "title": "Count Pairs Whose Sum is Less than Target",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2615,7 +2615,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_093",
+    "id": "HxT5c",
     "title": "Find Common Characters",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2643,7 +2643,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_094",
+    "id": "eDrZK",
     "title": "Maximum Score After Splitting a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2672,7 +2672,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_095",
+    "id": "JhIF6",
     "title": "Count Pairs With Sum K",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2704,7 +2704,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_096",
+    "id": "q7gmy",
     "title": "Find Subsequence of Length K With the Largest Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2729,7 +2729,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_097",
+    "id": "B5U3H",
     "title": "Check if String Can Be Partitioned into K Equal Substrings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2768,7 +2768,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_098",
+    "id": "dgTbd",
     "title": "Longest Common Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2800,7 +2800,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_099",
+    "id": "Y8Hwh",
     "title": "Find All Distinct Characters",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2829,7 +2829,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_100",
+    "id": "XzdQm",
     "title": "Find Missing and Repeating Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2854,7 +2854,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_101",
+    "id": "0lHcm",
     "title": "Max Consecutive Ones",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2886,7 +2886,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_102",
+    "id": "UAjyY",
     "title": "Find N Unique Integers Sum up to Zero",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2915,7 +2915,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_103",
+    "id": "Ibtkb",
     "title": "Count Negative Numbers in a Sorted Matrix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2942,7 +2942,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_104",
+    "id": "Xzq5M",
     "title": "Missing Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2974,7 +2974,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_105",
+    "id": "pWsHo",
     "title": "Single Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -2999,7 +2999,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_106",
+    "id": "ERaYA",
     "title": "Number of Good Pairs",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3031,7 +3031,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_107",
+    "id": "VbCCX",
     "title": "Squares of a Sorted Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3056,7 +3056,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_108",
+    "id": "25Yqi",
     "title": "Remove Duplicates from Sorted Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3081,7 +3081,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_109",
+    "id": "wce2x",
     "title": "Maximum Subarray",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3113,7 +3113,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_110",
+    "id": "YV1EJ",
     "title": "Best Time to Buy and Sell Stock",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3138,7 +3138,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_111",
+    "id": "qGgHz",
     "title": "Plus One",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3170,7 +3170,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_112",
+    "id": "gyJIA",
     "title": "Merge Sorted Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3205,7 +3205,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_113",
+    "id": "d8AIj",
     "title": "Is Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3230,7 +3230,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_114",
+    "id": "7rJKC",
     "title": "Word Pattern",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3269,7 +3269,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_115",
+    "id": "3veRT",
     "title": "Isomorphic Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3301,7 +3301,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_116",
+    "id": "U5FcX",
     "title": "First Unique Character in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3330,7 +3330,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_117",
+    "id": "Rjwsa",
     "title": "Ransom Note",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3362,7 +3362,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_118",
+    "id": "Ica5Y",
     "title": "Fizz Buzz",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3385,7 +3385,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_119",
+    "id": "RlVmV",
     "title": "Add Digits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3414,7 +3414,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_120",
+    "id": "ZLdz3",
     "title": "Power of Two",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3443,7 +3443,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_121",
+    "id": "ADL4u",
     "title": "Ugly Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3478,7 +3478,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_122",
+    "id": "1Iggu",
     "title": "Happy Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3501,7 +3501,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_123",
+    "id": "pCdsy",
     "title": "Move Zeroes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3533,7 +3533,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_124",
+    "id": "FClVB",
     "title": "Intersection of Two Arrays",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3562,7 +3562,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_125",
+    "id": "H5YqV",
     "title": "Majority Element",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3587,7 +3587,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_126",
+    "id": "veBJy",
     "title": "Missing Ranges",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3619,7 +3619,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_127",
+    "id": "Qor5E",
     "title": "Summary Ranges",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3644,7 +3644,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_128",
+    "id": "ZF3mb",
     "title": "Count Primes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3673,7 +3673,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_129",
+    "id": "tpJO9",
     "title": "Is Power of Four",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3702,7 +3702,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_130",
+    "id": "0d086",
     "title": "Valid Perfect Square",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3725,7 +3725,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_131",
+    "id": "Hcvn3",
     "title": "Guess Number Higher or Lower",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3757,7 +3757,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_132",
+    "id": "gQDU5",
     "title": "Sum of Square Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3786,7 +3786,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_133",
+    "id": "7cag6",
     "title": "Arranging Coins",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3809,7 +3809,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_134",
+    "id": "6HUVs",
     "title": "Convert a Number to Hexadecimal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3838,7 +3838,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_135",
+    "id": "DmmvU",
     "title": "Find All Anagrams in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3863,7 +3863,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_136",
+    "id": "YDzGz",
     "title": "Hamming Distance",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3888,7 +3888,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_137",
+    "id": "LqNAy",
     "title": "Number Complement",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3911,7 +3911,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_138",
+    "id": "jxM44",
     "title": "Island Perimeter",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3946,7 +3946,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_139",
+    "id": "qG1EC",
     "title": "Teemo Attacking",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3971,7 +3971,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_140",
+    "id": "L0VOK",
     "title": "License Key Formatting",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -3996,7 +3996,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_141",
+    "id": "oXOrs",
     "title": "Student Attendance Record I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4025,7 +4025,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_142",
+    "id": "qhE8D",
     "title": "Find Pivot Index (revisit with sum checks)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4064,7 +4064,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_143",
+    "id": "VbSuE",
     "title": "Subarray Sum Equals K",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4089,7 +4089,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_144",
+    "id": "eaDEU",
     "title": "Array Partition I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4114,7 +4114,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_145",
+    "id": "cMDJj",
     "title": "Reverse Words in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4143,7 +4143,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_146",
+    "id": "uzU2q",
     "title": "Max Area of Island",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4177,7 +4177,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_147",
+    "id": "m8ySE",
     "title": "Shortest Unsorted Continuous Subarray",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4209,7 +4209,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_148",
+    "id": "zGslc",
     "title": "Find the Duplicate Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4241,7 +4241,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_149",
+    "id": "v2eOx",
     "title": "Longest Palindrome",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4270,7 +4270,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_150",
+    "id": "hp2Sz",
     "title": "Reverse Vowels of a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4299,7 +4299,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_151",
+    "id": "LVC4p",
     "title": "Find K Closest Elements",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4324,7 +4324,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_152",
+    "id": "Op8Yt",
     "title": "Maximum Average Subarray I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4349,7 +4349,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_153",
+    "id": "zJ1QN",
     "title": "Binary Tree Paths",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4378,7 +4378,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_154",
+    "id": "bJDLM",
     "title": "Longest Univalue Path",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4401,7 +4401,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_155",
+    "id": "qa4zt",
     "title": "Path Sum III",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4426,7 +4426,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_156",
+    "id": "0FVgW",
     "title": "Diameter of Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4449,7 +4449,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_157",
+    "id": "aDjFB",
     "title": "Merge Two Binary Trees",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4474,7 +4474,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_158",
+    "id": "ofkUa",
     "title": "Trim a Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4499,7 +4499,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_159",
+    "id": "9Jcx4",
     "title": "Average of Levels in Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4522,7 +4522,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_160",
+    "id": "jE7Aj",
     "title": "Distribute Candies",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4554,7 +4554,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_161",
+    "id": "sJ7Ac",
     "title": "Reshape the Matrix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4589,7 +4589,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_162",
+    "id": "bcnNq",
     "title": "Longest Harmonious Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4621,7 +4621,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_163",
+    "id": "xaPdf",
     "title": "Maximum Depth of N-ary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4650,7 +4650,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_164",
+    "id": "vpLMM",
     "title": "N-ary Tree Postorder Traversal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4679,7 +4679,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_165",
+    "id": "wvSbG",
     "title": "N-ary Tree Preorder Traversal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4708,7 +4708,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_166",
+    "id": "u623u",
     "title": "Implement Stack using Queues",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4737,7 +4737,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_167",
+    "id": "kI6iA",
     "title": "Implement Queue using Stacks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4766,7 +4766,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_168",
+    "id": "YcwjY",
     "title": "Flood Fill",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4795,7 +4795,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_169",
+    "id": "bpa80",
     "title": "Max Increase to Keep City Skyline",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4824,7 +4824,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_170",
+    "id": "PKo3T",
     "title": "Number of Atoms",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4853,7 +4853,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_171",
+    "id": "Gphne",
     "title": "Longest Word in Dictionary through Deleting",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4880,7 +4880,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_172",
+    "id": "PIjMg",
     "title": "Set Mismatch",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4905,7 +4905,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_173",
+    "id": "9mfoM",
     "title": "Max Chunks To Make Sorted",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4937,7 +4937,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_174",
+    "id": "8pfJX",
     "title": "Minimum Absolute Difference in BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4960,7 +4960,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_175",
+    "id": "FEMSw",
     "title": "K-th Smallest Element in a BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -4985,7 +4985,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_176",
+    "id": "cO0W8",
     "title": "Invert Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5014,7 +5014,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_177",
+    "id": "jCGBi",
     "title": "Convert Sorted Array to Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5039,7 +5039,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_178",
+    "id": "rUxih",
     "title": "Count Complete Tree Nodes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5068,7 +5068,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_179",
+    "id": "4xp1L",
     "title": "Same Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5100,7 +5100,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_180",
+    "id": "CdZxc",
     "title": "Symmetric Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5129,7 +5129,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_181",
+    "id": "VyZpZ",
     "title": "Binary Tree Level Order Traversal II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5158,7 +5158,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_182",
+    "id": "wW4Pu",
     "title": "Binary Tree Zigzag Level Order Traversal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5187,7 +5187,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_183",
+    "id": "geZO5",
     "title": "Validate Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5210,7 +5210,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_184",
+    "id": "pMbYl",
     "title": "Populating Next Right Pointers in Each Node",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5233,7 +5233,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_185",
+    "id": "cpISu",
     "title": "Flatten Binary Tree to Linked List",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5262,7 +5262,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_186",
+    "id": "yJB1q",
     "title": "Sum Root to Leaf Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5285,7 +5285,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_187",
+    "id": "om2Cg",
     "title": "Count Nodes Equal to Average of Subtree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5308,7 +5308,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_188",
+    "id": "t1btE",
     "title": "Range Sum of BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5333,7 +5333,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_189",
+    "id": "dmK8o",
     "title": "Find Mode in Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5356,7 +5356,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_190",
+    "id": "xX0rn",
     "title": "Two Sum IV - Input is a BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5381,7 +5381,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_191",
+    "id": "Wbmek",
     "title": "Convert BST to Greater Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5404,7 +5404,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_192",
+    "id": "RiiDT",
     "title": "Add One Row to Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5429,7 +5429,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_193",
+    "id": "YTGeB",
     "title": "Smallest String Starting From Leaf",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5452,7 +5452,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_194",
+    "id": "BmDyK",
     "title": "Uncommon Words from Two Sentences",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5477,7 +5477,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_195",
+    "id": "cTVkF",
     "title": "Monotonic Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5516,7 +5516,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_196",
+    "id": "9ADvw",
     "title": "Fair Candy Swap",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5551,7 +5551,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_197",
+    "id": "t00zr",
     "title": "Minimum Number of Frogs Croaking",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5580,7 +5580,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_198",
+    "id": "5gqOv",
     "title": "Minimum Cost to Move Chips to The Same Position",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5612,7 +5612,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_199",
+    "id": "OUUmm",
     "title": "Count Substrings with Only One Distinct Letter",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5641,7 +5641,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_200",
+    "id": "bJAot",
     "title": "Minimum Absolute Difference in BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5664,7 +5664,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_201",
+    "id": "HEkoQ",
     "title": "Merge Two Sorted Lists",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5689,7 +5689,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_202",
+    "id": "gk27h",
     "title": "Remove Duplicates from Sorted List",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5712,7 +5712,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_203",
+    "id": "NfQnR",
     "title": "Symmetric Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5735,7 +5735,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_204",
+    "id": "hZyHg",
     "title": "Maximum Depth of Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5758,7 +5758,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_205",
+    "id": "E8Jmh",
     "title": "Minimum Depth of Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5781,7 +5781,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_206",
+    "id": "xn5ta",
     "title": "Convert Sorted Array to Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5806,7 +5806,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_207",
+    "id": "bK4Yf",
     "title": "Path Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5831,7 +5831,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_208",
+    "id": "PwVRK",
     "title": "Invert Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5854,7 +5854,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_209",
+    "id": "Z1pgt",
     "title": "Lowest Common Ancestor of a Binary Search Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5879,7 +5879,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_210",
+    "id": "lnjrd",
     "title": "Majority Element",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5904,7 +5904,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_211",
+    "id": "aXrIM",
     "title": "Contains Duplicate",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5929,7 +5929,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_212",
+    "id": "YzsvY",
     "title": "Missing Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5954,7 +5954,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_213",
+    "id": "bucMo",
     "title": "Intersection of Two Arrays",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -5983,7 +5983,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_214",
+    "id": "o7M5L",
     "title": "Assign Cookies",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6012,7 +6012,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_215",
+    "id": "7rRlX",
     "title": "Fizz Buzz",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6035,7 +6035,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_216",
+    "id": "Vk8Ab",
     "title": "Number of Segments in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6058,7 +6058,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_217",
+    "id": "eh0Sy",
     "title": "First Unique Character in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6081,7 +6081,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_218",
+    "id": "5YgbW",
     "title": "Ransom Note",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6113,7 +6113,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_219",
+    "id": "I00fO",
     "title": "Third Maximum Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6145,7 +6145,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_220",
+    "id": "jx5Su",
     "title": "Island Perimeter",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6173,7 +6173,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_221",
+    "id": "XAg8L",
     "title": "Teemo Attacking",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6198,7 +6198,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_222",
+    "id": "OdYAC",
     "title": "Harmonic Mean",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6223,7 +6223,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_223",
+    "id": "xqGuR",
     "title": "Check if N and its Double Exist",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6255,7 +6255,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_224",
+    "id": "7Hi4g",
     "title": "Average of Levels in Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6278,7 +6278,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_225",
+    "id": "eJWOZ",
     "title": "Subtree of Another Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6303,7 +6303,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_226",
+    "id": "xuo0H",
     "title": "Diameter of Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6326,7 +6326,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_227",
+    "id": "OK9x8",
     "title": "Merge Two Binary Trees",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6351,7 +6351,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_228",
+    "id": "9GVKo",
     "title": "Longest Univalue Path",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6374,7 +6374,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_229",
+    "id": "hXTwU",
     "title": "Maximum Product of Three Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6406,7 +6406,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_230",
+    "id": "fERUG",
     "title": "Array Partition",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6431,7 +6431,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_231",
+    "id": "Hmf8Z",
     "title": "Longest Continuous Increasing Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6456,7 +6456,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_232",
+    "id": "xcoyQ",
     "title": "Max Area of Island",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6490,7 +6490,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_233",
+    "id": "KsS31",
     "title": "Max Consecutive Ones",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6515,7 +6515,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_234",
+    "id": "QkysC",
     "title": "Two Sum IV - Input is a BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6540,7 +6540,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_235",
+    "id": "Y71D7",
     "title": "Reshape the Matrix",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6569,7 +6569,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_236",
+    "id": "JBf9i",
     "title": "Student Attendance Record I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6592,7 +6592,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_237",
+    "id": "gCv2I",
     "title": "Reverse String II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6617,7 +6617,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_238",
+    "id": "MMB3x",
     "title": "Relative Ranks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6642,7 +6642,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_239",
+    "id": "mW4HV",
     "title": "Longest Word in Dictionary",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6667,7 +6667,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_240",
+    "id": "pH8Ar",
     "title": "Monotonic Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6699,7 +6699,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_241",
+    "id": "hApNN",
     "title": "Fair Candy Swap",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6728,7 +6728,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_242",
+    "id": "D0H7m",
     "title": "Shortest Distance to a Character",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6753,7 +6753,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_243",
+    "id": "8ah7L",
     "title": "Minimum Time Difference",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6778,7 +6778,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_244",
+    "id": "vZ5eC",
     "title": "Maximum Average Subarray I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6803,7 +6803,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_245",
+    "id": "93upP",
     "title": "Detect Capital",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6826,7 +6826,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_246",
+    "id": "PRNQG",
     "title": "Image Smoother",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6855,7 +6855,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_247",
+    "id": "6hNM1",
     "title": "Valid Palindrome II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6884,7 +6884,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_248",
+    "id": "GgNdr",
     "title": "Merge Sorted Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6911,7 +6911,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_249",
+    "id": "AYZMP",
     "title": "Search Insert Position",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6938,7 +6938,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_250",
+    "id": "d45t0",
     "title": "Plus One",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6963,7 +6963,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_251",
+    "id": "OyvlF",
     "title": "Sqrt(x)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -6986,7 +6986,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_252",
+    "id": "pEVNO",
     "title": "Single Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7011,7 +7011,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_253",
+    "id": "ap3Ow",
     "title": "Happy Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7034,7 +7034,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_254",
+    "id": "2fKi2",
     "title": "Count Primes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7057,7 +7057,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_255",
+    "id": "2r2Ty",
     "title": "Isomorphic Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7082,7 +7082,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_256",
+    "id": "wponv",
     "title": "Reverse Linked List II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7107,7 +7107,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_257",
+    "id": "IIlsS",
     "title": "Intersection of Two Arrays II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7136,7 +7136,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_258",
+    "id": "fZ5nX",
     "title": "Find All Numbers Disappeared in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7161,7 +7161,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_259",
+    "id": "3GN68",
     "title": "K-diff Pairs in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7188,7 +7188,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_260",
+    "id": "Kh9pQ",
     "title": "Count Vowels and Consonants",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7211,7 +7211,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_261",
+    "id": "5rSXR",
     "title": "Check if String Contains All Alphabets",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7234,7 +7234,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_262",
+    "id": "XLXAq",
     "title": "Reverse Words in a Sentence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7257,7 +7257,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_263",
+    "id": "CmReX",
     "title": "Find Second Smallest Element in Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7282,7 +7282,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_264",
+    "id": "5VAlA",
     "title": "Check if Array is Sorted and Rotated",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7314,7 +7314,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_265",
+    "id": "gsP2n",
     "title": "Find Common Elements in Two Sorted Arrays",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7343,7 +7343,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_266",
+    "id": "lKn6r",
     "title": "Check if Number is Palindrome",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7372,7 +7372,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_267",
+    "id": "2lTD4",
     "title": "Count Primes up to N",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7401,7 +7401,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_268",
+    "id": "wEkMK",
     "title": "Reverse Integer",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7430,7 +7430,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_269",
+    "id": "Hab2N",
     "title": "Check if String is a Permutation of Another",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7455,7 +7455,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_270",
+    "id": "r6uzv",
     "title": "Sum of Two Smallest Numbers in Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7480,7 +7480,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_271",
+    "id": "PzWeG",
     "title": "Find the Difference of Two Arrays",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7509,7 +7509,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_272",
+    "id": "V2SRi",
     "title": "Remove Duplicates from Sorted Array II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7534,7 +7534,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_273",
+    "id": "SRlOb",
     "title": "Plus One (Large Number)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7559,7 +7559,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_274",
+    "id": "qo7Tr",
     "title": "Add Binary Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7584,7 +7584,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_275",
+    "id": "VE8wf",
     "title": "Sqrt(x)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7607,7 +7607,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_276",
+    "id": "vtnfV",
     "title": "Factorial Trailing Zeros (Revisited)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7636,7 +7636,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_277",
+    "id": "T3gGg",
     "title": "Find the First Bad Version",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7661,7 +7661,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_278",
+    "id": "RclzA",
     "title": "Reverse Words in a String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7684,7 +7684,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_279",
+    "id": "uAyuz",
     "title": "Valid Mountain Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7709,7 +7709,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_280",
+    "id": "SVzCL",
     "title": "Check if N and its Double Exist",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7741,7 +7741,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_281",
+    "id": "atU1o",
     "title": "Contains Duplicate II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7776,7 +7776,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_282",
+    "id": "AU9ep",
     "title": "Intersection of Two Arrays II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7805,7 +7805,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_283",
+    "id": "ajz1n",
     "title": "Move Zeroes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7830,7 +7830,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_284",
+    "id": "QjsSc",
     "title": "Third Maximum Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7855,7 +7855,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_285",
+    "id": "Sd608",
     "title": "Find All Numbers Disappeared in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7880,7 +7880,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_286",
+    "id": "fMKjP",
     "title": "Max Consecutive Ones",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7905,7 +7905,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_287",
+    "id": "Rvp1B",
     "title": "Find Pivot Index",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7930,7 +7930,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_288",
+    "id": "FbMMl",
     "title": "Isomorphic Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7955,7 +7955,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_289",
+    "id": "RvkHc",
     "title": "Word Pattern",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -7980,7 +7980,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_290",
+    "id": "aT0az",
     "title": "Reverse Linked List",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8003,7 +8003,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_291",
+    "id": "p7nrA",
     "title": "Contains Duplicate III",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8030,7 +8030,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_292",
+    "id": "NBSGb",
     "title": "Missing Ranges",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8059,7 +8059,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_293",
+    "id": "9yAKK",
     "title": "Compare Version Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8091,7 +8091,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_294",
+    "id": "l14tK",
     "title": "Reverse String II",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8116,7 +8116,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_295",
+    "id": "yhKYf",
     "title": "Check if All A's Appears Before All B's",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8139,7 +8139,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_296",
+    "id": "sGZK8",
     "title": "Largest Odd Number in String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8168,7 +8168,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_297",
+    "id": "EGvq6",
     "title": "Find Closest Number to Zero",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8193,7 +8193,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_298",
+    "id": "A3Q97",
     "title": "Sum of Subarray Minimums",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8218,7 +8218,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_299",
+    "id": "yrIX6",
     "title": "Count Square Sum Triples",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8241,7 +8241,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_300",
+    "id": "kFGxL",
     "title": "Count Symmetric Integers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8266,7 +8266,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_301",
+    "id": "szB0c",
     "title": "Minimum Absolute Difference in BST",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8289,7 +8289,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_302",
+    "id": "yMmFv",
     "title": "Average of Levels in Binary Tree",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8312,7 +8312,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_303",
+    "id": "KAGmG",
     "title": "Check if a Number is Fascinating",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8341,7 +8341,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_304",
+    "id": "CYi5O",
     "title": "Find the K-Beauty of a Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8366,7 +8366,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_305",
+    "id": "jVc6T",
     "title": "Maximum Number of Words You Can Type",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8391,7 +8391,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_306",
+    "id": "66LfE",
     "title": "Averages in a Stream",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8418,7 +8418,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_307",
+    "id": "ejKyT",
     "title": "Check if Number Has Equal Digit Count and Digit Value",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8441,7 +8441,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_308",
+    "id": "qAeD2",
     "title": "Maximum Product of Two Elements in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8466,7 +8466,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_309",
+    "id": "jNJBg",
     "title": "Sum of All Odd Length Subarrays",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8491,7 +8491,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_310",
+    "id": "XDmvG",
     "title": "Count the Number of Consistent Strings",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8518,7 +8518,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_311",
+    "id": "wzVpf",
     "title": "Check if Word Equals Summation of Two Words",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8545,7 +8545,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_312",
+    "id": "iM2zM",
     "title": "Maximum Ascending Subarray Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8570,7 +8570,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_313",
+    "id": "TjxNu",
     "title": "Check if Binary String Has at Most One Segment of Ones",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8599,7 +8599,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_314",
+    "id": "CU0QI",
     "title": "Longest Nice Substring",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8628,7 +8628,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_315",
+    "id": "31JeA",
     "title": "Count Elements With Strictly Smaller and Greater Elements",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8653,7 +8653,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_316",
+    "id": "uyw0Z",
     "title": "Minimum Sum of Four Digit Number After Splitting Digits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8676,7 +8676,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_317",
+    "id": "zT5Js",
     "title": "Convert the Temperature",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8699,7 +8699,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_318",
+    "id": "3sIkv",
     "title": "Find Resultant Array After Removing Anagrams",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8724,7 +8724,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_319",
+    "id": "w8LfL",
     "title": "Count Integers With Even Digit Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8747,7 +8747,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_320",
+    "id": "gAJnD",
     "title": "Find Kth Positive Missing Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8774,7 +8774,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_321",
+    "id": "7aa8x",
     "title": "Calculate Amount Paid in Taxes",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8804,7 +8804,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_322",
+    "id": "BYTnE",
     "title": "Check if Number Has Same First and Last Digit",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8833,7 +8833,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_323",
+    "id": "1Ne1s",
     "title": "Merge Strings Alternately",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8858,7 +8858,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_324",
+    "id": "umSwx",
     "title": "Check if One String Swap Can Make Strings Equal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8890,7 +8890,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_325",
+    "id": "4RMHz",
     "title": "Find the Kth Factor of N",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8915,7 +8915,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_326",
+    "id": "qBd3x",
     "title": "Maximum Product of Three Numbers",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8947,7 +8947,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_327",
+    "id": "Gac0b",
     "title": "Shortest Unsorted Continuous Subarray",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8972,7 +8972,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_328",
+    "id": "QgVN5",
     "title": "Degree of an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -8997,7 +8997,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_329",
+    "id": "PTYKw",
     "title": "Longest Harmonious Subsequence",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9022,7 +9022,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_330",
+    "id": "E1ka4",
     "title": "Kth Largest Element in a Stream",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9046,7 +9046,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_331",
+    "id": "oqxyT",
     "title": "Array Partition I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9071,7 +9071,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_332",
+    "id": "l3fpP",
     "title": "Distribute Candies",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9096,7 +9096,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_333",
+    "id": "UvX56",
     "title": "Check if N is a Power of Four",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9125,7 +9125,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_334",
+    "id": "NKa9f",
     "title": "Find All Duplicates in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9150,7 +9150,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_335",
+    "id": "AGRWE",
     "title": "Convert a Number to Hexadecimal",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9173,7 +9173,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_336",
+    "id": "Pdah1",
     "title": "Subarray Sum Equals K",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9200,7 +9200,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_337",
+    "id": "n42El",
     "title": "Binary Number with Alternating Bits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9229,7 +9229,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_338",
+    "id": "1I8tU",
     "title": "Shortest Completing Word",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9256,7 +9256,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_339",
+    "id": "SiTlL",
     "title": "Monotonic Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9288,7 +9288,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_340",
+    "id": "itwZ6",
     "title": "Reverse Only Letters",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9311,7 +9311,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_341",
+    "id": "FpTge",
     "title": "Smallest Range I",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9338,7 +9338,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_342",
+    "id": "E07du",
     "title": "Single Number III",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9363,7 +9363,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_343",
+    "id": "CmSUr",
     "title": "Fibonacci Number Revisited",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9392,7 +9392,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_344",
+    "id": "0VWKh",
     "title": "Count Substrings with Only One Distinct Letter",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9415,7 +9415,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_345",
+    "id": "3V139",
     "title": "Find the Student That Will Replace the Chalk",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9442,7 +9442,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_346",
+    "id": "c0RAg",
     "title": "Find N Unique Integers Sum up to Zero",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9465,7 +9465,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_347",
+    "id": "MXalX",
     "title": "Check if All Characters Have Equal Number of Occurrences",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9488,7 +9488,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_348",
+    "id": "jj5YP",
     "title": "Count Good Triplets",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9515,7 +9515,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_349",
+    "id": "QOT8U",
     "title": "Number of Lines To Write String",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9540,7 +9540,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_350",
+    "id": "CRkRY",
     "title": "Relative Ranks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9565,7 +9565,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_351",
+    "id": "xkoPG",
     "title": "Island Perimeter (Revisited)",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9593,7 +9593,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_352",
+    "id": "IBRap",
     "title": "Minimum Absolute Difference",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9618,7 +9618,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_353",
+    "id": "4W7Ss",
     "title": "Check if Number is a Sum of Powers of Three",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9641,7 +9641,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_354",
+    "id": "mdXV8",
     "title": "Maximum Number of Balloons",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9664,7 +9664,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_355",
+    "id": "V66Dv",
     "title": "Check if Sentence is Pangram",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9687,7 +9687,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_356",
+    "id": "V233s",
     "title": "Largest Perimeter Triangle",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9712,7 +9712,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_357",
+    "id": "VqeQ2",
     "title": "Number of Pairs of Interchangeable Rectangles",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9742,7 +9742,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_358",
+    "id": "YxWOz",
     "title": "Count Special Quadruplets",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9767,7 +9767,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_359",
+    "id": "rxt53",
     "title": "Find Original Array From Doubled Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9792,7 +9792,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_360",
+    "id": "LxozI",
     "title": "Find Players With Zero or One Losses",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9827,7 +9827,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_361",
+    "id": "pWs7c",
     "title": "Sort the People",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9854,7 +9854,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_362",
+    "id": "zTHci",
     "title": "Minimum Rounds to Complete All Tasks",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9879,7 +9879,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_363",
+    "id": "NtgW0",
     "title": "Difference Between Element Sum and Digit Sum of an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9904,7 +9904,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_364",
+    "id": "SQXwA",
     "title": "Alternating Digit Sum",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9933,7 +9933,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_365",
+    "id": "Xhkrt",
     "title": "Maximum Value of a String in an Array",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9958,7 +9958,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_366",
+    "id": "9zG5Q",
     "title": "Smallest Even Multiple",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -9981,7 +9981,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_367",
+    "id": "8RmvO",
     "title": "Count the Digits That Divide a Number",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -10004,7 +10004,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_368",
+    "id": "ndQSY",
     "title": "Sum of Values at Indices With K Set Bits",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -10031,7 +10031,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_369",
+    "id": "tmssS",
     "title": "Smallest Missing Non-Negative Integer",
     "category": "Pattern Recognition",
     "input_type": "stdin",
@@ -10056,7 +10056,7 @@
     "from": "AI"
   },
   {
-    "id": "pr_370",
+    "id": "mHCBJ",
     "title": "Check if Array is Good (Revisited)",
     "category": "Pattern Recognition",
     "input_type": "stdin",

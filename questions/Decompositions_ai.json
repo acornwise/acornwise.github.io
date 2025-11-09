@@ -1,6 +1,6 @@
 [
   {
-    "id": "decom_001",
+    "id": "raSTW",
     "title": "Reverse a String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -17,7 +17,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_002",
+    "id": "NRDKH",
     "title": "Count Vowels",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -34,7 +34,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_003",
+    "id": "oLPxO",
     "title": "Check Palindrome",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -51,7 +51,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_004",
+    "id": "QRPDn",
     "title": "String Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -68,7 +68,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_005",
+    "id": "ketit",
     "title": "Capitalize First Letter",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -85,7 +85,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_006",
+    "id": "uYHYH",
     "title": "Concatenate Two Strings",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -103,7 +103,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_007",
+    "id": "Iz5On",
     "title": "Remove Spaces from String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -120,7 +120,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_008",
+    "id": "x6G17",
     "title": "First Character of String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -137,7 +137,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_009",
+    "id": "YlpAU",
     "title": "Last Character of String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -154,7 +154,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_010",
+    "id": "RYuZZ",
     "title": "Is String Empty?",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -171,7 +171,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_011",
+    "id": "EixOA",
     "title": "Sum of Array Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -188,7 +188,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_012",
+    "id": "T7gQt",
     "title": "Average of Array Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -205,7 +205,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_013",
+    "id": "j7BPf",
     "title": "Find Maximum in Array",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -222,7 +222,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_014",
+    "id": "riDNm",
     "title": "Find Minimum in Array",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -239,7 +239,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_015",
+    "id": "826QQ",
     "title": "Filter Positive Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -256,7 +256,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_016",
+    "id": "iC7RS",
     "title": "Array Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -273,7 +273,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_017",
+    "id": "CEwa3",
     "title": "Access Array Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -291,7 +291,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_018",
+    "id": "WUaNd",
     "title": "Append to List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -309,7 +309,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_019",
+    "id": "fNV7J",
     "title": "Merge Two Arrays",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -327,7 +327,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_020",
+    "id": "B2bDa",
     "title": "Count Occurrences in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -345,7 +345,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_021",
+    "id": "sYNOy",
     "title": "Simple Greeting Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -362,7 +362,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_022",
+    "id": "gGDH8",
     "title": "Add Two Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -380,7 +380,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_023",
+    "id": "TIxMn",
     "title": "Is Even Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -397,7 +397,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_024",
+    "id": "LZDXx",
     "title": "Convert Celsius to Fahrenheit Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -414,7 +414,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_025",
+    "id": "caq16",
     "title": "Calculate Rectangle Area Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -432,7 +432,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_026",
+    "id": "9GoHv",
     "title": "Simple Calculator Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -451,7 +451,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_027",
+    "id": "DuhXB",
     "title": "Is Positive Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -468,7 +468,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_028",
+    "id": "FoYC4",
     "title": "Get Max of Two Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -486,7 +486,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_029",
+    "id": "0HE37",
     "title": "Return First Element of List Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -503,7 +503,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_030",
+    "id": "DedQ6",
     "title": "Power Calculation Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -521,7 +521,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_031",
+    "id": "l6fer",
     "title": "Perimeter of Square",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -538,7 +538,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_032",
+    "id": "dhBcL",
     "title": "Area of Circle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -555,7 +555,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_033",
+    "id": "k4gVM",
     "title": "Miles to Kilometers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -572,7 +572,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_034",
+    "id": "a3rpR",
     "title": "Currency Converter",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -590,7 +590,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_035",
+    "id": "1FS7c",
     "title": "Simple Interest Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -609,7 +609,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_036",
+    "id": "O9Vmz",
     "title": "BMI Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -627,7 +627,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_037",
+    "id": "pRGnV",
     "title": "Temperature Classifier",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -644,7 +644,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_038",
+    "id": "sOXhi",
     "title": "Check if Number is in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -663,7 +663,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_039",
+    "id": "795vp",
     "title": "Leap Year Checker",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -680,7 +680,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_040",
+    "id": "NGRDD",
     "title": "Voting Eligibility",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -697,7 +697,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_041",
+    "id": "MdHTJ",
     "title": "Pass/Fail Grade",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -714,7 +714,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_042",
+    "id": "Bvw01",
     "title": "Positive, Negative or Zero",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -731,7 +731,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_043",
+    "id": "or7UF",
     "title": "Triangle Type by Sides",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -750,7 +750,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_044",
+    "id": "3M6EW",
     "title": "Simple Login Check",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -768,7 +768,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_045",
+    "id": "3eOHC",
     "title": "Movie Ticket Price",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -785,7 +785,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_046",
+    "id": "jlG7X",
     "title": "Traffic Light Logic",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -802,7 +802,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_047",
+    "id": "WqLKG",
     "title": "Print Numbers 1 to N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -819,7 +819,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_048",
+    "id": "hRQRE",
     "title": "Sum of First N Integers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -836,7 +836,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_049",
+    "id": "CFQSL",
     "title": "Print Even Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -853,7 +853,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_050",
+    "id": "Sne3u",
     "title": "Multiplication Table",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -870,7 +870,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_051",
+    "id": "sNIIv",
     "title": "Countdown Timer",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -887,7 +887,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_052",
+    "id": "BkT0J",
     "title": "Count Characters in String (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -905,7 +905,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_053",
+    "id": "jqQwu",
     "title": "Print Stars in a Square",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -922,7 +922,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_054",
+    "id": "spPU1",
     "title": "Print Right-Angled Triangle (Stars)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -939,7 +939,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_055",
+    "id": "cppDa",
     "title": "Inverted Right-Angled Triangle (Stars)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -956,7 +956,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_056",
+    "id": "BLU8k",
     "title": "Hollow Square of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -973,7 +973,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_057",
+    "id": "uk6rY",
     "title": "Pyramid of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -990,7 +990,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_058",
+    "id": "Jghig",
     "title": "Number Pattern (Increasing)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1007,7 +1007,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_059",
+    "id": "ZTBvg",
     "title": "Simple FizzBuzz-like",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1024,7 +1024,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_060",
+    "id": "qS2X5",
     "title": "Count Evens in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1041,7 +1041,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_061",
+    "id": "jxh5v",
     "title": "Sum of Digits",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1058,7 +1058,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_062",
+    "id": "lYRXZ",
     "title": "Smallest of Three",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1077,7 +1077,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_063",
+    "id": "yUZte",
     "title": "Swap Two Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1095,7 +1095,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_064",
+    "id": "zo0QR",
     "title": "Number to Word (1-3)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1112,7 +1112,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_065",
+    "id": "ffBq5",
     "title": "Simple Grade Classifier",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1129,7 +1129,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_066",
+    "id": "wvHaC",
     "title": "Sum of Even Numbers in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1147,7 +1147,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_067",
+    "id": "qJE6A",
     "title": "Find Longest Word in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1164,7 +1164,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_068",
+    "id": "PVDUG",
     "title": "Remove First Occurrence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1182,7 +1182,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_069",
+    "id": "15HaE",
     "title": "Reverse a List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1199,7 +1199,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_070",
+    "id": "z96Y5",
     "title": "Print Diamond of Stars (Small)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1216,7 +1216,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_071",
+    "id": "i4Poi",
     "title": "Factorial Calculation (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1233,7 +1233,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_072",
+    "id": "p9kbw",
     "title": "Check if List is Sorted (Ascending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1250,7 +1250,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_073",
+    "id": "TNcF2",
     "title": "Count Words in Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1267,7 +1267,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_074",
+    "id": "lQ5kx",
     "title": "Find Index of Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1285,7 +1285,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_075",
+    "id": "7u90O",
     "title": "Filter Negative Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1302,7 +1302,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_076",
+    "id": "NxuJJ",
     "title": "Simple List Rotation (Left by 1)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1319,7 +1319,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_077",
+    "id": "v5qma",
     "title": "Acronym Generator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1336,7 +1336,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_078",
+    "id": "POBuT",
     "title": "Convert String to Uppercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1353,7 +1353,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_079",
+    "id": "etqgZ",
     "title": "Simple Data Type Conversion (String to Int)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1370,7 +1370,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_080",
+    "id": "Nbfya",
     "title": "Print Numbers and Squares",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1387,7 +1387,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_081",
+    "id": "xGXGy",
     "title": "Check if All Elements are Positive",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1404,7 +1404,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_082",
+    "id": "Uixpm",
     "title": "Vowel or Consonant Checker",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1421,7 +1421,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_083",
+    "id": "JhcN0",
     "title": "Sum of Elements at Even Indices",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1438,7 +1438,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_084",
+    "id": "B5VMg",
     "title": "Print Characters of String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1455,7 +1455,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_085",
+    "id": "2jubG",
     "title": "Calculate Hypotenuse",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1473,7 +1473,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_086",
+    "id": "74BdD",
     "title": "Basic Unit Converter (Feet to Inches)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1490,7 +1490,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_087",
+    "id": "AoaPS",
     "title": "Check if Number is Prime (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1507,7 +1507,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_088",
+    "id": "g8Uei",
     "title": "Calculate GCD of Two Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1525,7 +1525,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_089",
+    "id": "4Dm0Q",
     "title": "Find Second Largest in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1542,7 +1542,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_090",
+    "id": "YuIw2",
     "title": "Reverse Words in a Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1559,7 +1559,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_091",
+    "id": "VvKxy",
     "title": "Count Words Starting with Specific Letter",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1577,7 +1577,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_092",
+    "id": "EUZUE",
     "title": "Generate Fibonacci Sequence (N terms)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1594,7 +1594,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_093",
+    "id": "5EpPV",
     "title": "Calculate Sum of Even Numbers in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1611,7 +1611,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_094",
+    "id": "GsCOh",
     "title": "Find Common Elements in Two Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1629,7 +1629,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_095",
+    "id": "9xOsr",
     "title": "String Contains Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1647,7 +1647,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_096",
+    "id": "YMp0a",
     "title": "Calculate Product of List Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1664,7 +1664,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_097",
+    "id": "Gp6hZ",
     "title": "Replace Character in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1683,7 +1683,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_098",
+    "id": "zVIqD",
     "title": "Print Square of Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1700,7 +1700,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_099",
+    "id": "vs4Nx",
     "title": "Calculate Triangle Area (Base & Height)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1718,7 +1718,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_100",
+    "id": "ws86j",
     "title": "Count Vowels Using Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -1735,7 +1735,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_101",
+    "id": "Ylmce",
     "title": "Filter Odd Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1752,7 +1752,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_102",
+    "id": "m5j5I",
     "title": "Concatenate List Elements to String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1769,7 +1769,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_103",
+    "id": "ViUOD",
     "title": "Count Elements Greater Than N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1787,7 +1787,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_104",
+    "id": "lO4DY",
     "title": "Calculate Sum of Squares of List Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1804,7 +1804,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_105",
+    "id": "P8eXc",
     "title": "Remove Duplicates from Sorted List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1821,7 +1821,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_106",
+    "id": "lrYAJ",
     "title": "Swap First and Last Elements of List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1838,7 +1838,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_107",
+    "id": "PMnFP",
     "title": "Check if Element Exists in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1856,7 +1856,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_108",
+    "id": "Sq9aJ",
     "title": "Remove Nth Occurrence of Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1875,7 +1875,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_109",
+    "id": "W9lUJ",
     "title": "Count Uppercase Letters in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1892,7 +1892,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_110",
+    "id": "DHKLO",
     "title": "Check if String Contains Only Digits",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1909,7 +1909,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_111",
+    "id": "7Cuwd",
     "title": "Remove All Occurrences of Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1927,7 +1927,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_112",
+    "id": "Il4NH",
     "title": "Reverse Words with Same Case",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1944,7 +1944,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_113",
+    "id": "QBTxe",
     "title": "Count Words Longer Than N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1962,7 +1962,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_114",
+    "id": "wVmUh",
     "title": "Check Anagrams (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1980,7 +1980,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_115",
+    "id": "SDppw",
     "title": "Remove First and Last Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -1997,7 +1997,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_116",
+    "id": "kK22h",
     "title": "Average of Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2014,7 +2014,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_117",
+    "id": "vDsRc",
     "title": "Max of List Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2031,7 +2031,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_118",
+    "id": "6wxfG",
     "title": "Area of Triangle Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2049,7 +2049,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_119",
+    "id": "Nivsq",
     "title": "Is Palindrome Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2066,7 +2066,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_120",
+    "id": "EcG6D",
     "title": "Fahrenheit to Celsius Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2083,7 +2083,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_121",
+    "id": "27qfA",
     "title": "Get List Length Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2100,7 +2100,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_122",
+    "id": "KZZFP",
     "title": "Concatenate Two Lists Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2118,7 +2118,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_123",
+    "id": "hGF1q",
     "title": "Reverse String Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2135,7 +2135,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_124",
+    "id": "465yQ",
     "title": "Check Age Group Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2152,7 +2152,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_125",
+    "id": "GhGgQ",
     "title": "Calculate Simple Sales Tax",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2170,7 +2170,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_126",
+    "id": "bjjWK",
     "title": "Convert Days to Hours",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2187,7 +2187,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_127",
+    "id": "ngeHF",
     "title": "Travel Time Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2205,7 +2205,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_128",
+    "id": "TCCX8",
     "title": "Even or Odd Checker",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2222,7 +2222,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_129",
+    "id": "RM5Ff",
     "title": "Check if Character is Digit",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2239,7 +2239,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_130",
+    "id": "rXRpE",
     "title": "Check for Uppercase Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2256,7 +2256,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_131",
+    "id": "WmOCe",
     "title": "Divisible by 3 and 5",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2273,7 +2273,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_132",
+    "id": "HnV6Q",
     "title": "Weekday or Weekend",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2290,7 +2290,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_133",
+    "id": "0jNYZ",
     "title": "Smallest of Four Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2310,7 +2310,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_134",
+    "id": "yJKZU",
     "title": "Print N Times String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2328,7 +2328,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_135",
+    "id": "gPNEj",
     "title": "Sum of Odd Numbers in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2346,7 +2346,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_136",
+    "id": "1Bnou",
     "title": "Count Down By Step",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2364,7 +2364,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_137",
+    "id": "ZIP7J",
     "title": "Print Characters with Index",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2381,7 +2381,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_138",
+    "id": "U7EWu",
     "title": "Calculate Sum of Absolute Values in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2398,7 +2398,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_139",
+    "id": "ceoEs",
     "title": "Find Index of Smallest Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2415,7 +2415,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_140",
+    "id": "3mM7C",
     "title": "Replace All Occurrences in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2434,7 +2434,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_141",
+    "id": "rAUHH",
     "title": "Check if List is Empty",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2451,7 +2451,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_142",
+    "id": "FYkDg",
     "title": "Simple Chatbot Response",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2468,7 +2468,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_143",
+    "id": "HdlxV",
     "title": "Calculate Remainder",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2486,7 +2486,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_144",
+    "id": "oUXRO",
     "title": "Print Half Pyramid of Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2503,7 +2503,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_145",
+    "id": "dkijv",
     "title": "Inverted Half Pyramid of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2520,7 +2520,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_146",
+    "id": "sipms",
     "title": "Basic Number Guessing Game Logic",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2538,7 +2538,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_147",
+    "id": "L1Z46",
     "title": "Calculate Simple Discount",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2556,7 +2556,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_148",
+    "id": "6gbZV",
     "title": "Check if Number is Perfect Square (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2573,7 +2573,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_149",
+    "id": "9bfXS",
     "title": "Sum of First and Last Element of List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2590,7 +2590,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_150",
+    "id": "WUfl7",
     "title": "Reverse a String with Spaces",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2607,7 +2607,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_151",
+    "id": "MXWi7",
     "title": "Merge Two Sorted Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2625,7 +2625,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_152",
+    "id": "ZG4Zz",
     "title": "Rotate List Left by N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2643,7 +2643,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_153",
+    "id": "0XUX4",
     "title": "Find Common Elements in Two Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2661,7 +2661,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_154",
+    "id": "BHzJA",
     "title": "Check if List is a Subsequence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2679,7 +2679,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_155",
+    "id": "ZloH9",
     "title": "Sum of Elements at Even Indices",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2696,7 +2696,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_156",
+    "id": "qMHSy",
     "title": "Reverse Words in a Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2713,7 +2713,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_157",
+    "id": "TyPV4",
     "title": "Count Frequency of Each Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2730,7 +2730,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_158",
+    "id": "mNz54",
     "title": "Check if String is Pangram",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2747,7 +2747,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_159",
+    "id": "tUQ14",
     "title": "Remove Vowels from String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2764,7 +2764,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_160",
+    "id": "oJOW3",
     "title": "Capitalize First Letter of Each Word",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2781,7 +2781,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_161",
+    "id": "GzE3k",
     "title": "Factorial Calculator Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2798,7 +2798,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_162",
+    "id": "UyYge",
     "title": "Power Function (x to the power of y)",
     "category": "Decomposition",
     "input_type": "function",
@@ -2816,7 +2816,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_163",
+    "id": "HHNK4",
     "title": "Is Prime Number Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2833,7 +2833,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_164",
+    "id": "pgxBr",
     "title": "Sort List of Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2850,7 +2850,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_165",
+    "id": "iZr4z",
     "title": "Filter Even Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2867,7 +2867,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_166",
+    "id": "NZChT",
     "title": "Sum of Digits Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2884,7 +2884,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_167",
+    "id": "j3K6H",
     "title": "Check Leap Year Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2901,7 +2901,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_168",
+    "id": "EXBqz",
     "title": "GCD of Two Numbers Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -2919,7 +2919,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_169",
+    "id": "PbBjR",
     "title": "Calculate Simple Interest",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2938,7 +2938,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_170",
+    "id": "Pre93",
     "title": "BMI Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2956,7 +2956,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_171",
+    "id": "XbMhH",
     "title": "Currency Converter (USD to EUR)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2974,7 +2974,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_172",
+    "id": "Oebii",
     "title": "Calculate Final Grade",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -2993,7 +2993,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_173",
+    "id": "wLblB",
     "title": "Temperature Converter (Celsius to Fahrenheit)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3010,7 +3010,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_174",
+    "id": "wsbGq",
     "title": "Check if Number is Positive, Negative or Zero",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3027,7 +3027,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_175",
+    "id": "k1uwM",
     "title": "Check if Character is Vowel or Consonant",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3044,7 +3044,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_176",
+    "id": "cIc9a",
     "title": "Check if a Triangle is Valid",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3063,7 +3063,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_177",
+    "id": "kVaqr",
     "title": "Check if Point is Inside Rectangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3082,7 +3082,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_178",
+    "id": "ZLsow",
     "title": "Determine Grade Based on Score",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3099,7 +3099,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_179",
+    "id": "udG3x",
     "title": "Sum Even Numbers in a Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3117,7 +3117,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_180",
+    "id": "a6W2w",
     "title": "Print Multiples of N Up to M",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3135,7 +3135,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_181",
+    "id": "D0uUS",
     "title": "Count Digits in an Integer",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3152,7 +3152,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_182",
+    "id": "AbLQS",
     "title": "Print Fibonacci Sequence Up to N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3169,7 +3169,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_183",
+    "id": "oAQP0",
     "title": "Calculate Product of List Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3186,7 +3186,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_184",
+    "id": "AHYso",
     "title": "Inverted Full Pyramid of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3203,7 +3203,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_185",
+    "id": "bYhnQ",
     "title": "Hollow Square of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3220,7 +3220,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_186",
+    "id": "z7SPn",
     "title": "Diamond Pattern of Stars (Half)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3237,7 +3237,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_187",
+    "id": "Jsg9f",
     "title": "Alphabet Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3254,7 +3254,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_188",
+    "id": "gDZZF",
     "title": "Calculate Number of Working Days",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3272,7 +3272,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_189",
+    "id": "SsKOn",
     "title": "Simple Password Strength Checker",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3289,7 +3289,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_190",
+    "id": "alOXu",
     "title": "Grade Calculator with Weights",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3308,7 +3308,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_191",
+    "id": "RqcYP",
     "title": "Count Positive, Negative, Zero in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3325,7 +3325,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_192",
+    "id": "oe0ny",
     "title": "Split String by Delimiter",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3343,7 +3343,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_193",
+    "id": "J3Tmc",
     "title": "Remove Duplicate Characters from String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3360,7 +3360,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_194",
+    "id": "U6lYu",
     "title": "Word Search Grid Checker (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3380,7 +3380,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_195",
+    "id": "JP8xx",
     "title": "Reverse a List of Strings",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3397,7 +3397,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_196",
+    "id": "MSBSv",
     "title": "Check if List Contains Duplicates",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3414,7 +3414,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_197",
+    "id": "at6Z3",
     "title": "Concatenate with Separator Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -3432,7 +3432,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_198",
+    "id": "3n0oh",
     "title": "Print Pattern: Increasing Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3449,7 +3449,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_199",
+    "id": "yjtwZ",
     "title": "Check if Sorted List is Strictly Increasing",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3466,7 +3466,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_200",
+    "id": "Db5R7",
     "title": "Find Longest Word in Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3483,7 +3483,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_201",
+    "id": "2pIjQ",
     "title": "Find Second Smallest Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3500,7 +3500,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_202",
+    "id": "dyEMf",
     "title": "Remove All Occurrences of Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3518,7 +3518,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_203",
+    "id": "ab51F",
     "title": "Calculate Hypotenuse of Right Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3536,7 +3536,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_204",
+    "id": "ErYMv",
     "title": "Print Nth Character of String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3554,7 +3554,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_205",
+    "id": "KWB84",
     "title": "Count Words in a Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3571,7 +3571,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_206",
+    "id": "AAeec",
     "title": "Check if String is Alphanumeric",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3588,7 +3588,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_207",
+    "id": "FWluI",
     "title": "Extract Middle Character(s) of String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3611,7 +3611,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_208",
+    "id": "1Cy0T",
     "title": "Convert All to Lowercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3628,7 +3628,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_209",
+    "id": "JGrGC",
     "title": "Count Elements in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3647,7 +3647,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_210",
+    "id": "LM4Ag",
     "title": "Filter Strings by Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3665,7 +3665,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_211",
+    "id": "K301M",
     "title": "Remove First Occurrence of Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3683,7 +3683,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_212",
+    "id": "OfOwX",
     "title": "Check if List is Sorted (Descending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3700,7 +3700,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_213",
+    "id": "62lZN",
     "title": "Calculate Mean, Median, Mode (Mean Only)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3717,7 +3717,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_214",
+    "id": "RmSH0",
     "title": "Vending Machine Change Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3735,7 +3735,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_215",
+    "id": "fIWfs",
     "title": "Guess the Number Game (Single Check)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3760,7 +3760,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_216",
+    "id": "KzbOf",
     "title": "Determine Quadrant of a Point",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3792,7 +3792,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_217",
+    "id": "Bclx4",
     "title": "Check if All Elements are Positive",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3815,7 +3815,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_218",
+    "id": "7QpiH",
     "title": "Count Occurrences of Word",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3833,7 +3833,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_219",
+    "id": "aaD6N",
     "title": "Calculate Median of a List (Odd Length)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3850,7 +3850,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_220",
+    "id": "XlHUD",
     "title": "Reverse a Number",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3873,7 +3873,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_221",
+    "id": "9vuGl",
     "title": "Check if Year is Century Year",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3896,7 +3896,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_222",
+    "id": "oSEYd",
     "title": "Check if Character is Uppercase or Lowercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3919,7 +3919,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_223",
+    "id": "P9odn",
     "title": "Count Even Numbers in a List Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -3936,7 +3936,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_224",
+    "id": "h4XuQ",
     "title": "Calculate Compound Interest",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3955,7 +3955,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_225",
+    "id": "aFR5M",
     "title": "Sum of Numbers from 1 to N (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3972,7 +3972,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_226",
+    "id": "NY86R",
     "title": "Print Stars in a Right-Angled Triangle (Left Align)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -3989,7 +3989,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_227",
+    "id": "3VbjQ",
     "title": "Find the Length of Longest Word in a List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4006,7 +4006,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_228",
+    "id": "KN6lN",
     "title": "Insert Element at Specific Index",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4025,7 +4025,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_229",
+    "id": "RtP0H",
     "title": "Concatenate Strings with Spaces",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4042,7 +4042,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_230",
+    "id": "ochy0",
     "title": "Remove Leading and Trailing Spaces",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4059,7 +4059,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_231",
+    "id": "skila",
     "title": "Check if a Number is Multiple of N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4084,7 +4084,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_232",
+    "id": "s1vpo",
     "title": "Convert Seconds to Hours, Minutes, Seconds",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4101,7 +4101,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_233",
+    "id": "canqR",
     "title": "Sum of First N Natural Numbers (Formula)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4118,7 +4118,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_234",
+    "id": "GyzQV",
     "title": "Basic Calculator (Addition/Subtraction)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4145,7 +4145,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_235",
+    "id": "I2ZYk",
     "title": "Simple Login System (Single Attempt)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4170,7 +4170,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_236",
+    "id": "BZ7Eg",
     "title": "Average Word Length in Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4187,7 +4187,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_237",
+    "id": "awH2f",
     "title": "Count Lowercase Letters in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4204,7 +4204,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_238",
+    "id": "rgm9V",
     "title": "Check if String Starts With Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4229,7 +4229,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_239",
+    "id": "cMt6s",
     "title": "Find Largest Odd Number in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4252,7 +4252,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_240",
+    "id": "4dVOT",
     "title": "Sum of Elements in 2D List Row",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4272,7 +4272,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_241",
+    "id": "N7oDq",
     "title": "Find Intersection of Two Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4290,7 +4290,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_242",
+    "id": "TEH4s",
     "title": "Check if a String is a Valid Email Format (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4319,7 +4319,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_243",
+    "id": "v9LKy",
     "title": "Print a Table of Squares and Cubes",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4336,7 +4336,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_244",
+    "id": "cwUMI",
     "title": "Generate Random Number in Range Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -4357,7 +4357,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_245",
+    "id": "gU8ur",
     "title": "Check if Value is in Range Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -4384,7 +4384,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_246",
+    "id": "0LFcD",
     "title": "Concatenate Two Lists of Different Types",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4402,7 +4402,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_247",
+    "id": "5UrHh",
     "title": "Swap Two Elements by Index",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4421,7 +4421,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_248",
+    "id": "10xkj",
     "title": "Check if all characters are unique in string",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4444,7 +4444,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_249",
+    "id": "3n2gK",
     "title": "Simple Text Censor",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4462,7 +4462,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_250",
+    "id": "oAE6Z",
     "title": "Calculate Simple Moving Average (3-point)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4479,7 +4479,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_251",
+    "id": "LKJlk",
     "title": "Merge Two Unsorted Lists (Sorted Output)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4497,7 +4497,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_252",
+    "id": "acv0e",
     "title": "Find Majority Element in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4514,7 +4514,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_253",
+    "id": "N43eC",
     "title": "Remove Nth Occurrence of Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4533,7 +4533,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_254",
+    "id": "p3bAN",
     "title": "Group Anagrams Together",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4550,7 +4550,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_255",
+    "id": "joJYb",
     "title": "Run-Length Encoding",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4573,7 +4573,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_256",
+    "id": "Vr9ap",
     "title": "Validate Parentheses (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4602,7 +4602,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_257",
+    "id": "vENZG",
     "title": "Reverse Words in a Sentence (Preserve Punctuation)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4619,7 +4619,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_258",
+    "id": "61nXA",
     "title": "Remove Nth Character from String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4637,7 +4637,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_259",
+    "id": "SmftL",
     "title": "Find Mode of a List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4660,7 +4660,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_260",
+    "id": "fL9HX",
     "title": "Flatten a Nested List (1 Level)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4677,7 +4677,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_261",
+    "id": "D7shV",
     "title": "Matrix Transpose (2x2 or 3x3)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4696,7 +4696,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_262",
+    "id": "vwGcR",
     "title": "Sum of Diagonal Elements in Matrix",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4715,7 +4715,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_263",
+    "id": "ZiC7o",
     "title": "Check if Two Lists are Permutations",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4740,7 +4740,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_264",
+    "id": "SgA4p",
     "title": "Convert Roman Numerals to Integer (Limited)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4763,7 +4763,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_265",
+    "id": "b4zj7",
     "title": "Encode String with Caesar Cipher",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4795,7 +4795,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_266",
+    "id": "nrCFv",
     "title": "Check if a String is a Palindrome (Case & Space Insensitive)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4818,7 +4818,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_267",
+    "id": "vxlow",
     "title": "Implement a Queue (Enqueue, Dequeue)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4835,7 +4835,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_268",
+    "id": "pRikA",
     "title": "Implement a Stack (Push, Pop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4852,7 +4852,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_269",
+    "id": "7YtCE",
     "title": "Decimal to Binary Conversion",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4875,7 +4875,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_270",
+    "id": "S5ZqG",
     "title": "Binary to Decimal Conversion",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4898,7 +4898,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_271",
+    "id": "chZwo",
     "title": "Check if Number is Perfect Square",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4921,7 +4921,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_272",
+    "id": "gwQ0u",
     "title": "Nth Fibonacci Number (Iterative)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4950,7 +4950,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_273",
+    "id": "Zy0vZ",
     "title": "Calculate LCM of Two Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4975,7 +4975,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_274",
+    "id": "yKvtu",
     "title": "Print Diamond Pattern",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -4992,7 +4992,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_275",
+    "id": "R29jo",
     "title": "Convert Celsius to Fahrenheit (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -5009,7 +5009,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_276",
+    "id": "Euu7X",
     "title": "Reverse a List In-Place",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5026,7 +5026,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_277",
+    "id": "zM9fE",
     "title": "Find Second Largest Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5043,7 +5043,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_278",
+    "id": "hTH4u",
     "title": "Basic Matrix Addition (2x2)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5063,7 +5063,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_279",
+    "id": "mlFDL",
     "title": "Find Pairs with Given Sum",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5088,7 +5088,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_280",
+    "id": "xrhxw",
     "title": "Find Missing Number in Sequence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5105,7 +5105,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_281",
+    "id": "yR64a",
     "title": "Count Words Starting with Specific Letter",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5123,7 +5123,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_282",
+    "id": "7IjAy",
     "title": "Find All Substrings of a String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5140,7 +5140,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_283",
+    "id": "jvAbA",
     "title": "Print Pascal's Triangle (N Rows)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5157,7 +5157,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_284",
+    "id": "f3V32",
     "title": "Check if Number is Automorphic",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5192,7 +5192,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_285",
+    "id": "ZgO8r",
     "title": "Check if Two Rectangles Overlap",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5217,7 +5217,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_286",
+    "id": "2A5KN",
     "title": "Validate Credit Card Number (Luhn Algorithm - Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5240,7 +5240,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_287",
+    "id": "nVOc3",
     "title": "Basic File Path Parser (Filename & Extension)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5263,7 +5263,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_288",
+    "id": "U7f3E",
     "title": "Simple ATM Transaction (Withdrawal)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5288,7 +5288,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_289",
+    "id": "AEdT4",
     "title": "Number of Days in a Month",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5320,7 +5320,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_290",
+    "id": "k74mH",
     "title": "Count Prime Numbers in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5338,7 +5338,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_291",
+    "id": "3gq82",
     "title": "Check if Array is Monotonic",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5367,7 +5367,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_292",
+    "id": "MHEDd",
     "title": "Matrix Scalar Multiplication (2x2)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5386,7 +5386,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_293",
+    "id": "2jvWb",
     "title": "Count Palindromic Substrings (Simple)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5415,7 +5415,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_294",
+    "id": "Kijcz",
     "title": "Validate IP Address (Simplified IPv4)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5456,7 +5456,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_295",
+    "id": "4JzRZ",
     "title": "Check if All Digits are Even/Odd",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5485,7 +5485,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_296",
+    "id": "9f1rt",
     "title": "Reverse a Number (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -5508,7 +5508,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_297",
+    "id": "b8tBb",
     "title": "Count Elements Greater Than Average",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5531,7 +5531,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_298",
+    "id": "Zl9Qs",
     "title": "Find Longest Common Prefix (of two strings)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5563,7 +5563,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_299",
+    "id": "xjcXy",
     "title": "Print a Grid of Characters",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5582,7 +5582,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_300",
+    "id": "owR8c",
     "title": "Simple Stock Profit Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5614,7 +5614,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_301",
+    "id": "KHtFl",
     "title": "Reverse a List of Integers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5631,7 +5631,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_302",
+    "id": "Ur8qe",
     "title": "Convert String to Uppercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5648,7 +5648,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_303",
+    "id": "5U8mY",
     "title": "Calculate Cube",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5665,7 +5665,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_304",
+    "id": "xGoDg",
     "title": "Check if Number is Zero",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5682,7 +5682,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_305",
+    "id": "53AVy",
     "title": "Print Numbers from 1 to N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5699,7 +5699,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_306",
+    "id": "VSFsN",
     "title": "Count Words in a Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5716,7 +5716,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_307",
+    "id": "d3uo0",
     "title": "Calculate Average of Three Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5735,7 +5735,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_308",
+    "id": "p5TKS",
     "title": "Check if Character is Digit",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5752,7 +5752,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_309",
+    "id": "5NyIE",
     "title": "Count Negative Numbers in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5769,7 +5769,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_310",
+    "id": "IxVcK",
     "title": "Sum of First N Even Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5786,7 +5786,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_311",
+    "id": "Uskc2",
     "title": "Check if String Contains Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5804,7 +5804,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_312",
+    "id": "6NKFM",
     "title": "Compare Two Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5822,7 +5822,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_313",
+    "id": "f2M8n",
     "title": "Print Even Numbers in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5840,7 +5840,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_314",
+    "id": "iz8h4",
     "title": "Check if List is Sorted (Ascending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5857,7 +5857,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_315",
+    "id": "EYY90",
     "title": "Concatenate List of Strings",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5874,7 +5874,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_316",
+    "id": "t7uZn",
     "title": "Find Second Smallest in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5891,7 +5891,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_317",
+    "id": "g32yA",
     "title": "Print Right-Angled Number Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5908,7 +5908,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_318",
+    "id": "rZe6l",
     "title": "Calculate Factorial",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5925,7 +5925,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_319",
+    "id": "cjaS2",
     "title": "Simple Login Check",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5943,7 +5943,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_320",
+    "id": "OogxH",
     "title": "Find Index of First Occurrence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5961,7 +5961,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_321",
+    "id": "RXfDG",
     "title": "Convert String to Lowercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5978,7 +5978,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_322",
+    "id": "XM1di",
     "title": "Multiplication Table",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -5995,7 +5995,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_323",
+    "id": "xWRe1",
     "title": "Check if Year is Century Year",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6012,7 +6012,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_324",
+    "id": "dg7aH",
     "title": "Remove First Occurrence from List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6030,7 +6030,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_325",
+    "id": "3dTG8",
     "title": "Sum of Odd Numbers in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6047,7 +6047,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_326",
+    "id": "dK5KF",
     "title": "Convert String to Title Case",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6064,7 +6064,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_327",
+    "id": "Pi3Qh",
     "title": "Simple Number Guessing Game",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6082,7 +6082,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_328",
+    "id": "fAi0j",
     "title": "Filter Even Numbers from List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6099,7 +6099,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_329",
+    "id": "fSRV1",
     "title": "Print Square of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6116,7 +6116,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_330",
+    "id": "X98bI",
     "title": "Sum of Numbers from 1 to N (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6133,7 +6133,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_331",
+    "id": "6uQTG",
     "title": "Check if Character is Uppercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6150,7 +6150,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_332",
+    "id": "TWHEy",
     "title": "Discount Calculator",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6168,7 +6168,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_333",
+    "id": "2Q1ah",
     "title": "Find Sum of First and Last Element of List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6185,7 +6185,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_334",
+    "id": "EQGnp",
     "title": "Print Odds in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6203,7 +6203,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_335",
+    "id": "dNYT0",
     "title": "Reverse Words in a String (Character-wise)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6220,7 +6220,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_336",
+    "id": "WC65h",
     "title": "Check if List Contains Element",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6238,7 +6238,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_337",
+    "id": "0jOWD",
     "title": "Print Inverted Right-Angled Number Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6255,7 +6255,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_338",
+    "id": "ulFCX",
     "title": "Calculate Sum of Squares",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6272,7 +6272,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_339",
+    "id": "tElid",
     "title": "Count Vowels in Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6289,7 +6289,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_340",
+    "id": "1ZnQk",
     "title": "Check if Number is Between Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6308,7 +6308,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_341",
+    "id": "0wrjn",
     "title": "Generate Even Numbers List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6325,7 +6325,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_342",
+    "id": "5x6zg",
     "title": "Calculate Simple Average",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6343,7 +6343,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_343",
+    "id": "VUeg5",
     "title": "Check if Character is Lowercase",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6360,7 +6360,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_344",
+    "id": "cvRPg",
     "title": "Print Hollow Square of Hashes",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6377,7 +6377,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_345",
+    "id": "k36Vn",
     "title": "Find Mode in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6394,7 +6394,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_346",
+    "id": "VoVc8",
     "title": "Calculate Area of Triangle (Input Base & Height)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6412,7 +6412,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_347",
+    "id": "nma8T",
     "title": "Generate Odd Numbers List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6429,7 +6429,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_348",
+    "id": "IGQZQ",
     "title": "Calculate Sum of Multiples",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6447,7 +6447,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_349",
+    "id": "hZVug",
     "title": "Capitalize First Letter of Each Word in Sentence",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6464,7 +6464,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_350",
+    "id": "3YAg7",
     "title": "Check if Password Meets Minimum Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6482,7 +6482,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_351",
+    "id": "2PtYu",
     "title": "Remove Duplicates from List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6499,7 +6499,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_352",
+    "id": "DOMmN",
     "title": "Calculate Hypotenuse of Right Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6517,7 +6517,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_353",
+    "id": "y832p",
     "title": "Print Right-Angled Star Triangle (Inverted)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6534,7 +6534,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_354",
+    "id": "XKD8D",
     "title": "Count Occurrences of Character in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6552,7 +6552,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_355",
+    "id": "TRBvc",
     "title": "Find Sum of Even Indexed Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6569,7 +6569,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_356",
+    "id": "RwwHO",
     "title": "Check if All Elements are Positive",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6586,7 +6586,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_357",
+    "id": "ymgvJ",
     "title": "Print Full Pyramid of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6603,7 +6603,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_358",
+    "id": "FtSlu",
     "title": "Find Maximum of Three Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6622,7 +6622,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_359",
+    "id": "UufH5",
     "title": "Convert Days to Years, Weeks, Days",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6639,7 +6639,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_360",
+    "id": "b7JmD",
     "title": "Filter Strings by Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6657,7 +6657,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_361",
+    "id": "dpeaw",
     "title": "Calculate Volume of Cube",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6674,7 +6674,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_362",
+    "id": "tObXs",
     "title": "Simple Chatbot (Greeting/Farewell)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6691,7 +6691,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_363",
+    "id": "ugo0Z",
     "title": "Count Words Starting with Vowel",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6708,7 +6708,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_364",
+    "id": "H4o6B",
     "title": "Print Fibonacci Sequence (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6725,7 +6725,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_365",
+    "id": "jnQcb",
     "title": "Check if String is Palindrome (Case-Insensitive)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6742,7 +6742,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_366",
+    "id": "4zdor",
     "title": "Filter Negative Numbers from List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6759,7 +6759,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_367",
+    "id": "zbHYX",
     "title": "Sort List of Integers (Ascending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6776,7 +6776,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_368",
+    "id": "EATQy",
     "title": "Sum of Digits of a Number",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6793,7 +6793,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_369",
+    "id": "J8lYg",
     "title": "Print Diamond of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6810,7 +6810,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_370",
+    "id": "FCD3y",
     "title": "Count Characters (Excluding Spaces)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6827,7 +6827,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_371",
+    "id": "kdYVr",
     "title": "Generate Multiples of N List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6845,7 +6845,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_372",
+    "id": "sNep6",
     "title": "Find Smallest of Three Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6864,7 +6864,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_373",
+    "id": "V4NB3",
     "title": "Calculate Grade Based on Percentage",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6881,7 +6881,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_374",
+    "id": "h7eO3",
     "title": "Count Digits in a Number",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6898,7 +6898,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_375",
+    "id": "Wzmkj",
     "title": "Remove Specific Character from String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6916,7 +6916,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_376",
+    "id": "iZxII",
     "title": "Check if Any Element is Negative",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6933,7 +6933,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_377",
+    "id": "DHgKE",
     "title": "Print Inverted Full Pyramid of Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6950,7 +6950,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_378",
+    "id": "6T2Fk",
     "title": "Sum of First N Odd Numbers (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6967,7 +6967,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_379",
+    "id": "QxQvy",
     "title": "Validate Email Format (Basic)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -6984,7 +6984,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_380",
+    "id": "MAP2r",
     "title": "Find Median of List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7001,7 +7001,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_381",
+    "id": "9Gx8c",
     "title": "Replace Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7020,7 +7020,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_382",
+    "id": "o7QJ0",
     "title": "Sum of First N Numbers (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7037,7 +7037,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_383",
+    "id": "ja6sW",
     "title": "Print Reverse Alphabet Triangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7054,7 +7054,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_384",
+    "id": "3CryG",
     "title": "Count Prime Numbers in Range",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7072,7 +7072,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_385",
+    "id": "EPkR8",
     "title": "Check if Number is Perfect Square",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7089,7 +7089,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_386",
+    "id": "1M89q",
     "title": "Calculate Area of Rectangle (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7107,7 +7107,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_387",
+    "id": "3jLiz",
     "title": "Is Palindrome (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7124,7 +7124,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_388",
+    "id": "3b0Zi",
     "title": "Count Vowels Using Function",
     "category": "Decomposition",
     "input_type": "function",
@@ -7141,7 +7141,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_389",
+    "id": "R5coc",
     "title": "Find Max in List (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7158,7 +7158,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_390",
+    "id": "tO7Fj",
     "title": "Reverse String (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7175,7 +7175,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_391",
+    "id": "qUK5k",
     "title": "Is Leap Year (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7192,7 +7192,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_392",
+    "id": "Jb4ie",
     "title": "Calculate Factorial (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7209,7 +7209,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_393",
+    "id": "Zj81R",
     "title": "Count Even Numbers in List (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7226,7 +7226,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_394",
+    "id": "owViI",
     "title": "Sum of List Elements (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7243,7 +7243,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_395",
+    "id": "2gN9V",
     "title": "Get Last Element of List (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7260,7 +7260,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_396",
+    "id": "QjiP1",
     "title": "Celsius to Fahrenheit (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7277,7 +7277,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_397",
+    "id": "mKfT8",
     "title": "Reverse List (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7294,7 +7294,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_398",
+    "id": "FynTo",
     "title": "Simple Interest (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7313,7 +7313,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_399",
+    "id": "5DuFa",
     "title": "Convert Hours to Minutes (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7330,7 +7330,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_400",
+    "id": "fzqQi",
     "title": "Check if Divisible by N (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7348,7 +7348,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_401",
+    "id": "1yDLQ",
     "title": "Perimeter of Rectangle",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7366,7 +7366,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_402",
+    "id": "pensb",
     "title": "Volume of Cylinder",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7384,7 +7384,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_403",
+    "id": "5tzXK",
     "title": "Check if Number is Odd",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7401,7 +7401,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_404",
+    "id": "rxisq",
     "title": "Find Intersection of Two Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7419,7 +7419,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_405",
+    "id": "r8WMW",
     "title": "Print Asterisk Square (Hollow)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7436,7 +7436,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_406",
+    "id": "SF0JR",
     "title": "Convert String to Character List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7453,7 +7453,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_407",
+    "id": "wPymf",
     "title": "Count Spaces in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7470,7 +7470,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_408",
+    "id": "TpY7x",
     "title": "Check if All Elements are Unique",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7487,7 +7487,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_409",
+    "id": "ZeUU7",
     "title": "Print Right-Angled Triangle of Numbers (Increasing)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7504,7 +7504,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_410",
+    "id": "tu8jz",
     "title": "Calculate Sum of Absolute Values",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7521,7 +7521,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_411",
+    "id": "UM0Z2",
     "title": "Count Words of Specific Length",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7539,7 +7539,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_412",
+    "id": "Eg09d",
     "title": "Generate Times Table for N",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7556,7 +7556,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_413",
+    "id": "uVYJP",
     "title": "Check if Character is Alphabet",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7573,7 +7573,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_414",
+    "id": "JN359",
     "title": "Calculate Simple Median (Odd Length List)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7590,7 +7590,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_415",
+    "id": "5ackn",
     "title": "Print Pattern: Numbers in Rows (Decreasing)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7607,7 +7607,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_416",
+    "id": "q5P0G",
     "title": "Convert String to List of Words",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7624,7 +7624,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_417",
+    "id": "Xe5Ye",
     "title": "Count Uppercase Letters",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7641,7 +7641,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_418",
+    "id": "3w5I6",
     "title": "Check if List is Sorted (Descending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7658,7 +7658,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_419",
+    "id": "giill",
     "title": "Print Pyramid of Numbers (Same Number per Row)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7675,7 +7675,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_420",
+    "id": "nRz97",
     "title": "Validate Positive Integer (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7692,7 +7692,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_421",
+    "id": "hdhgz",
     "title": "Calculate Net Salary",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7710,7 +7710,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_422",
+    "id": "vEEEF",
     "title": "Find Union of Two Lists",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7728,7 +7728,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_423",
+    "id": "jWUVy",
     "title": "Count Lowercase Letters",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7745,7 +7745,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_424",
+    "id": "uJOfA",
     "title": "Find Sum of Odd Indexed Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7762,7 +7762,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_425",
+    "id": "pBJre",
     "title": "Convert Minutes to Hours and Minutes",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7779,7 +7779,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_426",
+    "id": "4VfcW",
     "title": "Filter Strings Containing Substring",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7797,7 +7797,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_427",
+    "id": "iO7MP",
     "title": "Print Square of Numbers (Increasing)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7814,7 +7814,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_428",
+    "id": "jEFix",
     "title": "Count Character Frequency in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7831,7 +7831,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_429",
+    "id": "XeNHq",
     "title": "Simple Unit Converter (Inches to Centimeters)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7848,7 +7848,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_430",
+    "id": "IdgrV",
     "title": "Check if Element Exists (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7866,7 +7866,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_431",
+    "id": "Us1B2",
     "title": "Calculate Sum of Even Numbers in Range (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7884,7 +7884,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_432",
+    "id": "H6kXo",
     "title": "Filter Positive Numbers (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7901,7 +7901,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_433",
+    "id": "ou2YX",
     "title": "Compare Two Strings (Equality)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -7919,7 +7919,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_434",
+    "id": "msfRv",
     "title": "Check if Prime Number (Simple, Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7936,7 +7936,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_435",
+    "id": "30ApY",
     "title": "Generate Fibonacci Sequence (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7953,7 +7953,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_436",
+    "id": "N7Onn",
     "title": "Calculate GCD (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7971,7 +7971,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_437",
+    "id": "rF9Gw",
     "title": "Convert String to Integer (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -7988,7 +7988,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_438",
+    "id": "NpPSQ",
     "title": "Check if List Contains Duplicates (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -8005,7 +8005,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_439",
+    "id": "Fkovb",
     "title": "Sort List of Strings (Alphabetical, Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -8022,7 +8022,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_440",
+    "id": "i5xOR",
     "title": "Concatenate Two Lists (Function)",
     "category": "Decomposition",
     "input_type": "function",
@@ -8040,7 +8040,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_441",
+    "id": "aX3zJ",
     "title": "Check if All Characters are Alphabetic",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8057,7 +8057,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_442",
+    "id": "DL9nO",
     "title": "Sum of First N Natural Numbers (Loop)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8074,7 +8074,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_443",
+    "id": "vOzJB",
     "title": "Check if String is Alphanumeric",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8091,7 +8091,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_444",
+    "id": "GsVXa",
     "title": "Calculate Weighted Average of Two Scores",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8109,7 +8109,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_445",
+    "id": "4MiUB",
     "title": "Check if List Contains Only Even Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8126,7 +8126,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_446",
+    "id": "ZPzRV",
     "title": "Print Half Diamond of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8143,7 +8143,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_447",
+    "id": "ZYv18",
     "title": "Sort List of Integers (Descending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8160,7 +8160,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_448",
+    "id": "fH3wS",
     "title": "Calculate Product of List Elements",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8177,7 +8177,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_449",
+    "id": "CbKI3",
     "title": "Count Lowercase Vowels",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8194,7 +8194,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_450",
+    "id": "ruWvE",
     "title": "Calculate Simple Median (Even Length List)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8211,7 +8211,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_451",
+    "id": "0TA5p",
     "title": "Print Cross Pattern of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8228,7 +8228,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_452",
+    "id": "TqgNt",
     "title": "Count Uppercase Vowels",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8245,7 +8245,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_453",
+    "id": "kQg0A",
     "title": "Check if String Starts with Specific Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8263,7 +8263,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_454",
+    "id": "R87Tw",
     "title": "Count Numbers Greater Than N in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8281,7 +8281,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_455",
+    "id": "f0Vah",
     "title": "Print Hollow Diamond of Stars",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8298,7 +8298,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_456",
+    "id": "kJHGL",
     "title": "Calculate Compound Interest (Simplified)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8317,7 +8317,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_457",
+    "id": "CWGeI",
     "title": "Check if String Ends with Specific Character",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8335,7 +8335,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_458",
+    "id": "sTmgG",
     "title": "Find Difference Between Max and Min in List",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8352,7 +8352,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_459",
+    "id": "ZAcRE",
     "title": "Check if Number is Multiple of Both A and B",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8371,7 +8371,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_460",
+    "id": "4LAEB",
     "title": "Print Inverted Triangle of Numbers (Same Number per Row)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8388,7 +8388,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_461",
+    "id": "3sBLb",
     "title": "Sort List of Strings by Length (Ascending)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8405,7 +8405,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_462",
+    "id": "0Dvxu",
     "title": "Count Consonants in String",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8422,7 +8422,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_463",
+    "id": "u8jnP",
     "title": "Basic Calculator (Multiplication/Division)",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8441,7 +8441,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_464",
+    "id": "3nmnY",
     "title": "Check if List Contains Only Odd Numbers",
     "category": "Decomposition",
     "input_type": "stdin",
@@ -8458,7 +8458,7 @@
     "from": "AI"
   },
   {
-    "id": "decom_465",
+    "id": "PoQea",
     "title": "Print Solid Diamond of Stars",
     "category": "Decomposition",
     "input_type": "stdin",

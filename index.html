@@ -3,284 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AcornWise - Python Programming Education Platform</title>
-    <meta name="description" content="Learn Python programming through interactive challenges and tutorials. Perfect for students preparing for coding competitions like OUCC and AIO.">
-    <meta name="keywords" content="Python programming, coding challenges, programming education, OUCC, AIO, learn to code">
-    <link rel="canonical" href="https://acornwise.github.io/">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.48.0/min/vs/loader.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782" crossorigin="anonymous"></script>
+    <title>Acornwise - Algorithmic Thinking & Python Coding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
+     crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">AcornWise Daily Coding Challenges</div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#daily-challenge">Challenge Status</a></li>
-                        <li><a href="#challenge-platform">Challenge Platform</a></li>
-                        <li><a href="#skillsets">Skill Sets</a></li>
-                        <li><a href="#learningscience">Learning Science</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+<body class="bg-white text-gray-800">
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
     <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Master Python Programming with AcornWise</h1>
-                <p>Transform your coding journey with our revolutionary <strong>5 Questions Daily Challenge</strong>. Build consistency, master concepts, and prepare for competitions - one day at a time for 365 days!</p>
-                <a href="#challenge-platform" class="cta-button">Start Your 365-Day Journey</a>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center py-20 md:py-32" style="background-image: url('src/main/hero-background.png');">
+            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text readability -->
+            <div class="relative container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Algorithmic Thinking: Give Your Child a Competitive Edge</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">We prepare students for top school programs (SEAL, Scholarships) and prestigious competitions through expert-led Python coding and mathematical reasoning courses.</p>
+                <a href="courses.html" class="mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:-translate-y-1">
+                    Explore Our Courses
+                </a>
             </div>
         </section>
 
-        <section id="daily-challenge" class="daily-challenge-banner">
-            <div class="container">
-                <h2 class="challenge-title">🎯 5 Questions Daily Challenge</h2>
-                <p class="challenge-subtitle">Commit to solving 5 coding questions every day for 365 days and transform your programming skills!</p>
-                
-                <div class="challenge-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">5</span>
-                        <span class="stat-label">Questions Per Day</span>
+        <!-- "Why Acornwise?" Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Acornwise?</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Our unique curriculum is designed to build foundational logical thinking and translate it into powerful, real-world coding skills. We focus on preparing students not just to code, but to think like a computer scientist.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 12v4m-2-2h4M17 3l-4.5 4.5M12 3l-4.5 4.5M3 17l4.5-4.5M3 12l4.5-4.5"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Competition Focused</h3>
+                        <p class="text-gray-600">Our goal is to help students achieve Merit/Credit awards or higher in renowned competitions like the AMC, CAT, and the Australian Informatics Olympiad.</p>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">365</span>
-                        <span class="stat-label">Days Challenge</span>
+                    <!-- Feature 2 -->
+                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" opacity=".5"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pathway to Top Schools</h3>
+                        <p class="text-gray-600">Strengthen your child's application for Secondary School SEAL programs and private school scholarships with a portfolio of certified competition results.</p>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">1,825</span>
-                        <span class="stat-label">Total Questions</span>
+                    <!-- Feature 3 -->
+                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Small, Focused Classes</h3>
+                        <p class="text-gray-600">With a maximum of 4 students per class, we provide personalized attention and mentorship.</p>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Skill Growth</span>
+                    <!-- Feature 4 -->
+                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                        <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Comprehensive Curriculum</h3>
+                        <p class="text-gray-600">From unplugged logical exercises to advanced Python projects, our courses cover every step of the learning journey.</p>
                     </div>
                 </div>
-
-                <div class="progress-tracker">
-                    <h3 style="text-align: center; margin-bottom: 1rem;">Your Progress Tracker</h3>
-                    <div class="daily-counter">
-                        <div class="counter-item">
-                            <div class="counter-number" id="today-progress">0 %</div>
-                            <div class="counter-label">Today's Progress</div>
-                        </div>
-                        <div class="counter-item">
-                            <div class="counter-number" id="current-day">0</div>
-                            <div class="counter-label">Current Day</div>
-                        </div>
-                        <div class="counter-item">
-                            <div class="counter-number" id="streak">0</div>
-                            <div class="counter-label">Day Streak</div>
-                        </div>
-                        <div class="counter-item">
-                            <div class="counter-number" id="partially-solved">0</div>
-                            <div class="counter-label">Partial Days</div>
-                        </div>                        
-                        <div class="counter-item">
-                            <div class="counter-number" id="total-solved">0</div>
-                            <div class="counter-label">Questions Solved</div>
-                        </div>
-                        <div class="counter-item">
-                            <div class="counter-number" id="remaining-days">365</div>
-                            <div class="counter-label">Days Remaining</div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill"></div>
-                    </div>
-                    <p style="text-align: center; margin-top: 1rem;">
-                        <strong>Today's Goal:</strong> Complete 5 questions to maintain your streak! 🔥
-                    </p>
-                </div>
-                <a href="#challenge-platform" class="cta-button">Start Your 365-Day Journey</a>
             </div>
         </section>
 
-        <section class="challenge-platform-section" id="challenge-platform">            
-            <div class="container">
-                <main>
-                    <aside>
-                        <nav id="challenge-navigation">
-                            <p>Loading challenges...</p>
-                        </nav>
-                    </aside>
-                    <section>
-                        <div class="challenge-description">
-                            <h2>Challenge Description</h2>
-                            <div id="description-area">
-                                <p>Select a challenge from the left to view its description.</p>
+        <!-- Courses Overview Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Courses</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">We offer a structured pathway from beginner to advanced levels, tailored to your child's age and experience.</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Course 1: Beginner -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="src/main/beginner.png" alt="Abstract illustration for beginner coding course" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Beginner (Years 2-5)</h3>
+                            <p class="text-gray-600 mb-4">Building the foundations of logic and coding.</p>
+                            <a href="courses.html#beginner" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Course 2: Intermediate -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="src/main/intermediate.png" alt="Abstract illustration for intermediate coding course" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Intermediate (Years 6-9)</h3>
+                            <p class="text-gray-600 mb-4">Developing advanced problem-solving skills.</p>
+                            <a href="courses.html#intermediate" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Course 3: Advanced -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="src/main/advanced.png" alt="Abstract illustration for advanced coding course" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Advanced (Years 8-10)</h3>
+                            <p class="text-gray-600 mb-4">Mastering algorithms for elite competition.</p>
+                            <a href="courses.html#advanced" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Free Learning Resources</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Valuable tools to supplement your learning, available for everyone.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <!-- Daily Challenge Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="text-indigo-600 mb-4">
+                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                             </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Daily Coding Challenge</h3>
+                            <p class="text-gray-600">Test your knowledge with a new Python question every day. A great way to build a consistent learning habit.</p>
                         </div>
-
-                        <div id="timer-container">
-                            Time Remaining: <span id="timer-display">00:00</span>
-                            <button id="skip-challenge-btn" style="display: none;">Skip This Challenge</button>
-                            <button id="retry-challenge-btn" style="display: none;">Retry Challenge</button>
+                        <div class="p-6 bg-gray-50">
+                            <a href="daily_challenge.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Start Challenge</a>
                         </div>
-
-                        <div class="ide-container">
-                            <h2>Your Code</h2>
-                            <div id="code-editor" class="code-editor"></div>
-                            <button id="run-code-btn" disabled>Run Code</button>
-                            <div id="pyodide-status" class="status-message">Loading Pyodide...</div>
-                        </div>
-
-                        <div class="results-section">
-                            <h2>Results</h2>
-                            <pre id="results-output"></pre>
-                        </div>
-
-                        <div class="test-cases-section">
-                            <h2>Test Cases</h2>
-                            <div id="test-cases-area">
-                                <p>Test cases will appear here.</p>
+                    </div>
+                    
+                    <!-- Practice Problems Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                             <div class="text-indigo-600 mb-4">
+                               <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 8h.01M12 12h.01M12 16h.01M9 16H9.01M15 16h.01M9 12h.01M15 12h.01M15 8h.01"></path></svg>
                             </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Practice Problems</h3>
+                            <p class="text-gray-600">Hone your skills with a collection of problems sorted by category. The perfect tool for targeted practice.</p>
                         </div>
-                    </section>
-                </main>
-            </div>
-        </section>  
+                         <div class="p-6 bg-gray-50">
+                            <a href="practice_problems.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Start Practicing</a>
+                        </div>
+                    </div>
 
-        <section class="content-section" id="features">
-            <div class="container">
-                <h2 class="section-title">Why the Daily Challenge Works</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📈</div>
-                        <h3>Consistent Progress</h3>
-                        <p>Small daily efforts compound into massive improvements. By solving just 5 questions daily, you'll develop strong problem-solving patterns and muscle memory that leads to programming mastery.</p>
+                    <!-- Online Editor Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                             <div class="text-indigo-600 mb-4">
+                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Online Python Editor</h3>
+                            <p class="text-gray-600">Write, run, and test your Python code directly in your browser. No setup required, perfect for quick experiments.</p>
+                        </div>
+                         <div class="p-6 bg-gray-50">
+                            <a href="online_editor.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Open Editor</a>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🧠</div>
-                        <h3>Spaced Learning</h3>
-                        <p>Our algorithm ensures you encounter varied concepts daily, reinforcing previous learning while introducing new challenges. This proven approach maximizes retention and understanding.</p>
+
+                    <!-- Cheat Sheet Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                             <div class="text-indigo-600 mb-4">
+                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.86 3.693l-4.167 4.167M16.14 3.693l4.167 4.167M3.693 16.14l4.167 4.167M12 21.557l4.447-4.447"></path></svg>
+
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Python Cheat Sheet</h3>
+                            <p class="text-gray-600">A quick reference guide for essential Python syntax, data structures, and functions. Your go-to for a quick reminder.</p>
+                        </div>
+                         <div class="p-6 bg-gray-50">
+                            <a href="cheat_sheet.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">View Cheat Sheet</a>
+                        </div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🏆</div>
-                        <h3>Competition Ready</h3>
-                        <p>After 365 days of consistent practice, you'll have solved 1,825 problems covering every topic needed for OUCC, AIO, and other competitive programming contests.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Habit Formation</h3>
-                        <p>Transform coding from a chore into a natural habit. Our streak tracking and daily reminders help you build the consistency that separates good programmers from great ones.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Progress Tracking</h3>
-                        <p>Watch your skills grow with detailed analytics. Track your streak, see your improvement over time, and identify areas where you excel or need more practice.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎉</div>
-                        <h3>Achievable Goals</h3>
-                        <p>5 questions per day is challenging enough to drive growth but manageable enough to maintain long-term. Perfect for busy students balancing studies and coding practice.</p>
-                    </div>
+
                 </div>
             </div>
-        </section>
+        </section>      
 
-        <section class="tutorial-section" id="skillsets">
-            <div class="container">
-                <h2 class="section-title">Computational Thinking Skill Sets</h2>
-                <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem;">
-                    Our challenges are designed to develop these core computational thinking skills.
-                </p>
-                <div class="article-grid">
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">🧩 Decomposition</h3>
-                            <p>Breaking down a complex problem into smaller, more manageable parts. This skill is crucial for tackling large-scale projects and understanding intricate systems.</p>
-                        </div>
-                    </article>
-
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">💡 Abstraction</h3>
-                            <p>Filtering out extraneous details to focus on what is essential. This allows you to create simplified models and generalize solutions, making them reusable and efficient.</p>
-                        </div>
-                    </article>
-
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">🔍 Pattern Recognition</h3>
-                            <p>Identifying repeated or familiar patterns in problems and data. Recognizing these patterns helps in developing efficient algorithms and predicting outcomes.</p>
-                        </div>
-                    </article>
-
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">📊 Modelling and Simulation</h3>
-                            <p>Setting up and running a simplified model of a process or system. This helps in understanding complex behaviors, testing hypotheses, and making predictions.</p>
-                        </div>
-                    </article>
-
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">⚙️ Algorithms</h3>
-                            <p>Creating a step-by-step procedure or set of rules to solve a problem. This is the foundation of programming, enabling you to design clear and effective solutions.</p>
-                        </div>
-                    </article>
-
-                    <article class="article-card">
-                        <div class="article-content">
-                            <h3 class="article-title">⚖️ Evaluation</h3>
-                            <p>Assessing or comparing outcomes to determine the effectiveness or correctness of a solution. This involves critical thinking and analyzing results against criteria.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-section" id="learningscience">
-            <div class="container">
-                <h2 class="section-title" style="color: white;">The Science Behind Daily Practice</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                    Research shows that consistent daily practice is far more effective than sporadic intensive sessions. Our 5-questions-per-day approach is scientifically designed for optimal learning and retention.
-                </p>
-                
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-number">1,825</div>
-                        <div>Problems Solved in 365 Days</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">25-30</div>
-                        <div>Minutes Daily Commitment</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">95%</div>
-                        <div>Completion Rate</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">3x</div>
-                        <div>Faster Learning vs. Cramming</div>
-                    </div>
-                </div>
-
-                <div style="margin-top: 3rem;">
-                    <h3 style="margin-bottom: 1rem;">Why 5 Questions Work</h3>
-                    <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
-                        Five questions hit the sweet spot between challenge and sustainability. It's enough to maintain engagement and drive progress, but not so much that it becomes overwhelming or leads to burnout. This approach leverages the psychological principle of "small wins" while building the compound effect of consistent practice.
-                    </p>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer id="contact">
-        <div class="container">
-            <div style="border-top: 1px solid #4a5568; padding-top: 1rem;">
-                <p>&copy; 2025 <a href="https://acornwise.com.au" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">AcornWise Coding &amp; Math</a>. All rights reserved. Empowering consistent learners, one day at a time.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js?v=8"></script>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
 </body>
 </html>
+

@@ -1,6 +1,6 @@
 [
   {
-    "id": "def97ef7-5521-41cb-bc51-f80104b9bb2a",
+    "id": "CreX5",
     "title": "Countdown",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -17,7 +17,7 @@
     "from": "OUCC"
   },
   {
-    "id": "f8bf6bbe-4b67-4c50-a15f-c171424e78b1",
+    "id": "cDMAR",
     "title": "Pig Latin",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -34,7 +34,7 @@
     "from": "OUCC"
   },
   {
-    "id": "91a6ca65-5da6-4598-b23a-35260871ed05",
+    "id": "2e7iU",
     "title": "Cost of Petrol",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -51,7 +51,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0ec0d3d7-bc4a-408a-a01b-1e0b2ad27f31",
+    "id": "SdOLa",
     "title": "How Long?",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -68,7 +68,7 @@
     "from": "OUCC"
   },
   {
-    "id": "1bda8af5-6381-458d-bd02-743e2ac7dbaa",
+    "id": "6AwWs",
     "title": "How Many Inputs?",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -88,7 +88,7 @@
     "from": "OUCC"
   },
   {
-    "id": "815b3229-9bd8-4813-8eb0-d43802a37b0b",
+    "id": "GIzd9",
     "title": "Fibonacci",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -106,7 +106,7 @@
     "from": "OUCC"
   },
   {
-    "id": "26510f2f-e651-4247-8026-c3b9f46f634b",
+    "id": "FPpxm",
     "title": "Stop at Zero",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -129,7 +129,7 @@
     "from": "OUCC"
   },
   {
-    "id": "964d28f3-2a32-40f8-b330-0d58be12c51e",
+    "id": "qmA6q",
     "title": "Saving Up",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -146,7 +146,7 @@
     "from": "OUCC"
   },
   {
-    "id": "a0fe7568-8447-4106-a713-2817f7deec6e",
+    "id": "q0fFY",
     "title": "Maximal Sum Path",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -163,7 +163,7 @@
     "from": "OUCC"
   },
   {
-    "id": "940c36dd-7ae7-46a3-9963-340a55f1d39d",
+    "id": "rV4Hs",
     "title": "Cost of Petrol",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -180,7 +180,7 @@
     "from": "OUCC"
   },
   {
-    "id": "bc0d6b35-0b32-4163-9011-8b16dc78607c",
+    "id": "BQW0G",
     "title": "Run Length Encoding",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -209,7 +209,7 @@
     "from": "OUCC"
   },
   {
-    "id": "9c62b855-85a1-4f3f-b9fd-a9fc101c4252",
+    "id": "TTKZD",
     "title": "Integer Division",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -226,7 +226,7 @@
     "from": "OUCC"
   },
   {
-    "id": "2941eadf-a353-40ed-8fed-3186df1565ef",
+    "id": "qV74V",
     "title": "A Mountain Hike",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -253,7 +253,7 @@
     "from": "OUCC"
   },
   {
-    "id": "982b711a-7d73-4ecd-af96-ad7c7eb37ba3",
+    "id": "OffbV",
     "title": "Marathon",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -270,7 +270,7 @@
     "from": "OUCC"
   },
   {
-    "id": "4b996b11-68e5-443c-b078-b907c4b133e0",
+    "id": "GrEXc",
     "title": "Boxes in Boxes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -291,7 +291,7 @@
     "from": "OUCC"
   },
   {
-    "id": "f3691cde-c9c0-4adc-b7c7-4fcebedcb71b",
+    "id": "AjHGT",
     "title": "Chocolates",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -308,7 +308,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0cffabe6-7999-4306-b0e8-1212af8218e8",
+    "id": "m2eE3",
     "title": "Crossnum Puzzle",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -335,7 +335,7 @@
     "from": "OUCC"
   },
   {
-    "id": "a14d10d9-2fe9-42b0-a53b-89f5d58883a7",
+    "id": "sp03w",
     "title": "IPv4 Validation",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -358,7 +358,7 @@
     "from": "OUCC"
   },
   {
-    "id": "cbc43d93-6cc8-47fc-9f74-fb02611aa2fc",
+    "id": "KppJ5",
     "title": "Heat Pumps",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -383,7 +383,7 @@
     "from": "OUCC"
   },
   {
-    "id": "273f2ef8-b826-4e97-adcf-68a60d27b4d2",
+    "id": "bFmEw",
     "title": "Error Codes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -409,7 +409,7 @@
     "from": "OUCC"
   },
   {
-    "id": "2f36c146-1104-48e9-80cd-a04ab72e7f23",
+    "id": "PVErB",
     "title": "Hailstones",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -426,7 +426,7 @@
     "from": "OUCC"
   },
   {
-    "id": "694caf94-f9c4-4352-96fc-6a7b35ecc503",
+    "id": "C4V8L",
     "title": "Square List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -443,7 +443,7 @@
     "from": "OUCC"
   },
   {
-    "id": "faa81f6a-23d8-4cfb-8cda-c4e146a36792",
+    "id": "wW0MP",
     "title": "Happy Ultrarunners",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -464,7 +464,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0ff622ac-f34e-4adb-9f59-3420f5dd1d9d",
+    "id": "ngoZf",
     "title": "Guest Goes Free",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -486,7 +486,7 @@
     "from": "OUCC"
   },
   {
-    "id": "0c849496-161d-4da5-ad77-bf1ccf02b328",
+    "id": "2419V",
     "title": "Too Short",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -507,7 +507,7 @@
     "from": "OUCC"
   },
   {
-    "id": "776b26fd-05a2-45b1-bc22-ca8104e2b225",
+    "id": "Zli20",
     "title": "Shopping Discounts",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -524,7 +524,7 @@
     "from": "OUCC"
   },
   {
-    "id": "ALGO_001",
+    "id": "OvqSL",
     "title": "Reverse Array In-Place",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -553,7 +553,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_002",
+    "id": "QzHWX",
     "title": "Find the Kth Smallest Element",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -578,7 +578,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_003",
+    "id": "pLSbb",
     "title": "Check for Anagrams",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -610,7 +610,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_004",
+    "id": "tEHmu",
     "title": "Longest Common Prefix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -639,7 +639,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_005",
+    "id": "g3pk5",
     "title": "Implement Binary Search",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -671,7 +671,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_006",
+    "id": "IYukN",
     "title": "Merge Two Sorted Arrays",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -703,7 +703,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_007",
+    "id": "8TU3N",
     "title": "Move Zeros to End",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -732,7 +732,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_008",
+    "id": "VVTiq",
     "title": "Rotate Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -757,7 +757,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_009",
+    "id": "IHCLr",
     "title": "Find Missing Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -786,7 +786,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_010",
+    "id": "RNUvg",
     "title": "Maximum Subarray Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -815,7 +815,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_011",
+    "id": "EE7uI",
     "title": "Implement Queue using Stacks",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -844,7 +844,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_012",
+    "id": "PChSE",
     "title": "Detect Cycle in Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -867,7 +867,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_013",
+    "id": "YRYmq",
     "title": "Valid Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -902,7 +902,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_014",
+    "id": "1TWlI",
     "title": "Climbing Stairs",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -931,7 +931,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_015",
+    "id": "FqzFl",
     "title": "Find First and Last Position of Element in Sorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -963,7 +963,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_016",
+    "id": "TsFhw",
     "title": "Intersection of Two Arrays",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -988,7 +988,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_017",
+    "id": "fbj0m",
     "title": "Reverse Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1017,7 +1017,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_018",
+    "id": "4gY8O",
     "title": "Valid Palindrome II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1046,7 +1046,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_019",
+    "id": "RAMMI",
     "title": "Remove Duplicates from Sorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1069,7 +1069,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_020",
+    "id": "kUFx5",
     "title": "Fibonacci Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1110,7 +1110,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_021",
+    "id": "jzFvN",
     "title": "Palindrome Checker",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1133,7 +1133,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_022",
+    "id": "wLPUt",
     "title": "Anagram Checker",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1158,7 +1158,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_023",
+    "id": "Pns7n",
     "title": "Prime Number Check",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1181,7 +1181,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_024",
+    "id": "96GrE",
     "title": "Factorial Calculation",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1204,7 +1204,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_025",
+    "id": "zUWs2",
     "title": "Greatest Common Divisor (GCD)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1227,7 +1227,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_026",
+    "id": "LDs19",
     "title": "Least Common Multiple (LCM)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1250,7 +1250,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_027",
+    "id": "TEpl0",
     "title": "Reverse a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1273,7 +1273,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_028",
+    "id": "cGhvt",
     "title": "Count Vowels and Consonants",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1296,7 +1296,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_029",
+    "id": "fw41C",
     "title": "FizzBuzz",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1313,7 +1313,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_030",
+    "id": "CYxH1",
     "title": "Array Sum and Average",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1336,7 +1336,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_031",
+    "id": "vBWOu",
     "title": "Find Max/Min in Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1359,7 +1359,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_032",
+    "id": "kPbBj",
     "title": "Remove Duplicates from Unsorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1382,7 +1382,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_033",
+    "id": "lLBUA",
     "title": "Binary Search",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1407,7 +1407,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_034",
+    "id": "goGS0",
     "title": "Bubble Sort",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1430,7 +1430,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_035",
+    "id": "eUcIn",
     "title": "Selection Sort",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1453,7 +1453,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_036",
+    "id": "F5HTu",
     "title": "Insertion Sort",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1476,7 +1476,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_037",
+    "id": "KQgWn",
     "title": "Merge Two Sorted Arrays",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1501,7 +1501,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_038",
+    "id": "lSMZM",
     "title": "Matrix Addition",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1532,7 +1532,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_039",
+    "id": "wV0G6",
     "title": "Rotate Matrix 90 Degrees Clockwise",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1560,7 +1560,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_040",
+    "id": "UDg93",
     "title": "Roman to Integer",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1589,7 +1589,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_041",
+    "id": "XKpYj",
     "title": "Two Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1614,7 +1614,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_042",
+    "id": "hW9Ip",
     "title": "Container With Most Water",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1637,7 +1637,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_043",
+    "id": "iartZ",
     "title": "Integer to Roman",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1666,7 +1666,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_044",
+    "id": "Ba6B7",
     "title": "Longest Palindromic Substring",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1689,7 +1689,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_045",
+    "id": "HQIUp",
     "title": "Zigzag Conversion",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1714,7 +1714,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_046",
+    "id": "JP17G",
     "title": "String to Integer (atoi)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1755,7 +1755,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_047",
+    "id": "qoett",
     "title": "Implement strStr()",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1787,7 +1787,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_048",
+    "id": "RqQMH",
     "title": "Divide Two Integers",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1826,7 +1826,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_049",
+    "id": "nBmsd",
     "title": "Longest Valid Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1855,7 +1855,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_050",
+    "id": "SsRWu",
     "title": "Search in Rotated Sorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1880,7 +1880,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_051",
+    "id": "Ak7bX",
     "title": "Combination Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1905,7 +1905,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_052",
+    "id": "2P0VQ",
     "title": "Permutations",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1928,7 +1928,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_053",
+    "id": "MQijX",
     "title": "Rotate List (Linked List)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1953,7 +1953,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_054",
+    "id": "JbCsX",
     "title": "Jump Game",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -1976,7 +1976,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_055",
+    "id": "wmDT2",
     "title": "Merge Intervals",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2005,7 +2005,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_056",
+    "id": "r2De4",
     "title": "Insert Interval",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2037,7 +2037,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_057",
+    "id": "KuRRl",
     "title": "Minimum Path Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2065,7 +2065,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_058",
+    "id": "mi7ei",
     "title": "Unique Paths",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2088,7 +2088,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_059",
+    "id": "2ib10",
     "title": "Set Matrix Zeroes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2117,7 +2117,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_060",
+    "id": "pbWi7",
     "title": "Sort Colors (Dutch National Flag)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2140,7 +2140,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_061",
+    "id": "YTgnl",
     "title": "Subsets",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2163,7 +2163,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_062",
+    "id": "x0F2p",
     "title": "Word Search",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2204,7 +2204,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_063",
+    "id": "XGyDr",
     "title": "Longest Consecutive Sequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2227,7 +2227,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_064",
+    "id": "xxjIE",
     "title": "Minimum Window Substring",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2259,7 +2259,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_065",
+    "id": "Vtzvh",
     "title": "Valid Sudoku",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2298,7 +2298,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_066",
+    "id": "ZCCp7",
     "title": "Group Anagrams",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2321,7 +2321,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_067",
+    "id": "fW9Wy",
     "title": "Spiral Matrix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2350,7 +2350,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_068",
+    "id": "InIyL",
     "title": "Pow(x, n)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2382,7 +2382,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_069",
+    "id": "adWl0",
     "title": "Sqrt(x)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2405,7 +2405,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_070",
+    "id": "IrZYN",
     "title": "Plus One",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2440,7 +2440,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_071",
+    "id": "BiDeL",
     "title": "Add Binary",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2465,7 +2465,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_072",
+    "id": "XsyDE",
     "title": "Text Justification",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2490,7 +2490,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_073",
+    "id": "v69X8",
     "title": "Count and Say Sequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2513,7 +2513,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_074",
+    "id": "C7U5q",
     "title": "N-Queens Problem",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2536,7 +2536,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_075",
+    "id": "xVrrB",
     "title": "Maximum Depth of Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2559,7 +2559,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_076",
+    "id": "TvQC3",
     "title": "Same Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2584,7 +2584,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_077",
+    "id": "gUXsm",
     "title": "Symmetric Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2607,7 +2607,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_078",
+    "id": "EdrK3",
     "title": "Binary Tree Level Order Traversal",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2630,7 +2630,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_079",
+    "id": "AgqcX",
     "title": "Convert Sorted Array to Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2653,7 +2653,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_080",
+    "id": "c5BQ2",
     "title": "Balanced Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2676,7 +2676,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_081",
+    "id": "u3CJO",
     "title": "Minimum Depth of Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2699,7 +2699,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_082",
+    "id": "Ka0qf",
     "title": "Path Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2724,7 +2724,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_083",
+    "id": "RzO8K",
     "title": "Flatten Binary Tree to Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2747,7 +2747,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_084",
+    "id": "CiAzj",
     "title": "Pascal's Triangle",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2770,7 +2770,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_085",
+    "id": "CcqHz",
     "title": "Single Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2793,7 +2793,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_086",
+    "id": "bJ8h1",
     "title": "Majority Element",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2816,7 +2816,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_087",
+    "id": "5GwsM",
     "title": "House Robber",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2839,7 +2839,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_088",
+    "id": "ZSzwh",
     "title": "Best Time to Buy and Sell Stock",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2862,7 +2862,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_089",
+    "id": "fgbSP",
     "title": "Contains Duplicate",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2885,7 +2885,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_090",
+    "id": "smBO4",
     "title": "Remove Nth Node From End of List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2917,7 +2917,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_091",
+    "id": "3C4V6",
     "title": "Longest Common Prefix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2940,7 +2940,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_092",
+    "id": "kZEut",
     "title": "3Sum Closest",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2965,7 +2965,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_093",
+    "id": "07dN1",
     "title": "Letter Combinations of a Phone Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -2988,7 +2988,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_094",
+    "id": "AykfV",
     "title": "Remove Duplicates from Sorted Array II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3011,7 +3011,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_095",
+    "id": "xNviA",
     "title": "Remove Element",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3036,7 +3036,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_096",
+    "id": "rx00S",
     "title": "Generate Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3059,7 +3059,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_097",
+    "id": "o66Tu",
     "title": "Merge Two Sorted Linked Lists",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3084,7 +3084,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_098",
+    "id": "BrSpV",
     "title": "Remove Duplicates from Sorted List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3107,7 +3107,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_099",
+    "id": "7BN5T",
     "title": "Partition List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3132,7 +3132,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_100",
+    "id": "4h8sK",
     "title": "Decode Ways",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3167,7 +3167,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_101",
+    "id": "jeB3W",
     "title": "Min Stack",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3190,7 +3190,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_102",
+    "id": "URPUz",
     "title": "Evaluate Reverse Polish Notation",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3219,7 +3219,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_103",
+    "id": "4cPuO",
     "title": "Number of Islands",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3250,7 +3250,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_104",
+    "id": "lDraF",
     "title": "Pacific Atlantic Water Flow",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3272,7 +3272,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_105",
+    "id": "94KUN",
     "title": "Course Schedule",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3300,7 +3300,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_106",
+    "id": "oDrLK",
     "title": "Clone Graph",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3328,7 +3328,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_107",
+    "id": "5Wp4w",
     "title": "Word Ladder",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3355,7 +3355,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_108",
+    "id": "q6G98",
     "title": "Cheapest Flights Within K Stops",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3399,7 +3399,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_109",
+    "id": "Ixkfa",
     "title": "Dijkstra's Algorithm (Shortest Path)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3425,7 +3425,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_110",
+    "id": "osBqQ",
     "title": "Bellman-Ford Algorithm (Shortest Path with Negative Edges)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3461,7 +3461,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_111",
+    "id": "dhZpA",
     "title": "Longest Increasing Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3484,7 +3484,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_112",
+    "id": "MrmCS",
     "title": "Edit Distance",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3509,7 +3509,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_113",
+    "id": "RxcJa",
     "title": "Coin Change",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3534,7 +3534,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_114",
+    "id": "gvIdV",
     "title": "Word Break",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3566,7 +3566,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_115",
+    "id": "4jBw7",
     "title": "Wildcard Matching",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3598,7 +3598,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_116",
+    "id": "VXFdm",
     "title": "Count Primes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3627,7 +3627,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_117",
+    "id": "IZB8Z",
     "title": "Happy Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3650,7 +3650,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_118",
+    "id": "8RDa8",
     "title": "Ugly Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3679,7 +3679,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_119",
+    "id": "j1kCD",
     "title": "Power of Two",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3708,7 +3708,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_120",
+    "id": "k62Dn",
     "title": "Add Digits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3731,7 +3731,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_121",
+    "id": "7N1NU",
     "title": "Power of Three",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3766,7 +3766,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_122",
+    "id": "5ZXuk",
     "title": "Sum of Two Integers (Bit Manipulation)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3791,7 +3791,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_123",
+    "id": "VB3sF",
     "title": "Number of 1 Bits (Hamming Weight)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3814,7 +3814,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_124",
+    "id": "GRwKo",
     "title": "Reverse Bits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3831,7 +3831,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_125",
+    "id": "MZ9ie",
     "title": "Counting Bits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3854,7 +3854,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_126",
+    "id": "tvMp0",
     "title": "Invert Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3877,7 +3877,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_127",
+    "id": "0J0zI",
     "title": "Lowest Common Ancestor of a Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3904,7 +3904,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_128",
+    "id": "D4zsj",
     "title": "Lowest Common Ancestor of a Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3931,7 +3931,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_129",
+    "id": "QTDY3",
     "title": "Binary Tree Zigzag Level Order Traversal",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3954,7 +3954,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_130",
+    "id": "obmPr",
     "title": "Binary Tree Right Side View",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -3977,7 +3977,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_131",
+    "id": "o2jEj",
     "title": "Count Complete Tree Nodes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4000,7 +4000,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_132",
+    "id": "46MeM",
     "title": "Kth Smallest Element in a BST",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4025,7 +4025,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_133",
+    "id": "8kclg",
     "title": "Serialize and Deserialize Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4043,7 +4043,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_134",
+    "id": "1vp0j",
     "title": "Path Sum II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4061,7 +4061,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_135",
+    "id": "4PaBL",
     "title": "Construct Binary Tree from Preorder and Inorder Traversal",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4086,7 +4086,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_136",
+    "id": "c8XHK",
     "title": "Construct Binary Tree from Inorder and Postorder Traversal",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4104,7 +4104,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_137",
+    "id": "t8vxf",
     "title": "Validate Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4127,7 +4127,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_138",
+    "id": "WaDBW",
     "title": "Missing Ranges",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4154,7 +4154,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_139",
+    "id": "kYbtE",
     "title": "Meeting Rooms",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4182,7 +4182,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_140",
+    "id": "Z4d33",
     "title": "Meeting Rooms II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4210,7 +4210,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_141",
+    "id": "sY6PV",
     "title": "Shortest Word Distance",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4237,7 +4237,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_142",
+    "id": "SRxTO",
     "title": "Remove K Digits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4269,7 +4269,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_143",
+    "id": "rjzYS",
     "title": "Flatten a Multilevel Doubly Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4298,7 +4298,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_144",
+    "id": "sLzMJ",
     "title": "Next Greater Element I",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4323,7 +4323,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_145",
+    "id": "9dSPa",
     "title": "Top K Frequent Elements",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4348,7 +4348,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_146",
+    "id": "A8dV4",
     "title": "Find All Duplicates in an Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4371,7 +4371,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_147",
+    "id": "jLr6l",
     "title": "Array Partition I",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4394,7 +4394,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_148",
+    "id": "EVOck",
     "title": "Number Complement",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4417,7 +4417,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_149",
+    "id": "MSFpX",
     "title": "Teemo Attacking",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4442,7 +4442,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_150",
+    "id": "LEsTJ",
     "title": "Longest Palindrome",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4465,7 +4465,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_151",
+    "id": "hx7k7",
     "title": "First Unique Character in a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4494,7 +4494,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_152",
+    "id": "9WMpN",
     "title": "Ransom Note",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4526,7 +4526,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_153",
+    "id": "WIkod",
     "title": "Find the Difference",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4551,7 +4551,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_154",
+    "id": "84nxB",
     "title": "Jewels and Stones",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4576,7 +4576,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_155",
+    "id": "GCZ05",
     "title": "Number of Good Pairs",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4599,7 +4599,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_156",
+    "id": "K4sYm",
     "title": "Valid Perfect Square",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4622,7 +4622,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_157",
+    "id": "BiwAg",
     "title": "Arranging Coins",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4645,7 +4645,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_158",
+    "id": "Fsy5f",
     "title": "Find All Numbers Disappeared in an Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4668,7 +4668,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_159",
+    "id": "0z3cK",
     "title": "Assign Cookies",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4693,7 +4693,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_160",
+    "id": "nhZLw",
     "title": "Can Place Flowers",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4718,7 +4718,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_161",
+    "id": "yRC92",
     "title": "Non-overlapping Intervals",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4748,7 +4748,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_162",
+    "id": "7BrKP",
     "title": "Merge Intervals",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4777,7 +4777,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_163",
+    "id": "kHd1X",
     "title": "Insert Interval",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4809,7 +4809,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_164",
+    "id": "DZguj",
     "title": "Queue Reconstruction by Height",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4832,7 +4832,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_165",
+    "id": "jXuqh",
     "title": "Task Scheduler",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4857,7 +4857,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_166",
+    "id": "P0nu3",
     "title": "Kth Largest Element in an Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4882,7 +4882,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_167",
+    "id": "VCgic",
     "title": "Sort Colors (Dutch National Flag Problem)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4905,7 +4905,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_168",
+    "id": "ttCNy",
     "title": "Daily Temperatures",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4928,7 +4928,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_169",
+    "id": "jtXuR",
     "title": "Subarray Sum Equals K",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4953,7 +4953,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_170",
+    "id": "zeDLZ",
     "title": "Find Peak Element",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4976,7 +4976,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_171",
+    "id": "22xN9",
     "title": "Find Minimum in Rotated Sorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -4999,7 +4999,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_172",
+    "id": "rr3yT",
     "title": "Find Minimum in Rotated Sorted Array II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5022,7 +5022,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_173",
+    "id": "yXjJn",
     "title": "Search in Rotated Sorted Array",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5047,7 +5047,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_174",
+    "id": "Jf0iz",
     "title": "Search a 2D Matrix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5078,7 +5078,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_175",
+    "id": "7KAkb",
     "title": "Search a 2D Matrix II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5113,7 +5113,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_176",
+    "id": "ytvG0",
     "title": "Longest Consecutive Sequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5136,7 +5136,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_177",
+    "id": "O5TLQ",
     "title": "Group Anagrams",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5159,7 +5159,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_178",
+    "id": "Jpl7D",
     "title": "Set Matrix Zeroes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5188,7 +5188,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_179",
+    "id": "4IqlY",
     "title": "Spiral Matrix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5217,7 +5217,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_180",
+    "id": "V6G75",
     "title": "Spiral Matrix II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5240,7 +5240,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_181",
+    "id": "oSqS3",
     "title": "Jump Game",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5263,7 +5263,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_182",
+    "id": "f4CVA",
     "title": "Jump Game II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5286,7 +5286,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_183",
+    "id": "h9eV9",
     "title": "Gas Station",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5311,7 +5311,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_184",
+    "id": "SvcaJ",
     "title": "Candy",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5334,7 +5334,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_185",
+    "id": "0irvm",
     "title": "Trapping Rain Water",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5357,7 +5357,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_186",
+    "id": "GyCf9",
     "title": "Container With Most Water",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5380,7 +5380,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_187",
+    "id": "BAU09",
     "title": "Product of Array Except Self",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5403,7 +5403,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_188",
+    "id": "gJCJU",
     "title": "Majority Element",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5426,7 +5426,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_189",
+    "id": "PnD4z",
     "title": "Majority Element II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5455,7 +5455,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_190",
+    "id": "HTAnt",
     "title": "Missing Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5478,7 +5478,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_191",
+    "id": "G74hj",
     "title": "Find the Duplicate Number",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5501,7 +5501,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_192",
+    "id": "NVlEu",
     "title": "Game of Life",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5531,7 +5531,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_193",
+    "id": "fsJKL",
     "title": "Palindrome Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5554,7 +5554,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_194",
+    "id": "Sbscy",
     "title": "Odd Even Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5577,7 +5577,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_195",
+    "id": "IhMKW",
     "title": "Reverse Linked List II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5604,7 +5604,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_196",
+    "id": "JkrLp",
     "title": "Reorder List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5627,7 +5627,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_197",
+    "id": "uIP7X",
     "title": "Copy List with Random Pointer",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5657,7 +5657,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_198",
+    "id": "yGx0b",
     "title": "Add Two Numbers II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5682,7 +5682,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_199",
+    "id": "gaths",
     "title": "Minimum Window Substring",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5714,7 +5714,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_200",
+    "id": "kdOJf",
     "title": "Longest Substring with At Most Two Distinct Characters",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5737,7 +5737,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_201",
+    "id": "6uN2I",
     "title": "Permutation in String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5762,7 +5762,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_202",
+    "id": "xx1Jz",
     "title": "Find All Anagrams in a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5787,7 +5787,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_203",
+    "id": "1d67N",
     "title": "Sliding Window Maximum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5812,7 +5812,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_204",
+    "id": "k6oeo",
     "title": "Longest Substring with At Most K Distinct Characters",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5837,7 +5837,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_205",
+    "id": "U95wA",
     "title": "Subarrays with K Different Integers",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5862,7 +5862,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_206",
+    "id": "SXBAk",
     "title": "Shortest Subarray with Sum at Least K",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5894,7 +5894,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_207",
+    "id": "5rOe3",
     "title": "Maximal Square",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5923,7 +5923,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_208",
+    "id": "BsmsW",
     "title": "Perfect Squares",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5946,7 +5946,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_209",
+    "id": "Bzley",
     "title": "Range Sum Query - Immutable",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5967,7 +5967,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_210",
+    "id": "Zi9Hj",
     "title": "Range Sum Query 2D - Immutable",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -5993,7 +5993,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_211",
+    "id": "NZ0KX",
     "title": "House Robber",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6016,7 +6016,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_212",
+    "id": "cQOFp",
     "title": "House Robber II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6039,7 +6039,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_213",
+    "id": "D6a9o",
     "title": "House Robber III",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6062,7 +6062,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_214",
+    "id": "wcxck",
     "title": "Best Time to Buy and Sell Stock with Cooldown",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6085,7 +6085,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_215",
+    "id": "tAbtp",
     "title": "Best Time to Buy and Sell Stock with Transaction Fee",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6110,7 +6110,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_216",
+    "id": "S1vpF",
     "title": "Count Numbers with Unique Digits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6133,7 +6133,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_217",
+    "id": "JZW4V",
     "title": "Smallest Subtree with All the Deepest Nodes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6156,7 +6156,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_218",
+    "id": "Z8YnC",
     "title": "Convert BST to Greater Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6179,7 +6179,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_219",
+    "id": "Xuboo",
     "title": "Validate Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6202,7 +6202,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_220",
+    "id": "n8W9j",
     "title": "Convert Sorted List to Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6225,7 +6225,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_221",
+    "id": "IQcOo",
     "title": "Convert Sorted Array to Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6248,7 +6248,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_222",
+    "id": "nY3G3",
     "title": "Path Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6273,7 +6273,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_223",
+    "id": "CbSqt",
     "title": "Path Sum II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6298,7 +6298,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_224",
+    "id": "qJxEK",
     "title": "Path Sum III",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6323,7 +6323,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_225",
+    "id": "fttPN",
     "title": "Sum Root to Leaf Numbers",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6346,7 +6346,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_226",
+    "id": "wxtfF",
     "title": "Minimum Depth of Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6369,7 +6369,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_227",
+    "id": "IqtuW",
     "title": "Maximum Depth of Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6392,7 +6392,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_228",
+    "id": "RuIlO",
     "title": "Symmetric Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6415,7 +6415,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_229",
+    "id": "k304y",
     "title": "Invert Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6438,7 +6438,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_230",
+    "id": "NRUss",
     "title": "Binary Tree Right Side View",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6461,7 +6461,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_231",
+    "id": "lHuWM",
     "title": "Cousins in Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6488,7 +6488,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_232",
+    "id": "pBcx0",
     "title": "Lowest Common Ancestor of a Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6515,7 +6515,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_233",
+    "id": "ngr1T",
     "title": "Lowest Common Ancestor of a Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6542,7 +6542,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_234",
+    "id": "4CrOK",
     "title": "Implement Trie (Prefix Tree)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6565,7 +6565,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_235",
+    "id": "EJ4Qs",
     "title": "Add and Search Word - Data structure design",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6589,7 +6589,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_236",
+    "id": "V4UZ2",
     "title": "Design HashMap",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6614,7 +6614,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_237",
+    "id": "GxSw2",
     "title": "Design HashSet",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6639,7 +6639,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_238",
+    "id": "n5nPX",
     "title": "Number of Islands",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6670,7 +6670,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_239",
+    "id": "XQ0RI",
     "title": "Walls and Gates",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6691,7 +6691,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_240",
+    "id": "smDsz",
     "title": "Course Schedule",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6719,7 +6719,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_241",
+    "id": "VfuyA",
     "title": "Course Schedule II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6758,7 +6758,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_242",
+    "id": "nEbeZ",
     "title": "Alien Dictionary",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6789,7 +6789,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_243",
+    "id": "QPDeh",
     "title": "Minimum Height Trees",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6822,7 +6822,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_244",
+    "id": "RqpxA",
     "title": "Graph Valid Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6856,7 +6856,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_245",
+    "id": "XrImE",
     "title": "Number of Connected Components in an Undirected Graph",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6888,7 +6888,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_246",
+    "id": "m7Gkw",
     "title": "Clone Graph",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6916,7 +6916,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_247",
+    "id": "hsk7t",
     "title": "Longest Increasing Path in a Matrix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6945,7 +6945,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_248",
+    "id": "uiXEV",
     "title": "Word Search",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -6986,7 +6986,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_249",
+    "id": "w6X8c",
     "title": "Word Search II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7016,7 +7016,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_250",
+    "id": "Dge3d",
     "title": "Longest Common Prefix",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7039,7 +7039,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_251",
+    "id": "X14mI",
     "title": "Implement strStr()",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7064,7 +7064,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_252",
+    "id": "459BB",
     "title": "Count and Say",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7087,7 +7087,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_253",
+    "id": "ICkIc",
     "title": "Group Anagrams",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7110,7 +7110,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_254",
+    "id": "mmbY4",
     "title": "Longest Palindromic Substring",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7133,7 +7133,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_255",
+    "id": "P6VKW",
     "title": "Palindromic Substrings",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7156,7 +7156,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_256",
+    "id": "IzOCE",
     "title": "Decode Ways",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7185,7 +7185,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_257",
+    "id": "0vTjH",
     "title": "Unique Paths",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7208,7 +7208,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_258",
+    "id": "1ihB8",
     "title": "Unique Paths II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7236,7 +7236,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_259",
+    "id": "gpMH0",
     "title": "Minimum Path Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7264,7 +7264,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_260",
+    "id": "rt4J3",
     "title": "Triangle",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7292,7 +7292,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_261",
+    "id": "paV7l",
     "title": "Longest Common Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7324,7 +7324,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_262",
+    "id": "mMW47",
     "title": "Edit Distance",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7349,7 +7349,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_263",
+    "id": "0NFdh",
     "title": "Longest Increasing Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7378,7 +7378,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_264",
+    "id": "07LY7",
     "title": "Coin Change",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7410,7 +7410,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_265",
+    "id": "H1OOf",
     "title": "Combination Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7435,7 +7435,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_266",
+    "id": "4BOph",
     "title": "Combination Sum II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7460,7 +7460,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_267",
+    "id": "LV6Bk",
     "title": "Combination Sum III",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7485,7 +7485,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_268",
+    "id": "r6EPZ",
     "title": "Perfect Sum Problem",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7510,7 +7510,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_269",
+    "id": "LxAVN",
     "title": "Target Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7535,7 +7535,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_270",
+    "id": "wcjjx",
     "title": "Partition Equal Subset Sum",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7558,7 +7558,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_271",
+    "id": "L25Dj",
     "title": "Longest Palindrome",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7581,7 +7581,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_272",
+    "id": "7UTD0",
     "title": "First Unique Character in a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7604,7 +7604,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_273",
+    "id": "09SZX",
     "title": "Find the Difference",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7629,7 +7629,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_274",
+    "id": "I1dVe",
     "title": "String to Integer (atoi)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7658,7 +7658,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_275",
+    "id": "yzaLR",
     "title": "Zigzag Conversion",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7690,7 +7690,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_276",
+    "id": "SIqzQ",
     "title": "Reverse Words in a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7713,7 +7713,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_277",
+    "id": "KhrHE",
     "title": "Reverse Words in a String III",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7736,7 +7736,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_278",
+    "id": "5EeIN",
     "title": "Valid Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7765,7 +7765,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_279",
+    "id": "THu44",
     "title": "Generate Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7788,7 +7788,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_280",
+    "id": "cNjhb",
     "title": "Longest Valid Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7817,7 +7817,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_281",
+    "id": "9ggAF",
     "title": "Minimum Add to Make Parentheses Valid",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7846,7 +7846,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_282",
+    "id": "1NJm0",
     "title": "Score of Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7875,7 +7875,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_283",
+    "id": "ebCma",
     "title": "Remove Outermost Parentheses",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7904,7 +7904,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_284",
+    "id": "HjqMA",
     "title": "Backspace String Compare",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7936,7 +7936,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_285",
+    "id": "yVTFR",
     "title": "Valid Palindrome II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7965,7 +7965,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_286",
+    "id": "rp3Pl",
     "title": "Longest Palindromic Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -7988,7 +7988,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_287",
+    "id": "8uoFq",
     "title": "Count Palindromic Subsequences",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8011,7 +8011,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_288",
+    "id": "gG1cT",
     "title": "Minimum Window Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8036,7 +8036,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_289",
+    "id": "WAexF",
     "title": "Shortest Supersequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8061,7 +8061,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_290",
+    "id": "Cas3T",
     "title": "Longest Duplicate Substring",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8090,7 +8090,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_291",
+    "id": "yk966",
     "title": "Shortest Distance to Character",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8115,7 +8115,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_292",
+    "id": "iiI8s",
     "title": "Length of Last Word",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8138,7 +8138,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_293",
+    "id": "2ndwY",
     "title": "Reverse Vowels of a String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8161,7 +8161,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_294",
+    "id": "cz4yR",
     "title": "Valid Anagram",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8186,7 +8186,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_295",
+    "id": "ZFilL",
     "title": "First Bad Version",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8211,7 +8211,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_296",
+    "id": "Z5THV",
     "title": "Intersection of Two Arrays",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8236,7 +8236,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_297",
+    "id": "sMGeY",
     "title": "Intersection of Two Arrays II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8261,7 +8261,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_298",
+    "id": "Un2s8",
     "title": "Island Perimeter",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8289,7 +8289,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_299",
+    "id": "iAwYG",
     "title": "Hamming Distance",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8314,7 +8314,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_300",
+    "id": "SlzDl",
     "title": "Number of 1 Bits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8337,7 +8337,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_301",
+    "id": "qxEbm",
     "title": "Sum of Two Integers",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8362,7 +8362,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_302",
+    "id": "iejos",
     "title": "Reverse Bits",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8385,7 +8385,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_303",
+    "id": "k34pG",
     "title": "Power of Two",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8414,7 +8414,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_304",
+    "id": "8uzST",
     "title": "Power of Three",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8443,7 +8443,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_305",
+    "id": "jAEfl",
     "title": "Power of Four",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8472,7 +8472,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_306",
+    "id": "1tQ7n",
     "title": "Sum of Left Leaves",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8495,7 +8495,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_307",
+    "id": "GJ2kH",
     "title": "Average of Levels in Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8518,7 +8518,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_308",
+    "id": "5dAu9",
     "title": "Merge Two Binary Trees",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8543,7 +8543,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_309",
+    "id": "aNVBi",
     "title": "Diameter of Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8566,7 +8566,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_310",
+    "id": "cSstV",
     "title": "Subtree of Another Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8591,7 +8591,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_311",
+    "id": "emjWA",
     "title": "Kth Smallest Element in a BST",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8616,7 +8616,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_312",
+    "id": "pTSYH",
     "title": "Delete Node in a BST",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8641,7 +8641,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_313",
+    "id": "YeasT",
     "title": "Insert into a Binary Search Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8666,7 +8666,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_314",
+    "id": "rAsFY",
     "title": "Balanced Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8689,7 +8689,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_315",
+    "id": "Vzu46",
     "title": "Count Complete Tree Nodes",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8712,7 +8712,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_316",
+    "id": "gtG7V",
     "title": "Minimum Absolute Difference in BST",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8735,7 +8735,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_317",
+    "id": "ur92l",
     "title": "Two Sum IV - Input is a BST",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8760,7 +8760,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_318",
+    "id": "jo8fF",
     "title": "Construct String from Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8783,7 +8783,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_319",
+    "id": "csMUp",
     "title": "Maximum Binary Tree",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8806,7 +8806,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_320",
+    "id": "nQ9Zj",
     "title": "All Paths From Source to Target",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8835,7 +8835,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_321",
+    "id": "ZPJJU",
     "title": "Is Graph Bipartite?",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8866,7 +8866,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_322",
+    "id": "3yjy9",
     "title": "Find Eventual Safe States",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8900,7 +8900,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_323",
+    "id": "7vIme",
     "title": "Minimum Spanning Tree (Prim's Algorithm)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8933,7 +8933,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_324",
+    "id": "C9kPZ",
     "title": "Minimum Spanning Tree (Kruskal's Algorithm)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8966,7 +8966,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_325",
+    "id": "sM0aU",
     "title": "Single-Source Shortest Path (Dijkstra's Algorithm)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -8999,7 +8999,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_326",
+    "id": "q3DsF",
     "title": "All-Pairs Shortest Path (Floyd-Warshall Algorithm)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9029,7 +9029,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_327",
+    "id": "mRTJo",
     "title": "Detect Cycle in a Directed Graph",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9060,7 +9060,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_328",
+    "id": "7GPST",
     "title": "Detect Cycle in an Undirected Graph",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9091,7 +9091,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_329",
+    "id": "Dw8Y0",
     "title": "Topological Sort (Kahn's Algorithm)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9122,7 +9122,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_330",
+    "id": "KUTRS",
     "title": "Topological Sort (DFS)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9153,7 +9153,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_331",
+    "id": "yt6hv",
     "title": "Longest Consecutive Sequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9176,7 +9176,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_332",
+    "id": "z1kBh",
     "title": "Word Ladder",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9203,7 +9203,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_333",
+    "id": "LnYdW",
     "title": "Word Ladder II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9230,7 +9230,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_334",
+    "id": "b4Yet",
     "title": "Cheapest Flights Within K Stops",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9263,7 +9263,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_335",
+    "id": "mICuU",
     "title": "Network Delay Time",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9292,7 +9292,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_336",
+    "id": "AdSSA",
     "title": "Minimum Genetic Mutation",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9319,7 +9319,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_337",
+    "id": "8T5jC",
     "title": "Word Break",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9344,7 +9344,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_338",
+    "id": "9e5qO",
     "title": "Word Break II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9369,7 +9369,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_339",
+    "id": "DTOE4",
     "title": "Decode String",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9392,7 +9392,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_340",
+    "id": "ad2Sg",
     "title": "Longest Absolute File Path",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9415,7 +9415,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_341",
+    "id": "BKRJq",
     "title": "Battleships in a Board",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9442,7 +9442,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_342",
+    "id": "Lo80l",
     "title": "Validate IP Address",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9471,7 +9471,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_343",
+    "id": "QbRF7",
     "title": "Optimal Division",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9495,7 +9495,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_344",
+    "id": "Xxtla",
     "title": "Delete Operation for Two Strings",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9520,7 +9520,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_345",
+    "id": "DWnJi",
     "title": "Maximum Length of Pair Chain",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9549,7 +9549,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_346",
+    "id": "Fydbi",
     "title": "Number of Longest Increasing Subsequence",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9572,7 +9572,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_347",
+    "id": "w7kDU",
     "title": "Minimum ASCII Delete Sum for Two Strings",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9597,7 +9597,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_348",
+    "id": "rKWHl",
     "title": "Partition to K Equal Sum Subsets",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9622,7 +9622,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_349",
+    "id": "blR6K",
     "title": "Can Partition K Subsets (Recursive with Memoization)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9647,7 +9647,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_350",
+    "id": "7s4rX",
     "title": "Minimum Swaps To Make Sequences Increasing",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9672,7 +9672,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_351",
+    "id": "xWbir",
     "title": "Find K Closest Elements",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9699,7 +9699,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_352",
+    "id": "1b1zz",
     "title": "Split Array into Consecutive Subsequences",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9728,7 +9728,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_353",
+    "id": "ZtFEu",
     "title": "Longest Word in Dictionary through Deleting",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9753,7 +9753,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_354",
+    "id": "x2Bi8",
     "title": "Reverse Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9776,7 +9776,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_355",
+    "id": "4Vdzr",
     "title": "Reverse Linked List (Recursive)",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9799,7 +9799,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_356",
+    "id": "y756d",
     "title": "Middle of the Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9822,7 +9822,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_357",
+    "id": "NU973",
     "title": "Delete Node in a Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9847,7 +9847,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_358",
+    "id": "rPFfQ",
     "title": "Remove Duplicates from Sorted List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9870,7 +9870,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_359",
+    "id": "BgX36",
     "title": "Remove Duplicates from Sorted List II",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9893,7 +9893,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_360",
+    "id": "SbQkF",
     "title": "Partition List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9918,7 +9918,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_361",
+    "id": "e8EM1",
     "title": "Rotate List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9943,7 +9943,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_362",
+    "id": "rJhIk",
     "title": "Flatten a Multilevel Doubly Linked List",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9965,7 +9965,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_363",
+    "id": "DeZRU",
     "title": "Design Circular Deque",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -9992,7 +9992,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_364",
+    "id": "a4eA8",
     "title": "Design Circular Queue",
     "category": "Algorithms",
     "input_type": "stdin",
@@ -10019,7 +10019,7 @@
     "from": "AI"
   },
   {
-    "id": "ALGO_365",
+    "id": "NL1jD",
     "title": "Design HashMap without using built-in hash map library (Linear Probing)",
     "category": "Algorithms",
     "input_type": "stdin",

@@ -3,381 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Exam Cheat Sheet</title>
+    <title>Python Cheat Sheet - Acornwise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Consolas', 'Monaco', monospace; /* Good for code */
-            font-size: 9pt; /* Adjusted for A4 print - smaller for more content */
-            line-height: 1.4; /* Improved readability */
-            margin: 0;
-            padding: 0;
-        }
-        .page {
-            width: 210mm;  /* A4 width */
-            height: 297mm; /* A4 height */
-            padding: 12mm; /* Slightly reduced margins for more space */
-            box-sizing: border-box;
-            page-break-after: always;
-            position: relative;
-            display: flex; /* Use flexbox for vertical content distribution */
-            flex-direction: column;
-        }
-        .page:last-child {
-            page-break-after: avoid; /* No page break after the last page */
-        }
+        body { font-family: 'Inter', sans-serif; }
+        /* Style for the code blocks */
         pre {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 5px;
-            margin-left: 10px;
-            overflow-x: auto; /* Still good for very long lines */
-            font-size: 8pt; /* Smaller for code blocks */
-            line-height: 1.3; /* Tighter line height for code */
-            white-space: pre-wrap; /* Allows long lines to wrap */
-            word-wrap: break-word; /* Ensures long words break */
-            word-break: break-all; /* More aggressive word breaking for long strings */
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            position: relative;
         }
-        h1 {
-            text-align: center;
-            font-size: 15pt; /* Slightly smaller */
-            margin-bottom: 15px; /* Reduced margin */
+        code {
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 0.9em;
         }
-        h2 {
-            font-size: 12pt; /* Slightly smaller */
-            margin-top: 12px; /* Adjusted margin */
-            margin-bottom: 4px; /* Adjusted margin */
+        .copy-button {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background-color: #d1d5db;
+            color: #1f2937;
+            border: none;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+            opacity: 0;
+            transition: opacity 0.2s;
         }
-        h3 {
-            font-size: 10pt; /* Slightly smaller */
-            margin-top: 8px; /* Adjusted margin */
-            margin-bottom: 2px; /* Adjusted margin */
+        pre:hover .copy-button {
+            opacity: 1;
         }
-        b {
-            font-weight: bold;
-        }
-        ul {
-            margin-top: 4px; /* Reduced margin */
-            margin-bottom: 4px; /* Reduced margin */
-            padding-left: 18px; /* Slightly reduced padding */
-        }
-        li {
-            margin-bottom: 1px; /* Tighter list item spacing */
-        }
-        .page-content {
-            flex-grow: 1; /* Allows content to expand and push page number to bottom */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Distribute sections within the page */
-        }
-        .page-number {
-            text-align: center;
-            font-size: 7pt; /* Even smaller for page number */
-            margin-top: 10mm; /* Ensure it's at the bottom */
-        }
-
+        
         /* Print-specific styles */
         @media print {
             body {
-                margin: 0;
+                background-color: #fff;
+                font-size: 10pt;
+            }
+            #header-placeholder, #footer-placeholder, #mobile-menu, .no-print {
+                display: none !important; /* Hide header, footer, and other non-print elements */
+            }
+            main {
                 padding: 0;
-            }
-            .page {
-                border: none;
                 margin: 0;
-                box-shadow: none;
             }
-            /* Ensure code blocks don't break across pages badly */
+            .max-w-7xl {
+                max-width: 100%;
+            }
+            #cheat-sheet-content {
+                display: block; /* Override grid for single column */
+            }
+            .cheat-sheet-card {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                page-break-inside: avoid; /* Prevent cards from splitting across pages */
+                margin-bottom: 1rem;
+            }
             pre {
-                page-break-inside: avoid;
+                background-color: #fff;
+                border: 1px dashed #ccc;
+            }
+            .copy-button {
+                display: none;
+            }
+
+            /* Add page number to the bottom of each page */
+            @page {
+                @bottom-center {
+                    content: "Page " counter(page);
+                    font-size: 9pt;
+                    color: #6B7280; /* gray-500 */
+                }
             }
         }
     </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
+     crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-gray-50">
 
-    <div class="page">
-        <div class="page-content">
-            <div>
-                <h1>Python Exam Cheat Sheet</h1>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
-                <h2>I. Input & Data Conversion</h2>
-                <ul>
-                    <li><b>Read a single line of string:</b>
-                        <pre><code>s = input()</code></pre>
-                    </li>
-                    <li><b>Read an integer:</b>
-                        <pre><code>n = int(input())</code></pre>
-                    </li>
-                    <li><b>Read a float:</b>
-                        <pre><code>f = float(input())</code></pre>
-                    </li>
-                    <li><b>Read a list of space-separated integers:</b>
-                        <pre><code>nums = list(map(int, input().split()))</code></pre>
-                        <i>Example:</i> <code>1 2 3</code> becomes <code>[1, 2, 3]</code>
-                    </li>
-                    <li><b>Read a list of space-separated strings:</b>
-                        <pre><code>words = input().split()</code></pre>
-                        <i>Example:</i> <code>hello world</code> becomes <code>['hello', 'world']</code>
-                    </li>
-                </ul>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 lg:px-8 py-12">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 text-center">Python Cheat Sheet</h1>
+            <p class="text-lg text-gray-600 text-center mb-10">A quick reference for common Python syntax and functions.</p>
 
-                <h2>II. Loops & Iteration</h2>
-                <ul>
-                    <li><b><code>for</code> loop (by range):</b>
-                        <pre><code>for i in range(5): # 0, 1, 2, 3, 4
-    # ...
-for i in range(1, 6): # 1, 2, 3, 4, 5
-    # ...
-for i in range(5, 0, -1): # 5, 4, 3, 2, 1
-    # ...</code></pre>
-                    </li>
-                    <li><b><code>for</code> loop (through a list/set/etc.):</b>
-                        <pre><code>my_collection = [10, 20, 30] # Works for lists, sets, strings, dict keys, etc.
-for item in my_collection:
-    # ...</code></pre>
-                    </li>
-                    <li><b><code>for</code> loop with index (using <code>enumerate</code>):</b>
-                        <pre><code>my_list = ['a', 'b', 'c']
-for index, value in enumerate(my_list):
-    # ... index 0, value 'a'; index 1, value 'b', etc.</code></pre>
-                    </li>
-                    <li><b><code>while</code> loop:</b>
-                        <pre><code>count = 0
-while count < 5:
-    # ...
-    count += 1</code></pre>
-                    </li>
-                    <li><b>Loop Control:</b>
-                        <ul>
-                            <li><code>break</code>: Exits the current loop.</li>
-                            <li><code>continue</code>: Skipped rest of current iter & goes to next.</li>
-                        </ul>
-                    </li>
-                </ul>
+            <!-- Search and Print Controls -->
+            <div class="flex flex-col sm:flex-row gap-4 mb-8 no-print">
+                <input type="text" id="search-input" placeholder="Search cheat sheet (e.g., 'print', 'list', 'for loop')" class="flex-grow w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <button id="print-button" class="flex items-center justify-center gap-2 bg-gray-600 text-white font-semibold py-3 px-5 rounded-lg hover:bg-gray-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5 4v3H4a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2V9a2 2 0 00-2-2h-1V4a2 2 0 00-2-2H7a2 2 0 00-2 2zm8 0H7v3h6V4zm0 8H7v4h6v-4z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Print</span>
+                </button>
             </div>
-            <div class="page-number">Page 1</div>
-        </div>
-    </div>
 
-    <div class="page">
-        <div class="page-content">
-            <div>
-                <h2>III. Conditional Statements</h2>
-                <ul>
-                    <li><b><code>if</code>, <code>elif</code>, <code>else</code>:</b>
-                        <pre><code>if condition1:
-    # ...
-elif condition2:
-    # ...
-else:
-    # ...</code></pre>
-                    </li>
-                    <li><b>Logical Operators:</b>
-                        <ul>
-                            <li><code>and</code>: Both conditions must be true.</li>
-                            <li><code>or</code>: At least one condition must be true.</li>
-                            <li><code>not</code>: Reverses the boolean value.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h2>IV. Lists (Common Operations)</h2>
-                <ul>
-                    <li><b>Create:</b> <code>my_list = []</code> or <code>my_list = [1, 2, 3]</code></li>
-                    <li><b>Access:</b> <code>my_list[0]</code> (first), <code>my_list[-1]</code> (last)</li>
-                    <li><b>Add:</b>
-                        <ul>
-                            <li><code>my_list.append(item)</code>: Adds to end.</li>
-                            <li><code>my_list.insert(index, item)</code>: Inserts at specific index.</li>
-                        </ul>
-                    </li>
-                    <li><b>Remove:</b>
-                        <ul>
-                            <li><code>my_list.pop()</code>: Removes and returns last item.</li>
-                            <li><code>my_list.pop(index)</code>: Removes and returns item at index.</li>
-                            <li><code>my_list.remove(value)</code>: Removes first occurrence of value.</li>
-                        </ul>
-                    </li>
-                    <li><b>Length:</b> <code>len(my_list)</code></li>
-                    <li><b>Sort:</b>
-                        <ul>
-                            <li><code>my_list.sort()</code>: Sorts in-place (ascending).</li>
-                            <li><code>my_list.sort(reverse=True)</code>: Sorts in-place (descending).</li>
-                            <li><code>sorted(my_list)</code>: Returns a new sorted list.</li>
-                        </ul>
-                    </li>
-                    <li><b>Min/Max/Sum:</b> <code>min(my_list)</code>, <code>max(my_list)</code>, <code>sum(my_list)</code></li>
-                </ul>
-
-                <h2>V. Sets (Unique Elements & Fast Lookups)</h2>
-                <ul>
-                    <li><b>Create:</b>
-                        <ul>
-                            <li><code>my_set = set()</code>: Empty set.</li>
-                            <li><code>my_set = {1, 2, 3}</code>: From literal values.</li>
-                            <li><code>my_set = set([1, 2, 2, 3])</code>: From a list (duplicates removed).
-                                <i>Result:</i> <code>{1, 2, 3}</code>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><b>Add:</b>
-                        <ul>
-                            <li><code>my_set.add(item)</code>: Adds an item. No effect if item present.</li>
-                        </ul>
-                    </li>
-                    <li><b>Remove:</b>
-                        <ul>
-                            <li><code>my_set.remove(item)</code>: Removes item. Raises <code>KeyError</code> if not found.</li>
-                            <li><code>my_set.discard(item)</code>: Removes item. Does nothing if not found (safer).</li>
-                            <li><code>my_set.pop()</code>: Removes and returns arbitrary item (unordered).</li>
-                        </ul>
-                    </li>
-                    <li><b>Check Membership (Very Fast!):</b>
-                        <pre><code>if item in my_set:
-    # ...
-if item not in my_set:
-    # ...</code></pre>
-                    </li>
-                    <li><b>Length:</b> <code>len(my_set)</code></li>
-                    <li><b>Set Operations:</b>
-                        <ul>
-                            <li><code>set1.union(set2)</code> or <code>set1 | set2</code>: All unique elements.</li>
-                            <li><code>set1.intersection(set2)</code> or <code>set1 & set2</code>: Common elements.</li>
-                            <li><code>set1.difference(set2)</code> or <code>set1 - set2</code>: In <code>set1</code> but not <code>set2</code>.</li>
-                            <li><code>set1.symmetric_difference(set2)</code> or <code>set1 ^ set2</code>: In either, but not both.</li>
-                        </ul>
-                    </li>
-                </ul>
+            <div id="cheat-sheet-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Content will be injected here by JavaScript -->
             </div>
-            <div class="page-number">Page 2</div>
-        </div>
-    </div>
-
-    <div class="page">
-        <div class="page-content">
-            <div>
-                <h2>VI. Dictionaries (Key-Value Pairs)</h2>
-                <ul>
-                    <li><b>Create:</b>
-                        <ul>
-                            <li><code>my_dict = {}</code> or <code>my_dict = dict()</code>: Empty.</li>
-                            <li><code>my_dict = {'name': 'Alice', 'age': 30}</code>: With initial pairs.</li>
-                        </ul>
-                    </li>
-                    <li><b>Access Value:</b>
-                        <ul>
-                            <li><code>value = my_dict['key']</code>: Access by key. Raises <code>KeyError</code> if not found.</li>
-                            <li><code>value = my_dict.get('key')</code>: Returns <code>None</code> if key not found (safer).</li>
-                            <li><code>value = my_dict.get('key', default_value)</code>: Returns <code>default_value</code> if not found.</li>
-                        </ul>
-                    </li>
-                    <li><b>Add/Update:</b>
-                        <ul>
-                            <li><code>my_dict['new_key'] = 'new_value'</code>: Adds new pair.</li>
-                            <li><code>my_dict['existing_key'] = 'updated_value'</code>: Updates existing.</li>
-                        </ul>
-                    </li>
-                    <li><b>Remove:</b>
-                        <ul>
-                            <li><code>del my_dict['key']</code>: Deletes pair. Raises <code>KeyError</code> if not found.</li>
-                            <li><code>value = my_dict.pop('key')</code>: Removes & returns value. Raises <code>KeyError</code> if not found.</li>
-                            <li><code>value = my_dict.pop('key', default_value)</code>: Removes & returns value; <code>default_value</code> if not found.</li>
-                        </ul>
-                    </li>
-                    <li><b>Check Key Membership (Fast!):</b>
-                        <pre><code>if 'key' in my_dict:
-    # ...</code></pre>
-                    </li>
-                    <li><b>Length:</b> <code>len(my_dict)</code> (number of key-value pairs)</li>
-                    <li><b>Iterating:</b>
-                        <ul>
-                            <li><b>Keys (default):</b>
-                                <pre><code>for key in my_dict:
-    # ...
-for key in my_dict.keys(): # Explicitly iterate keys
-    # ...</code></pre>
-                            </li>
-                            <li><b>Values:</b>
-                                <pre><code>for value in my_dict.values():
-    # ...</code></pre>
-                            </li>
-                            <li><b>Key-Value Pairs:</b>
-                                <pre><code>for key, value in my_dict.items():
-    # ...</code></pre>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+             <div id="no-results" class="hidden text-center text-gray-600 py-16">
+                <h3 class="text-2xl font-semibold">No results found</h3>
+                <p>Try searching for a different term.</p>
             </div>
-            <div class="page-number">Page 3</div>
         </div>
-    </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cheatSheetData = [
+                {
+                    "category": "Basic Syntax",
+                    "items": [
+                        { "title": "Print to Console", "description": "Displays output to the console.", "code": "print(\"Hello, World!\")" },
+                        { "title": "Variables", "description": "Storing data in named containers.", "code": "name = \"Alice\"\nage = 30" },
+                        { "title": "Comments", "description": "Notes in the code ignored by the interpreter.", "code": "# This is a single-line comment\n\"\"\"\nThis is a\nmulti-line comment.\n\"\"\"" }
+                    ]
+                },
+                {
+                    "category": "Data Types",
+                    "items": [
+                        { "title": "String", "description": "A sequence of characters.", "code": "my_string = \"Python\"" },
+                        { "title": "Integer", "description": "A whole number.", "code": "my_integer = 100" },
+                        { "title": "Float", "description": "A number with a decimal point.", "code": "my_float = 3.14" },
+                        { "title": "Boolean", "description": "Represents True or False.", "code": "is_active = True" }
+                    ]
+                },
+                {
+                    "category": "Data Structures",
+                    "items": [
+                        { "title": "List", "description": "An ordered, mutable collection of items.", "code": "my_list = [1, \"apple\", 3.5]" },
+                        { "title": "Tuple", "description": "An ordered, immutable collection of items.", "code": "my_tuple = (1, \"apple\", 3.5)" },
+                        { "title": "Dictionary", "description": "An unordered collection of key-value pairs.", "code": "my_dict = {\"name\": \"Bob\", \"age\": 25}" },
+                        { "title": "Set", "description": "An unordered collection of unique items.", "code": "my_set = {1, 2, 3, 3}" }
+                    ]
+                },
+                {
+                    "category": "Control Flow",
+                    "items": [
+                        { "title": "If-Elif-Else Statement", "description": "Conditional execution of code.", "code": "x = 10\nif x > 5:\n    print(\"x is greater than 5\")\nelif x == 5:\n    print(\"x is 5\")\nelse:\n    print(\"x is less than 5\")" },
+                        { "title": "For Loop", "description": "Iterates over a sequence.", "code": "for fruit in [\"apple\", \"banana\"]:\n    print(fruit)" },
+                        { "title": "While Loop", "description": "Executes a block of code as long as a condition is true.", "code": "count = 0\nwhile count < 3:\n    print(count)\n    count += 1" }
+                    ]
+                },
+                {
+                    "category": "Functions",
+                    "items": [
+                        { "title": "Defining a Function", "description": "A reusable block of code.", "code": "def greet(name):\n    return f\"Hello, {name}!\"\n\nmessage = greet(\"Alice\")\nprint(message)" },
+                        { "title": "Function with Default Arguments", "description": "Arguments with default values.", "code": "def power(base, exponent=2):\n    return base ** exponent\n\npower(3)    # Returns 9\npower(3, 3) # Returns 27" }
+                    ]
+                },
+                 {
+                    "category": "String Methods",
+                    "items": [
+                        { "title": "len()", "description": "Returns the length of a string.", "code": "len(\"Hello\") # Returns 5" },
+                        { "title": ".upper() / .lower()", "description": "Converts string to uppercase or lowercase.", "code": "\"Hello\".upper() # \"HELLO\"\n\"World\".lower() # \"world\"" },
+                        { "title": ".strip()", "description": "Removes leading/trailing whitespace.", "code": "\"  Hello  \".strip() # \"Hello\"" },
+                        { "title": ".split()", "description": "Splits a string into a list.", "code": "\"one,two,three\".split(',') # ['one', 'two', 'three']" }
+                    ]
+                },
+                {
+                    "category": "List Methods",
+                    "items": [
+                        { "title": ".append()", "description": "Adds an element to the end of a list.", "code": "my_list = [1, 2]\nmy_list.append(3)\n# my_list is now [1, 2, 3]" },
+                        { "title": ".pop()", "description": "Removes and returns the last element.", "code": "my_list = [1, 2, 3]\nmy_list.pop() # Returns 3\n# my_list is now [1, 2]" },
+                        { "title": "len()", "description": "Returns the number of elements in a list.", "code": "len([1, 2, 3]) # Returns 3" }
+                    ]
+                },
+                {
+                    "category": "Dictionary Methods",
+                    "items": [
+                        { "title": ".keys()", "description": "Returns a view of the dictionary's keys.", "code": "my_dict = {'a': 1, 'b': 2}\nmy_dict.keys() # dict_keys(['a', 'b'])" },
+                        { "title": ".values()", "description": "Returns a view of the dictionary's values.", "code": "my_dict = {'a': 1, 'b': 2}\nmy_dict.values() # dict_values([1, 2])" },
+                        { "title": ".items()", "description": "Returns a view of key-value tuple pairs.", "code": "my_dict = {'a': 1, 'b': 2}\nmy_dict.items() # dict_items([('a', 1), ('b', 2)])" }
+                    ]
+                }
+            ];
 
-    <div class="page">
-        <div class="page-content">
-            <div>
-                <h2>VII. Strings (Common Operations)</h2>
-                <ul>
-                    <li><b>Length:</b> <code>len(my_string)</code></li>
-                    <li><b>Access Character:</b> <code>my_string[0]</code></li>
-                    <li><b>Slicing:</b> <code>my_string[start:end:step]</code>
-                        <ul>
-                            <li><code>my_string[1:4]</code> (chars from index 1 to 3)</li>
-                            <li><code>my_string[2:]</code> (from index 2 to end)</li>
-                            <li><code>my_string[:5]</code> (from start to index 4)</li>
-                        </ul>
-                    </li>
-                    <li><b>Concatenation:</b> <code>str1 + str2</code></li>
-                    <li><b>Split:</b> <code>my_string.split(separator)</code> (defaults to whitespace)</li>
-                    <li><b>Join:</b> <code>'separator'.join(list_of_strings)</code></li>
-                </ul>
+            const contentContainer = document.getElementById('cheat-sheet-content');
+            const searchInput = document.getElementById('search-input');
+            const noResultsDiv = document.getElementById('no-results');
+            const printButton = document.getElementById('print-button');
 
-                <h2>VIII. Output</h2>
-                <ul>
-                    <li><b>Print a single value:</b>
-                        <pre><code>print("Hello")
-print(123)</code></pre>
-                    </li>
-                    <li><b>Print multiple values (space-separated by default):</b>
-                        <pre><code>print("Name:", "Alice", "Age:", 30)
-# Output: Name: Alice Age: 30</code></pre>
-                    </li>
-                    <li><b>Print a list/tuple/set/etc. of numbers with space separators:</b>
-                        <pre><code>my_collection = [1, 5, 9, 2] # Works for lists, tuples, sets, keys from dicts
-print(*my_collection)
-# Output: 1 5 9 2 (order may vary for sets/dicts before Python 3.7)</code></pre>
-                        <i>Alternative (for any iterable, good for non-numeric as well):</i>
-                        <pre><code>print(' '.join(map(str, my_collection)))
-# Output: 1 5 9 2 (order may vary for sets/dicts before Python 3.7)</code></pre>
-                    </li>
-                    <li><b>Print with f-strings (formatted string literals - Python 3.6+):</b>
-                        <pre><code>name = "Bob"
-age = 25
-print(f"Name: {name}, Age: {age}")
-# Output: Name: Bob, Age: 25</code></pre>
-                    </li>
-                </ul>
+            function renderContent(data) {
+                contentContainer.innerHTML = '';
+                let hasResults = false;
 
-                <h2>IX. Useful Built-in Functions</h2>
-                <ul>
-                    <li><code>len()</code>: Length of sequence (list, string, set, dict, etc.)</li>
-                    <li><code>min()</code>, <code>max()</code>, <code>sum()</code></li>
-                    <li><code>abs()</code>: Absolute value.</li>
-                    <li><code>round(number, ndigits)</code>: Round to specified decimal places.</li>
-                </ul>
+                data.forEach(category => {
+                    if (category.items.length > 0) {
+                        hasResults = true;
+                        category.items.forEach(item => {
+                            const card = document.createElement('div');
+                            card.className = 'bg-white p-6 rounded-lg shadow-md cheat-sheet-card';
+                            card.dataset.title = item.title.toLowerCase();
+                            card.dataset.description = item.description.toLowerCase();
+                            card.dataset.code = item.code.toLowerCase();
+                            card.dataset.category = category.category.toLowerCase();
 
-                <h2>Tips for Exam:</h2>
-                <ul>
-                    <li><b>Read the problem carefully.</b> Understand inputs, outputs, and constraints.</li>
-                    <li><b>Test with examples.</b></li>
-                    <li><b>Start with input parsing and output formatting.</b> This ensures basic structure.</li>
-                    <li><b>Break down complex problems.</b></li>
-                    <li><b>Indent correctly!</b> Python relies on indentation.</li>
-                </ul>
-            </div>
-            <div class="page-number">Page 4</div>
-        </div>
-    </div>
+                            const codeHTML = `<pre><button class="copy-button">Copy</button><code>${item.code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
 
+                            card.innerHTML = `
+                                <h3 class="text-xl font-semibold text-gray-800 mb-2">${item.title}</h3>
+                                <p class="text-sm text-gray-500 mb-1">Category: ${category.category}</p>
+                                <p class="text-gray-600 mb-4">${item.description}</p>
+                                ${codeHTML}
+                            `;
+                            contentContainer.appendChild(card);
+                        });
+                    }
+                });
+                
+                noResultsDiv.classList.toggle('hidden', hasResults);
+            }
+
+            function filterContent() {
+                const query = searchInput.value.toLowerCase().trim();
+                const cards = contentContainer.querySelectorAll('.cheat-sheet-card');
+                let hasResults = false;
+
+                cards.forEach(card => {
+                    const isVisible = card.dataset.title.includes(query) || 
+                                      card.dataset.description.includes(query) || 
+                                      card.dataset.code.includes(query) ||
+                                      card.dataset.category.includes(query);
+                    card.classList.toggle('hidden', !isVisible);
+                    if (isVisible) hasResults = true;
+                });
+                
+                noResultsDiv.classList.toggle('hidden', hasResults);
+            }
+
+            // Initial render
+            renderContent(cheatSheetData);
+
+            // Event Listeners
+            searchInput.addEventListener('input', filterContent);
+            
+            printButton.addEventListener('click', () => {
+                window.print();
+            });
+
+            contentContainer.addEventListener('click', function(e) {
+                if (e.target.classList.contains('copy-button')) {
+                    const button = e.target;
+                    const pre = button.parentElement;
+                    const code = pre.querySelector('code').innerText;
+
+                    const textArea = document.createElement('textarea');
+                    textArea.value = code;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+
+                    const originalText = button.textContent;
+                    button.textContent = 'Copied!';
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                    }, 1500);
+                }
+            });
+        });
+    </script>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
 </body>
 </html>
+

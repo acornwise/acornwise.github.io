@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Python Editor - Acornwise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        #editor { 
+            height: 50vh; 
+            min-height: 350px;
+        }
+        #terminal {
+            height: 30vh;
+            min-height: 200px;
+            background-color: #111827; /* A slightly softer black */
+        }
+        /* The custom terminal input is no longer used, so its style can be removed if desired, but we'll keep it for now */
+        #terminal-input {
+            all: unset;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-family: monospace;
+            width: 100%;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
+     crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 lg:px-8 py-12">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 text-center">Online Python Editor</h1>
+            <p class="text-lg text-gray-600 text-center mb-10">Write, run, and test your Python code directly in the browser.</p>
+            
+            <div id="pyodide-loader" class="text-center text-indigo-600 font-semibold mb-6">Initializing Python Environment... Please wait.</div>
+
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Your Code</h3>
+                <div id="editor" class="border border-gray-300 rounded-lg"></div>
+                <div class="mt-4 flex justify-end">
+                     <button id="run-code-button" class="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 transition text-lg">Run Code</button>
+                </div>
+               
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4">Terminal</h3>
+                <div id="terminal" class="w-full p-4 text-white rounded-md font-mono text-sm whitespace-pre-wrap overflow-y-auto"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const editorDiv = document.getElementById('editor');
+            const runCodeButton = document.getElementById('run-code-button');
+            const terminal = document.getElementById('terminal');
+            const pyodideLoader = document.getElementById('pyodide-loader');
+
+            // Mobile menu setup
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton) {
+                mobileMenu.innerHTML = `<a href="index.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+                    <a href="courses.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Our Courses</a>
+                    <a href="resources.html" class="block py-2 px-4 text-sm text-indigo-600 bg-indigo-50 font-semibold">Learning Resources</a>
+                    <a href="practice_problems.html" class="block py-2 pl-8 pr-4 text-sm text-gray-700 hover:bg-gray-100">Practice Problems</a>
+                    <a href="online_editor.html" class="block py-2 pl-8 pr-4 text-sm text-gray-700 bg-gray-100">Online Python Editor</a>
+                    <a href="cheat_sheet.html" class="block py-2 pl-8 pr-4 text-sm text-gray-700 hover:bg-gray-100">Python Cheat Sheet</a>
+                    <a href="timetable.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Timetable & Fees</a>
+                    <a href="contact.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contact Us</a>`;
+                mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+            }
+
+            const editor = ace.edit(editorDiv);
+            editor.setTheme("ace/theme/chrome");
+            editor.session.setMode("ace/mode/python");
+            editor.setValue(`# Example: Ask for user's name and greet them\n\nname = input("What is your name? ")\nprint(f"Hello, {name}!")`, 1);
+            editor.focus();
+
+            let pyodide = null;
+
+            function appendToTerminal(text, type = 'stdout') {
+                const textStr = String(text);
+                const sanitizedText = textStr.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                const span = document.createElement('span');
+                span.innerHTML = sanitizedText.replace(/\n/g, '<br>');
+                
+                switch (type) {
+                    case 'stderr':
+                        span.className = 'text-red-400';
+                        break;
+                    case 'user-input':
+                        span.className = 'text-green-400';
+                        break;
+                    case 'info':
+                        span.className = 'text-blue-400';
+                        break;
+                    default:
+                        // stdout has default white text
+                        break;
+                }
+
+                terminal.appendChild(span);
+                terminal.scrollTop = terminal.scrollHeight;
+            }
+            
+            // Pyodide's stdin function does not receive the prompt text.
+            // The prompt from Python's input() is sent to stdout.
+            function promptForInput() {
+                const userInput = window.prompt("Please enter input for the Python script:");
+                if (userInput !== null) { // Log the user's input to the terminal for clarity
+                    appendToTerminal(userInput + '\n', 'user-input');
+                }
+                return userInput;
+            }
+
+            async function initPyodide() {
+                 pyodide = await loadPyodide({
+                    stdout: (text) => appendToTerminal(text, 'stdout'),
+                    stderr: (text) => appendToTerminal(text, 'stderr'),
+                    stdin: promptForInput
+                });
+                
+                pyodideLoader.textContent = 'Python Environment Ready!';
+                setTimeout(() => pyodideLoader.style.display = 'none', 1500);
+                
+                const pythonVersion = pyodide.runPython("import sys; sys.version");
+                appendToTerminal(`Python ${pythonVersion}\nWelcome to the Acornwise Python Editor!\n`, 'info');
+            }
+            initPyodide();
+
+            async function runCode() {
+                if (!pyodide) {
+                    appendToTerminal("Pyodide is still loading. Please wait...\n", 'stderr');
+                    return;
+                }
+                // Don't clear the terminal, so we can see the history of prompts and inputs
+                const code = editor.getValue();
+                
+                runCodeButton.disabled = true;
+                runCodeButton.textContent = 'Running...';
+                
+                try {
+                    await pyodide.runPythonAsync(code);
+                } catch (e) {
+                    appendToTerminal(`\nAn error occurred: ${e.message}\n`, 'stderr');
+                } finally {
+                    runCodeButton.disabled = false;
+                    runCodeButton.textContent = 'Run Code';
+                }
+            }
+
+            runCodeButton.addEventListener('click', runCode);
+        });
+    </script>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>    
+</body>
+</html>
+

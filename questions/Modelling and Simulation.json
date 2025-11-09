@@ -1,6 +1,6 @@
 [
   {
-    "id": "a6ba344a-08b3-4ed4-a104-dfc583dde53a",
+    "id": "OwlH9",
     "title": "Bus Passengers",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -18,7 +18,7 @@
     "from": "OUCC"
   },
   {
-    "id": "45ddd840-ea14-4527-8adc-99f28bdd96f2",
+    "id": "v0c68",
     "title": "Lift Says \"no!\"",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -35,7 +35,7 @@
     "from": "OUCC"
   },
   {
-    "id": "5a83476f-e7f1-4a1b-a949-09f5eebe5308",
+    "id": "s0qKM",
     "title": "Toothed Caterpillars",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -53,7 +53,7 @@
     "from": "OUCC"
   },
   {
-    "id": "56a8d962-3510-4a49-9e75-d216e30ad93c",
+    "id": "1tZEn",
     "title": "Solar Panels",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -71,7 +71,7 @@
     "from": "OUCC"
   },
   {
-    "id": "bb7b7e9b-db36-4612-8c9e-9ad6361fb784",
+    "id": "dE5Au",
     "title": "MangoesReview",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -91,7 +91,7 @@
     "from": "OUCC"
   },
   {
-    "id": "8d2effcd-a8c2-4a8d-9082-095276417d30",
+    "id": "mvjDm",
     "title": "Trading Licences",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -109,7 +109,7 @@
     "from": "OUCC"
   },
   {
-    "id": "5ff4496d-8f21-40d8-abd2-b1ad0cdee830",
+    "id": "BP3Ra",
     "title": "Ticket to Ride",
     "category": "Modelling and Simulation",
     "input_type": "stdin",
@@ -126,7 +126,7 @@
     "from": "OUCC"
   },
   {
-    "id": "e94018df-150c-4653-926e-72a3627fbdb7",
+    "id": "gjiIJ",
     "title": "Dividing the Loot",
     "category": "Modelling and Simulation",
     "input_type": "stdin",

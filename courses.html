@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Acornwise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+        /* Offset for fixed header */
+        :target {
+            scroll-margin-top: 100px;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
+     crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->         
+        <section class="relative bg-cover bg-center py-20 md:py-32" style="background-image: url('src/courses/background.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="container mx-auto px-6 text-center relative">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Our Curriculum Pathway</h1>
+                <p class="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">From foundational logic to advanced algorithms, our courses are designed to build a complete and competitive skillset.</p>
+            </div>
+        </section>
+
+
+        <!-- Course Details Section -->
+        <section class="py-16 md:py-24">
+            <div class="container mx-auto px-6 space-y-16">
+
+                <!-- Beginner Course -->
+                <div id="beginner" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-1">
+                            <img src="src/main/beginner.png" alt="Beginner Course Illustration" class="rounded-lg object-cover w-full h-full">
+                        </div>
+                        <div class="md:col-span-2">
+                            <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 2-5</span>
+                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Beginner Course</h2>
+                            <p class="mt-4 text-gray-600">This foundational course prepares students for SEAL (Select Entry Acceleration Program) and private school scholarship applications by targeting Merit/Credit awards in major competitions. We build a strong base in logical and mathematical thinking before introducing Python programming.</p>
+                            
+                            <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Core Learning Modules:</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li><strong class="font-semibold">Unplugged Activities:</strong> Learn logical principles with hands-on materials from CS Unplugged, sponsored by Google and Microsoft.</li>
+                                    <li><strong class="font-semibold">Computational Thinking:</strong> Master 6 key skills (e.g., Abstraction, Pattern Recognition) through our custom-developed curriculum.</li>
+                                    <li><strong class="font-semibold">Block Coding:</strong> Practice logical constructs on the Amazon-sponsored code.org platform.</li>
+                                    <li><strong class="font-semibold">Python Coding:</strong> Apply learned concepts to a powerful, real-world programming language.</li>
+                                    <li><strong class="font-semibold">Advanced Maths:</strong> Cover essential mathematical concepts from the Australian Curriculum to support coding logic.</li>
+                                </ul>
+                            </div>
+                             <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Competition Targets:</h3>
+                                <p class="text-gray-600">KSF, Bebras, CAT, Coding Challenge, AMC, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate Course -->
+                <div id="intermediate" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid md:grid-cols-3 gap-8">
+                         <div class="md:col-span-2">
+                            <span class="text-sm font-semibold text-green-600 bg-green-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 6-9</span>
+                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Intermediate Course</h2>
+                            <p class="mt-4 text-gray-600">This course is designed for students with basic Python knowledge who want to deepen their problem-solving abilities. The curriculum focuses on analyzing and structuring solutions for complex challenges in preparation for four key Australian Math Trust (AMT) competitions.</p>
+                            
+                            <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Key Focus Areas:</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li><strong class="font-semibold">Advanced Problem-Solving:</strong> Develop the ability to deconstruct complex problems and build logical, efficient solutions in Python.</li>
+                                    <li><strong class="font-semibold">Competition Strategy:</strong> Prepare specifically for the format and challenges of high-level informatics and algorithmic thinking contests.</li>
+                                    <li><strong class="font-semibold">Capstone Project:</strong> After the competition season, students apply their skills to a practical project: building a classic game platform using Python.</li>
+                                </ul>
+                            </div>
+                             <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Competition Targets:</h3>
+                                <p class="text-gray-600">Bebras, CAT, Coding Challenge (CC), Australian Informatics Olympiad (AIO).</p>
+                                <p class="text-sm text-gray-500 mt-2"><strong>Prerequisite:</strong> Basic Python proficiency is required. Applicants must submit a relevant certificate or pass an assessment.</p>
+                            </div>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="src/main/intermediate.png" alt="Intermediate Course Illustration" class="rounded-lg object-cover w-full h-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Course -->
+                <div id="advanced" class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="md:col-span-1">
+                            <img src="src/main/advanced.png" alt="Advanced Course Illustration" class="rounded-lg object-cover w-full h-full">
+                        </div>
+                        <div class="md:col-span-2">
+                            <span class="text-sm font-semibold text-purple-600 bg-purple-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 8-10</span>
+                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Advanced Course</h2>
+                            <p class="mt-4 text-gray-600">Our most advanced course focuses on mastering Data Structures and Algorithms to achieve top-tier results in national competitions. The curriculum is based on the VCE Algorithmics (HESS) guide, providing a significant advantage for students considering this subject in their VCE studies.</p>
+                            
+                            <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Learning Objectives:</h3>
+                                <ul class="space-y-2 text-gray-700">
+                                    <li><strong class="font-semibold">Algorithmic Mastery:</strong> In-depth study of core data structures and algorithms required for elite competitive programming.</li>
+                                    <li><strong class="font-semibold">VCE Preparation:</strong> Gain a head start and practical experience with concepts covered in the VCE Algorithmics curriculum.</li>
+                                    <li><strong class="font-semibold">Capstone Project:</strong> Students will conceptualize and develop a Minimum Viable Product (MVP) from their own ideas, honing real-world development and project management skills.</li>
+                                </ul>
+                            </div>
+                             <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Competition Targets:</h3>
+                                <p class="text-gray-600">Aiming for high-level awards in Bebras, CAT, Coding Challenge (CC), and the Australian Informatics Olympiad (AIO).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
+
