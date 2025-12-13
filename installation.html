@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download & Install - Acornwise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-pattern {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .step-card {
+            counter-increment: step-counter;
+        }
+        .step-number::before {
+            content: counter(step-counter);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-white overflow-hidden border-b border-gray-100">
+            <div class="absolute inset-0 hero-pattern opacity-50"></div>
+            <div class="container mx-auto px-6 py-16 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+                    Download <span class="text-blue-600">Acornwise Platform</span>
+                </h1>
+                <p class="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
+                    The launcher provides a dedicated environment for your courses and coding challenges. Select your operating system below to get started.
+                </p>
+            </div>
+        </section>
+
+        <!-- OS Selection Grid -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Windows -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-100 flex flex-col">
+                        <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-4 text-3xl">
+                            <i class="fab fa-windows"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Windows</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">Compatible with Windows 10 and 11 (64-bit).</p>
+                        
+                        <div class="bg-gray-50 rounded-md p-3 mb-6 text-xs text-gray-600 font-mono border border-gray-200">
+                            Look for: <span class="font-bold text-gray-800">.exe</span> file
+                        </div>
+
+                        <!-- Update filename if necessary -->
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/download/v1.0.1/AcornWise-Learning-Platform-Setup-1.0.1.exe" 
+                           class="block w-full py-2 px-4 bg-white border-2 border-blue-600 text-blue-600 font-bold rounded-lg text-center hover:bg-blue-50 transition mb-3">
+                            Download for Windows
+                        </a>
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/tag/v1.0.1" target="_blank" class="text-xs text-gray-400 text-center hover:text-blue-600 transition-colors">
+                            View all downloads on GitHub <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mac Intel -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-100 flex flex-col">
+                        <div class="w-14 h-14 bg-gray-100 text-gray-700 rounded-lg flex items-center justify-center mb-4 text-3xl">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Mac (Intel)</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">For older Macs with Intel processors.</p>
+                        
+                        <div class="bg-gray-50 rounded-md p-3 mb-6 text-xs text-gray-600 font-mono border border-gray-200">
+                            Look for: <span class="font-bold text-gray-800">mac-x64.dmg</span>
+                        </div>
+
+                        <!-- Update filename if necessary -->
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/download/v1.0.1/AcornWise-Learning-Platform-1.0.1.dmg" 
+                           class="block w-full py-2 px-4 bg-white border-2 border-gray-700 text-gray-700 font-bold rounded-lg text-center hover:bg-gray-50 transition mb-3">
+                            Download for Intel Mac
+                        </a>
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/tag/v1.0.1" target="_blank" class="text-xs text-gray-400 text-center hover:text-gray-700 transition-colors">
+                            View all downloads on GitHub <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mac Silicon -->
+                    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 border border-gray-100 flex flex-col">
+                        <div class="w-14 h-14 bg-gray-800 text-white rounded-lg flex items-center justify-center mb-4 text-3xl">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Mac (Silicon)</h3>
+                        <p class="text-gray-500 text-sm mb-6 flex-grow">For M1, M2, M3 Macs (Apple Silicon).</p>
+                        
+                        <div class="bg-gray-50 rounded-md p-3 mb-6 text-xs text-gray-600 font-mono border border-gray-200">
+                            Look for: <span class="font-bold text-gray-800">mac-arm64.dmg</span>
+                        </div>
+
+                        <!-- Update filename if necessary -->
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/download/v1.0.1/AcornWise-Learning-Platform-1.0.1-arm64.dmg" 
+                           class="block w-full py-2 px-4 bg-white border-2 border-gray-900 text-gray-900 font-bold rounded-lg text-center hover:bg-gray-50 transition mb-3">
+                            Download for Silicon Mac
+                        </a>
+                        <a href="https://github.com/k830206/acornwise-learning-platform-launcher/releases/tag/v1.0.1" target="_blank" class="text-xs text-gray-400 text-center hover:text-gray-900 transition-colors">
+                            View all downloads on GitHub <i class="fas fa-external-link-alt ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Instructions -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-7xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">Installation Guide</h2>
+                    <p class="text-gray-600 mt-2">Follow these steps if you see security warnings during installation.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Windows Guide -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                <i class="fab fa-windows text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Windows</h3>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">1</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-blue-100 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Run the Installer</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Double-click the <code class="bg-white px-1 rounded border">.exe</code> file.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">2</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-blue-100 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Handle SmartScreen</h4>
+                                    <p class="text-gray-600 text-sm mt-1">If "Windows protected your PC" appears, click <span class="font-bold text-blue-600">More info</span>.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm z-10">3</div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Run Anyway</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Click the <span class="font-bold text-blue-600">Run anyway</span> button to finish installing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mac Intel Guide -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center mr-3">
+                                <i class="fab fa-apple text-gray-800 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">macOS (Intel)</h3>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-700 text-white flex items-center justify-center font-bold text-sm z-10">1</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-gray-200 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Move to Applications</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Drag the app to the Applications folder. Double-click to open it.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-700 text-white flex items-center justify-center font-bold text-sm z-10">2</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-gray-200 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Open Settings</h4>
+                                    <p class="text-gray-600 text-sm mt-1">If blocked, go to <span class="font-semibold">System Settings</span> > <span class="font-semibold">Privacy & Security</span>.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-700 text-white flex items-center justify-center font-bold text-sm z-10">3</div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Allow the App</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Scroll down to "Security". Click <span class="font-bold text-gray-900">Open Anyway</span> next to the Acornwise notification.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mac Silicon Guide -->
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 shadow-sm">
+                        <div class="flex items-center mb-6">
+                            <div class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center mr-3">
+                                <i class="fas fa-microchip text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">macOS (Silicon)</h3>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm z-10">1</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-gray-300 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Move to Applications</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Drag the app to Applications. <strong>Do not open it yet.</strong></p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm z-10">2</div>
+                                <div class="absolute top-8 left-4 w-0.5 h-full bg-gray-300 -z-0" style="height: calc(100% + 2rem);"></div>
+                                <div class="ml-4 pb-2">
+                                    <h4 class="font-bold text-gray-900">Open Terminal</h4>
+                                    <p class="text-gray-600 text-sm mt-1">Press <code class="bg-gray-200 px-1 rounded text-xs">Cmd+Space</code>, type "Terminal", and open it.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div class="flex-shrink-0 w-8 h-8 rounded-full bg-gray-900 text-white flex items-center justify-center font-bold text-sm z-10">3</div>
+                                <div class="ml-4 pb-2 w-full">
+                                    <h4 class="font-bold text-gray-900">Run Command</h4>
+                                    <p class="text-gray-600 text-sm mt-1 mb-2">Paste this exact command:</p>
+                                    <div class="bg-gray-900 rounded p-3 relative group w-full">
+                                        <code class="text-green-400 text-xs break-all font-mono block pr-6">sudo xattr -cr /Applications/AcornWise\ Learning\ Platform.app</code>
+                                        <button onclick="navigator.clipboard.writeText('sudo xattr -cr /Applications/AcornWise\\ Learning\\ Platform.app'); this.innerHTML = '<i class=\'fas fa-check\'></i>'; setTimeout(() => this.innerHTML = '<i class=\'far fa-copy\'></i>', 2000);" class="absolute top-2 right-2 text-gray-400 hover:text-white transition-colors" title="Copy to clipboard">
+                                            <i class="far fa-copy"></i>
+                                        </button>
+                                    </div>
+                                    <p class="text-xs text-gray-500 mt-2">Enter your password if prompted (it won't show while typing).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

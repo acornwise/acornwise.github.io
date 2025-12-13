@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Courses - Acornwise</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -14,6 +15,18 @@
         /* Offset for fixed header */
         :target {
             scroll-margin-top: 100px;
+        }
+        /* Custom Styles for New Sections */
+        .hero-bg {
+            background: linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
@@ -24,89 +37,236 @@
     <div id="header-placeholder"></div>
 
     <main>
-        <!-- Page Header -->         
-        <section class="relative bg-cover bg-center py-20 md:py-32" style="background-image: url('src/courses/background.png');">
-            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-            <div class="container mx-auto px-6 text-center relative">
-                <h1 class="text-4xl md:text-5xl font-bold text-white">Our Curriculum Pathway</h1>
-                <p class="mt-4 text-lg text-gray-200 max-w-3xl mx-auto">From foundational logic to advanced algorithms, our courses are designed to build a complete and competitive skillset.</p>
+        <!-- NEW: Hero / Intro Section -->
+        <section class="relative hero-bg pt-20 pb-16 px-6 border-b border-gray-100">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-blue-700 font-medium text-sm mb-8 border border-blue-100">
+                    <i class="fas fa-rocket"></i>
+                    <span>Now available for subscription</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                    Master Your Future <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">At Your Own Pace</span>
+                </h1>
+                <p class="text-xl text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
+                    Designed for the self-driven student. From VCE Algorithmics to Python mastery, 
+                    our platform adapts to your schedule with a flexible subscription model.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="subscription.html" class="px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                        Start Learning Now
+                    </a>
+                    <a href="#pathways" class="px-8 py-4 bg-white text-gray-700 font-semibold rounded-xl border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition shadow-sm">
+                        Explore Curriculum
+                    </a>
+                </div>
             </div>
         </section>
 
-
-        <!-- Course Details Section -->
-        <section class="py-16 md:py-24">
-            <div class="container mx-auto px-6 space-y-16">
-
-                <!-- Beginner Course -->
-                <div id="beginner" class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="md:col-span-1">
-                            <img src="src/main/beginner.png" alt="Beginner Course Illustration" class="rounded-lg object-cover w-full h-full">
+        <!-- NEW: Blended Learning Feature -->
+        <section class="py-16 px-6 bg-slate-50 border-y border-gray-200">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <div class="inline-block px-3 py-1 rounded bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+                        Our Philosophy
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Blended Learning for <br> Maximum Impact
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We believe the best educational outcome isn't achieved by staring at a screen all day. It's achieved by balance.
+                    </p>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="mt-1 text-blue-500"><i class="fas fa-quote-left text-xl"></i></div>
+                            <div>
+                                <p class="text-gray-700 font-medium italic mb-2">
+                                    "Unlock your full potential with our proven hybrid approach: seamlessly blending interactive online learning with focused offline mastery."
+                                </p>
+                                <p class="text-sm text-gray-500">— Acornwise Learning Approach</p>
+                            </div>
                         </div>
-                        <div class="md:col-span-2">
-                            <span class="text-sm font-semibold text-indigo-600 bg-indigo-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 2-5</span>
-                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Beginner Course</h2>
-                            <p class="mt-4 text-gray-600">This foundational course prepares students for SEAL (Select Entry Acceleration Program) and private school scholarship applications by targeting Merit/Credit awards in major competitions. We build a strong base in logical and mathematical thinking before introducing Python programming.</p>
-                            
-                            <div class="mt-6">
-                                <h3 class="text-xl font-semibold mb-3">Core Learning Modules:</h3>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md aspect-video bg-white rounded-2xl shadow-xl border border-gray-100 flex items-center justify-center overflow-hidden group">
+                        <!-- Decorative Background Elements -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full transition-transform group-hover:scale-110 duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-green-50 rounded-tr-full transition-transform group-hover:scale-110 duration-500"></div>
+                        
+                        <div class="relative z-10 text-center">
+                            <div class="flex items-center justify-center gap-8 mb-4">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mb-2 mx-auto">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-700">Online</span>
+                                </div>
+                                <div class="text-gray-300 text-2xl"><i class="fas fa-plus"></i></div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl mb-2 mx-auto">
+                                        <i class="fas fa-book-open"></i>
+                                    </div>
+                                    <span class="text-sm font-semibold text-gray-700">Offline</span>
+                                </div>
+                            </div>
+                            <div class="font-bold text-gray-900 text-xl">= Excellence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW: Course Pathways Summary (Navigational) -->
+        <section id="pathways" class="py-20 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Targeted Learning Pathways</h2>
+                    <p class="text-lg text-gray-500">Curriculums designed for exams, competitions, and real-world skills.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- VCE Algorithmics Card -->
+                    <a href="#vce" class="block group">
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100 card-shadow flex flex-col h-full group-hover:border-blue-200">
+                            <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 mb-6 text-2xl">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">VCE Algorithmics</h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Rigorous preparation for students tackling the VCE exam or the Australian Informatics Olympiad (AIO).
+                            </p>
+                            <div class="border-t border-gray-100 pt-6 mt-auto">
+                                <span class="text-sm font-semibold text-blue-600 group-hover:underline">View Details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Python Basics Card -->
+                    <a href="#python" class="block group">
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100 card-shadow flex flex-col h-full relative overflow-hidden group-hover:border-blue-200">
+                            <div class="absolute top-0 right-0 w-24 h-24 bg-yellow-50 rounded-bl-full -mr-4 -mt-4 opacity-50"></div>
+                            <div class="w-14 h-14 bg-yellow-50 rounded-2xl flex items-center justify-center text-yellow-600 mb-6 text-2xl relative z-10">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 relative z-10 group-hover:text-blue-600 transition">Python Basics</h3>
+                            <p class="text-gray-600 mb-6 flex-grow relative z-10">
+                                For first-time coders. Build a solid foundation and prepare for the Oxford University Computing Challenge (OUCC).
+                            </p>
+                            <div class="border-t border-gray-100 pt-6 mt-auto relative z-10">
+                                <span class="text-sm font-semibold text-blue-600 group-hover:underline">View Details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Math 6-7 Card -->
+                    <a href="#maths" class="block group">
+                        <div class="bg-white rounded-2xl p-8 border border-gray-100 card-shadow flex flex-col h-full group-hover:border-blue-200">
+                            <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600 mb-6 text-2xl">
+                                <i class="fas fa-square-root-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">Mathematics (Yr 6-7)</h3>
+                            <p class="text-gray-600 mb-6 flex-grow">
+                                Enhance school studies and develop problem-solving strategies for the Australian Mathematics Competition (AMC).
+                            </p>
+                            <div class="border-t border-gray-100 pt-6 mt-auto">
+                                <span class="text-sm font-semibold text-blue-600 group-hover:underline">View Details &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Details List (Preserved) -->
+        <section class="py-16 px-4 md:px-0">
+            <div class="max-w-6xl mx-auto space-y-24">
+                
+                <!-- Year 6-7 Mathematics -->
+                <div id="maths" class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                     <div class="md:w-1/2 relative bg-cover bg-center h-64 md:h-auto" style="background-image: url('src/main/intermediate.png');">
+                         <div class="absolute inset-0 bg-blue-900 bg-opacity-30 flex items-center justify-center">
+                            <!-- Optional overlay content -->
+                         </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                        <div class="mb-4">
+                             <span class="bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Foundation</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Year 6-7 Mathematics</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Building a rock-solid mathematical foundation while introducing advanced problem-solving techniques for competitions.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Learning Objectives:</h3>
                                 <ul class="space-y-2 text-gray-700">
-                                    <li><strong class="font-semibold">Unplugged Activities:</strong> Learn logical principles with hands-on materials from CS Unplugged, sponsored by Google and Microsoft.</li>
-                                    <li><strong class="font-semibold">Computational Thinking:</strong> Master 6 key skills (e.g., Abstraction, Pattern Recognition) through our custom-developed curriculum.</li>
-                                    <li><strong class="font-semibold">Block Coding:</strong> Practice logical constructs on the Amazon-sponsored code.org platform.</li>
-                                    <li><strong class="font-semibold">Python Coding:</strong> Apply learned concepts to a powerful, real-world programming language.</li>
-                                    <li><strong class="font-semibold">Advanced Maths:</strong> Cover essential mathematical concepts from the Australian Curriculum to support coding logic.</li>
+                                    <li><strong class="font-semibold">Core Reinforcement:</strong> Strengthen understanding of key curriculum topics including algebra, geometry, and probability.</li>
+                                    <li><strong class="font-semibold">Problem Solving:</strong> Develop logical reasoning skills essential for higher-level mathematics.</li>
+                                    <li><strong class="font-semibold">AMC Preparation:</strong> Targeted practice with past papers and strategies for the Australian Mathematics Competition.</li>
                                 </ul>
                             </div>
-                             <div class="mt-6">
-                                <h3 class="text-xl font-semibold mb-3">Competition Targets:</h3>
-                                <p class="text-gray-600">KSF, Bebras, CAT, Coding Challenge, AMC, and more.</p>
+                            <div class="mt-6">
+                                <h3 class="text-xl font-semibold mb-3">Target Audience:</h3>
+                                <p class="text-gray-600">Students in Years 6 and 7 looking to excel in school and prepare for national competitions.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Intermediate Course -->
-                <div id="intermediate" class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="grid md:grid-cols-3 gap-8">
-                         <div class="md:col-span-2">
-                            <span class="text-sm font-semibold text-green-600 bg-green-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 6-9</span>
-                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Intermediate Course</h2>
-                            <p class="mt-4 text-gray-600">This course is designed for students with basic Python knowledge who want to deepen their problem-solving abilities. The curriculum focuses on analyzing and structuring solutions for complex challenges in preparation for four key Australian Math Trust (AMT) competitions.</p>
-                            
-                            <div class="mt-6">
-                                <h3 class="text-xl font-semibold mb-3">Key Focus Areas:</h3>
+                <!-- Python Basics -->
+                <div id="python" class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row-reverse hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="md:w-1/2 relative bg-cover bg-center h-64 md:h-auto" style="background-image: url('src/main/beginner.png');">
+                         <div class="absolute inset-0 bg-yellow-900 bg-opacity-30 flex items-center justify-center">
+                             <!-- Optional overlay content -->
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                         <div class="mb-4">
+                             <span class="bg-yellow-100 text-yellow-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Beginner Coding</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Python Basics</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Your first step into the world of programming. Learn the language of the future from scratch to competition readiness.
+                        </p>
+
+                         <div class="space-y-6">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-3">Learning Objectives:</h3>
                                 <ul class="space-y-2 text-gray-700">
-                                    <li><strong class="font-semibold">Advanced Problem-Solving:</strong> Develop the ability to deconstruct complex problems and build logical, efficient solutions in Python.</li>
-                                    <li><strong class="font-semibold">Competition Strategy:</strong> Prepare specifically for the format and challenges of high-level informatics and algorithmic thinking contests.</li>
-                                    <li><strong class="font-semibold">Capstone Project:</strong> After the competition season, students apply their skills to a practical project: building a classic game platform using Python.</li>
+                                    <li><strong class="font-semibold">Syntax & Logic:</strong> Master variables, loops, conditionals, and functions in Python.</li>
+                                    <li><strong class="font-semibold">Computational Thinking:</strong> Learn how to break down complex problems into solvable code.</li>
+                                    <li><strong class="font-semibold">OUCC Preparation:</strong> Specific training modules designed for the Oxford University Computing Challenge.</li>
                                 </ul>
                             </div>
                              <div class="mt-6">
-                                <h3 class="text-xl font-semibold mb-3">Competition Targets:</h3>
-                                <p class="text-gray-600">Bebras, CAT, Coding Challenge (CC), Australian Informatics Olympiad (AIO).</p>
-                                <p class="text-sm text-gray-500 mt-2"><strong>Prerequisite:</strong> Basic Python proficiency is required. Applicants must submit a relevant certificate or pass an assessment.</p>
+                                <h3 class="text-xl font-semibold mb-3">Prerequisites:</h3>
+                                <p class="text-gray-600">No prior coding experience required. Perfect for absolute beginners.</p>
                             </div>
-                        </div>
-                        <div class="md:col-span-1">
-                            <img src="src/main/intermediate.png" alt="Intermediate Course Illustration" class="rounded-lg object-cover w-full h-full">
                         </div>
                     </div>
                 </div>
 
-                <!-- Advanced Course -->
-                <div id="advanced" class="bg-white p-8 rounded-lg shadow-lg">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="md:col-span-1">
-                            <img src="src/main/advanced.png" alt="Advanced Course Illustration" class="rounded-lg object-cover w-full h-full">
+                <!-- VCE Algorithmics -->
+                <div id="vce" class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="md:w-1/2 relative bg-cover bg-center h-64 md:h-auto" style="background-image: url('src/main/advanced.png');">
+                        <div class="absolute inset-0 bg-purple-900 bg-opacity-30 flex items-center justify-center">
+                             <!-- Optional overlay content -->
                         </div>
-                        <div class="md:col-span-2">
-                            <span class="text-sm font-semibold text-purple-600 bg-purple-100 py-1 px-3 rounded-full">RECOMMENDED: YEARS 8-10</span>
-                            <h2 class="text-3xl font-bold text-gray-900 mt-2">Advanced Course</h2>
-                            <p class="mt-4 text-gray-600">Our most advanced course focuses on mastering Data Structures and Algorithms to achieve top-tier results in national competitions. The curriculum is based on the VCE Algorithmics (HESS) guide, providing a significant advantage for students considering this subject in their VCE studies.</p>
-                            
-                            <div class="mt-6">
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                         <div class="mb-4">
+                             <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Advanced</span>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">VCE Algorithmics (HESS)</h2>
+                        <p class="text-lg text-gray-600 mb-6">
+                            A rigorous, university-level subject for students ready to master the logic behind computer science.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div>
                                 <h3 class="text-xl font-semibold mb-3">Learning Objectives:</h3>
                                 <ul class="space-y-2 text-gray-700">
                                     <li><strong class="font-semibold">Algorithmic Mastery:</strong> In-depth study of core data structures and algorithms required for elite competitive programming.</li>
@@ -134,4 +294,3 @@
 
 </body>
 </html>
-
