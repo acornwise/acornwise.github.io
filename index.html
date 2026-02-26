@@ -3,16 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acornwise - Algorithmic Thinking & Python Coding</title>
+    <title>AcornWise - Algorithmic Thinking, VCE Algorithmics (HESS) & Python Coding</title>
+    <meta name="description" content="Master Algorithmic Thinking and Python Coding with AcornWise. Specialized courses for VCE Algorithmics (HESS), Python Basics, and Bebras Challenge. Prepare for SEAL, Scholarships, AMC, and AIO.">
+    <meta name="keywords" content="VCE Algorithmics, HESS, Python Coding, Bebras Challenge, Algorithmic Thinking, SEAL program, Scholarship preparation, AMC, AIO, coding for kids Australia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://platform.acornwise.com.au/">
+    <meta property="og:title" content="AcornWise - Algorithmic Thinking & Python Coding">
+    <meta property="og:description" content="Expert-led courses in VCE Algorithmics, Python, and Mathematical Reasoning. Competitive edge for SEAL and Scholarship students.">
+    <meta property="og:image" content="https://platform.acornwise.com.au/src/main/hero-background.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://platform.acornwise.com.au/">
+    <meta property="twitter:title" content="AcornWise - Algorithmic Thinking & Python Coding">
+    <meta property="twitter:description" content="Expert-led courses in VCE Algorithmics, Python, and Mathematical Reasoning. Competitive edge for SEAL and Scholarship students.">
+    <meta property="twitter:image" content="https://platform.acornwise.com.au/src/main/hero-background.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "AcornWise",
+      "url": "https://platform.acornwise.com.au",
+      "logo": "https://platform.acornwise.com.au/src/main/logo.png",
+      "description": "Specialized education in Algorithmic Thinking, VCE Algorithmics (HESS), and Python Coding.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Coding and Math Courses",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "name": "VCE Algorithmics (HESS)",
+            "description": "Rigorous algorithm and data structure mastery for VCE and informatics competitions."
+          },
+          {
+            "@type": "Course",
+            "name": "Python Basics",
+            "description": "Foundational programming and computational thinking for beginners."
+          },
+          {
+            "@type": "Course",
+            "name": "Bebras Computational Thinking",
+            "description": "Preparing students for international logical reasoning challenges."
+          }
+        ]
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7669371125149782" crossorigin="anonymous"></script>
 </head>
 <body class="bg-white text-gray-800">
     <!-- Header Placeholder -->
@@ -21,55 +68,84 @@
     <main>
         <!-- Hero Section -->
         <section class="relative bg-cover bg-center py-20 md:py-32" style="background-image: url('src/main/hero-background.png');">
-            <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Overlay for text readability -->
+            <div class="absolute inset-0 bg-black opacity-60"></div> 
             <div class="relative container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Algorithmic Thinking: Give Your Child a Competitive Edge</h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">We prepare students for top school programs (SEAL, Scholarships) and prestigious competitions through expert-led Python coding and mathematical reasoning courses.</p>
-                <a href="courses.html" class="mt-8 inline-block bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-indigo-700 transition transform hover:-translate-y-1">
-                    Explore Our Courses
-                </a>
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                    Master Algorithmic Thinking <br>
+                    <span class="text-indigo-400">VCE HESS &amp; Python Mastery</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+                    We prepare students for top school programs (**SEAL, Scholarships**) and elite competitions (**Bebras, AMC, AIO**) through professional-grade Python coding and VCE Algorithmics training.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="courses.html" class="bg-indigo-600 text-white font-semibold py-4 px-10 rounded-xl shadow-lg hover:bg-indigo-700 transition transform hover:-translate-y-1">
+                        Explore Our Courses
+                    </a>
+                    <a href="subscription.html" class="bg-white text-indigo-600 font-semibold py-4 px-10 rounded-xl shadow-lg hover:bg-gray-100 transition transform hover:-translate-y-1 border-2 border-indigo-600">
+                        Start Learning Free
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subjects Focus Section -->
+        <section class="py-16 bg-gray-50 border-b border-gray-200">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <div class="text-indigo-600 text-4xl mb-4"><i class="fas fa-brain"></i></div>
+                        <h2 class="text-2xl font-bold mb-2">Bebras Thinking</h2>
+                        <p class="text-gray-600">Master the logic behind the international Bebras Challenge and build core problem-solving muscles.</p>
+                    </div>
+                    <div>
+                        <div class="text-yellow-500 text-4xl mb-4"><i class="fab fa-python"></i></div>
+                        <h2 class="text-2xl font-bold mb-2">Python Mastery</h2>
+                        <p class="text-gray-600">From first script to complex data structures. The primary language for AI and Computer Science.</p>
+                    </div>
+                    <div>
+                        <div class="text-purple-600 text-4xl mb-4"><i class="fas fa-microchip"></i></div>
+                        <h2 class="text-2xl font-bold mb-2">VCE HESS (Algorithmics)</h2>
+                        <p class="text-gray-600">Rigorous preparation for VCE Algorithmics (HESS) and the Australian Informatics Olympiad (AIO).</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- "Why Acornwise?" Section -->
         <section class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Acornwise?</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Our unique curriculum is designed to build foundational logical thinking and translate it into powerful, real-world coding skills. We focus on preparing students not just to code, but to think like a computer scientist.</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">The Competitive Advantage</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Our unique curriculum bridges the gap between raw logic and elite coding performance. We build the "Computer Science" mindset from day one.</p>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center border border-gray-100 hover:shadow-md transition">
                         <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
-                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 12v4m-2-2h4M17 3l-4.5 4.5M12 3l-4.5 4.5M3 17l4.5-4.5M3 12l4.5-4.5"></path></svg>
+                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-12v4m-2-2h4m5 12v4m-2-2h4M17 3l-4.5 4.5M12 3l-4.5 4.5M3 17l4.5-4.5M3 12l4.5-4.5"></path></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Competition Focused</h3>
-                        <p class="text-gray-600">Our goal is to help students achieve Merit/Credit awards or higher in renowned competitions like the AMC, CAT, and the Australian Informatics Olympiad.</p>
+                        <h3 class="text-xl font-semibold mb-2">AIO & AMC Success</h3>
+                        <p class="text-gray-600">Consistent results in Informatics and Math Olympiads at the state and national level.</p>
                     </div>
-                    <!-- Feature 2 -->
-                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center border border-gray-100 hover:shadow-md transition">
                         <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
-                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" opacity=".5"></path></svg>
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Pathway to Top Schools</h3>
-                        <p class="text-gray-600">Strengthen your child's application for Secondary School SEAL programs and private school scholarships with a portfolio of certified competition results.</p>
+                        <h3 class="text-xl font-semibold mb-2">SEAL & Scholarships</h3>
+                        <p class="text-gray-600">A logic-heavy portfolio that validates your child's capabilities for elite Victorian school programs.</p>
                     </div>
-                    <!-- Feature 3 -->
-                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center border border-gray-100 hover:shadow-md transition">
                         <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
-                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                           <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Small, Focused Classes</h3>
-                        <p class="text-gray-600">With a maximum of 4 students per class, we provide personalized attention and mentorship.</p>
+                        <h3 class="text-xl font-semibold mb-2">Small Class Sizes</h3>
+                        <p class="text-gray-600">Maximum of 4 students per class. Personalised mentorship from industry-active educators.</p>
                     </div>
-                    <!-- Feature 4 -->
-                    <div class="bg-gray-50 p-8 rounded-lg text-center">
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center border border-gray-100 hover:shadow-md transition">
                         <div class="mb-4 inline-block p-4 bg-indigo-100 rounded-full">
-                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Comprehensive Curriculum</h3>
-                        <p class="text-gray-600">From unplugged logical exercises to advanced Python projects, our courses cover every step of the learning journey.</p>
+                        <h3 class="text-xl font-semibold mb-2">Modern Ed-Tech</h3>
+                        <p class="text-gray-600">Access to our cloud-based practice platform with real-time feedback and progress tracking.</p>
                     </div>
                 </div>
             </div>
@@ -78,36 +154,45 @@
         <!-- Courses Overview Section -->
         <section class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Courses</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">We offer a structured pathway from beginner to advanced levels, tailored to your child's age and experience.</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Learning Pathways</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Structured progression from logical foundations to मास्टरing high-performance algorithms.</p>
                 </div>
                 <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
                     <!-- Course 1: Beginner -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                        <img src="src/main/beginner.png" alt="Abstract illustration for beginner coding course" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Beginner (Years 2-5)</h3>
-                            <p class="text-gray-600 mb-4">Building the foundations of logic and coding.</p>
-                            <a href="courses.html#beginner" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-gray-100">
+                        <img src="src/main/beginner.png" alt="Python Coding for Kids Beginner Level" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <div class="text-indigo-600 font-bold text-sm uppercase tracking-widest mb-2">Ages 7-11</div>
+                            <h3 class="text-2xl font-bold mb-3">Python Basics & Bebras</h3>
+                            <p class="text-gray-600 mb-6">Introduction to logical thinking via Bebras and foundational Python syntax.</p>
+                            <a href="courses.html#python" class="font-bold text-indigo-600 hover:text-indigo-800 flex items-center">
+                                View Curriculum <span class="ml-2">&rarr;</span>
+                            </a>
                         </div>
                     </div>
                     <!-- Course 2: Intermediate -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                        <img src="src/main/intermediate.png" alt="Abstract illustration for intermediate coding course" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Intermediate (Years 6-9)</h3>
-                            <p class="text-gray-600 mb-4">Developing advanced problem-solving skills.</p>
-                            <a href="courses.html#intermediate" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-gray-100">
+                        <img src="src/main/intermediate.png" alt="Competitive Programming and Algorithmic Thinking" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <div class="text-indigo-600 font-bold text-sm uppercase tracking-widest mb-2">Ages 12-15</div>
+                            <h3 class="text-2xl font-bold mb-3">Math &amp; Informatics</h3>
+                            <p class="text-gray-600 mb-6">Advanced problem solving for AMC and preparation for the Oxford Computing Challenge.</p>
+                            <a href="courses.html#maths" class="font-bold text-indigo-600 hover:text-indigo-800 flex items-center">
+                                View Curriculum <span class="ml-2">&rarr;</span>
+                            </a>
                         </div>
                     </div>
                     <!-- Course 3: Advanced -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
-                        <img src="src/main/advanced.png" alt="Abstract illustration for advanced coding course" class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-2">Advanced (Years 8-10)</h3>
-                            <p class="text-gray-600 mb-4">Mastering algorithms for elite competition.</p>
-                            <a href="courses.html#advanced" class="font-semibold text-indigo-600 hover:text-indigo-800">Learn More &rarr;</a>
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-gray-100">
+                        <img src="src/main/advanced.png" alt="VCE Algorithmics HESS Preparation" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <div class="text-indigo-600 font-bold text-sm uppercase tracking-widest mb-2">Ages 15+</div>
+                            <h3 class="text-2xl font-bold mb-3">VCE HESS Mastery</h3>
+                            <p class="text-gray-600 mb-6">Mastering complex data structures and algorithms for VCE and AIO (Informatics Olympiad).</p>
+                            <a href="courses.html#vce" class="font-bold text-indigo-600 hover:text-indigo-800 flex items-center">
+                                View Curriculum <span class="ml-2">&rarr;</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -117,79 +202,42 @@
         <!-- Resources Section -->
         <section class="py-16 md:py-24">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Free Learning Resources</h2>
-                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Valuable tools to supplement your learning, available for everyone.</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Free Learning Portal</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Elite-grade tools available to the community. Build your skills daily.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                    <!-- Daily Challenge Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="text-indigo-600 mb-4">
-                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Daily Coding Challenge</h3>
-                            <p class="text-gray-600">Test your knowledge with a new Python question every day. A great way to build a consistent learning habit.</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="daily_challenge.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Start Challenge</a>
-                        </div>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col hover:shadow-xl transition">
+                        <div class="text-indigo-600 mb-6 text-3xl"><i class="fas fa-calendar-check"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Daily Challenge</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">A fresh Python or Logic puzzle every 24 hours. Perfect for consistent habit building.</p>
+                        <a href="daily_challenge.html" class="bg-indigo-600 text-white text-center font-bold py-3 rounded-xl hover:bg-indigo-700 transition">Start Now</a>
                     </div>
-                    
-                    <!-- Practice Problems Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                             <div class="text-indigo-600 mb-4">
-                               <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 8h.01M12 12h.01M12 16h.01M9 16H9.01M15 16h.01M9 12h.01M15 12h.01M15 8h.01"></path></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Practice Problems</h3>
-                            <p class="text-gray-600">Hone your skills with a collection of problems sorted by category. The perfect tool for targeted practice.</p>
-                        </div>
-                         <div class="p-6 bg-gray-50">
-                            <a href="practice_problems.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Start Practicing</a>
-                        </div>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col hover:shadow-xl transition">
+                        <div class="text-indigo-600 mb-6 text-3xl"><i class="fas fa-layer-group"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Practice Lab</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Hundreds of categorized problems for AIO, AMC, and OUCC preparation.</p>
+                        <a href="practice_problems.html" class="bg-indigo-600 text-white text-center font-bold py-3 rounded-xl hover:bg-indigo-700 transition">Explore Lab</a>
                     </div>
-
-                    <!-- Online Editor Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                             <div class="text-indigo-600 mb-4">
-                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Online Python Editor</h3>
-                            <p class="text-gray-600">Write, run, and test your Python code directly in your browser. No setup required, perfect for quick experiments.</p>
-                        </div>
-                         <div class="p-6 bg-gray-50">
-                            <a href="online_editor.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">Open Editor</a>
-                        </div>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col hover:shadow-xl transition">
+                        <div class="text-indigo-600 mb-6 text-3xl"><i class="fas fa-terminal"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Web Editor</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Zero-setup Python environment. Code, run, and test directly in your browser.</p>
+                        <a href="online_editor.html" class="bg-indigo-600 text-white text-center font-bold py-3 rounded-xl hover:bg-indigo-700 transition">Launch Editor</a>
                     </div>
-
-                    <!-- Cheat Sheet Card -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                             <div class="text-indigo-600 mb-4">
-                                <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.86 3.693l-4.167 4.167M16.14 3.693l4.167 4.167M3.693 16.14l4.167 4.167M12 21.557l4.447-4.447"></path></svg>
-
-                            </div>
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Python Cheat Sheet</h3>
-                            <p class="text-gray-600">A quick reference guide for essential Python syntax, data structures, and functions. Your go-to for a quick reminder.</p>
-                        </div>
-                         <div class="p-6 bg-gray-50">
-                            <a href="cheat_sheet.html" class="inline-block bg-indigo-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-indigo-700 transition duration-300">View Cheat Sheet</a>
-                        </div>
+                    <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col hover:shadow-xl transition">
+                        <div class="text-indigo-600 mb-6 text-3xl"><i class="fas fa-file-code"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Syntax Bible</h3>
+                        <p class="text-gray-600 mb-6 flex-grow">Ultimate Python cheat sheet covering variables to advanced data structures.</p>
+                        <a href="cheat_sheet.html" class="bg-indigo-600 text-white text-center font-bold py-3 rounded-xl hover:bg-indigo-700 transition">View Bible</a>
                     </div>
-
                 </div>
             </div>
         </section>      
-
     </main>
 
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
-
     <script src="main.js"></script>
 </body>
 </html>
-
