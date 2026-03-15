@@ -95,15 +95,19 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        const descriptionHTML = question.description_md.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+        const descriptionHTML = (question.description_md || "")
+            .replace(/\\n/g, "\n").replace(/\\t/g, "\t")
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\n/g, '<br>');
 
         const testCasesHTML = (question.test_cases || []).map((tc, index) => {
-            const formattedInput = (tc.input || []).join('\n');
+            const formattedInput = (tc.input || []).join('\n').replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+            const expectedStr = String(tc.expected_output).replace(/\\n/g, "\n").replace(/\\t/g, "\t");
             return `
             <tbody id="test-case-group-${index}">
                 <tr id="test-case-row-${index}" data-index="${index}">
-                    <td class="border px-4 py-2 font-mono text-sm">${formattedInput || '""'}</td>
-                    <td class="border px-4 py-2 font-mono text-sm">${tc.expected_output}</td>
+                    <td class="border px-4 py-2 font-mono text-sm whitespace-pre-wrap">${formattedInput || '""'}</td>
+                    <td class="border px-4 py-2 font-mono text-sm whitespace-pre-wrap">${expectedStr}</td>
                     <td class="border px-4 py-2 text-center" id="test-case-result-${index}">-</td>
                 </tr>
                 <tr id="test-case-details-${index}" class="hidden">

@@ -361,6 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
             currentChallengeData = challenge;
             
             const descriptionHTML = (challenge.description_md || "")
+                .replace(/\\n/g, "\n").replace(/\\t/g, "\t")
                 .replace(/</g, "&lt;")
                 .replace(/>/g, "&gt;")
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
@@ -395,11 +396,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             const testCasesHTML = (currentChallengeData.test_cases || []).map((tc, index) => {
-                const formattedInput = tc.input.join(', ');
+                const formattedInput = tc.input.join(', ').replace(/\\n/g, "\n").replace(/\\t/g, "\t");
+                const expectedStr = String(tc.expected_output).replace(/\\n/g, "\n").replace(/\\t/g, "\t");
                 return `
                     <div id="test-case-container-${index}" class="p-2 border rounded-md bg-gray-50">
                         <strong>Test ${index + 1}</strong>
-                        <pre class="text-xs mt-1" id="test-case-details-${index}">Input: ${formattedInput}\nExpected: ${tc.expected_output}</pre>
+                        <pre class="text-xs mt-1" id="test-case-details-${index}">Input: ${formattedInput}\nExpected: ${expectedStr}</pre>
                     </div>
                 `;
             }).join('');
