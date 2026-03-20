@@ -90,10 +90,9 @@
             let pyodide = null;
 
             function appendToTerminal(text, type = 'stdout') {
+                if (!text) return;
                 const textStr = String(text);
-                const sanitizedText = textStr.replace(/</g, '&lt;').replace(/>/g, '&gt;');
                 const span = document.createElement('span');
-                span.innerHTML = sanitizedText.replace(/\n/g, '<br>');
                 
                 switch (type) {
                     case 'stderr':
@@ -109,6 +108,10 @@
                         // stdout has default white text
                         break;
                 }
+
+                // Use textContent to safely handle all characters and rely on 
+                // white-space: pre-wrap in the parent #terminal to handle newlines (\n) correctly.
+                span.textContent = textStr;
 
                 terminal.appendChild(span);
                 terminal.scrollTop = terminal.scrollHeight;
