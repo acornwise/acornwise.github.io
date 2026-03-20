@@ -18,11 +18,13 @@
             height: 30vh;
             min-height: 200px;
             background-color: #111827; /* A slightly softer black */
-            white-space: pre-wrap;
+            white-space: pre-wrap !important;
             word-break: break-all;
+            display: block;
         }
         #terminal span {
-            white-space: pre-wrap;
+            white-space: pre-wrap !important;
+            display: inline;
         }
         /* The custom terminal input is no longer used, so its style can be removed if desired, but we'll keep it for now */
         #terminal-input {
@@ -62,7 +64,7 @@
                     <h3 class="text-xl font-semibold text-gray-800">Terminal</h3>
                     <button id="clear-terminal-button" class="text-sm bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium py-1 px-3 rounded transition">Clear Output</button>
                 </div>
-                <div id="terminal" class="w-full p-4 text-white rounded-md font-mono text-sm whitespace-pre-wrap overflow-y-auto"></div>
+                <pre id="terminal" class="w-full p-4 text-white rounded-md font-mono text-sm overflow-y-auto whitespace-pre-wrap"></pre>
             </div>
         </div>
     </main>
@@ -102,32 +104,24 @@
 
             let pyodide = null;
 
+            // Robust terminal appending using spans for everything to ensure consistent styling
             function appendToTerminal(text, type = 'stdout') {
                 if (!text) return;
                 const textStr = String(text);
                 
-                // If the last child is a text node and we're adding stdout, merge
-                // If the last child is a span of the same type, merge
                 const lastChild = terminal.lastChild;
-                const canMerge = lastChild && (
-                    (type === 'stdout' && lastChild.nodeType === Node.TEXT_NODE) ||
-                    (lastChild.nodeType === Node.ELEMENT_NODE && lastChild.tagName === 'SPAN' && lastChild.dataset.type === type)
-                );
+                const canMerge = lastChild && lastChild.tagName === 'SPAN' && lastChild.dataset.type === type;
 
                 if (canMerge) {
                     lastChild.textContent += textStr;
                 } else {
-                    if (type === 'stdout') {
-                        terminal.appendChild(document.createTextNode(textStr));
-                    } else {
-                        const span = document.createElement('span');
-                        span.dataset.type = type;
-                        if (type === 'stderr') span.className = 'text-red-400';
-                        else if (type === 'user-input') span.className = 'text-green-400';
-                        else if (type === 'info') span.className = 'text-blue-400';
-                        span.textContent = textStr;
-                        terminal.appendChild(span);
-                    }
+                    const span = document.createElement('span');
+                    span.dataset.type = type;
+                    if (type === 'stderr') span.className = 'text-red-400';
+                    else if (type === 'user-input') span.className = 'text-green-400';
+                    else if (type === 'info') span.className = 'text-blue-400';
+                    span.textContent = textStr;
+                    terminal.appendChild(span);
                 }
                 terminal.scrollTop = terminal.scrollHeight;
             }
