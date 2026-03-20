@@ -129,8 +129,9 @@
                     currentLineSpan.textContent += segment;
                     currentLineSpan.appendChild(document.createElement('br'));
 
-                    // If not the last segment, it means a \n was encountered, move to new line
-                    if (i < segments.length - 1) {
+                    // If not the last segment, it means a \n was encountered. 
+                    // Or if it's a single segment (no newline), we also reset to start a new line next time.
+                    if (i < segments.length - 1 || segments.length === 1) {
                         currentLineSpan = null;
                     }
                 });
