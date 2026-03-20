@@ -105,28 +105,30 @@
             function appendToTerminal(text, type = 'stdout') {
                 if (!text) return;
                 const textStr = String(text);
-                const span = document.createElement('span');
                 
-                switch (type) {
-                    case 'stderr':
-                        span.className = 'text-red-400';
-                        break;
-                    case 'user-input':
-                        span.className = 'text-green-400';
-                        break;
-                    case 'info':
-                        span.className = 'text-blue-400';
-                        break;
-                    default:
-                        // stdout has default white text
-                        break;
+                // If the last child is a text node and we're adding stdout, merge
+                // If the last child is a span of the same type, merge
+                const lastChild = terminal.lastChild;
+                const canMerge = lastChild && (
+                    (type === 'stdout' && lastChild.nodeType === Node.TEXT_NODE) ||
+                    (lastChild.nodeType === Node.ELEMENT_NODE && lastChild.tagName === 'SPAN' && lastChild.dataset.type === type)
+                );
+
+                if (canMerge) {
+                    lastChild.textContent += textStr;
+                } else {
+                    if (type === 'stdout') {
+                        terminal.appendChild(document.createTextNode(textStr));
+                    } else {
+                        const span = document.createElement('span');
+                        span.dataset.type = type;
+                        if (type === 'stderr') span.className = 'text-red-400';
+                        else if (type === 'user-input') span.className = 'text-green-400';
+                        else if (type === 'info') span.className = 'text-blue-400';
+                        span.textContent = textStr;
+                        terminal.appendChild(span);
+                    }
                 }
-
-                // Use textContent to safely handle all characters and rely on 
-                // white-space: pre-wrap in the parent #terminal to handle newlines (\n) correctly.
-                span.textContent = textStr;
-
-                terminal.appendChild(span);
                 terminal.scrollTop = terminal.scrollHeight;
             }
             
