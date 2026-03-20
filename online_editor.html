@@ -76,8 +76,11 @@
             const clearTerminalButton = document.getElementById('clear-terminal-button');
             const terminal = document.getElementById('terminal');
 
+            let currentLineSpan = null;
+
             clearTerminalButton.addEventListener('click', () => {
                 terminal.innerHTML = '';
+                currentLineSpan = null;
             });
             const pyodideLoader = document.getElementById('pyodide-loader');
 
@@ -104,25 +107,32 @@
 
             let pyodide = null;
 
-            // Robust terminal appending using spans for everything to ensure consistent styling
+            // One span per line implementation as requested
             function appendToTerminal(text, type = 'stdout') {
                 if (!text) return;
                 const textStr = String(text);
-                
-                const lastChild = terminal.lastChild;
-                const canMerge = lastChild && lastChild.tagName === 'SPAN' && lastChild.dataset.type === type;
+                const segments = textStr.split('\n');
 
-                if (canMerge) {
-                    lastChild.textContent += textStr;
-                } else {
-                    const span = document.createElement('span');
-                    span.dataset.type = type;
-                    if (type === 'stderr') span.className = 'text-red-400';
-                    else if (type === 'user-input') span.className = 'text-green-400';
-                    else if (type === 'info') span.className = 'text-blue-400';
-                    span.textContent = textStr;
-                    terminal.appendChild(span);
-                }
+                segments.forEach((segment, i) => {
+                    // If no current line or type changed, start a new span
+                    if (!currentLineSpan || currentLineSpan.dataset.type !== type) {
+                        currentLineSpan = document.createElement('span');
+                        currentLineSpan.dataset.type = type;
+                        currentLineSpan.style.display = 'block';
+                        currentLineSpan.style.minHeight = '1.2em';
+                        if (type === 'stderr') currentLineSpan.className = 'text-red-400';
+                        else if (type === 'user-input') currentLineSpan.className = 'text-green-400';
+                        else if (type === 'info') currentLineSpan.className = 'text-blue-400';
+                        terminal.appendChild(currentLineSpan);
+                    }
+
+                    currentLineSpan.textContent += segment;
+
+                    // If not the last segment, it means a \n was encountered, move to new line
+                    if (i < segments.length - 1) {
+                        currentLineSpan = null;
+                    }
+                });
                 terminal.scrollTop = terminal.scrollHeight;
             }
             
