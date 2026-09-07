@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://platform.acornwise.com.au/sitemap.xml
+Sitemap: https://acornwise.com.au/sitemap.xml
