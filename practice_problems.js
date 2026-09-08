@@ -33,12 +33,21 @@ document.addEventListener('DOMContentLoaded', function () {
         "Modelling and Simulation", "Pattern Recognition"
     ];
 
+    const questionFiles = [
+        "Abstraction.json", "Abstractions_ai.json",
+        "Algorithms.json", "Algorithms_ai.json",
+        "Decomposition.json", "Decompositions_ai.json",
+        "Evaluation.json", "Evaluations_ai.json",
+        "Modelling and Simulation.json", "Modelling and Simulations_ai.json",
+        "Pattern Recognition.json", "Pattern Recognition_ai.json"
+    ];
+
     async function loadAllQuestions() {
         try {
-            const fetchPromises = categories.map(category =>
-                fetch(`questions/${category.replace(/ /g, '%20')}.json`)
+            const fetchPromises = questionFiles.map(fileName =>
+                fetch(`questions/${fileName.replace(/ /g, '%20')}`)
                     .then(res => {
-                        if (!res.ok) console.warn(`Could not load questions for category: ${category}`);
+                        if (!res.ok) console.warn(`Could not load questions for file: ${fileName}`);
                         return res.ok ? res.json() : [];
                     })
             );
@@ -173,7 +182,10 @@ document.addEventListener('DOMContentLoaded', function () {
         editor = ace.edit("editor");
         editor.setTheme("ace/theme/chrome");
         editor.session.setMode("ace/mode/python");
-        editor.setValue((question.starter_code || '# Start your code here').trim(), -1);
+        const starter = (question.starter_code !== undefined && question.starter_code !== null && question.starter_code !== '')
+            ? question.starter_code.trim()
+            : '# Start your code here';
+        editor.setValue(starter, -1);
 
         document.getElementById('run-code').addEventListener('click', runCode);
         document.getElementById('check-answer').addEventListener('click', checkAnswer);
@@ -222,7 +234,8 @@ document.addEventListener('DOMContentLoaded', function () {
     
     function getQuestionById(id) {
         if (!pyodide) return;
-        const found = masterQuestionList.find(q => q.id === id);
+        const cleanId = (id || '').trim();
+        const found = masterQuestionList.find(q => q.id === cleanId || String(q.id).toLowerCase() === cleanId.toLowerCase());
         if (found) {
             categorySelect.value = found.category;
             displayQuestion(found);
