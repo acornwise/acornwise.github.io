@@ -18,10 +18,10 @@
     <meta property="og:title" content="ATAR English Guide: VCE Text Response, Argument Analysis &amp; 40+ Study Score Strategies">
     <meta property="og:description" content="Master Victorian ATAR English with proven essay frameworks, Section A/B/C breakdown, study score scaling data, and examiner insights.">
     <meta property="og:url" content="https://acornwise.com.au/atar-english-guide">
-    <meta property="og:image" content="https://platform.acornwise.com.au/src/main/hero-background.png">
+    <meta property="og:image" content="https://acornwise.com.au/src/main/hero-background.png">
     <meta property="og:locale" content="en_AU">
     <meta property="article:published_time" content="2025-01-15T08:00:00+11:00">
-    <meta property="article:modified_time" content="2026-09-07T12:00:00+10:00">
+    <meta property="article:modified_time" content="2026-09-09T20:30:00+10:00">
     <meta property="article:section" content="VCE Education">
 
     <!-- Twitter Card -->
@@ -29,7 +29,7 @@
     <meta name="twitter:site" content="@AcornWiseEdu">
     <meta name="twitter:title" content="ATAR English Guide: VCE Text Response &amp; 40+ Study Score Blueprint">
     <meta name="twitter:description" content="The complete guide to mastering VCE English (Sections A, B, and C), scaling, and achieving a 40+ study score.">
-    <meta name="twitter:image" content="https://platform.acornwise.com.au/src/main/hero-background.png">
+    <meta name="twitter:image" content="https://acornwise.com.au/src/main/hero-background.png">
 
     <!-- Tailwind CSS CDN & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,7 +64,7 @@
           "@id": "https://acornwise.com.au/#organization",
           "name": "AcornWise",
           "url": "https://acornwise.com.au",
-          "logo": "https://platform.acornwise.com.au/src/main/logo.png",
+          "logo": "https://acornwise.com.au/src/main/logo.png",
           "description": "AcornWise is an Australian educational platform delivering curriculum mastery, algorithmic thinking, and adaptive practice for secondary students."
         },
         {
@@ -223,10 +223,11 @@
                     <a href="timetable.html" class="text-gray-600 hover:text-indigo-600 transition">Timetable</a>
                     <a href="contact.html" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
                     
-                    <!-- Launch Platform Link -->
-                    <a href="https://platform.acornwise.com.au" target="_blank" class="px-4 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition shadow-sm flex items-center gap-1.5">
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                        <span>Launch Platform</span>
+                    <!-- Aussie English App Link -->
+                    <a href="#mobile-app" class="px-3.5 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition shadow-sm flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>Aussie English App</span>
+                        <span class="bg-amber-400 text-slate-900 text-[10px] font-extrabold px-1.5 py-0.5 rounded">In Review</span>
                     </a>
                 </div>
 
@@ -248,12 +249,20 @@
                 <a href="cheat_sheet.html" class="block py-2 pl-8 pr-4 text-gray-600 hover:bg-gray-50">- Cheat Sheet</a>
                 <a href="timetable.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50">Timetable</a>
                 <a href="contact.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-50">Contact</a>
-                <a href="https://platform.acornwise.com.au" target="_blank" class="block py-2 px-4 text-indigo-600 font-semibold hover:bg-gray-50">Launch Platform &rarr;</a>
+                <a href="#mobile-app" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block py-2 px-4 text-indigo-600 font-semibold hover:bg-gray-50 flex items-center justify-between">
+                    <span class="flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>Aussie English App</span>
+                    </span>
+                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold">In Review</span>
+                </a>
             </div>
         </nav>
     </header>
 
     <main id="main-content">
+        <!-- TEMPORARILY HIDDEN DURING REVIEW OF AUSSIE ENGLISH APP -->
+        <div style="display: none;" class="hidden" aria-hidden="true" data-review-hidden="curriculum-guide">
         <!-- Hero Section -->
         <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-indigo-50/60 via-white to-slate-50">
             <div class="container mx-auto px-4 lg:px-8">
@@ -966,56 +975,222 @@
                 </div>
             </div>
         </section>
+        </div><!-- END TEMPORARILY HIDDEN -->
 
-        <!-- Section 8: AcornWise Platform Integration Hook -->
-        <section class="py-16 bg-gradient-to-tr from-indigo-900 via-slate-900 to-violet-950 text-white relative overflow-hidden">
+        <!-- Section 8: Aussie English Mobile App Showcase (iOS & Android In Review) -->
+        <section id="mobile-app" class="py-16 lg:py-24 bg-gradient-to-tr from-slate-950 via-indigo-950 to-slate-900 text-white relative overflow-hidden">
+            <!-- Background glow accents -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-violet-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
             <div class="container mx-auto px-4 lg:px-8 relative z-10">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                    <div class="lg:col-span-8">
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-400/30 mb-4">
-                            <i class="fa-solid fa-microchip"></i>
-                            AI-Powered Learning Platform
-                        </div>
-                        <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-                            Accelerate Your English Mastery with AcornWise
-                        </h2>
-                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                            AcornWise combines educational science with adaptive AI to train the foundational cognitive skills required for VCE English success: precise vocabulary acquisition, grammatical fluency, sentence structure evaluation, and verbal reasoning.
-                        </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <i class="fa-solid fa-book-open text-indigo-400 mb-2 block text-lg"></i>
-                                <strong class="text-sm text-white block">Vocabulary Lexicon</strong>
-                                <span class="text-xs text-slate-400">Master high-yield metalanguage terms with contextual examples.</span>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <i class="fa-solid fa-feather-pointed text-violet-400 mb-2 block text-lg"></i>
-                                <strong class="text-sm text-white block">Sentence Evaluator</strong>
-                                <span class="text-xs text-slate-400">Transform weak assertions into high-scoring analytical prose.</span>
-                            </div>
-                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
-                                <i class="fa-solid fa-brain text-emerald-400 mb-2 block text-lg"></i>
-                                <strong class="text-sm text-white block">Verbal Reasoning</strong>
-                                <span class="text-xs text-slate-400">Train argument deconstruction and critical perspective mapping.</span>
-                            </div>
-                        </div>
+
+                <!-- Navigation Breadcrumbs -->
+                <nav aria-label="Breadcrumb" class="mb-8">
+                    <ol class="flex items-center gap-2 text-xs text-slate-400">
+                        <li><a href="index.html" class="hover:text-indigo-400 transition-colors">Home</a></li>
+                        <li><i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i></li>
+                        <li><a href="resources.html" class="hover:text-indigo-400 transition-colors">Learning Resources</a></li>
+                        <li><i class="fa-solid fa-chevron-right text-[10px] text-slate-500"></i></li>
+                        <li class="font-semibold text-white" aria-current="page">Aussie English: All Australian Students</li>
+                    </ol>
+                </nav>
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-400/20 text-amber-300 border border-amber-400/40 mb-4 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        Mobile Apps Currently in Review on Apple &amp; Google Play Stores
                     </div>
-                    <div class="lg:col-span-4 text-center lg:text-right">
-                        <div class="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 inline-block text-left w-full max-w-sm">
-                            <span class="text-xs text-indigo-300 font-semibold uppercase block mb-1">Start Practicing</span>
-                            <h3 class="text-xl font-bold text-white mb-3">Launch AcornWise Platform</h3>
-                            <p class="text-xs text-slate-300 mb-4 leading-relaxed">
-                                Access structured exercises, question banks, and learning modules designed for Australian high school students.
-                            </p>
-                            <a href="https://platform.acornwise.com.au" target="_blank" class="w-full py-3 px-4 bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-600 hover:to-violet-700 text-white font-bold rounded-xl text-center block text-sm shadow-lg shadow-indigo-500/30 transition-all">
-                                Open Web Platform &rarr;
-                            </a>
+                    <h2 class="heading-font text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+                        Aussie English: All Australian Students
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        The ultimate 365-day senior English prep companion engineered specifically for Australian secondary students across <strong>VCE, HSC, QCE, SACE, and WACE</strong>. Built with an offline-first SQLite curriculum engine, daily vocabulary mastery, analytical reasoning drills, and on-device privacy-first AI sentence evaluation.
+                    </p>
+
+                    <!-- App Store Status Badges Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mt-8 text-left">
+                        <!-- Apple App Store Card -->
+                        <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center gap-4 hover:border-indigo-400/50 transition">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-white text-2xl">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 uppercase font-bold tracking-wider">Apple App Store</span>
+                                    <span class="text-[10px] bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded-full font-bold">In Review</span>
+                                </div>
+                                <span class="text-sm font-bold text-white block">iOS &amp; iPadOS</span>
+                                <span class="text-xs text-slate-300">iPhone, iPad • Version 1.0</span>
+                            </div>
+                        </div>
+
+                        <!-- Google Play Card -->
+                        <div class="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 flex items-center gap-4 hover:border-indigo-400/50 transition">
+                            <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-emerald-400 text-2xl">
+                                <i class="fa-brands fa-google-play"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-[11px] text-slate-400 uppercase font-bold tracking-wider">Google Play Store</span>
+                                    <span class="text-[10px] bg-amber-400/20 text-amber-300 border border-amber-400/30 px-2 py-0.5 rounded-full font-bold">In Review</span>
+                                </div>
+                                <span class="text-sm font-bold text-white block">Android</span>
+                                <span class="text-xs text-slate-300">Phones &amp; Tablets • Version 1.0</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Main Content: Interactive Showcase & Features -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Left: Interactive Mobile Screen Preview -->
+                    <div class="lg:col-span-5 flex flex-col items-center">
+                        <div class="relative w-full max-w-[300px] sm:max-w-[320px] rounded-[2.5rem] p-3 bg-slate-800 border-4 border-slate-700 shadow-2xl shadow-indigo-950/80">
+                            <!-- Phone Notch / Island -->
+                            <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-4 bg-slate-900 rounded-full z-20"></div>
+                            
+                            <!-- Screen Container -->
+                            <div class="relative rounded-[2rem] overflow-hidden bg-slate-950 aspect-[9/19.5] border border-white/10">
+                                <img id="app-screen-img" src="src/app/01_home_curriculum.png" alt="Aussie English App Interface" class="w-full h-full object-cover object-top transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Caption -->
+                        <div class="mt-4 text-center max-w-sm px-2">
+                            <h4 id="app-screen-title" class="text-sm font-bold text-white mb-1">
+                                365-Day Curriculum &amp; Streak Roadmap
+                            </h4>
+                            <p id="app-screen-desc" class="text-xs text-slate-300 leading-relaxed">
+                                Progressive daily pacing with locked forward advancement, streak counters, and flexible backward review across the entire academic year.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Tab Switcher & Features Grid -->
+                    <div class="lg:col-span-7">
+                        
+                        <!-- Interactive Screen Tabs -->
+                        <div class="mb-6">
+                            <span class="text-xs text-indigo-300 font-bold uppercase tracking-wider block mb-2">Explore App Screens:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <button type="button" onclick="setAppScreenshot(0)" class="app-tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition border bg-indigo-600 text-white border-indigo-500 shadow-sm flex items-center gap-1.5">
+                                    <i class="fa-solid fa-calendar-check text-[11px]"></i>
+                                    <span>365-Day Roadmap</span>
+                                </button>
+                                <button type="button" onclick="setAppScreenshot(1)" class="app-tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition border bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-book-bookmark text-[11px]"></i>
+                                    <span>Daily Vocab &amp; Audio</span>
+                                </button>
+                                <button type="button" onclick="setAppScreenshot(2)" class="app-tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition border bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-brain text-[11px]"></i>
+                                    <span>Verbal Reasoning</span>
+                                </button>
+                                <button type="button" onclick="setAppScreenshot(3)" class="app-tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition border bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-file-lines text-[11px]"></i>
+                                    <span>Reading Challenges</span>
+                                </button>
+                                <button type="button" onclick="setAppScreenshot(4)" class="app-tab-btn px-3 py-2 rounded-xl text-xs font-semibold transition border bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-trophy text-[11px]"></i>
+                                    <span>Milestone Tests</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 6 Core Feature Pillars (Verified against vce_english codebase) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                            
+                            <!-- Feature 1 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-road text-indigo-400 text-sm"></i>
+                                    <strong class="text-sm text-white">365-Day Structured Roadmap</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Structured daily tasks (Vocab + Reasoning + Reading). Requires 100% daily mastery to unlock the next day, preventing superficial skipping while enabling backward review.
+                                </p>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-spell-check text-violet-400 text-sm"></i>
+                                    <strong class="text-sm text-white">3,650 Vocabulary Terms &amp; TTS</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Curated high-yield metalanguage words with Zipf frequency ratings, VCE analytical sentence examples, native Text-To-Speech pronunciation, and 10-word retention quizzes.
+                                </p>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-puzzle-piece text-emerald-400 text-sm"></i>
+                                    <strong class="text-sm text-white">3,650 Verbal Reasoning Drills</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Targeted exercises training rhetorical analysis, analogical reasoning, inference deconstruction, and logical deduction with instant concise rationales (&lt;35 words).
+                                </p>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-book-open-reader text-sky-400 text-sm"></i>
+                                    <strong class="text-sm text-white">435 Senior Reading Challenges</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Curriculum-aligned passages covering <em>Reading Texts</em>, <em>Crafting Texts</em>, and <em>Exploring Argument</em> (including licensed articles from <em>The Conversation</em>).
+                                </p>
+                            </div>
+
+                            <!-- Feature 5 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-feather-pointed text-amber-400 text-sm"></i>
+                                    <strong class="text-sm text-white">On-Device AI Sentence Evaluator</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Immediate feedback transforming conversational or first-person assertions into formal third-person academic prose, flagging part-of-speech misuses, and scoring analytical depth.
+                                </p>
+                            </div>
+
+                            <!-- Feature 6 -->
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition">
+                                <div class="flex items-center gap-2.5 mb-1.5">
+                                    <i class="fa-solid fa-medal text-rose-400 text-sm"></i>
+                                    <strong class="text-sm text-white">Weekly 20-Item Milestone Tests</strong>
+                                </div>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Comprehensive milestone tests every 7 days applying SM-2 spaced repetition principles to consolidate weekly learnings and identify weak topics.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Architecture & Early Access Bar -->
+                        <div class="mt-6 p-4 rounded-2xl bg-indigo-950/60 border border-indigo-800/40 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div class="text-xs text-slate-300">
+                                <div class="flex items-center gap-2 text-white font-bold mb-1">
+                                    <i class="fa-solid fa-database text-indigo-400"></i>
+                                    <span>Offline-First &amp; Privacy-Preserving</span>
+                                </div>
+                                <span>Curriculum powered by local SQLite database. No account required. Read our <a href="privacy-policy.html" class="text-indigo-300 underline font-semibold hover:text-white">Privacy Policy</a>.</span>
+                            </div>
+                            <a href="mailto:info@acornwise.com.au?subject=Aussie%20English%20App%20Early%20Access%20Inquiry" class="px-4 py-2 text-xs font-bold text-slate-900 bg-white hover:bg-slate-100 rounded-xl transition whitespace-nowrap shadow-sm">
+                                Request Early Access &rarr;
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <!-- TEMPORARILY HIDDEN DURING REVIEW OF AUSSIE ENGLISH APP -->
+        <div style="display: none;" class="hidden" aria-hidden="true" data-review-hidden="faq">
         <!-- Section 9: FAQ Accordion Section (Mapped to Schema.org) -->
         <section id="faq" class="py-16 bg-slate-50 border-t border-slate-200">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1098,12 +1273,13 @@
                 </div>
             </div>
         </section>
+        </div><!-- END TEMPORARILY HIDDEN -->
     </main>
 
     <!-- Comprehensive Footer (Consistent with AcornWise Site Footer) -->
     <footer class="bg-gray-800 text-white mt-auto py-12 border-t border-gray-700">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-left">
                 <div>
                     <span class="text-xl font-bold text-indigo-400 block mb-2">AcornWise</span>
                     <p class="text-gray-400 text-xs leading-relaxed">
@@ -1119,7 +1295,7 @@
                         <li><a href="practice_problems.html" class="hover:text-indigo-400 transition">Problem Lab</a></li>
                     </ul>
                 </div>
-                <div>
+                <div style="display: none;" aria-hidden="true">
                     <strong class="text-white text-sm block mb-3 font-semibold">Study Score Tools</strong>
                     <ul class="space-y-2 text-xs text-gray-400">
                         <li><a href="#study-score-calc" class="hover:text-indigo-400 transition">Score Estimator</a></li>
@@ -1129,9 +1305,10 @@
                     </ul>
                 </div>
                 <div>
-                    <strong class="text-white text-sm block mb-3 font-semibold">Platform &amp; Contact</strong>
+                    <strong class="text-white text-sm block mb-3 font-semibold">Mobile App &amp; Legal</strong>
                     <ul class="space-y-2 text-xs text-gray-400">
-                        <li><a href="https://platform.acornwise.com.au" target="_blank" class="hover:text-indigo-400 transition">Platform App</a></li>
+                        <li><a href="#mobile-app" class="hover:text-indigo-400 transition text-indigo-300 font-medium">Aussie English App (In Review)</a></li>
+                        <li><a href="privacy-policy.html" class="hover:text-indigo-400 transition">Privacy Policy</a></li>
                         <li><a href="courses.html" class="hover:text-indigo-400 transition">Our Courses</a></li>
                         <li><a href="timetable.html" class="hover:text-indigo-400 transition">Timetable</a></li>
                         <li><a href="contact.html" class="hover:text-indigo-400 transition">Contact Us</a></li>
@@ -1204,6 +1381,60 @@
                 content.classList.add('hidden');
                 icon.style.transform = 'rotate(0deg)';
             }
+        }
+
+        // Aussie English App Screenshot Switcher
+        function setAppScreenshot(idx) {
+            const screens = [
+                {
+                    src: 'src/app/01_home_curriculum.png',
+                    title: '365-Day Curriculum & Streak Roadmap',
+                    desc: 'Progressive daily pacing with locked forward advancement, streak counters, and flexible backward review across the entire academic year.'
+                },
+                {
+                    src: 'src/app/02_daily_vocabulary.png',
+                    title: 'Daily Vocabulary Cards with Audio & Quiz',
+                    desc: '10 target words daily with Zipf frequency, VCE context sentences, native Text-To-Speech audio pronunciation, and instant 10-word retention quizzes.'
+                },
+                {
+                    src: 'src/app/03_verbal_reasoning.png',
+                    title: 'Verbal Reasoning & Analytical Drills',
+                    desc: '3,650 critical reasoning questions covering rhetorical intent, analogy logic, deductive analysis, and concise instant explanations.'
+                },
+                {
+                    src: 'src/app/04_reading_challenge.png',
+                    title: 'Senior Reading Challenges & Text Passages',
+                    desc: '435 senior secondary text excerpts mapped to Section A (Reading Texts), Section B (Crafting Texts), and Section C (Exploring Argument).'
+                },
+                {
+                    src: 'src/app/05_weekly_assessments.png',
+                    title: 'Weekly 20-Item Milestone Tests',
+                    desc: 'Milestone evaluations every 7 days using SM-2 spaced repetition principles to consolidate long-term retention and exam readiness.'
+                }
+            ];
+
+            if (idx < 0 || idx >= screens.length) return;
+            const imgEl = document.getElementById('app-screen-img');
+            const titleEl = document.getElementById('app-screen-title');
+            const descEl = document.getElementById('app-screen-desc');
+            
+            const isSubfolder = window.location.pathname.includes('/atar-english-guide/');
+            const basePath = isSubfolder ? '../' : '';
+
+            if (imgEl) imgEl.src = basePath + screens[idx].src;
+            if (titleEl) titleEl.textContent = screens[idx].title;
+            if (descEl) descEl.textContent = screens[idx].desc;
+
+            // Highlight active tab
+            document.querySelectorAll('.app-tab-btn').forEach((btn, i) => {
+                if (i === idx) {
+                    btn.classList.add('bg-indigo-600', 'text-white', 'border-indigo-500');
+                    btn.classList.remove('bg-white/5', 'text-slate-300', 'border-white/10');
+                } else {
+                    btn.classList.remove('bg-indigo-600', 'text-white', 'border-indigo-500');
+                    btn.classList.add('bg-white/5', 'text-slate-300', 'border-white/10');
+                }
+            });
         }
     </script>
 </body>
